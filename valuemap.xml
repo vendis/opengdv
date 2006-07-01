@@ -1,0 +1,2914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+  <typ name="absender_art_t">
+    <path satz="0001" teil="1" nr="54" sparte=""/>
+    <value key="1">VU</value>
+    <value key="2">Vermittler</value>
+    <value key="3">VU (Nicht GDV-Schlüssel)</value>
+    <value key="9">Sonstige (z. B. Clearingstelle, Firmenvermittler)</value>
+  </typ>
+  <typ name="sparte_t">
+    <path satz="0052" teil="1" nr="4" sparte=""/>
+    <path satz="0100" teil="1" nr="4" sparte=""/>
+    <path satz="0100" teil="2" nr="4" sparte=""/>
+    <path satz="0100" teil="3" nr="4" sparte=""/>
+    <path satz="0100" teil="4" nr="4" sparte=""/>
+    <path satz="0102" teil="1" nr="4" sparte=""/>
+    <path satz="0200" teil="1" nr="4" sparte=""/>
+    <path satz="0200" teil="2" nr="4" sparte=""/>
+    <path satz="0210" teil="1" nr="4" sparte="000"/>
+    <path satz="0210" teil="2" nr="4" sparte="000"/>
+    <path satz="0210" teil="1" nr="4" sparte="080"/>
+    <path satz="0210" teil="2" nr="4" sparte="080"/>
+    <path satz="0210" teil="1" nr="4" sparte="110"/>
+    <path satz="0210" teil="1" nr="4" sparte="040"/>
+    <path satz="0210" teil="1" nr="4" sparte="550"/>
+    <path satz="0210" teil="1" nr="4" sparte="050"/>
+    <path satz="0210" teil="2" nr="4" sparte="050"/>
+    <path satz="0210" teil="1" nr="4" sparte="020"/>
+    <path satz="0210" teil="2" nr="4" sparte="020"/>
+    <path satz="0210" teil="1" nr="4" sparte="010"/>
+    <path satz="0210" teil="2" nr="4" sparte="010"/>
+    <path satz="0210" teil="1" nr="4" sparte="070"/>
+    <path satz="0210" teil="1" nr="4" sparte="170"/>
+    <path satz="0210" teil="2" nr="4" sparte="170"/>
+    <path satz="0210" teil="1" nr="4" sparte="190"/>
+    <path satz="0210" teil="1" nr="4" sparte="030"/>
+    <path satz="0210" teil="1" nr="4" sparte="140"/>
+    <path satz="0210" teil="1" nr="4" sparte="130"/>
+    <path satz="0210" teil="2" nr="4" sparte="130"/>
+    <path satz="0210" teil="1" nr="4" sparte="510"/>
+    <path satz="0211" teil="1" nr="4" sparte="000"/>
+    <path satz="0211" teil="1" nr="4" sparte="080"/>
+    <path satz="0211" teil="1" nr="4" sparte="110"/>
+    <path satz="0211" teil="1" nr="4" sparte="040"/>
+    <path satz="0211" teil="1" nr="4" sparte="050"/>
+    <path satz="0211" teil="1" nr="4" sparte="010"/>
+    <path satz="0211" teil="1" nr="4" sparte="170"/>
+    <path satz="0211" teil="1" nr="4" sparte="190"/>
+    <path satz="0211" teil="1" nr="4" sparte="140"/>
+    <path satz="0211" teil="1" nr="4" sparte="130"/>
+    <path satz="0212" teil="1" nr="4" sparte="050"/>
+    <path satz="0220" teil="1" nr="4" sparte="000"/>
+    <path satz="0220" teil="2" nr="4" sparte="000"/>
+    <path satz="0220" teil="1" nr="4" sparte="080"/>
+    <path satz="0220" teil="2" nr="4" sparte="080"/>
+    <path satz="0220" teil="1" nr="4" sparte="110"/>
+    <path satz="0220" teil="1" nr="4" sparte="040"/>
+    <path satz="0220" teil="2" nr="4" sparte="040"/>
+    <path satz="0220" teil="1" nr="4" sparte="550"/>
+    <path satz="0220" teil="1" nr="4" sparte="055"/>
+    <path satz="0220" teil="2" nr="4" sparte="055"/>
+    <path satz="0220" teil="1" nr="4" sparte="051"/>
+    <path satz="0220" teil="2" nr="4" sparte="051"/>
+    <path satz="0220" teil="1" nr="4" sparte="053"/>
+    <path satz="0220" teil="2" nr="4" sparte="053"/>
+    <path satz="0220" teil="1" nr="4" sparte="052"/>
+    <path satz="0220" teil="2" nr="4" sparte="052"/>
+    <path satz="0220" teil="1" nr="4" sparte="059"/>
+    <path satz="0220" teil="2" nr="4" sparte="059"/>
+    <path satz="0220" teil="1" nr="4" sparte="054"/>
+    <path satz="0220" teil="2" nr="4" sparte="054"/>
+    <path satz="0220" teil="1" nr="4" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="4" sparte="020.1"/>
+    <path satz="0220" teil="1" nr="4" sparte="020.3"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.0"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.48"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.48"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.48"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.48"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="7" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="3" nr="4" sparte="010.9"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.7"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.7"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.7"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.7"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.13"/>
+    <path satz="0220" teil="7" nr="4" sparte="010.13"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.13"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.13"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.13"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="7" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="3" nr="4" sparte="010.2"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.5"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.5"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.5"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.5"/>
+    <path satz="0220" teil="6" nr="4" sparte="010.6"/>
+    <path satz="0220" teil="8" nr="4" sparte="010.6"/>
+    <path satz="0220" teil="9" nr="4" sparte="010.6"/>
+    <path satz="0220" teil="1" nr="4" sparte="010.6"/>
+    <path satz="0220" teil="2" nr="4" sparte="010.6"/>
+    <path satz="0220" teil="1" nr="4" sparte="070"/>
+    <path satz="0220" teil="2" nr="4" sparte="070"/>
+    <path satz="0220" teil="1" nr="4" sparte="170"/>
+    <path satz="0220" teil="2" nr="4" sparte="170"/>
+    <path satz="0220" teil="3" nr="4" sparte="170"/>
+    <path satz="0220" teil="1" nr="4" sparte="190"/>
+    <path satz="0220" teil="2" nr="4" sparte="190"/>
+    <path satz="0220" teil="1" nr="4" sparte="030"/>
+    <path satz="0220" teil="2" nr="4" sparte="030"/>
+    <path satz="0220" teil="3" nr="4" sparte="030"/>
+    <path satz="0220" teil="9" nr="4" sparte="030"/>
+    <path satz="0220" teil="1" nr="4" sparte="140"/>
+    <path satz="0220" teil="2" nr="4" sparte="140"/>
+    <path satz="0220" teil="1" nr="4" sparte="130"/>
+    <path satz="0220" teil="1" nr="4" sparte="510"/>
+    <path satz="0221" teil="1" nr="4" sparte="000"/>
+    <path satz="0221" teil="2" nr="4" sparte="080"/>
+    <path satz="0221" teil="1" nr="4" sparte="110"/>
+    <path satz="0221" teil="1" nr="4" sparte="040"/>
+    <path satz="0221" teil="1" nr="4" sparte="055"/>
+    <path satz="0221" teil="1" nr="4" sparte="051"/>
+    <path satz="0221" teil="1" nr="4" sparte="053"/>
+    <path satz="0221" teil="1" nr="4" sparte="052"/>
+    <path satz="0221" teil="1" nr="4" sparte="059"/>
+    <path satz="0221" teil="1" nr="4" sparte="054"/>
+    <path satz="0221" teil="2" nr="4" sparte="054"/>
+    <path satz="0221" teil="2" nr="4" sparte="010.48"/>
+    <path satz="0221" teil="8" nr="4" sparte="010.7"/>
+    <path satz="0221" teil="1" nr="4" sparte="010.7"/>
+    <path satz="0221" teil="2" nr="4" sparte="010.7"/>
+    <path satz="0221" teil="7" nr="4" sparte="010.13"/>
+    <path satz="0221" teil="8" nr="4" sparte="010.13"/>
+    <path satz="0221" teil="1" nr="4" sparte="010.13"/>
+    <path satz="0221" teil="2" nr="4" sparte="010.13"/>
+    <path satz="0221" teil="8" nr="4" sparte="010.2"/>
+    <path satz="0221" teil="7" nr="4" sparte="010.2"/>
+    <path satz="0221" teil="1" nr="4" sparte="010.2"/>
+    <path satz="0221" teil="2" nr="4" sparte="010.2"/>
+    <path satz="0221" teil="8" nr="4" sparte="010.5"/>
+    <path satz="0221" teil="1" nr="4" sparte="010.5"/>
+    <path satz="0221" teil="2" nr="4" sparte="010.5"/>
+    <path satz="0221" teil="8" nr="4" sparte="010.6"/>
+    <path satz="0221" teil="1" nr="4" sparte="010.6"/>
+    <path satz="0221" teil="2" nr="4" sparte="010.6"/>
+    <path satz="0221" teil="1" nr="4" sparte="070"/>
+    <path satz="0221" teil="2" nr="4" sparte="070"/>
+    <path satz="0221" teil="2" nr="4" sparte="170"/>
+    <path satz="0221" teil="2" nr="4" sparte="190"/>
+    <path satz="0221" teil="2" nr="4" sparte="030"/>
+    <path satz="0221" teil="3" nr="4" sparte="030"/>
+    <path satz="0221" teil="2" nr="4" sparte="140"/>
+    <path satz="0221" teil="1" nr="4" sparte="130"/>
+    <path satz="0221" teil="1" nr="4" sparte="510"/>
+    <path satz="0250" teil="1" nr="4" sparte="190"/>
+    <path satz="0250" teil="2" nr="4" sparte="190"/>
+    <path satz="0251" teil="2" nr="4" sparte="190"/>
+    <path satz="0260" teil="1" nr="4" sparte="190"/>
+    <path satz="0270" teil="1" nr="4" sparte="550"/>
+    <path satz="0270" teil="2" nr="4" sparte="550"/>
+    <path satz="0280" teil="1" nr="4" sparte="550"/>
+    <path satz="0291" teil="1" nr="4" sparte="550"/>
+    <path satz="0292" teil="1" nr="4" sparte="550"/>
+    <path satz="0293" teil="1" nr="4" sparte="550"/>
+    <path satz="0294" teil="1" nr="4" sparte="550"/>
+    <path satz="0295" teil="1" nr="4" sparte="550"/>
+    <path satz="0300" teil="1" nr="4" sparte=""/>
+    <path satz="0300" teil="2" nr="4" sparte=""/>
+    <path satz="0350" teil="1" nr="4" sparte=""/>
+    <path satz="0352" teil="1" nr="4" sparte=""/>
+    <path satz="0362" teil="1" nr="4" sparte=""/>
+    <path satz="0372" teil="1" nr="4" sparte=""/>
+    <path satz="0382" teil="1" nr="4" sparte=""/>
+    <path satz="0400" teil="1" nr="4" sparte=""/>
+    <path satz="0400" teil="2" nr="4" sparte=""/>
+    <path satz="0410" teil="1" nr="4" sparte=""/>
+    <path satz="0420" teil="1" nr="4" sparte=""/>
+    <path satz="0430" teil="1" nr="4" sparte=""/>
+    <path satz="0450" teil="1" nr="4" sparte=""/>
+    <path satz="0500" teil="1" nr="4" sparte=""/>
+    <path satz="0550" teil="1" nr="4" sparte=""/>
+    <path satz="0600" teil="1" nr="4" sparte=""/>
+    <path satz="0600" teil="2" nr="4" sparte=""/>
+    <path satz="0600" teil="3" nr="4" sparte=""/>
+    <path satz="9950" teil="1" nr="4" sparte=""/>
+    <path satz="9952" teil="1" nr="4" sparte=""/>
+    <value key="051">Kfz-Haftpflicht</value>
+    <value key="052">Kfz-Fahrzeugvoll</value>
+    <value key="053">Kfz-Fahrzeugteil</value>
+    <value key="054">Kfz-Unfall</value>
+    <value key="055">Kfz-Gepäck</value>
+    <value key="060">Luftfahrtversicherung</value>
+    <value key="080">Feuerversicherung</value>
+    <value key="081">Feuer-Industrie-Versicherung</value>
+    <value key="082">landwirtschaftliche Feuer-Versicherung</value>
+    <value key="083">sonstige Feuerversicherung</value>
+    <value key="089">übrige und nicht aufgegliederte Feuer-Versicherung</value>
+    <value key="090">Einbruch-Diebstahl- und Raub(ED)-Versicherung</value>
+    <value key="099">übrige und nicht aufgegliederte ED-Versicherung</value>
+    <value key="100">Leitungswasser(LW)-Versicherung</value>
+    <value key="109">übrige und nicht aufgegliederte LW-Versicherung</value>
+    <value key="110">Glasversicherung</value>
+    <value key="120">Sturm-Versicherung</value>
+    <value key="150">Hagel-Versicherung</value>
+    <value key="160">Tierversicherung</value>
+    <value key="171">Maschinen-Versicherung</value>
+    <value key="172">Elektronik-Versicherung</value>
+    <value key="174">Montage-Versicherung</value>
+    <value key="175">Haushaltsgeräteversicherung</value>
+    <value key="176">Bauleistungs-Versicherung</value>
+    <value key="179">übrige Technische Versicherungen</value>
+    <value key="180">Einheits-Versicherung 1.</value>
+    <value key="181">Allgemeine Einheitsversicherung 1.</value>
+    <value key="210">Versicherung zusätzlicher Gefahren zur Feuer- bzw. Feuer-Betriebsunterbrechungs-Versicherung (Extend Coverage(EC)-Versicherung)</value>
+    <value key="231">Feuer-(Groß)Betriebsunterbrechungs-Versicherung</value>
+    <value key="232">Technische-Betriebsunterbrechungs-Versicherung/ MBU Elektronik</value>
+    <value key="233">sonstige Betriebsunterbrechungsversicherungen</value>
+    <value key="290">sonstige Schadenversicherung, z. B. Maschinen-Garantie-Versicherung</value>
+    <value key="293">sonstige Vermögensschadenversicherungen</value>
+    <value key="294">sonstige gemischte Versicherungen</value>
+    <value key="299">übrige und nicht aufgegliederte sonstige Schadenversicherungen</value>
+    <value key="510">Verkehrsservice</value>
+    <value key="550">Investmentfonds</value>
+    <value key="580">Bausparkassen</value>
+    <value key="600">Moped 2.</value>
+    <value key="630">Rahmen- und Sammelverträge</value>
+    <value key="650">Handel und Handwerk 2.</value>
+  </typ>
+  <typ name="gevo_t">
+    <path satz="0052" teil="1" nr="8" sparte=""/>
+    <value key="001">Antrag</value>
+    <value key="002">Eingangsbestätigung</value>
+    <value key="003">Vorläufige Deckungszusage</value>
+    <value key="004">Ablehnung</value>
+    <value key="005">Nachfrage</value>
+    <value key="006">Antwort auf Nachfrage</value>
+    <value key="007">Dokument erstellt</value>
+  </typ>
+  <typ name="autorisierung_t">
+    <path satz="0052" teil="1" nr="17" sparte=""/>
+    <value key="01">Maklerauftrag</value>
+    <value key="02">Unterschrift liegt vor</value>
+    <value key="03">Digitale Signatur</value>
+  </typ>
+  <typ name="boolean">
+    <path satz="0052" teil="1" nr="18" sparte=""/>
+    <path satz="0100" teil="1" nr="23" sparte=""/>
+    <path satz="0200" teil="1" nr="24" sparte=""/>
+    <path satz="0200" teil="1" nr="27" sparte=""/>
+    <path satz="0200" teil="1" nr="28" sparte=""/>
+    <path satz="0200" teil="1" nr="36" sparte=""/>
+    <path satz="0200" teil="2" nr="8" sparte=""/>
+    <path satz="0210" teil="1" nr="25" sparte="000"/>
+    <path satz="0210" teil="1" nr="27" sparte="000"/>
+    <path satz="0210" teil="1" nr="28" sparte="000"/>
+    <path satz="0210" teil="1" nr="29" sparte="000"/>
+    <path satz="0210" teil="1" nr="30" sparte="000"/>
+    <path satz="0210" teil="1" nr="20" sparte="080"/>
+    <path satz="0210" teil="1" nr="22" sparte="080"/>
+    <path satz="0210" teil="1" nr="36" sparte="080"/>
+    <path satz="0210" teil="1" nr="37" sparte="080"/>
+    <path satz="0210" teil="1" nr="38" sparte="080"/>
+    <path satz="0210" teil="1" nr="40" sparte="080"/>
+    <path satz="0210" teil="1" nr="41" sparte="080"/>
+    <path satz="0210" teil="1" nr="42" sparte="080"/>
+    <path satz="0210" teil="1" nr="19" sparte="110"/>
+    <path satz="0210" teil="1" nr="21" sparte="110"/>
+    <path satz="0210" teil="1" nr="25" sparte="040"/>
+    <path satz="0210" teil="1" nr="27" sparte="040"/>
+    <path satz="0210" teil="1" nr="34" sparte="040"/>
+    <path satz="0210" teil="1" nr="35" sparte="040"/>
+    <path satz="0210" teil="1" nr="13" sparte="550"/>
+    <path satz="0210" teil="1" nr="18" sparte="550"/>
+    <path satz="0210" teil="1" nr="25" sparte="550"/>
+    <path satz="0210" teil="1" nr="19" sparte="050"/>
+    <path satz="0210" teil="1" nr="20" sparte="050"/>
+    <path satz="0210" teil="1" nr="24" sparte="050"/>
+    <path satz="0210" teil="1" nr="25" sparte="050"/>
+    <path satz="0210" teil="1" nr="25" sparte="020"/>
+    <path satz="0210" teil="1" nr="27" sparte="020"/>
+    <path satz="0210" teil="1" nr="10" sparte="010"/>
+    <path satz="0210" teil="1" nr="11" sparte="010"/>
+    <path satz="0210" teil="1" nr="19" sparte="010"/>
+    <path satz="0210" teil="1" nr="21" sparte="010"/>
+    <path satz="0210" teil="1" nr="25" sparte="010"/>
+    <path satz="0210" teil="1" nr="35" sparte="010"/>
+    <path satz="0210" teil="2" nr="9" sparte="010"/>
+    <path satz="0210" teil="2" nr="13" sparte="010"/>
+    <path satz="0210" teil="1" nr="17" sparte="070"/>
+    <path satz="0210" teil="1" nr="19" sparte="070"/>
+    <path satz="0210" teil="1" nr="22" sparte="170"/>
+    <path satz="0210" teil="1" nr="24" sparte="170"/>
+    <path satz="0210" teil="1" nr="25" sparte="170"/>
+    <path satz="0210" teil="1" nr="26" sparte="170"/>
+    <path satz="0210" teil="1" nr="27" sparte="170"/>
+    <path satz="0210" teil="1" nr="28" sparte="170"/>
+    <path satz="0210" teil="1" nr="29" sparte="170"/>
+    <path satz="0210" teil="1" nr="30" sparte="170"/>
+    <path satz="0210" teil="1" nr="31" sparte="170"/>
+    <path satz="0210" teil="1" nr="32" sparte="170"/>
+    <path satz="0210" teil="1" nr="25" sparte="190"/>
+    <path satz="0210" teil="1" nr="27" sparte="190"/>
+    <path satz="0210" teil="1" nr="28" sparte="190"/>
+    <path satz="0210" teil="1" nr="29" sparte="190"/>
+    <path satz="0210" teil="1" nr="34" sparte="190"/>
+    <path satz="0210" teil="1" nr="35" sparte="190"/>
+    <path satz="0210" teil="1" nr="13" sparte="030"/>
+    <path satz="0210" teil="1" nr="14" sparte="030"/>
+    <path satz="0210" teil="1" nr="15" sparte="030"/>
+    <path satz="0210" teil="1" nr="19" sparte="030"/>
+    <path satz="0210" teil="1" nr="26" sparte="030"/>
+    <path satz="0210" teil="1" nr="27" sparte="030"/>
+    <path satz="0210" teil="1" nr="33" sparte="030"/>
+    <path satz="0210" teil="1" nr="19" sparte="140"/>
+    <path satz="0210" teil="1" nr="21" sparte="140"/>
+    <path satz="0210" teil="1" nr="23" sparte="130"/>
+    <path satz="0210" teil="1" nr="25" sparte="130"/>
+    <path satz="0210" teil="1" nr="32" sparte="130"/>
+    <path satz="0210" teil="1" nr="33" sparte="130"/>
+    <path satz="0210" teil="1" nr="35" sparte="130"/>
+    <path satz="0210" teil="1" nr="37" sparte="130"/>
+    <path satz="0210" teil="1" nr="17" sparte="510"/>
+    <path satz="0210" teil="1" nr="19" sparte="510"/>
+    <path satz="0212" teil="1" nr="11" sparte="050"/>
+    <path satz="0220" teil="1" nr="23" sparte="000"/>
+    <path satz="0220" teil="1" nr="25" sparte="000"/>
+    <path satz="0220" teil="1" nr="26" sparte="000"/>
+    <path satz="0220" teil="1" nr="27" sparte="000"/>
+    <path satz="0220" teil="1" nr="19" sparte="580.2"/>
+    <path satz="0220" teil="1" nr="20" sparte="580.2"/>
+    <path satz="0220" teil="1" nr="27" sparte="580.2"/>
+    <path satz="0220" teil="1" nr="16" sparte="080"/>
+    <path satz="0220" teil="2" nr="28" sparte="080"/>
+    <path satz="0220" teil="1" nr="27" sparte="110"/>
+    <path satz="0220" teil="1" nr="30" sparte="110"/>
+    <path satz="0220" teil="1" nr="21" sparte="550"/>
+    <path satz="0220" teil="1" nr="28" sparte="055"/>
+    <path satz="0220" teil="1" nr="26" sparte="051"/>
+    <path satz="0220" teil="1" nr="28" sparte="051"/>
+    <path satz="0220" teil="1" nr="23" sparte="053"/>
+    <path satz="0220" teil="1" nr="29" sparte="053"/>
+    <path satz="0220" teil="1" nr="27" sparte="052"/>
+    <path satz="0220" teil="1" nr="35" sparte="052"/>
+    <path satz="0220" teil="1" nr="15" sparte="059"/>
+    <path satz="0220" teil="1" nr="33" sparte="054"/>
+    <path satz="0220" teil="1" nr="21" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="37" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="39" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="27" sparte="020.3"/>
+    <path satz="0220" teil="1" nr="26" sparte="010.0"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="20" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="31" sparte="010.48"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.9"/>
+    <path satz="0220" teil="6" nr="19" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="21" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="22" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="33" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="45" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="46" sparte="010.9"/>
+    <path satz="0220" teil="3" nr="12" sparte="010.9"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.7"/>
+    <path satz="0220" teil="6" nr="19" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="19" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="26" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="29" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="30" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="38" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="42" sparte="010.7"/>
+    <path satz="0220" teil="2" nr="25" sparte="010.7"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.13"/>
+    <path satz="0220" teil="6" nr="19" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="19" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="26" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="29" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="30" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="38" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="42" sparte="010.13"/>
+    <path satz="0220" teil="2" nr="25" sparte="010.13"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.2"/>
+    <path satz="0220" teil="6" nr="19" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="21" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="22" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="33" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="45" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="46" sparte="010.2"/>
+    <path satz="0220" teil="3" nr="11" sparte="010.2"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="22" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="23" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="33" sparte="010.5"/>
+    <path satz="0220" teil="6" nr="15" sparte="010.6"/>
+    <path satz="0220" teil="1" nr="23" sparte="070"/>
+    <path satz="0220" teil="1" nr="26" sparte="070"/>
+    <path satz="0220" teil="1" nr="30" sparte="070"/>
+    <path satz="0220" teil="1" nr="35" sparte="070"/>
+    <path satz="0220" teil="1" nr="38" sparte="070"/>
+    <path satz="0220" teil="2" nr="23" sparte="170"/>
+    <path satz="0220" teil="2" nr="34" sparte="170"/>
+    <path satz="0220" teil="2" nr="35" sparte="170"/>
+    <path satz="0220" teil="1" nr="18" sparte="190"/>
+    <path satz="0220" teil="1" nr="19" sparte="190"/>
+    <path satz="0220" teil="1" nr="28" sparte="030"/>
+    <path satz="0220" teil="1" nr="30" sparte="030"/>
+    <path satz="0220" teil="2" nr="14" sparte="030"/>
+    <path satz="0220" teil="2" nr="40" sparte="030"/>
+    <path satz="0220" teil="2" nr="41" sparte="030"/>
+    <path satz="0220" teil="2" nr="43" sparte="030"/>
+    <path satz="0220" teil="9" nr="14" sparte="030"/>
+    <path satz="0220" teil="1" nr="24" sparte="140"/>
+    <path satz="0220" teil="1" nr="25" sparte="140"/>
+    <path satz="0220" teil="1" nr="28" sparte="140"/>
+    <path satz="0220" teil="1" nr="29" sparte="140"/>
+    <path satz="0220" teil="2" nr="28" sparte="140"/>
+    <path satz="0220" teil="2" nr="30" sparte="140"/>
+    <path satz="0220" teil="1" nr="26" sparte="130"/>
+    <path satz="0220" teil="1" nr="27" sparte="130"/>
+    <path satz="0220" teil="1" nr="23" sparte="510"/>
+    <path satz="0292" teil="1" nr="19" sparte="550"/>
+    <path satz="0300" teil="1" nr="11" sparte=""/>
+    <path satz="0300" teil="1" nr="16" sparte=""/>
+    <path satz="0300" teil="1" nr="22" sparte=""/>
+    <path satz="0300" teil="1" nr="28" sparte=""/>
+    <path satz="0362" teil="1" nr="18" sparte=""/>
+    <path satz="0362" teil="1" nr="22" sparte=""/>
+    <path satz="0362" teil="1" nr="23" sparte=""/>
+    <path satz="0400" teil="1" nr="39" sparte=""/>
+    <path satz="0410" teil="1" nr="31" sparte=""/>
+    <path satz="0410" teil="1" nr="44" sparte=""/>
+    <path satz="0500" teil="1" nr="29" sparte=""/>
+    <path satz="0500" teil="1" nr="34" sparte=""/>
+    <path satz="0550" teil="1" nr="32" sparte=""/>
+    <value key="0">nein</value>
+    <value key="1">ja</value>
+  </typ>
+  <typ name="anrede_t">
+    <path satz="0100" teil="1" nr="8" sparte=""/>
+    <value key="0">(ohne Anrede)</value>
+    <value key="1">Herr</value>
+    <value key="2">Frau</value>
+    <value key="3">Firma</value>
+    <value key="4">Herr und Frau</value>
+    <value key="5">Fräulein</value>
+  </typ>
+  <typ name="laenderkennz_t">
+    <path satz="0100" teil="1" nr="13" sparte=""/>
+    <path satz="0210" teil="1" nr="13" sparte="130"/>
+    <path satz="0220" teil="1" nr="12" sparte="080"/>
+    <path satz="0220" teil="1" nr="11" sparte="110"/>
+    <path satz="0220" teil="1" nr="11" sparte="170"/>
+    <path satz="0220" teil="1" nr="14" sparte="140"/>
+    <value key="A">Österreich</value>
+    <value key="AFG">Afghanistan</value>
+    <value key="AL">Albanien</value>
+    <value key="AND">Andorra</value>
+    <value key="ANG">Angola</value>
+    <value key="AUS">Australien</value>
+    <value key="AZ">Aserbaidschan</value>
+    <value key="B">Belgien</value>
+    <value key="BD">Bangladesch</value>
+    <value key="BDS">Barbados</value>
+    <value key="BF">Burkina Faso</value>
+    <value key="BG">Bulgarien</value>
+    <value key="BH">Belize</value>
+    <value key="BIH">Bosnien und Herzegowina</value>
+    <value key="BOL">Bolivien</value>
+    <value key="BR">Brasilien</value>
+    <value key="BRN">Bahrain</value>
+    <value key="BRU">Brunei Darussalam</value>
+    <value key="BS">Bahamas</value>
+    <value key="BY">Belarus (Weißrußland)</value>
+    <value key="C">Kuba</value>
+    <value key="CD">Kongo, Demokr. Republik</value>
+    <value key="CDN">Kanada</value>
+    <value key="CH">Schweiz</value>
+    <value key="CI">Côte d&quot;Ivoire</value>
+    <value key="CO">Kolumbien</value>
+    <value key="CR">Costa Rica</value>
+    <value key="CY">Zypern</value>
+    <value key="CZ">Tschechische Republik</value>
+    <value key="D">Deutschland</value>
+    <value key="DK">Dänemark</value>
+    <value key="DOM">Dominikanische Republik</value>
+    <value key="DZ">Algerien</value>
+    <value key="E">Spanien</value>
+    <value key="EAK">Kenia</value>
+    <value key="EAT">Tansania</value>
+    <value key="EAU">Uganda</value>
+    <value key="EC">Ecuador</value>
+    <value key="ER">Eritrea</value>
+    <value key="ES">El Salvador</value>
+    <value key="EST">Estland</value>
+    <value key="ET">Ägypten</value>
+    <value key="ETH">Äthiopien</value>
+    <value key="F">Frankreich</value>
+    <value key="FIN">Finnland</value>
+    <value key="FJI">Fidschi</value>
+    <value key="FL">Liechtenstein</value>
+    <value key="FR">Färöer</value>
+    <value key="GB">Vereinigtes Königreich</value>
+    <value key="GBA">Alderney</value>
+    <value key="GBG">Guernsey</value>
+    <value key="GBJ">Jersey</value>
+    <value key="GBM">Insel Man</value>
+    <value key="GBZ">Gibraltar</value>
+    <value key="GCA">Guatemala</value>
+    <value key="GE">Georgien</value>
+    <value key="GH">Ghana</value>
+    <value key="GR">Griechenland</value>
+    <value key="GUY">Guyana</value>
+    <value key="H">Ungarn</value>
+    <value key="HK">Hongkong</value>
+    <value key="HN">Honduras</value>
+    <value key="HR">Kroatien</value>
+    <value key="I">Italien</value>
+    <value key="IL">Israel</value>
+    <value key="IND">Indien</value>
+    <value key="IR">Iran</value>
+    <value key="IRL">Irland</value>
+    <value key="IRQ">Irak</value>
+    <value key="IS">Island</value>
+    <value key="J">Japan</value>
+    <value key="JA">Jamaika</value>
+    <value key="JOR">Jordanien</value>
+    <value key="K">Kambodscha</value>
+    <value key="KS">Kirgisistan</value>
+    <value key="KSA">Königreich Saudi-Arabien</value>
+    <value key="KWT">Kuwait</value>
+    <value key="KZ">Kasachstan</value>
+    <value key="L">Luxemburg</value>
+    <value key="LAO">Demokratische Volksrepublik Laos</value>
+    <value key="LS">Lesotho</value>
+    <value key="LT">Litauen</value>
+    <value key="LV">Lettland</value>
+    <value key="M">Malta</value>
+    <value key="MA">Marokko</value>
+    <value key="MAL">Malaysia</value>
+    <value key="MC">Monaco</value>
+    <value key="MD">Moldau</value>
+    <value key="MEX">Mexiko</value>
+    <value key="MGL">Mongolei</value>
+    <value key="MK">Mazedonien (ehemalige jugoslawische Republik)</value>
+    <value key="MOC">Mosambik</value>
+    <value key="MS">Mauritius</value>
+    <value key="MW">Malawi</value>
+    <value key="MYA">Myanmar</value>
+    <value key="N">Norwegen</value>
+    <value key="NA">Niederländ. Antillen</value>
+    <value key="NAM">Namibia</value>
+    <value key="NIC">Nicaragua</value>
+    <value key="NL">Niederlande</value>
+    <value key="NZ">Neuseeland</value>
+    <value key="OM">Oman</value>
+    <value key="P">Portugal</value>
+    <value key="PA">Panama</value>
+    <value key="PE">Peru</value>
+    <value key="PK">Pakistan</value>
+    <value key="PL">Polen</value>
+    <value key="PY">Paraguay</value>
+    <value key="Q">Katar</value>
+    <value key="RA">Argentinien</value>
+    <value key="RB">Botsuana</value>
+    <value key="RC">China (Taiwan)</value>
+    <value key="RCA">Zentralafrikanische Republik</value>
+    <value key="RCB">Kongo</value>
+    <value key="RCH">Chile</value>
+    <value key="RH">Haiti</value>
+    <value key="RI">Indonesien</value>
+    <value key="RIM">Mauretanien</value>
+    <value key="RL">Libanon</value>
+    <value key="RM">Madagaskar</value>
+    <value key="RMM">Mali</value>
+    <value key="RN">Niger</value>
+    <value key="RO">Rumänien</value>
+    <value key="ROK">Korea (Republik)</value>
+    <value key="ROU">Uruguay</value>
+    <value key="RP">Philippinen</value>
+    <value key="RSM">San Marino</value>
+    <value key="RT">Togo</value>
+    <value key="RUS">Russische Föderation</value>
+    <value key="RWA">Ruanda</value>
+    <value key="S">Schweden</value>
+    <value key="SD">Swasiland</value>
+    <value key="SGP">Singapur</value>
+    <value key="SK">Slowakische Republik</value>
+    <value key="SLO">Slowenien</value>
+    <value key="SME">Suriname</value>
+    <value key="SN">Senegal</value>
+    <value key="SP">Somalia</value>
+    <value key="SU">Sowjetunion (ehemalige)</value>
+    <value key="SY">Seyschellen</value>
+    <value key="SYR">Syrien</value>
+    <value key="THA">Thailand</value>
+    <value key="TJ">Tadschikistan</value>
+    <value key="TM">Turkmenistan</value>
+    <value key="TN">Tunesien</value>
+    <value key="TR">Türkei</value>
+    <value key="TT">Trinidad und Tobago</value>
+    <value key="UA">Ukraine</value>
+    <value key="UAE">Vereinigte Arabische Emirate</value>
+    <value key="USA">Vereinigte Staaten</value>
+    <value key="UZ">Usbekistan</value>
+    <value key="V">Vatikanstadt</value>
+    <value key="VN">Vietnam</value>
+    <value key="WAG">Gambia</value>
+    <value key="WAL">Sierra Leone</value>
+    <value key="WAN">Nigeria</value>
+    <value key="WD">Dominica</value>
+    <value key="WG">Grenada</value>
+    <value key="WL">Santa Lucia</value>
+    <value key="WS">Samoa</value>
+    <value key="WV">St. Vincent und die Grenadinen</value>
+    <value key="YU">Jugoslawien (Serbien/Montenegro)</value>
+    <value key="YV">Venezuela</value>
+    <value key="Z">Sambia</value>
+    <value key="ZA">Südafrika</value>
+    <value key="ZW">Simbabwe</value>
+  </typ>
+  <typ name="address_kennz_t">
+    <path satz="0100" teil="1" nr="20" sparte=""/>
+    <value key="01">Versicherungsnehmer</value>
+    <value key="02">Sicherungsgläubiger</value>
+    <value key="03">Beitragszahler</value>
+    <value key="04">Zustellungsbevollmächtigter</value>
+    <value key="05">Leistungsempfänger</value>
+    <value key="06">Korrespondenzpartner</value>
+    <value key="07">GV-Partner</value>
+    <value key="08">Empfänger Beitragsrückerstattung</value>
+    <value key="09">Versicherte Person</value>
+    <value key="10">SFR-Berechtigter</value>
+    <value key="11">Fahrzeughalter</value>
+    <value key="12">Fahrer</value>
+    <value key="13">Abschleppfirma</value>
+    <value key="14">Vermittler</value>
+    <value key="15">Anspruchsteller</value>
+    <value key="16">Mietwagenfirma</value>
+    <value key="17">Polizeidienststelle</value>
+    <value key="18">Zeuge</value>
+    <value key="19">Werkstatt</value>
+    <value key="20">Schadenmanager</value>
+    <value key="21">Sachverständiger</value>
+    <value key="22">Melder(Notrufmeldende Person)</value>
+    <value key="23">Rettungsleitstelle</value>
+    <value key="24">Autobahnmeisterei</value>
+    <value key="25">Pannenhelfer</value>
+    <value key="26">Assisteur</value>
+    <value key="31">Versicherungsnehmer</value>
+    <value key="32">Sicherungsgläubiger</value>
+    <value key="33">Beitragszahler</value>
+    <value key="34">Zustellungsbevollmächtigter</value>
+    <value key="35">Leistungsempfänger</value>
+    <value key="36">Korrespondenzpartner</value>
+    <value key="37">GV-Partner</value>
+    <value key="38">Empfänger Beitragsrückerstattung</value>
+    <value key="39">Versicherte Person</value>
+    <value key="40">SFR-Berechtigter</value>
+    <value key="41">Fahrzeughalter</value>
+    <value key="42">Fahrer</value>
+    <value key="43">Abschleppfirma</value>
+    <value key="44">Vermittler</value>
+    <value key="45">Anspruchsteller</value>
+    <value key="46">Mietwagenfirma</value>
+    <value key="47">Polizeidienststelle</value>
+    <value key="48">Zeuge</value>
+    <value key="49">Werkstatt</value>
+    <value key="50">Schadenmanager</value>
+    <value key="51">Sachverständiger</value>
+    <value key="52">Melder(Notrufmeldende Person)</value>
+    <value key="53">Rettungsleitstelle</value>
+    <value key="54">Autobahnmeisterei</value>
+    <value key="55">Pannenhelfer</value>
+    <value key="56">Assisteur</value>
+    <value key="61">Versicherungsnehmer</value>
+    <value key="62">Sicherungsgläubiger</value>
+    <value key="63">Beitragszahler</value>
+    <value key="64">Zustellungsbevollmächtigter</value>
+    <value key="65">Leistungsempfänger</value>
+    <value key="66">Korrespondenzpartner</value>
+    <value key="67">GV-Partner</value>
+    <value key="68">Empfänger Beitragsrückerstattung</value>
+    <value key="69">Versicherte Person</value>
+    <value key="70">SFR-Berechtigter</value>
+    <value key="71">Fahrzeughalter</value>
+    <value key="72">Fahrer</value>
+    <value key="73">Abschleppfirma</value>
+    <value key="74">Vermittler</value>
+    <value key="75">Anspruchsteller</value>
+    <value key="76">Mietwagenfirma</value>
+    <value key="77">Polizeidienststelle</value>
+    <value key="78">Zeuge</value>
+    <value key="79">Werkstatt</value>
+    <value key="80">Schadenmanager</value>
+    <value key="81">Sachverständiger</value>
+    <value key="82">Melder(Notrufmeldende Person)</value>
+    <value key="83">Rettungsleitstelle</value>
+    <value key="84">Autobahnmeisterei</value>
+    <value key="85">Pannenhelfer</value>
+    <value key="86">Assisteur</value>
+    <value key="A1">Rechtsanwalt</value>
+    <value key="A2">Eigentümer</value>
+    <value key="A3">Versicherungsunternehmen</value>
+    <value key="A4">Auftraggeber</value>
+    <value key="A5">Zahlungsempfänger</value>
+    <value key="A6">Restwerthändler</value>
+    <value key="A7">Fahrzeuganbieter</value>
+    <value key="D1">Rechtsanwalt</value>
+    <value key="D2">Eigentümer</value>
+    <value key="D3">Versicherungsunternehmen</value>
+    <value key="D4">Auftraggeber</value>
+    <value key="D5">Zahlungsempfänger</value>
+    <value key="D6">Restwerthändler</value>
+    <value key="D7">Fahrzeuganbieter</value>
+    <value key="G1">Rechtsanwalt</value>
+    <value key="G2">Eigentümer</value>
+    <value key="G3">Versicherungsunternehmen</value>
+    <value key="G4">Auftraggeber</value>
+    <value key="G5">Zahlungsempfänger</value>
+    <value key="G6">Restwerthändler</value>
+    <value key="G7">Fahrzeuganbieter</value>
+    <value key="X0">Zahlungsempfänger für Reparaturkosten</value>
+    <value key="X1">Zahlungsempfänger für Gesambetrag</value>
+    <value key="X2">Zahlungsempfänger für Wertminderung</value>
+    <value key="X3">Zahlungsempfänger für An- und Abmeldekosten</value>
+    <value key="X4">Zahlungsempfänger für Umbaukosten</value>
+    <value key="X5">Zahlungsempfänger für Abschlepp-/Bergungskosten</value>
+    <value key="X6">Zahlungsempfänger für Rückführungskosten</value>
+    <value key="X7">Zahlungsempfänger für Nutzungsausfall</value>
+    <value key="X8">Zahlungsempfänger für Kostenpauschale</value>
+    <value key="X9">Zahlungsempfänger für Mietwagenkosten</value>
+    <value key="XA">Zahlungsempfänger für Sachverständigenkosten</value>
+    <value key="XB">Auftraggeber für Gutachten</value>
+    <value key="Y0">Zahlungsempfänger für Reparaturkosten</value>
+    <value key="Y1">Zahlungsempfänger für Gesambetrag</value>
+    <value key="Y2">Zahlungsempfänger für Wertminderung</value>
+    <value key="Y3">Zahlungsempfänger für An- und Abmeldekosten</value>
+    <value key="Y4">Zahlungsempfänger für Umbaukosten</value>
+    <value key="Y5">Zahlungsempfänger für Abschlepp-/Bergungskosten</value>
+    <value key="Y6">Zahlungsempfänger für Rückführungskosten</value>
+    <value key="Y7">Zahlungsempfänger für Nutzungsausfall</value>
+    <value key="Y8">Zahlungsempfänger für Kostenpauschale</value>
+    <value key="Y9">Zahlungsempfänger für Mietwagenkosten</value>
+    <value key="YA">Zahlungsempfänger für Sachverständigenkosten</value>
+    <value key="YB">Auftraggeber für Gutachten</value>
+    <value key="Z0">Zahlungsempfänger für Reparaturkosten</value>
+    <value key="Z1">Zahlungsempfänger für Gesambetrag</value>
+    <value key="Z2">Zahlungsempfänger für Wertminderung</value>
+    <value key="Z3">Zahlungsempfänger für An- und Abmeldekosten</value>
+    <value key="Z4">Zahlungsempfänger für Umbaukosten</value>
+    <value key="Z5">Zahlungsempfänger für Abschlepp-/Bergungskosten</value>
+    <value key="Z6">Zahlungsempfänger für Rückführungskosten</value>
+    <value key="Z7">Zahlungsempfänger für Nutzungsausfall</value>
+    <value key="Z8">Zahlungsempfänger für Kostenpauschale</value>
+    <value key="Z9">Zahlungsempfänger für Mietwagenkosten</value>
+    <value key="ZA">Zahlungsempfänger für Sachverständigenkosten</value>
+    <value key="ZB">Auftraggeber für Gutachten</value>
+  </typ>
+  <typ name="zielgruppe_t">
+    <path satz="0100" teil="1" nr="22" sparte=""/>
+    <value key="01">Beamte</value>
+    <value key="02">Landwirte</value>
+    <value key="03">Ärzte</value>
+    <value key="99">Sonstige</value>
+  </typ>
+  <typ name="geschlecht_t">
+    <path satz="0100" teil="1" nr="25" sparte=""/>
+    <path satz="0220" teil="1" nr="18" sparte="020.1"/>
+    <path satz="0220" teil="1" nr="14" sparte="010.0"/>
+    <path satz="0220" teil="2" nr="19" sparte="010.9"/>
+    <path satz="0220" teil="2" nr="19" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="15" sparte="030"/>
+    <value key="0">juristische Person</value>
+    <value key="1">männlich</value>
+    <value key="2">weiblich</value>
+  </typ>
+  <typ name="kommtyp_t">
+    <path satz="0100" teil="2" nr="14" sparte=""/>
+    <path satz="0100" teil="2" nr="16" sparte=""/>
+    <path satz="0100" teil="2" nr="18" sparte=""/>
+    <path satz="0100" teil="2" nr="20" sparte=""/>
+    <path satz="0100" teil="3" nr="8" sparte=""/>
+    <path satz="0100" teil="3" nr="10" sparte=""/>
+    <path satz="0100" teil="3" nr="12" sparte=""/>
+    <value key="10">Telefonnummer Privat</value>
+    <value key="20">Telefonnummer Geschäftlich</value>
+    <value key="30">Telefonnummer Mobil</value>
+    <value key="40">Telefax</value>
+    <value key="41">Telefax Privat</value>
+    <value key="42">Telefax Geschäftlich</value>
+    <value key="50">E-Mail</value>
+    <value key="51">E-Mail Privat</value>
+    <value key="52">E-Mail Geschäftlich</value>
+  </typ>
+  <typ name="zahlungsart_t">
+    <path satz="0100" teil="2" nr="22" sparte=""/>
+    <value key="1">Lastschrift</value>
+    <value key="2">Rechnung</value>
+    <value key="3">Dauerauftrag</value>
+    <value key="4">Depot</value>
+    <value key="5">Gehaltsabzug</value>
+    <value key="9">sonstige</value>
+  </typ>
+  <typ name="fam_stand_t">
+    <path satz="0100" teil="2" nr="23" sparte=""/>
+    <value key="1">ledig</value>
+    <value key="2">verheiratet</value>
+    <value key="3">geschieden</value>
+    <value key="4">verwitwet</value>
+    <value key="5">getrennt lebend</value>
+    <value key="9">sonstiges</value>
+  </typ>
+  <typ name="rechtsform_t">
+    <path satz="0100" teil="3" nr="14" sparte=""/>
+    <value key="01">natürliche Person</value>
+    <value key="02">Gesellschaft des Bürgerlichen Rechts GdBR</value>
+    <value key="03">OHG</value>
+    <value key="04">KG</value>
+    <value key="05">GmbH</value>
+    <value key="06">gGmbH</value>
+    <value key="07">GmbH &amp; Co KG</value>
+    <value key="08">KGaA</value>
+    <value key="09">AG</value>
+    <value key="10">eV</value>
+    <value key="11">Verein nach BGB</value>
+    <value key="12">eG</value>
+    <value key="13">Ges. d. öff. Rechts</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="bankverb_t">
+    <path satz="0100" teil="4" nr="10" sparte=""/>
+    <path satz="0100" teil="4" nr="11" sparte=""/>
+    <value key="01">Prämienzahlungskonto</value>
+    <value key="02">Schadenzahlungskonto</value>
+    <value key="03">ohne Spezifikation</value>
+  </typ>
+  <typ name="_typ29">
+    <path satz="0102" teil="1" nr="11" sparte=""/>
+    <path satz="0220" teil="1" nr="18" sparte="030"/>
+    <value key="A">Gefahrengruppe A</value>
+    <value key="B">Gefahrengruppe B</value>
+    <value key="E">Einheitsgefahren</value>
+  </typ>
+  <typ name="bezug_vn_t">
+    <path satz="0102" teil="1" nr="13" sparte=""/>
+    <value key="01">Selbst</value>
+    <value key="02">Ehepartner</value>
+    <value key="03">Lebenspartner</value>
+    <value key="04">Kind</value>
+    <value key="05">Mitarbeiter</value>
+    <value key="06">Tochterunternehmen</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="inkasso_t">
+    <path satz="0200" teil="1" nr="8" sparte=""/>
+    <path satz="0400" teil="1" nr="8" sparte=""/>
+    <value key="1">Vermittlerinkasso</value>
+    <value key="2">Zentralinkasso, Direktes Inkasso</value>
+  </typ>
+  <typ name="zahlungsweise_t">
+    <path satz="0200" teil="1" nr="12" sparte=""/>
+    <path satz="0210" teil="1" nr="33" sparte="580"/>
+    <path satz="0210" teil="1" nr="29" sparte="010"/>
+    <path satz="0210" teil="1" nr="12" sparte="070"/>
+    <path satz="0210" teil="1" nr="12" sparte="510"/>
+    <path satz="0220" teil="2" nr="15" sparte="010.9"/>
+    <path satz="0220" teil="2" nr="15" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="16" sparte="070"/>
+    <path satz="0220" teil="1" nr="16" sparte="510"/>
+    <path satz="0400" teil="1" nr="13" sparte=""/>
+    <value key="1">jährlich</value>
+    <value key="2">halbjährlich</value>
+    <value key="4">vierteljährlich</value>
+    <value key="5">Sonstiges</value>
+    <value key="6">Einmalbetrag</value>
+    <value key="8">monatlich</value>
+    <value key="9">beitragsfrei</value>
+  </typ>
+  <typ name="vertragsstatus_t">
+    <path satz="0200" teil="1" nr="13" sparte=""/>
+    <path satz="0210" teil="1" nr="11" sparte="000"/>
+    <path satz="0210" teil="1" nr="9" sparte="080"/>
+    <path satz="0210" teil="1" nr="8" sparte="110"/>
+    <path satz="0210" teil="1" nr="8" sparte="040"/>
+    <path satz="0210" teil="1" nr="8" sparte="070"/>
+    <path satz="0210" teil="1" nr="9" sparte="170"/>
+    <path satz="0210" teil="1" nr="13" sparte="190"/>
+    <path satz="0210" teil="1" nr="8" sparte="030"/>
+    <path satz="0210" teil="1" nr="8" sparte="140"/>
+    <path satz="0210" teil="1" nr="8" sparte="130"/>
+    <path satz="0210" teil="1" nr="8" sparte="510"/>
+    <path satz="0220" teil="1" nr="12" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="12" sparte="020.1"/>
+    <path satz="0220" teil="1" nr="18" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="18" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="23" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="23" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="18" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="20" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="18" sparte="010.6"/>
+    <path satz="0220" teil="1" nr="12" sparte="070"/>
+    <path satz="0220" teil="1" nr="12" sparte="510"/>
+    <value key="1">lebend</value>
+    <value key="2">lebend / kurzfristig / unterjährig</value>
+    <value key="3">ruhend / Anwartschaft</value>
+    <value key="4">storniert</value>
+    <value key="5">ruhend / beitragsfrei</value>
+    <value key="6">beitragsfrei</value>
+    <value key="7">beitragsfrei durch Leistung</value>
+    <value key="8">Beitragsstundung</value>
+    <value key="9">Sonstiges</value>
+  </typ>
+  <typ name="abgangsgrund_t">
+    <path satz="0200" teil="1" nr="14" sparte=""/>
+    <path satz="0220" teil="1" nr="34" sparte="020.2"/>
+    <path satz="0362" teil="1" nr="13" sparte=""/>
+    <value key="01">Kündigung VN zum Ablauf</value>
+    <value key="02">Kündigung VN im Schadenfall / allgemeine Differenzen</value>
+    <value key="03">Kündigung VN bei Beitragserhöhung / Tarifaktion</value>
+    <value key="04">Kündigung VU zum Ablauf</value>
+    <value key="05">Kündigung VU im Schadenfall</value>
+    <value key="06">Kündigung VU mangels Beitragszahlung (Folgebeitrag § 39 VVG)</value>
+    <value key="07">Kündigung Risikofortfall (Besitzerwechsel) / Umzug ins Ausland / Versicherungsfähigkeit nicht gegeben /   Berufsunfähigkeit / Totalschaden</value>
+    <value key="08">Ersatzversicherung / Umstellung Einzelversicherung in Gruppenversicherung / Umstellung Gruppenversicherung in   Einzelversicherung</value>
+    <value key="09">Storno zum Ablauf kurzfristiger Verträge</value>
+    <value key="10">Vertragsunterbrechung mit Reservierung (spez. KFZ)</value>
+    <value key="11">Vertragsunterbrechung ohne Reservierung (spez. KFZ)</value>
+    <value key="12">nicht in Kraft getretener Vertrag / Storno ab Beginn (§ 38 VVG)</value>
+    <value key="13">Kündigung des Erwerbers bei Besitzwechsel</value>
+    <value key="14">Tod Versicherungsnehmer</value>
+    <value key="15">Altersablauf / Endalter</value>
+    <value key="16">Kündigungsklausel gestrichen</value>
+    <value key="17">Erlebensfallauszahlung</value>
+    <value key="18">Abgang aus Rahmenvertrag</value>
+    <value key="19">Beitragsfreistellung vom VN beantragt</value>
+    <value key="20">Beitragsfreistellung gemäß § 39 VVG</value>
+    <value key="21">Vertragsende durch Tod der versicherten Person</value>
+    <value key="22">Vertragsende durch Ablauf (Vertrag)</value>
+    <value key="23">Vertragsende durch Heirat (mitversichertes Kind)</value>
+    <value key="24">Rückkauf</value>
+    <value key="25">Verfall</value>
+    <value key="26">Wechsel zu anderen Privaten-Krankenversicherungsunternehmen</value>
+    <value key="27">Wechsel zur Gesetzlichen-Krankenversicherung - pflichtig</value>
+    <value key="28">Wechsel zur Gesetzlichen-Krankenversicherung - freiwillig</value>
+    <value key="29">Vertragstrennung / -Zusammenlegung</value>
+    <value key="30">Agentur und/oder Geschäftsstellenwechsel</value>
+    <value key="31">Rücktritt (z. B. Verletzung der vorvertraglichen Anzeigepflicht / Anfechtung)</value>
+    <value key="32">Abgang nach Tarifwechsel</value>
+    <value key="99">sonstige Stornogründe</value>
+  </typ>
+  <typ name="_typ36">
+    <path satz="0200" teil="1" nr="18" sparte=""/>
+    <path satz="0550" teil="1" nr="26" sparte=""/>
+    <value key="1">Alleinbesitzend</value>
+    <value key="2">Führungsgeschäft</value>
+    <value key="3">Beteiligung</value>
+  </typ>
+  <typ name="waehrung_t">
+    <path satz="0200" teil="1" nr="21" sparte=""/>
+    <path satz="0200" teil="1" nr="35" sparte=""/>
+    <path satz="0210" teil="1" nr="15" sparte="000"/>
+    <path satz="0210" teil="1" nr="10" sparte="580"/>
+    <path satz="0210" teil="1" nr="13" sparte="080"/>
+    <path satz="0210" teil="1" nr="12" sparte="110"/>
+    <path satz="0210" teil="1" nr="13" sparte="040"/>
+    <path satz="0210" teil="1" nr="16" sparte="040"/>
+    <path satz="0210" teil="1" nr="19" sparte="040"/>
+    <path satz="0210" teil="1" nr="22" sparte="040"/>
+    <path satz="0210" teil="1" nr="28" sparte="040"/>
+    <path satz="0210" teil="1" nr="20" sparte="550"/>
+    <path satz="0210" teil="1" nr="30" sparte="550"/>
+    <path satz="0210" teil="1" nr="21" sparte="050"/>
+    <path satz="0210" teil="1" nr="23" sparte="020"/>
+    <path satz="0210" teil="1" nr="9" sparte="010"/>
+    <path satz="0210" teil="1" nr="14" sparte="070"/>
+    <path satz="0210" teil="1" nr="13" sparte="170"/>
+    <path satz="0210" teil="1" nr="17" sparte="190"/>
+    <path satz="0210" teil="1" nr="19" sparte="190"/>
+    <path satz="0210" teil="1" nr="20" sparte="030"/>
+    <path satz="0210" teil="1" nr="12" sparte="140"/>
+    <path satz="0210" teil="1" nr="17" sparte="130"/>
+    <path satz="0210" teil="1" nr="14" sparte="510"/>
+    <path satz="0220" teil="1" nr="13" sparte="000"/>
+    <path satz="0220" teil="1" nr="10" sparte="580.2"/>
+    <path satz="0220" teil="1" nr="10" sparte="580.01"/>
+    <path satz="0220" teil="1" nr="32" sparte="580.01"/>
+    <path satz="0220" teil="2" nr="10" sparte="580.01"/>
+    <path satz="0220" teil="1" nr="14" sparte="040"/>
+    <path satz="0220" teil="1" nr="18" sparte="550"/>
+    <path satz="0220" teil="1" nr="20" sparte="550"/>
+    <path satz="0220" teil="1" nr="23" sparte="550"/>
+    <path satz="0220" teil="1" nr="27" sparte="550"/>
+    <path satz="0220" teil="1" nr="15" sparte="055"/>
+    <path satz="0220" teil="1" nr="21" sparte="055"/>
+    <path satz="0220" teil="1" nr="28" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="26" sparte="020.1"/>
+    <path satz="0220" teil="1" nr="29" sparte="020.3"/>
+    <path satz="0220" teil="1" nr="18" sparte="070"/>
+    <path satz="0220" teil="2" nr="11" sparte="190"/>
+    <path satz="0220" teil="2" nr="14" sparte="190"/>
+    <path satz="0220" teil="1" nr="21" sparte="030"/>
+    <path satz="0220" teil="1" nr="18" sparte="510"/>
+    <path satz="0250" teil="2" nr="11" sparte="190"/>
+    <path satz="0250" teil="2" nr="14" sparte="190"/>
+    <path satz="0260" teil="1" nr="17" sparte="190"/>
+    <path satz="0260" teil="1" nr="20" sparte="190"/>
+    <path satz="0270" teil="1" nr="19" sparte="550"/>
+    <path satz="0270" teil="1" nr="24" sparte="550"/>
+    <path satz="0270" teil="1" nr="28" sparte="550"/>
+    <path satz="0270" teil="1" nr="32" sparte="550"/>
+    <path satz="0270" teil="2" nr="16" sparte="550"/>
+    <path satz="0270" teil="2" nr="19" sparte="550"/>
+    <path satz="0270" teil="2" nr="22" sparte="550"/>
+    <path satz="0270" teil="2" nr="25" sparte="550"/>
+    <path satz="0280" teil="1" nr="18" sparte="550"/>
+    <path satz="0280" teil="1" nr="21" sparte="550"/>
+    <path satz="0292" teil="1" nr="20" sparte="550"/>
+    <path satz="0293" teil="1" nr="20" sparte="550"/>
+    <path satz="0294" teil="1" nr="14" sparte="550"/>
+    <path satz="0294" teil="1" nr="16" sparte="550"/>
+    <path satz="0295" teil="1" nr="12" sparte="550"/>
+    <path satz="0400" teil="1" nr="19" sparte=""/>
+    <path satz="0400" teil="2" nr="13" sparte=""/>
+    <path satz="0420" teil="1" nr="17" sparte=""/>
+    <path satz="0420" teil="1" nr="27" sparte=""/>
+    <path satz="0420" teil="1" nr="37" sparte=""/>
+    <path satz="0500" teil="1" nr="23" sparte=""/>
+    <path satz="0550" teil="1" nr="22" sparte=""/>
+    <value key="">(unbekannt)</value>
+    <value key="ADF">Andorran Franc</value>
+    <value key="ADP">Andorran Peseta</value>
+    <value key="AED">Utd. Arab Emir. Dirham</value>
+    <value key="AFA">Afghanistan Afghani</value>
+    <value key="ALL">Albanischer Lek</value>
+    <value key="ANG">NL Antillian Guilder</value>
+    <value key="AON">Angolanischer New Kwanza</value>
+    <value key="ARS">Argentinischer Peso</value>
+    <value key="ATS">Österreichischer Schilling</value>
+    <value key="AUD">Australischer Dollar</value>
+    <value key="AWG">Aruban Florin</value>
+    <value key="BBD">Barbados Dollar</value>
+    <value key="BDT">Bangladeshi Taka</value>
+    <value key="BEF">Belgischer Franc</value>
+    <value key="BGL">Bulgarischer Lev</value>
+    <value key="BHD">Bahraini Dinar</value>
+    <value key="BIF">Burundi Franc</value>
+    <value key="BMD">Bermudian Dollar</value>
+    <value key="BND">Brunei Dollar</value>
+    <value key="BOB">Bolivianischer Boliviano</value>
+    <value key="BRL">Brasilianischer Real</value>
+    <value key="BSD">Bahamian Dollar</value>
+    <value key="BTN">Bhutan Ngultrum</value>
+    <value key="BWP">Botswana Pula</value>
+    <value key="BZD">Belize Dollar</value>
+    <value key="CAD">Kanadischer Dollar</value>
+    <value key="CHF">Schweizer Franken</value>
+    <value key="CLP">Chilean Peso</value>
+    <value key="CNY">Chinese Yuan Renminbi</value>
+    <value key="COP">Colombian Peso</value>
+    <value key="CRC">Costa Rican Colon</value>
+    <value key="CSK">Tchchischer Koruna</value>
+    <value key="CUP">Kubanischer Peso</value>
+    <value key="CVE">Cape Verde Escudo</value>
+    <value key="CYP">Zyprisches Pfund</value>
+    <value key="DEM">Deutsche Mark</value>
+    <value key="DJF">Djibouti Franc</value>
+    <value key="DKK">Dänische Krone</value>
+    <value key="DOP">Dominican Peso</value>
+    <value key="DZD">Algerian Dinar</value>
+    <value key="ECS">Ecuador Sucre</value>
+    <value key="EEK">Estonian Kroon</value>
+    <value key="EGP">Egyptian Pound</value>
+    <value key="ESP">Spanische Peseta</value>
+    <value key="ETB">Ethiopian Birr</value>
+    <value key="EUR">Euro</value>
+    <value key="FIM">Finnish Markka</value>
+    <value key="FJD">Fiji Dollar</value>
+    <value key="FKP">Falkland Islands Pound</value>
+    <value key="FRF">Französische Franc</value>
+    <value key="GBP">Britisches Pfund</value>
+    <value key="GHC">Ghanaian Cedi</value>
+    <value key="GIP">Gibraltar Pound</value>
+    <value key="GMD">Gambian Dalasi</value>
+    <value key="GNF">Guinea Franc</value>
+    <value key="GRD">Griechische Drachmen</value>
+    <value key="GTQ">Guatemalan Quetzal</value>
+    <value key="GYD">Guyanan Dollar</value>
+    <value key="HKD">Hong Kong Dollar</value>
+    <value key="HNL">Honduran Lempira</value>
+    <value key="HRK">Kroatische Kuna</value>
+    <value key="HTG">Haitian Gourde</value>
+    <value key="HUF">Ungarischer Forint</value>
+    <value key="IDR">Indonesian Rupiah</value>
+    <value key="IEP">Irisches Punt</value>
+    <value key="ILS">Israelisches Neuer Shekel</value>
+    <value key="INR">Indian Rupee</value>
+    <value key="IQD">Irakischer Dinar</value>
+    <value key="IRR">Iranischer Rial</value>
+    <value key="ISK">Iceland Krona</value>
+    <value key="ITL">Italienische Lira</value>
+    <value key="JMD">Jamaican Dollar</value>
+    <value key="JOD">Jordanian Dinar</value>
+    <value key="JPY">Japanischer Yen</value>
+    <value key="KES">Kenyan Shilling</value>
+    <value key="KHR">Cambodian Riel</value>
+    <value key="KMF">Comoros Franc</value>
+    <value key="KPW">Nord- Koreanischer Won</value>
+    <value key="KRW">Koreanischer Won</value>
+    <value key="KWD">Kuwaiischeri Dinar</value>
+    <value key="KYD">Cayman Islands Dollar</value>
+    <value key="KZT">Kazakhstan Tenge</value>
+    <value key="LAK">Lao Kip</value>
+    <value key="LBP">Lebanese Pound</value>
+    <value key="LKR">Sri Lanka Rupee</value>
+    <value key="LRD">Liberian Dollar</value>
+    <value key="LSL">Lesotho Loti</value>
+    <value key="LTL">Lithuanian Litas</value>
+    <value key="LUF">Luxemburger Franc</value>
+    <value key="LVL">Latvian Lats</value>
+    <value key="LYD">Libyscher Dinar</value>
+    <value key="MAD">Moroccan Dirham</value>
+    <value key="MGF">Malagasy Franc</value>
+    <value key="MMK">Myanmar Kyat</value>
+    <value key="MNT">Mongolian Tugrik</value>
+    <value key="MOP">Macau Pataca</value>
+    <value key="MRO">Mauritanian Ouguiya</value>
+    <value key="MTL">Maltese Lira</value>
+    <value key="MUR">Mauritius Rupee</value>
+    <value key="MVR">Maldive Rufiyaa</value>
+    <value key="MWK">Malawi Kwacha</value>
+    <value key="MXP">Mexikanischer Peso</value>
+    <value key="MYR">Malaysian Ringgit</value>
+    <value key="MZM">Mozambique Metical</value>
+    <value key="NAD">Namibia Dollar</value>
+    <value key="NGN">Nigerian Naira</value>
+    <value key="NIO">Nicaraguan Cordoba Oro</value>
+    <value key="NLG">Niederländischer Guilder</value>
+    <value key="NOK">Norwegische Krone</value>
+    <value key="NPR">Nepalese Rupee</value>
+    <value key="NZD">Neu Sealändischer Dollar</value>
+    <value key="OMR">Omani Rial</value>
+    <value key="PAB">Panamanian Balboa</value>
+    <value key="PEN">Peruvian Nuevo Sol</value>
+    <value key="PGK">Papua New Guinea Kina</value>
+    <value key="PHP">Philippinischer Peso</value>
+    <value key="PKR">Pakistan Rupee</value>
+    <value key="PLZ">Polnischer Zloty</value>
+    <value key="PTE">Portugisiescher Escudo</value>
+    <value key="PYG">Paraguay Guarani</value>
+    <value key="QAR">Qatari Rial</value>
+    <value key="ROL">Rumänischer Leu</value>
+    <value key="RUB">Russischer Rubel</value>
+    <value key="SAR">Saudi Riyal</value>
+    <value key="SBD">Solomon Islands Dollar</value>
+    <value key="SCR">Seychelles Rupee</value>
+    <value key="SDD">Sudanese Dinar</value>
+    <value key="SDP">Sudanese Pound</value>
+    <value key="SEK">Schwedische Krone</value>
+    <value key="SGD">Singapore Dollar</value>
+    <value key="SHP">St. Helena Pound</value>
+    <value key="SIT">Sloveniischer Tolar</value>
+    <value key="SKK">Slovak Koruna</value>
+    <value key="SLL">Sierra Leone Leone</value>
+    <value key="SOS">Somali Shilling</value>
+    <value key="SRG">Suriname Guilder</value>
+    <value key="STD">Sao Tome/Principe Dobra</value>
+    <value key="SVC">El Salvador Colon</value>
+    <value key="SYP">Syrian Pound</value>
+    <value key="SZL">Swaziland Lilangeni</value>
+    <value key="THB">Thai Baht</value>
+    <value key="TND">Tunisian Dinar</value>
+    <value key="TOP">Tongan Pa&quot;anga</value>
+    <value key="TRL">Türkische Lira</value>
+    <value key="TTD">Trinidad/Tobago Dollar</value>
+    <value key="TWD">Taiwan Dollar</value>
+    <value key="TZS">Tanzanian Shilling</value>
+    <value key="UAH">Ukraine Hryvnia</value>
+    <value key="UGS">Uganda Shilling</value>
+    <value key="USD">US Dollar</value>
+    <value key="UYP">Uruguayan Peso</value>
+    <value key="VEB">Venezuelan Bolivar</value>
+    <value key="VND">Vietnamese Dong</value>
+    <value key="VUV">Vanuatu Vatu</value>
+    <value key="WST">Samoan Tala</value>
+    <value key="XAF">CFA Franc BEAC</value>
+    <value key="XAG">Silver (oz.)</value>
+    <value key="XAU">Gold (oz.)</value>
+    <value key="XEU">ECU</value>
+    <value key="XOF">CFA Franc BCEAO</value>
+    <value key="XPD">Palladium (oz.)</value>
+    <value key="XPT">Platinum (oz.)</value>
+    <value key="YUN">Yugoslav Dinar</value>
+    <value key="ZAR">South African Rand</value>
+    <value key="ZMK">Zambian Kwacha</value>
+    <value key="ZWD">Zimbabwe Dollar</value>
+  </typ>
+  <typ name="_typ41">
+    <path satz="0200" teil="1" nr="33" sparte=""/>
+    <value key="1">alte Vers.scheinnr.</value>
+    <value key="2">neue Vers.scheinnr.</value>
+  </typ>
+  <typ name="_typ44">
+    <path satz="0200" teil="1" nr="37" sparte=""/>
+    <value key="A">Auszahlung</value>
+    <value key="E">Einzahlung</value>
+  </typ>
+  <typ name="_typ56">
+    <path satz="0210" teil="1" nr="9" sparte="580"/>
+    <value key="0">Antragsphase</value>
+    <value key="1">Sparphase</value>
+    <value key="2">Darlehensphase</value>
+  </typ>
+  <typ name="_typ58">
+    <path satz="0210" teil="1" nr="17" sparte="580"/>
+    <value key="1">Neuzugang</value>
+    <value key="2">Erhöhung</value>
+    <value key="3">Teilung</value>
+    <value key="4">Übertragung</value>
+    <value key="5">Wohnsitzwechsel (nur LBS)</value>
+    <value key="6">Zusammenlegung</value>
+  </typ>
+  <typ name="sign_t">
+    <path satz="0210" teil="1" nr="24" sparte="580"/>
+    <path satz="0280" teil="1" nr="17" sparte="550"/>
+    <path satz="0280" teil="1" nr="20" sparte="550"/>
+    <path satz="0400" teil="1" nr="21" sparte=""/>
+    <path satz="0400" teil="1" nr="23" sparte=""/>
+    <path satz="0400" teil="1" nr="25" sparte=""/>
+    <path satz="0400" teil="1" nr="27" sparte=""/>
+    <path satz="0400" teil="1" nr="29" sparte=""/>
+    <path satz="0400" teil="1" nr="31" sparte=""/>
+    <path satz="0400" teil="1" nr="35" sparte=""/>
+    <path satz="0400" teil="2" nr="12" sparte=""/>
+    <path satz="0410" teil="1" nr="11" sparte=""/>
+    <path satz="0410" teil="1" nr="13" sparte=""/>
+    <path satz="0410" teil="1" nr="16" sparte=""/>
+    <path satz="0410" teil="1" nr="19" sparte=""/>
+    <path satz="0410" teil="1" nr="22" sparte=""/>
+    <path satz="0410" teil="1" nr="25" sparte=""/>
+    <path satz="0410" teil="1" nr="28" sparte=""/>
+    <path satz="0410" teil="1" nr="35" sparte=""/>
+    <path satz="0410" teil="1" nr="37" sparte=""/>
+    <path satz="0410" teil="1" nr="39" sparte=""/>
+    <path satz="0410" teil="1" nr="41" sparte=""/>
+    <path satz="0420" teil="1" nr="14" sparte=""/>
+    <path satz="0420" teil="1" nr="16" sparte=""/>
+    <path satz="0420" teil="1" nr="24" sparte=""/>
+    <path satz="0420" teil="1" nr="26" sparte=""/>
+    <path satz="0420" teil="1" nr="34" sparte=""/>
+    <path satz="0420" teil="1" nr="36" sparte=""/>
+    <path satz="0450" teil="1" nr="14" sparte=""/>
+    <path satz="0450" teil="1" nr="18" sparte=""/>
+    <path satz="0450" teil="1" nr="21" sparte=""/>
+    <path satz="0450" teil="1" nr="24" sparte=""/>
+    <path satz="0450" teil="1" nr="27" sparte=""/>
+    <path satz="0450" teil="1" nr="30" sparte=""/>
+    <path satz="0450" teil="1" nr="33" sparte=""/>
+    <path satz="0500" teil="1" nr="26" sparte=""/>
+    <path satz="0500" teil="1" nr="28" sparte=""/>
+    <path satz="0500" teil="1" nr="31" sparte=""/>
+    <path satz="0550" teil="1" nr="24" sparte=""/>
+    <path satz="0550" teil="1" nr="29" sparte=""/>
+    <path satz="9999" teil="1" nr="6" sparte=""/>
+    <path satz="9999" teil="1" nr="8" sparte=""/>
+    <path satz="9999" teil="1" nr="10" sparte=""/>
+    <path satz="9999" teil="1" nr="12" sparte=""/>
+    <value key="+">Positiv</value>
+    <value key="-">Negativ</value>
+  </typ>
+  <typ name="_typ60">
+    <path satz="0210" teil="1" nr="30" sparte="580"/>
+    <value key="V">Vorausdarlehen</value>
+    <value key="Z">Zwischenkredit</value>
+  </typ>
+  <typ name="_typ67">
+    <path satz="0210" teil="1" nr="24" sparte="080"/>
+    <path satz="0210" teil="1" nr="27" sparte="080"/>
+    <path satz="0210" teil="1" nr="30" sparte="080"/>
+    <path satz="0210" teil="1" nr="33" sparte="080"/>
+    <value key="01">Revision - Prüfung von elektrischen Licht- und Kraftanlagen</value>
+    <value key="02">Stichtagsmeldungen (Vorräte)</value>
+    <value key="03">Festsetzung neuer Wertzuschlag</value>
+    <value key="04">Abrechnung - Vorsorgeversicherung</value>
+    <value key="05">§ 9 FBUB</value>
+    <value key="06">Meldung von hinzukommenden Betriebsgrundstücken</value>
+    <value key="10">Fristüberwachung für Einrichtungen und Maßnahmen zur Brandverhütung und -bekämpfung</value>
+    <value key="20">Sicherungseinrichtungen z. B. Einbruchsmeldeanlagen</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ74">
+    <path satz="0210" teil="1" nr="39" sparte="080"/>
+    <value key="0">nein</value>
+    <value key="1">ja</value>
+    <value key="2">nur Klein-BU</value>
+  </typ>
+  <typ name="_typ78">
+    <path satz="0210" teil="1" nr="44" sparte="080"/>
+    <path satz="0220" teil="2" nr="30" sparte="080"/>
+    <value key="0150">Wäscherei / Färberei</value>
+    <value key="0151">Wäscherei</value>
+    <value key="0152">Färberei</value>
+    <value key="0153">Waschsalon</value>
+    <value key="3039">Sonstige grobe Metallverarbeitung</value>
+    <value key="3091">Großmaschinen</value>
+    <value key="7137">Polstermöbelhersteller</value>
+  </typ>
+  <typ name="summenart_t">
+    <path satz="0210" teil="1" nr="12" sparte="040"/>
+    <path satz="0220" teil="1" nr="20" sparte="040"/>
+    <value key="1">Personenschäden</value>
+    <value key="2">Sachschäden</value>
+    <value key="3">Personen- und Sachschäden</value>
+    <value key="4">Vermögensschäden</value>
+    <value key="5">Personen- und Vermögensschäden</value>
+    <value key="6">Sach- und Vermögensschäden</value>
+    <value key="7">Personen-,Vermögens- und Sachschäden</value>
+    <value key="8">Mietsachschäden</value>
+    <value key="9">EP (Einheitspauschale)</value>
+    <value key="A">Personen- und Sachschäden (pauschal)</value>
+    <value key="B">sonstige Sach- und Vermögensschäden (pauschal)</value>
+    <value key="C">Personenschäden und sonstige Schäden (pauschal)</value>
+    <value key="D">unbegrenzt (nur für Gabelstapler nach AKB)</value>
+    <value key="Z">Sonstiges</value>
+  </typ>
+  <typ name="jahres_maximierung_t">
+    <path satz="0210" teil="1" nr="24" sparte="040"/>
+    <path satz="0220" teil="1" nr="28" sparte="040"/>
+    <value key="0">keine</value>
+    <value key="1">1-fach</value>
+    <value key="2">2-fach</value>
+    <value key="3">3-fach</value>
+    <value key="4">4-fach</value>
+    <value key="5">5-fach</value>
+    <value key="6">6-fach</value>
+    <value key="7">7-fach</value>
+    <value key="8">8-fach</value>
+    <value key="9">sonstige Vereinbarung</value>
+    <value key="A">1,25-fach</value>
+    <value key="B">1,5-fach</value>
+    <value key="C">1,75-fach</value>
+    <value key="D">2,25-fach</value>
+    <value key="E">2,5-fach</value>
+    <value key="F">2,75-fach</value>
+  </typ>
+  <typ name="_typ99">
+    <path satz="0210" teil="1" nr="12" sparte="550"/>
+    <path satz="0210" teil="1" nr="8" sparte="010"/>
+    <value key="1">Neuantrag</value>
+    <value key="2">Zuwachsgarantie</value>
+    <value key="3">Abtrennung Gruppenversicherung</value>
+    <value key="4">Umtausch Risiko</value>
+    <value key="5">Übernahme von anderer Gesellschaft</value>
+  </typ>
+  <typ name="_typ101">
+    <path satz="0210" teil="1" nr="15" sparte="550"/>
+    <value key="1">Hypothekentilgung</value>
+    <value key="2">VL</value>
+    <value key="3">Sonstiges</value>
+  </typ>
+  <typ name="_typ102">
+    <path satz="0210" teil="1" nr="16" sparte="550"/>
+    <path satz="0210" teil="1" nr="15" sparte="010"/>
+    <value key="0">Einzel</value>
+    <value key="1">Firmengruppen</value>
+    <value key="2">Vereins-/Verbandsgruppen</value>
+    <value key="3">Sammelversicherung</value>
+  </typ>
+  <typ name="_typ108">
+    <path satz="0210" teil="1" nr="8" sparte="050"/>
+    <value key="000">(unbekannt)</value>
+    <value key="001">Kleinkraftraeder</value>
+    <value key="003">Kraftraeder, Kraftroller</value>
+    <value key="005">Fahrzeuge mit Versicherungskennzeichen</value>
+    <value key="006">Krankenfahrstuehle</value>
+    <value key="007">Leichtmofa</value>
+    <value key="012">Leichtkraftroller bis 80 ccm</value>
+    <value key="016">Leichtkraftroller (ab 16 J.)</value>
+    <value key="018">Leichtkraftroller (ab 18 J.)</value>
+    <value key="022">Leichtkraftraeder bis 80 ccm</value>
+    <value key="026">Leichtkraftraeder (ab 16 J.)</value>
+    <value key="028">Leichtkraftraeder (ab 18 J.)</value>
+    <value key="030">Trikes</value>
+    <value key="112">Personenkraftwagen</value>
+    <value key="127">Campingkraftfahrzeuge, Wohnmobile</value>
+    <value key="141">Personenmietwagen (bis 50.000 Einw.)</value>
+    <value key="142">Personenmietwagen (ueber 50.000 Einw.)</value>
+    <value key="150">Kraftdroschken (ausserhalb Berlins)</value>
+    <value key="159">Kraftdroschken in Berlin</value>
+    <value key="162">Selbstfahrervermietfahrzeuge Pkw</value>
+    <value key="202">Lkw bis 1 t Nutzlast</value>
+    <value key="204">Lkw bis 1 t Nutzlast, Treibstoffbef.</value>
+    <value key="262">Selbstfahrervermietlieferwagen</value>
+    <value key="301">Lkw Werknahverkehr</value>
+    <value key="302">Lkw Werkfernverkehr</value>
+    <value key="303">Lkw Werknahverkehr,  Treibstoffbef.</value>
+    <value key="304">Lkw Werkfernverkehr, Treibstoffbef.</value>
+    <value key="309">Lehr-Lkw</value>
+    <value key="311">Lkw Nahverkehr</value>
+    <value key="313">Lkw Nahverkehr, Treibstoffbef.</value>
+    <value key="314">Lkw Nahverkehr, Inhabergenehmigung</value>
+    <value key="316">Lkw Nahv., Inhabergen., Treibstoffbef.</value>
+    <value key="322">Lkw Fernverkehr</value>
+    <value key="324">Lkw Fernverkehr, Treibstoffbef.</value>
+    <value key="332">Lkw Umzugsverkehr</value>
+    <value key="362">Selbstfahrervermietlastkraftwagen</value>
+    <value key="401">Zugmaschinen Werknahverkehr</value>
+    <value key="402">Zugmaschinen Werkfernverkehr</value>
+    <value key="403">Zugmaschinen Werknahv.,  Treibstoffbef.</value>
+    <value key="404">Zugmaschinen Werkfernv., Treibstoffbef.</value>
+    <value key="411">Zugmaschinen Nahverkehr</value>
+    <value key="413">Zugmaschinen Nahverkehr, Treibstoffbef.</value>
+    <value key="414">Zugmaschinen Nahverkehr, Inhabergen.</value>
+    <value key="416">Zugm. Nahverkehr, Inhabergen., Treibst.</value>
+    <value key="422">Zugmaschinen Fernverkehr</value>
+    <value key="424">Zugmaschinen Fernverkehr, Treibstoffbef.</value>
+    <value key="432">Zugmaschinen Umzugsverkehr</value>
+    <value key="451">Landwirtsch. Zugmaschinen, Raupenschl.</value>
+    <value key="459">Zugmaschinen Schaustellerbetriebe</value>
+    <value key="501">Anhaenger Werknahverkehr</value>
+    <value key="502">Anhaenger Werkfernverkehr</value>
+    <value key="503">Anhaenger Werknahverkehr, Treibstoffbef.</value>
+    <value key="504">Anhaenger Werkfernverkehr,Treibstoffbef.</value>
+    <value key="511">Anhaenger Nahverkehr</value>
+    <value key="513">Anhaenger Nahverkehr, Treibstoffbef.</value>
+    <value key="514">Anhaenger Nahverkehr, Inhabergenehmigung</value>
+    <value key="516">Anhaenger Nahv., Inhabergen., Treibst.</value>
+    <value key="522">Anhaenger Fernverkehr</value>
+    <value key="524">Anhaenger Fernverkehr, Treibstoffbef.</value>
+    <value key="532">Anhaenger Umzugsverkehr</value>
+    <value key="541">Wohnwagenanhaenger</value>
+    <value key="542">Anhaenger in Sonderausfuehrung</value>
+    <value key="551">Anhaenger zu landwirtsch. Zugmaschinen</value>
+    <value key="561">Anhaenger des DRK</value>
+    <value key="571">Wechselaufbauten</value>
+    <value key="601">Kraftomnibusse und Obusse</value>
+    <value key="602">Hotelomnibusse</value>
+    <value key="603">Werkomnibusse</value>
+    <value key="604">Lehromnibusse</value>
+    <value key="621">Hotelomnibusse,  einteilige Frontscheibe</value>
+    <value key="622">Hotelomnibusse, zweiteilige Frontscheibe</value>
+    <value key="631">Werkomnibusse,</value>
+    <value key="632">Werkomnibusse,  zweiteilige Frontscheibe</value>
+    <value key="641">Lehromnibusse,</value>
+    <value key="642">Lehromnibusse,  zweiteilige Frontscheibe</value>
+    <value key="651">KOM Linienverkehr,  einteilige Frontsch.</value>
+    <value key="652">KOM Linienverkehr, zweiteilige Frontsch.</value>
+    <value key="661">KOM Geleg.verkehr,  einteilige Frontsch.</value>
+    <value key="662">KOM Geleg.verkehr, zweiteilige Frontsch.</value>
+    <value key="701">Abschleppwagen bis 10 t</value>
+    <value key="702">Sonstige Arbeitsmaschinen</value>
+    <value key="703">Fahrbare Kuechenwagen und dergl.</value>
+    <value key="704">Melkwagen, landwirtsch. Sonderfahrzeuge</value>
+    <value key="705">Strassen-Reinigungs-kfz. (ohne WKZ 716)</value>
+    <value key="706">Krankenomnibusse</value>
+    <value key="707">Krankenwagen</value>
+    <value key="708">Hub- und Gabelstapler</value>
+    <value key="709">Leichenwagen</value>
+    <value key="710">Autoschuetter</value>
+    <value key="711">Mannschaftswagen der Polizei und des DRK</value>
+    <value key="715">Sonstige Selbstfahrervermiet-kfz.</value>
+    <value key="716">Kommunale Strassen-Reinigungs-kfz.</value>
+    <value key="719">Sonstige Wagnisse</value>
+    <value key="722">Elektro-Fahrzeuge</value>
+    <value key="760">Behind. mit Kfz.-Steuerbefr. (WKZ 005)</value>
+    <value key="761">Behind. mit Kfz.-Steuerbefr. (WKZ 001)</value>
+    <value key="762">Behind. mit Kfz.-Steuerbefr. (WKZ 112)</value>
+    <value key="763">Behind. mit Kfz.-Steuerbefr. (WKZ 022)</value>
+    <value key="764">Behind. mit Kfz.-Steuerbefr. (WKZ 127)</value>
+    <value key="765">Behind. mit Kfz.-Steuerbefr. (WKZ 003)</value>
+    <value key="767">Behind. mit Kfz.-Steuerbefr. (WKZ 202)</value>
+    <value key="769">Behind. mit Kfz.-Steuerbefr. (WKZ 719)</value>
+    <value key="770">Behind. 50 o/o Kfz.-Steuererm. (WKZ 005)</value>
+    <value key="771">Behind. 50 o/o Kfz.-Steuererm. (WKZ 001)</value>
+    <value key="772">Behind. 50 o/o Kfz.-Steuererm. (WKZ 112)</value>
+    <value key="773">Behind. 50 o/o Kfz.-Steuererm. (WKZ 022)</value>
+    <value key="774">Behind. 50 o/o Kfz.-Steuererm. (WKZ 127)</value>
+    <value key="775">Behind. 50 o/o Kfz.-Steuererm. (WKZ 003)</value>
+    <value key="777">Behind. 50 o/o Kfz.-Steuererm. (WKZ 202)</value>
+    <value key="779">Behind. 50 o/o Kfz.-Steuererm. (WKZ 719)</value>
+    <value key="810">Ausfuhrkennzeichen wie WKZ 005</value>
+    <value key="811">Ausfuhrkennzeichen Kleinkraftraeder</value>
+    <value key="812">Ausfuhrkennzeichen Personenkraftwagen</value>
+    <value key="813">Ausfuhrkennz. Leichtkraftraeder, -roller</value>
+    <value key="814">Ausfuhrkennzeichen Lkw</value>
+    <value key="815">Ausfuhrkennzeichen Lkw ueber 1 t Nutzl.</value>
+    <value key="816">Ausfuhrkennzeichen Anhaenger, Auflieger</value>
+    <value key="817">Ausfuhrkennzeichen Kraftomnibusse</value>
+    <value key="818">Ausfuhrkennzeichen sonstige Kfz.</value>
+    <value key="819">Ausfuhrkennzeichen Kraftraeder, -roller</value>
+  </typ>
+  <typ name="_typ112">
+    <path satz="0210" teil="1" nr="23" sparte="050"/>
+    <value key="0">kein Sicherungsschein</value>
+    <value key="1">Sicherungsschein</value>
+    <value key="2">Leasing</value>
+  </typ>
+  <typ name="_typ116">
+    <path satz="0210" teil="2" nr="11" sparte="050"/>
+    <value key="01">Normal</value>
+    <value key="02">Grün</value>
+    <value key="03">Kurzzeit (Überführungskennzeichen)</value>
+    <value key="04">Saison</value>
+    <value key="05">Behörden</value>
+    <value key="06">Ausfuhrkennzeichen (ehemals Zoll)</value>
+    <value key="07">Historische Fahrzeuge</value>
+    <value key="08">ohne amtl. Kennzeichen</value>
+    <value key="99">Sonstige</value>
+  </typ>
+  <typ name="_typ117">
+    <path satz="0210" teil="2" nr="15" sparte="050"/>
+    <value key="01">Tageszulassung</value>
+    <value key="02">Werkszulassung</value>
+    <value key="03">Sonstige (Anzahl Vorbesitzer gemäß Feld 15)</value>
+  </typ>
+  <typ name="_typ118">
+    <path satz="0210" teil="2" nr="21" sparte="050"/>
+    <value key="00">unbekannt</value>
+    <value key="02">nicht vorhanden</value>
+    <value key="03">abschließbare Einzel- und Doppelgarage</value>
+    <value key="04">Mehrfach / Tiefgarage (nicht abschließbar)</value>
+    <value key="05">gesichertes Grundstück / Carport</value>
+  </typ>
+  <typ name="_typ119">
+    <path satz="0210" teil="2" nr="22" sparte="050"/>
+    <value key="01">Überwiegend geschäftlich</value>
+    <value key="02">Privat</value>
+    <value key="03">Taxi</value>
+    <value key="04">Vermietung</value>
+    <value key="05">Sonstige</value>
+  </typ>
+  <typ name="_typ120">
+    <path satz="0210" teil="2" nr="23" sparte="050"/>
+    <value key="1">Eigentum VN</value>
+    <value key="2">Eigentum / Finanzierung</value>
+    <value key="3">Leasing</value>
+  </typ>
+  <typ name="_typ121">
+    <path satz="0210" teil="2" nr="24" sparte="050"/>
+    <value key="1">Selbstgenutztes Ein/ Zweifamilienhaus</value>
+    <value key="2">Mehrfamilienhaus</value>
+    <value key="3">Eigentumswohnung</value>
+    <value key="4">Sonstiges</value>
+    <value key="5">Nein</value>
+  </typ>
+  <typ name="_typ123">
+    <path satz="0210" teil="1" nr="8" sparte="020"/>
+    <path satz="0220" teil="1" nr="11" sparte="020.2"/>
+    <path satz="0220" teil="1" nr="11" sparte="020.1"/>
+    <path satz="0220" teil="1" nr="11" sparte="020.3"/>
+    <value key="0">Einzel</value>
+    <value key="1">Firmengruppen</value>
+    <value key="2">Vereinsgruppen</value>
+    <value key="3">Verbandsgruppen</value>
+    <value key="4">Sammelversicherung</value>
+    <value key="9">Sonstiges</value>
+  </typ>
+  <typ name="_typ124">
+    <path satz="0210" teil="1" nr="9" sparte="020"/>
+    <value key="0">LEV</value>
+    <value key="1">Dauerauftrag</value>
+    <value key="2">Sammeleinzug / Sammelinkasso</value>
+    <value key="9">Sonstiges</value>
+  </typ>
+  <typ name="_typ134">
+    <path satz="0210" teil="1" nr="14" sparte="010"/>
+    <value key="1">Hypothekentilgung</value>
+    <value key="2">VL</value>
+    <value key="3">Restschuldversicherung</value>
+    <value key="9">sonstiges</value>
+  </typ>
+  <typ name="_typ138">
+    <path satz="0210" teil="1" nr="22" sparte="010"/>
+    <value key="01">Abtretung</value>
+    <value key="02">Verpfändung</value>
+    <value key="03">Pfändung</value>
+    <value key="04">Konkurs</value>
+    <value key="05">Vergleich</value>
+  </typ>
+  <typ name="aenderungsgrund_t">
+    <path satz="0210" teil="1" nr="31" sparte="010"/>
+    <path satz="0220" teil="1" nr="24" sparte="550"/>
+    <path satz="0220" teil="1" nr="25" sparte="020.2"/>
+    <path satz="0291" teil="1" nr="16" sparte="550"/>
+    <path satz="0292" teil="1" nr="22" sparte="550"/>
+    <value key="00">Bei Erstausstattung (Stichtagsbestand, Bestandsübernahme)</value>
+    <value key="01">Erstlieferung eines Vertrages neue Vertragsnummer nach Vertragstrennung / Nachversicherung z. B.: Umstellung Einzelversicherung in Gruppenversicherung / Umstellung Gruppenversicherung in Einzelversicherung</value>
+    <value key="02">VN-Wechsel</value>
+    <value key="03">Fahrzeugwechsel</value>
+    <value key="04">Änderung Regionalklasse / Tarifgruppe / Typklasse (KFZ)</value>
+    <value key="05">Änderung Deckungsumfang / Versicherungsschutz / Übergang von Vollversicherung auf Anwartschaft bzw. von Anwartschaft auf Vollversicherung</value>
+    <value key="06">Änderung der SFR-Einstufung (KFZ) / Beitragsrückerstattung (KV)</value>
+    <value key="07">Kurzfristiger Einschluß oder Änderung der Deckung</value>
+    <value key="08">Wiederinkraftsetzung</value>
+    <value key="09">Änderung der Versicherungsdauer / des Versicherungsbeginnes</value>
+    <value key="10">Änderung zum Risiko / Risikozuschlag / Leistungsausschluß</value>
+    <value key="11">Änderung der Bedingungen</value>
+    <value key="12">Bedingungsgemäße Zuwachserhöhung / dynamische Leistungsanpassung</value>
+    <value key="13">Änderung der Zahlungsweise / Fälligkeit</value>
+    <value key="14">Änderung der Versicherungssumme</value>
+    <value key="15">Erhöhung Zusatzversicherung</value>
+    <value key="16">Einschluß Zusatz</value>
+    <value key="17">Ausschluß Zusatz</value>
+    <value key="18">Änderung der Beiträge (z. B. Beitragsanpassung, bedingungsgemäße Beitragserhöhung)</value>
+    <value key="19">Änderung Personendaten</value>
+    <value key="20">Vertragszusammenlegung</value>
+    <value key="21">Ersatzvertrag</value>
+    <value key="22">Bestandsübertragung (Übertragung von anderem Vermittler)</value>
+    <value key="23">Agenturnummernwechsel (Änderung der Organisationseinheit intern beim Vermittler)</value>
+    <value key="24">Neuzugang nach Vertragsneuordnung</value>
+    <value key="25">Neuzugang nach Tarifwechsel</value>
+    <value key="26">Ablehnung der Dynamikerhöhung</value>
+    <value key="27">Bedingungsgemäße Zuwachserhöhung / nichtdynamische Leistungsanpassung (z. B. bei Aufbaumodellen)</value>
+    <value key="28">Umstellung der Todesfalleistung in Prozent</value>
+    <value key="29">Wegfall des Risikovorlaufs</value>
+    <value key="30">Tarifliche Beitragsumstellung (z. B. Tarif mit ermäßigtem Anfangsbeitrag)</value>
+    <value key="31">Tarifwechsel (Versicherungsscheinnummer bleibt bestehen)</value>
+    <value key="32">Zuzahlung</value>
+    <value key="33">Änderung des Bezugsrechts</value>
+    <value key="34">Folgerechnung</value>
+    <value key="35">Hauptfälligkeitsrechnung</value>
+    <value key="99">sonstige Änderung</value>
+  </typ>
+  <typ name="_typ144">
+    <path satz="0210" teil="2" nr="8" sparte="010"/>
+    <value key="1">Direktversicherung</value>
+    <value key="2">Direktversicherung mit Gehaltsumwandlung</value>
+    <value key="3">Direktversicherung mit anteiliger Gehaltsumwandlung</value>
+    <value key="4">Rückdeckungsversicherung für Pensionszusage</value>
+    <value key="5">Rückdeckungsversicherung für Unterstützungskassenzusage</value>
+  </typ>
+  <typ name="_typ147">
+    <path satz="0210" teil="2" nr="17" sparte="010"/>
+    <value key="0">irrelevant</value>
+    <value key="1">pauschal besteuerte Direktversicherung nach §40b EStG</value>
+    <value key="2">Beiträge steuerfrei nach §3 Ziff.63 EStG</value>
+    <value key="3">zulagengeförderte Direktversicherung nach §10a EStG</value>
+    <value key="4">Beiträge steuerfrei nach §3 Ziff.66 EstG</value>
+    <value key="5">keine</value>
+  </typ>
+  <typ name="_typ148">
+    <path satz="0210" teil="2" nr="18" sparte="010"/>
+    <value key="0">irrelevant</value>
+    <value key="1">Arbeitgeber finanziert</value>
+    <value key="2">Arbeitnehmer finanziert Entgeltumwandlung</value>
+    <value key="3">Arbeitnehmer finanziert aus versteuertem Einkommen</value>
+    <value key="4">aus Vertrag nicht erkennbar</value>
+    <value key="5">Arbeitgeber / Arbeitnehmer</value>
+  </typ>
+  <typ name="_typ149">
+    <path satz="0210" teil="2" nr="19" sparte="010"/>
+    <value key="0">irrelevant</value>
+    <value key="1">Direktversicherung</value>
+    <value key="2">Unterstützungskasse</value>
+    <value key="3">Pensionskasse</value>
+    <value key="4">Pensionsfonds</value>
+    <value key="5">Privat</value>
+    <value key="6">Direktzusage</value>
+  </typ>
+  <typ name="_typ150">
+    <path satz="0210" teil="2" nr="20" sparte="010"/>
+    <value key="0">irrelevant</value>
+    <value key="1">Rückdeckungsversicherung</value>
+    <value key="2">Rückdeckungsversicherung partiell</value>
+    <value key="3">Rückdeckungsversicherung kongruent</value>
+    <value key="4">Pensionsfonds</value>
+  </typ>
+  <typ name="_typ157">
+    <path satz="0210" teil="1" nr="21" sparte="070"/>
+    <path satz="0400" teil="1" nr="37" sparte=""/>
+    <path satz="0410" teil="1" nr="43" sparte=""/>
+    <value key="1">zeichnendes VU</value>
+    <value key="2">vermittelndes VU</value>
+  </typ>
+  <typ name="_typ161">
+    <path satz="0210" teil="1" nr="18" sparte="170"/>
+    <value key="0">Unbekannt</value>
+    <value key="1">NEGB78</value>
+    <value key="2">AMKB</value>
+    <value key="3">AVFEBU</value>
+    <value key="4">AVFEM</value>
+    <value key="5">AMOBUB</value>
+    <value key="6">ABUB(E)</value>
+    <value key="9">Sonstige</value>
+  </typ>
+  <typ name="_typ172">
+    <path satz="0210" teil="1" nr="40" sparte="170"/>
+    <value key="0">Unbekannt</value>
+    <value key="1">bis 24 Monate</value>
+    <value key="2">über 24 bis 36 Monate</value>
+    <value key="3">über 36 bis 48 Monate</value>
+    <value key="4">über 48 Monate</value>
+    <value key="9">Sonstige</value>
+  </typ>
+  <typ name="_typ173">
+    <path satz="0210" teil="1" nr="41" sparte="170"/>
+    <value key="1">Einzelvertrag</value>
+    <value key="2">Rahmenvertrag / Generalvertrag / Maklervertrag</value>
+    <value key="3">Sonstiges</value>
+  </typ>
+  <typ name="_typ176">
+    <path satz="0210" teil="1" nr="10" sparte="190"/>
+    <path satz="0250" teil="1" nr="10" sparte="190"/>
+    <path satz="0260" teil="1" nr="8" sparte="190"/>
+    <path satz="0450" teil="1" nr="35" sparte=""/>
+    <path satz="0550" teil="1" nr="11" sparte=""/>
+    <value key="1">GDV-Verzeichnis</value>
+    <value key="2">RINET</value>
+    <value key="3">EDIFACT</value>
+  </typ>
+  <typ name="_typ184">
+    <path satz="0210" teil="1" nr="30" sparte="190"/>
+    <value key="M">in Monaten</value>
+    <value key="T">in Tagen</value>
+    <value key="W">in Wochen</value>
+  </typ>
+  <typ name="_typ185">
+    <path satz="0210" teil="1" nr="32" sparte="190"/>
+    <path satz="0250" teil="2" nr="22" sparte="190"/>
+    <path satz="0260" teil="1" nr="28" sparte="190"/>
+    <value key="0">VU</value>
+    <value key="1">Vermittler</value>
+  </typ>
+  <typ name="_typ186">
+    <path satz="0210" teil="1" nr="33" sparte="190"/>
+    <path satz="0250" teil="2" nr="18" sparte="190"/>
+    <path satz="0260" teil="1" nr="24" sparte="190"/>
+    <value key="0">steuerfrei</value>
+    <value key="1">VU</value>
+    <value key="2">Vermittler</value>
+    <value key="3">VN</value>
+  </typ>
+  <typ name="_typ198">
+    <path satz="0210" teil="1" nr="31" sparte="030"/>
+    <path satz="0220" teil="1" nr="24" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="25" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="33" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="33" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="25" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="26" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="21" sparte="010.6"/>
+    <value key="0">ohne Dynamik</value>
+    <value key="1">linear</value>
+    <value key="2">progressiv</value>
+    <value key="3">Sozialversicherung prozentual</value>
+    <value key="4">Sozialversicherung absolut</value>
+    <value key="5">Gehaltsanpassung</value>
+    <value key="6">absoluter Dynamikerhöhungsbetrag</value>
+    <value key="9">Sonstiges</value>
+  </typ>
+  <typ name="_typ207">
+    <path satz="0210" teil="1" nr="12" sparte="130"/>
+    <value key="B">Beraubung</value>
+    <value key="E">ED</value>
+    <value key="F">Feuer</value>
+    <value key="G">Glas</value>
+    <value key="H">Hagel</value>
+    <value key="L">Leitungswasser</value>
+    <value key="M">Elementarschäden</value>
+    <value key="N">Nutzfeuer</value>
+    <value key="S">Sturm</value>
+    <value key="U">Überspannungschäden</value>
+  </typ>
+  <typ name="bauartklasse_t">
+    <path satz="0210" teil="1" nr="30" sparte="130"/>
+    <value key="0">sonstiges / nicht aufgeteilt / Sachen im Freien</value>
+    <value key="1">Bauartklasse I</value>
+    <value key="2">Bauartklasse II</value>
+    <value key="3">Bauartklasse III</value>
+    <value key="4">Bauartklasse IV</value>
+    <value key="5">Bauartklasse V</value>
+    <value key="6">Fertighausgruppe 1</value>
+    <value key="7">Fertighausgruppe 2</value>
+    <value key="8">Fertighausgruppe 3</value>
+  </typ>
+  <typ name="gefahrenerhoehung_t">
+    <path satz="0210" teil="1" nr="31" sparte="130"/>
+    <value key="0">nein</value>
+    <value key="1">ja</value>
+    <value key="2">ja (temporär)</value>
+  </typ>
+  <typ name="_typ244">
+    <path satz="0220" teil="1" nr="9" sparte="580.2"/>
+    <path satz="0220" teil="1" nr="9" sparte="580.01"/>
+    <path satz="0220" teil="2" nr="9" sparte="580.01"/>
+    <value key="0">Antrag</value>
+    <value key="1">Sparen</value>
+    <value key="2">Darlehen</value>
+  </typ>
+  <typ name="_typ249">
+    <path satz="0220" teil="1" nr="28" sparte="580.2"/>
+    <value key="01">Abtretung an Bank</value>
+    <value key="02">Verpflichtungserklärung</value>
+  </typ>
+  <typ name="_typ252">
+    <path satz="0220" teil="1" nr="16" sparte="580.01"/>
+    <value key="1">geringer als Regelbesparung</value>
+    <value key="2">höher als Regelbesparung</value>
+    <value key="3">identisch mit Regelbesparung</value>
+  </typ>
+  <typ name="_typ254">
+    <path satz="0220" teil="1" nr="36" sparte="580.01"/>
+    <value key="1">Ermäßigung</value>
+    <value key="2">Erhöhung</value>
+    <value key="3">Teilung</value>
+    <value key="4">Zusammenlegung</value>
+  </typ>
+  <typ name="_typ261">
+    <path satz="0220" teil="2" nr="12" sparte="080"/>
+    <value key="10">feste Summe Zeitwert</value>
+    <value key="20">feste Summe Neuwert</value>
+    <value key="30">gleitender Neuwert</value>
+    <value key="40">Wertzuschlagsklausel</value>
+    <value key="50">Stichtagsklausel</value>
+    <value key="60">Bruchteilversicherung</value>
+    <value key="70">Erstrisikoversicherung</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ262">
+    <path satz="0220" teil="2" nr="21" sparte="080"/>
+    <value key="0">keine</value>
+    <value key="1">plus</value>
+    <value key="2">minus</value>
+  </typ>
+  <typ name="_typ264">
+    <path satz="0220" teil="2" nr="29" sparte="080"/>
+    <value key="1">Keine Aufteilung</value>
+    <value key="2">Innere Unruhen gem. § 2A (ECB87)</value>
+    <value key="3">Fahrzeuganprall gem. § 2B (ECB87)</value>
+    <value key="4">Sprinklerleckage gem § 2C (ECB87)</value>
+    <value key="5">Leitungswasser gem. § 2D (ECB87)</value>
+    <value key="6">Sturm gem. § 2E (ECB87)</value>
+    <value key="7">Sturm gem. § 2E (ECB87) Hagel gem. § 2F (ECB87)</value>
+    <value key="8">Sonstige Gefahren</value>
+    <value key="9">Besondere Kündigungsfrist</value>
+  </typ>
+  <typ name="_typ268">
+    <path satz="0220" teil="1" nr="15" sparte="110"/>
+    <value key="1">gewerblich</value>
+    <value key="2">privat</value>
+    <value key="3">Werbeanlagen</value>
+    <value key="9">Sonstige</value>
+  </typ>
+  <typ name="_typ269">
+    <path satz="0220" teil="1" nr="16" sparte="110"/>
+    <value key="1">Gebäudeverglasung</value>
+    <value key="2">Mobiliarverglasung</value>
+    <value key="3">Gebäude- und Mobiliarverglasung</value>
+    <value key="9">sonstige</value>
+  </typ>
+  <typ name="_typ270">
+    <path satz="0220" teil="1" nr="17" sparte="110"/>
+    <value key="01">Mehrscheibenisolierverglasung</value>
+    <value key="02">künstlerisch bearbeitete Gläser</value>
+    <value key="03">Scheiben über 4 qm</value>
+    <value key="99">Sonstige</value>
+  </typ>
+  <typ name="_typ271">
+    <path satz="0220" teil="1" nr="18" sparte="110"/>
+    <value key="01">Einfamilienhaus ohne Einliegerwohnung</value>
+    <value key="02">Einfamilienhaus mit Einliegerwohnung</value>
+    <value key="03">Mietwohnung</value>
+    <value key="04">Wohnung möbliert vermietet</value>
+    <value key="05">Mehrfamilienhaus</value>
+    <value key="06">Wohngebäude</value>
+    <value key="07">Geschäftsgebäude</value>
+    <value key="08">Wohn- / Geschäftsgebäude</value>
+    <value key="09">Bürogebäude</value>
+    <value key="10">Geschäfts- / Bürobetrieb</value>
+    <value key="11">Industriebau</value>
+    <value key="12">Glas - Keramik</value>
+    <value key="13">Aquarium</value>
+    <value key="14">Ganzglaskonstruktion</value>
+    <value key="15">Werbeanlagen</value>
+    <value key="16">Kunststoff</value>
+    <value key="17">Inhalt</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ272">
+    <path satz="0220" teil="1" nr="20" sparte="110"/>
+    <value key="01">qm Scheibenfläche</value>
+    <value key="02">Versicherungssumme Werbeanlagen, Wert der Scheiben</value>
+    <value key="03">Gebäudewert</value>
+    <value key="04">Wohnfläche / qm  Betriebsfläche</value>
+    <value key="05">Hausratversicherungssumme</value>
+    <value key="06">Schaufensterinhalt</value>
+    <value key="07">Umrahmungen</value>
+    <value key="08">Gerüstkosten</value>
+    <value key="09">aufgebrachte Sachen (Beschriftungen / Folien etc.)</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ276">
+    <path satz="0220" teil="1" nr="11" sparte="040"/>
+    <value key="001">, Personen, Person</value>
+    <value key="002">X, Lohn-/Gehaltssumme,</value>
+    <value key="003">X, Umsatz,</value>
+    <value key="004">, Anlagen, Anlage</value>
+    <value key="005">, Strahler,</value>
+    <value key="006">X, Bausumme,</value>
+    <value key="007">X, Beitrag,</value>
+    <value key="008">, Tanks, Tank</value>
+    <value key="010">, Apparate, Apparat</value>
+    <value key="011">, Megawatt / H,</value>
+    <value key="012">, km Länge,</value>
+    <value key="014">, Anschlüsse, Anschluß</value>
+    <value key="015">, CBM,</value>
+    <value key="016">, CBM Inhalt,</value>
+    <value key="017">, Schlachtungen, Schlachtung</value>
+    <value key="018">, Fächer, Fach</value>
+    <value key="019">, Agenturen, Agentur</value>
+    <value key="020">, Hetar (tariflich),</value>
+    <value key="021">, Hektar,</value>
+    <value key="022">, Spritzen, Spritze</value>
+    <value key="023">, Tiere, Tier</value>
+    <value key="024">, Räume, Raum</value>
+    <value key="025">X, Versicherungssumme,</value>
+    <value key="026">, Geräte, Gerät</value>
+    <value key="027">, Pferde, Pferd</value>
+    <value key="028">, Bahnen, Bahn</value>
+    <value key="029">, Betten, Bett</value>
+    <value key="030">, Ponys, Pony</value>
+    <value key="031">, Hengste, Hengst</value>
+    <value key="032">, Stiere, Stier</value>
+    <value key="033">, Hunde, Hund</value>
+    <value key="034">, Völker, Volk</value>
+    <value key="035">, Schafe, Schaf</value>
+    <value key="036">, Bagger,</value>
+    <value key="038">, Honorar,</value>
+    <value key="039">, Zimmer,</value>
+    <value key="040">, Fremdenzimmer,</value>
+    <value key="041">, Schieß-Stände, Schieß-Stand</value>
+    <value key="043">, Blöcke, Block</value>
+    <value key="044">, Plätze, Platz</value>
+    <value key="046">, Säle, Saal</value>
+    <value key="047">, Wirtschaften, Wirtschaft</value>
+    <value key="048">, qm Fläche,</value>
+    <value key="049">, Lenker,</value>
+    <value key="050">, qm,</value>
+    <value key="051">, KFZ,</value>
+    <value key="052">, Automaten, Automat</value>
+    <value key="054">, Spielfelder, Spielfeld</value>
+    <value key="055">, Einstellplätze, Einstellplatz</value>
+    <value key="056">, Säuglinge, Säugling</value>
+    <value key="057">, Schwestern, Schwester</value>
+    <value key="059">, Probanden, Proband</value>
+    <value key="060">, Besucher,</value>
+    <value key="061">, Badeeinrichtungen, Badeeinrichtung</value>
+    <value key="062">, Fahrzeuge, Fahrzeug</value>
+    <value key="063">, m Frontlänge,</value>
+    <value key="064">, Wagen,</value>
+    <value key="065">, Übergänge, Übergang</value>
+    <value key="066">, Kreuzungen, Kreuzung</value>
+    <value key="068">, Waagen, Waage</value>
+    <value key="070">, Wagen / Container,</value>
+    <value key="071">X, Einnahmen,</value>
+    <value key="072">, KFZ / Geräte, KFZ / Gerät</value>
+    <value key="073">, Kräne, Kran</value>
+    <value key="074">, Winden, Winde</value>
+    <value key="075">, Vorrichtungen, Vorrichtung</value>
+    <value key="076">, Teilnehmer,</value>
+    <value key="077">, Tafeln, Tafel</value>
+    <value key="078">, Säulen, Säule</value>
+    <value key="079">, Abonnenten, Abonnent</value>
+    <value key="080">, KFZ-Einstellplätze, KFZ-Einstellplatz</value>
+    <value key="081">, Einstellplätze für Fahrräder, Einstellplatz für Fahrrad</value>
+    <value key="082">, Schließfächer, Schließfach</value>
+    <value key="083">, Zapfstellen, Zapfstelle</value>
+    <value key="084">, Aufbewahrungsscheine, Aufbewahrungsschein</value>
+    <value key="085">, Mitglieder, Mitglied</value>
+    <value key="086">, Boote, Boot</value>
+    <value key="087">, qm Segelfläche,</value>
+    <value key="088">, m Bahnlänge,</value>
+    <value key="089">, Schanzen, Schanze</value>
+    <value key="091">, Kinder, Kind</value>
+    <value key="092">, Schützen, Schütze</value>
+    <value key="093">, Tiere / Boote / Geräte, Tier / Boot / Gerät</value>
+    <value key="094">, Reiter,</value>
+    <value key="095">, Aussteller,</value>
+    <value key="096">, Teilnehmer / Besucher,</value>
+    <value key="097">, Böller,</value>
+    <value key="099">X, Mietwert,</value>
+    <value key="100">, Wohnungen, Wohnung</value>
+    <value key="101">, Grundstücke, Grundstück</value>
+    <value key="102">, m Straßenfront,</value>
+    <value key="103">, Mieter,</value>
+    <value key="104">, Garagen, Garage</value>
+    <value key="105">X, Pacht-/Mietwert,</value>
+    <value key="107">, Ärzte, Arzt</value>
+    <value key="108">, Besamungen, Besamung</value>
+    <value key="109">, qm Stallungen, qm Stallung</value>
+    <value key="110">, Lehrer,</value>
+    <value key="111">, Schüler,</value>
+    <value key="112">, Jagdscheine, Jagdschein</value>
+    <value key="113">, km Straßenlänge,</value>
+    <value key="115">, Einwohner,</value>
+    <value key="116">, Schiffe, Schiff</value>
+    <value key="117">, Schlepper,</value>
+    <value key="118">, PS,</value>
+    <value key="120">, BRT,</value>
+    <value key="121">, kw,</value>
+    <value key="122">, Versicherungen, Versicherung</value>
+    <value key="123">X, Warenumsatz,</value>
+    <value key="124">, Betriebsorte, Betriebsort</value>
+    <value key="126">, Ställe, Stall</value>
+    <value key="127">, GJ/H,</value>
+    <value key="128">, Hilfspersonen, Hilfsperson</value>
+    <value key="129">, Maschinen, Maschine</value>
+    <value key="999">, Sonstige,</value>
+  </typ>
+  <typ name="mengen_schluessel_t">
+    <path satz="0220" teil="1" nr="12" sparte="040"/>
+    <value key="1">Originalmenge</value>
+    <value key="2">Menge ist in 10 angegeben. Ergänzung der Menge mit 0</value>
+    <value key="3">Menge ist in 100 angegeben. Ergänzung der Menge mit 00</value>
+    <value key="4">Menge ist in 1000 angegeben. Ergänzung der Menge mit .000</value>
+    <value key="5">Menge ist in 10000 angegeben. Ergänzung der Menge mit 0.000</value>
+    <value key="6">Menge ist in 100000 angegeben. Ergänzung der Menge mit 00.000</value>
+    <value key="7">Menge ist in Millionen angegeben. Ergänzung der Menge mit .000.000</value>
+    <value key="8">Menge ist in 10 angegeben. Ergänzung der Menge mit .000.000.000</value>
+  </typ>
+  <typ name="_typ295">
+    <path satz="0220" teil="1" nr="12" sparte="051"/>
+    <value key="11">Unbegrenzte Deckung</value>
+    <value key="13">5.000.000 / 1.000.000 / 100.000, Mindestdeckungssummen 2.500.000 / 500.000 / 50.000 in Euro (umgerechnet)</value>
+    <value key="16">Deckungssummen, die nicht unter die Pos. 11, 13, 17 und 18 fallen</value>
+    <value key="17">Gesetzliche Deckungssummen für Personenbeförderung mit Omnibussen</value>
+    <value key="18">5.000.000 Personenschäden,  2.000.000 pauschal Sach- und Vermögensschäden, 2.500.000 Euro (umgerechnet), 1.000.000 Euro (umgerechnet)</value>
+    <value key="51">50.000.000 Euro (pauschal), 8.000.000 Euro maximal pro Person (zusätzlicher Schlüssel, nicht im GDV-Verzeichnis enthalten)</value>
+  </typ>
+  <typ name="_typ300">
+    <path satz="0220" teil="1" nr="12" sparte="053"/>
+    <value key="71">ohne Selbstbeteiligung</value>
+    <value key="72">TK mit 300,00 DM Selbstbeteiligung  TK mit 150,00 Euro (umgerechnet)</value>
+    <value key="73">TK mit 650,00 DM Selbstbeteiligung  TK mit 300,00 Euro (umgerechnet)</value>
+    <value key="74">TK mit 1000,00 DM Selbstbeteiligung  TK mit 500,00 Euro (umgerechnet)</value>
+    <value key="76">TK mit 5000,00 DM Selbstbeteiligung TK mit 2500,00 Euro (umgerechnet)</value>
+    <value key="77">TK mit 5000,00 DM Selbstbeteiligung TK mit 2500,00 Euro (umgerechnet)</value>
+    <value key="79">sonstige Selbstbeteiligung</value>
+  </typ>
+  <typ name="_typ305">
+    <path satz="0220" teil="1" nr="12" sparte="052"/>
+    <value key="21">VK ohne Selbstbeteiligung (Bei allen Tatbeständen zur Fahrzeugversicherung)</value>
+    <value key="22">VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet)</value>
+    <value key="23">VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet)</value>
+    <value key="24">VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet)</value>
+    <value key="26">VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet)</value>
+    <value key="27">VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet)</value>
+    <value key="32">VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet)</value>
+    <value key="33">VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet)</value>
+    <value key="34">VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet)</value>
+    <value key="36">VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet)</value>
+    <value key="37">VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet)</value>
+    <value key="42">VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet)</value>
+    <value key="43">VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet)</value>
+    <value key="44">VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet)</value>
+    <value key="46">VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet)</value>
+    <value key="47">VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet)</value>
+    <value key="63">VK und TK mit je 650,00 DM Selbstbtlg. VK u. TK mit 300,00 Euro (umgerechnet)</value>
+    <value key="64">VK und TK mit je 1000,00 DM Selbstbtlg. VK u. TK mit 500,00 Euro (umgerechnet)</value>
+    <value key="65">VK und TK mit je 1500,00 DM Selbstbtlg. VK u. TK mit 750,00 Euro (umgerechnet)</value>
+    <value key="66">VK und TK mit je 2000,00 DM Selbstbtlg. VK u. TK mit 1000,00 Euro (umgerechnet)</value>
+    <value key="67">VK und TK mit je 5000,00 DM Selbstbtlg. VK u. TK mit 2500,00 Euro (umgerechnet)</value>
+    <value key="69">sonstige Selbstbeteiligung</value>
+    <value key="97">sonstige Selbstbeteiligung für Vollkasko und Teilkasko</value>
+    <value key="98">sonstige Selbstbeteiligung</value>
+    <value key="99">sonstige Selbstbeteiligung</value>
+  </typ>
+  <typ name="_typ313">
+    <path satz="0220" teil="1" nr="11" sparte="054"/>
+    <path satz="0220" teil="1" nr="12" sparte="054"/>
+    <value key="1">Insassenversicherung nach dem Pauschalsystem außer WKZ 001, 002, 003, 005, 012, 018, 022, 028, 760, 761, 765, 766</value>
+    <value key="2">Insassenversicherung nach dem Platzsystem außer WKZ 001, 002, 003, 005, 012, 018, 022, 028, 760, 761, 765, 766</value>
+    <value key="3">Insassenversicherung nach dem Pauschalsystem für WKZ 001, 002, 003, 005, 012, 018, 022, 028, 760, 761, 765, 766</value>
+    <value key="4">Berufs- und Beifahrerversicherung unter Ausschluß der Kraftradbenutzung</value>
+    <value key="5">Berufs- und Beifahrerversicherung mit Einschluß der Kraftradbenutzung</value>
+    <value key="9">Namentliche Unfallversicherung</value>
+  </typ>
+  <typ name="_typ316">
+    <path satz="0220" teil="1" nr="35" sparte="054"/>
+    <path satz="0220" teil="1" nr="36" sparte="054"/>
+    <value key="0">ohne</value>
+    <value key="1">mit</value>
+  </typ>
+  <typ name="_typ322">
+    <path satz="0220" teil="1" nr="17" sparte="020.2"/>
+    <value key="0">einmalig</value>
+    <value key="1">dauerhaft</value>
+    <value key="2">dauerhaft mit Widerruf</value>
+    <value key="9">sonstiges</value>
+  </typ>
+  <typ name="_typ333">
+    <path satz="0220" teil="1" nr="21" sparte="020.1"/>
+    <value key="0">keine KC ausgegeben</value>
+    <value key="1">KC ausgegeben</value>
+    <value key="2">KC ungültig</value>
+    <value key="3">KC ersatzweise ausgestellt</value>
+  </typ>
+  <typ name="_typ334">
+    <path satz="0220" teil="1" nr="22" sparte="020.1"/>
+    <value key="1">Beihilfeberechtigter</value>
+    <value key="2">Berücksichtigungsfähiger Ehegatte</value>
+    <value key="3">Berücksichtigungsfähiges Kind</value>
+    <value key="4">Versorgungsempfänger</value>
+    <value key="5">Waise / Halbwaise</value>
+    <value key="6">Freie Heilfürsorge</value>
+    <value key="BB">Brandenburg</value>
+    <value key="BDO">Bund Ost</value>
+    <value key="BDW">Bund West</value>
+    <value key="BLO">Berlin Ost</value>
+    <value key="BLW">Berlin West</value>
+    <value key="BR">Bremen</value>
+    <value key="BW">Baden-Württemberg</value>
+    <value key="BY">Bayern</value>
+    <value key="DP">Post</value>
+    <value key="HBG">Hamburg</value>
+    <value key="HES">Hessen</value>
+    <value key="KVB">Bundesbahn</value>
+    <value key="MV">Mecklenburg / Vorpommern</value>
+    <value key="NDS">Niedersachsen</value>
+    <value key="NW">Nordrhein-Westfalen</value>
+    <value key="RP">Rheinland-Pfalz</value>
+    <value key="SA">Sachsen-Anhalt</value>
+    <value key="SC">Sachsen</value>
+    <value key="SH">Schleswig-Holstein</value>
+    <value key="SL">Saarland</value>
+    <value key="SO">Sonstige</value>
+    <value key="TH">Thüringen</value>
+  </typ>
+  <typ name="_typ339">
+    <path satz="0220" teil="1" nr="28" sparte="020.3"/>
+    <value key="0">nein</value>
+    <value key="1">Übertritt aus GKV</value>
+    <value key="2">ärztliche Untersuchung</value>
+    <value key="3">Kindernachversicherung</value>
+    <value key="4">Ehegattennachversicherung</value>
+    <value key="5">Befreiungsversicherung</value>
+    <value key="9">Sonstiges</value>
+  </typ>
+  <typ name="_typ341">
+    <path satz="0220" teil="1" nr="33" sparte="020.3"/>
+    <value key="01">Arbeitslosigkeit</value>
+    <value key="02">GKV-Übertritt</value>
+    <value key="03">Freie Heilfürsorge</value>
+    <value key="04">Kleine Anwartschaft</value>
+    <value key="05">Wirtschaftliche Notlage</value>
+    <value key="06">Pflichtversicherung</value>
+    <value key="07">Soldat/Zivildienst</value>
+    <value key="08">Auslandsaufenthalt</value>
+    <value key="09">Zahlungsunfähigkeit</value>
+    <value key="99">Sonstige Gründe</value>
+  </typ>
+  <typ name="_typ344">
+    <path satz="0220" teil="1" nr="22" sparte="010.0"/>
+    <value key="01">Sozialversicherungspflichtig Beschäftigte ohne besondere Merkmale</value>
+    <value key="02">Auszubildende</value>
+    <value key="03">Beschäftigte in Altersteilzeit</value>
+    <value key="04">Praktikanten</value>
+    <value key="05">Werksstudenten</value>
+    <value key="06">Geringfügig entlohnte Beschäftigte nach § 8 Abs. 1 Nr. 1 SGB IV</value>
+    <value key="07">Kurzfristig Beschäftigte nach § 8 Abs. 1 Nr. 2 SGB IV</value>
+    <value key="08">Unständig Beschäftigte</value>
+    <value key="09">Altersvollrentner und Versorgungsbezieher wegen Alters</value>
+    <value key="10">Unterbrechung wegen Elternzeit</value>
+    <value key="11">Unterbrechung wegen gesetzlicher Dienstpflicht</value>
+    <value key="12">Beschäftigte in Mutterschutz</value>
+    <value key="13">Ausgeschieden</value>
+    <value key="14">Freigestellt</value>
+    <value key="99">Sonstige</value>
+  </typ>
+  <typ name="_typ347">
+    <path satz="0220" teil="6" nr="12" sparte="010.48"/>
+    <path satz="0220" teil="6" nr="12" sparte="010.9"/>
+    <path satz="0220" teil="6" nr="12" sparte="010.7"/>
+    <path satz="0220" teil="6" nr="12" sparte="010.13"/>
+    <path satz="0220" teil="6" nr="12" sparte="010.2"/>
+    <path satz="0220" teil="6" nr="12" sparte="010.6"/>
+    <path satz="0220" teil="9" nr="11" sparte="030"/>
+    <value key="1">Versicherungsnehmer</value>
+    <value key="2">Versicherte Person</value>
+    <value key="9">Sonstiger Bezugsberechtigter</value>
+  </typ>
+  <typ name="_typ350">
+    <path satz="0220" teil="8" nr="13" sparte="010.48"/>
+    <path satz="0220" teil="8" nr="20" sparte="010.9"/>
+    <path satz="0220" teil="8" nr="20" sparte="010.2"/>
+    <value key="0">keine Änderung bzw. nur eine Jahresrente</value>
+    <value key="1">Erhöhung der Jahresrente</value>
+    <value key="2">Reduzierung der Jahresrente</value>
+  </typ>
+  <typ name="_typ351">
+    <path satz="0220" teil="8" nr="14" sparte="010.48"/>
+    <path satz="0220" teil="7" nr="14" sparte="010.9"/>
+    <path satz="0220" teil="8" nr="14" sparte="010.9"/>
+    <path satz="0220" teil="8" nr="21" sparte="010.9"/>
+    <path satz="0220" teil="8" nr="14" sparte="010.7"/>
+    <path satz="0220" teil="8" nr="21" sparte="010.7"/>
+    <path satz="0220" teil="7" nr="14" sparte="010.13"/>
+    <path satz="0220" teil="8" nr="14" sparte="010.13"/>
+    <path satz="0220" teil="8" nr="21" sparte="010.13"/>
+    <path satz="0220" teil="7" nr="14" sparte="010.2"/>
+    <path satz="0220" teil="8" nr="14" sparte="010.2"/>
+    <path satz="0220" teil="8" nr="21" sparte="010.2"/>
+    <path satz="0220" teil="8" nr="14" sparte="010.5"/>
+    <path satz="0220" teil="8" nr="14" sparte="010.6"/>
+    <value key="000">keine Änderungen/Auszahlungen</value>
+    <value key="999">unregelmäßige Änderungen/Auszahlungen</value>
+  </typ>
+  <typ name="wertungsbasis_t">
+    <path satz="0220" teil="9" nr="14" sparte="010.48"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.48"/>
+    <path satz="0220" teil="9" nr="14" sparte="010.9"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.9"/>
+    <path satz="0220" teil="9" nr="14" sparte="010.7"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.7"/>
+    <path satz="0220" teil="9" nr="14" sparte="010.13"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.13"/>
+    <path satz="0220" teil="9" nr="14" sparte="010.2"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.2"/>
+    <path satz="0220" teil="9" nr="14" sparte="010.5"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.5"/>
+    <path satz="0220" teil="9" nr="14" sparte="010.6"/>
+    <path satz="0220" teil="9" nr="23" sparte="010.6"/>
+    <value key="1">VS</value>
+    <value key="2">Beitrag</value>
+  </typ>
+  <typ name="_typ354">
+    <path satz="0220" teil="9" nr="16" sparte="010.48"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.48"/>
+    <path satz="0220" teil="9" nr="16" sparte="010.9"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.9"/>
+    <path satz="0220" teil="9" nr="16" sparte="010.7"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.7"/>
+    <path satz="0220" teil="9" nr="16" sparte="010.13"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.13"/>
+    <path satz="0220" teil="9" nr="16" sparte="010.2"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.2"/>
+    <path satz="0220" teil="9" nr="16" sparte="010.5"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.5"/>
+    <path satz="0220" teil="9" nr="16" sparte="010.6"/>
+    <path satz="0220" teil="9" nr="25" sparte="010.6"/>
+    <value key="01">Gutschrift prov.pflichtige Wertungssumme</value>
+    <value key="02">Lastschrift prov.pflichtige Wertungssumme</value>
+    <value key="03">provisionsneutrale Buchung  (Änderung des Haftungszeitraums)</value>
+  </typ>
+  <typ name="_typ358">
+    <path satz="0220" teil="1" nr="15" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="15" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="15" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="15" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="15" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="15" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="15" sparte="010.6"/>
+    <value key="1">Grundvertrag</value>
+    <value key="2">Dynamik</value>
+    <value key="3">Grundvertrag incl. vorletzter Dynamik</value>
+    <value key="4">Grundvertrag incl. letzter Dynamik</value>
+  </typ>
+  <typ name="_typ360">
+    <path satz="0220" teil="1" nr="19" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="19" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="27" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="27" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="19" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="21" sparte="010.5"/>
+    <value key="0">Ansammlung</value>
+    <value key="1">Laufzeitverkürzung</value>
+    <value key="2">Summenerhöhung</value>
+    <value key="3">lt. Vermögensbildungsgesetz</value>
+    <value key="4">Barauszahlung</value>
+    <value key="5">Bonus Todesfall</value>
+    <value key="6">Bonus Erlebensfall</value>
+    <value key="7">Bonus Todes- und Erlebensfall</value>
+    <value key="8">Beitragsverrechnung</value>
+    <value key="9">sonstiges</value>
+    <value key="A">Bonusrente</value>
+    <value key="B">Schlußdividende</value>
+  </typ>
+  <typ name="_typ362">
+    <path satz="0220" teil="1" nr="21" sparte="010.48"/>
+    <value key="1">Berufssparte</value>
+    <value key="2">medizinisch</value>
+    <value key="9">Sonstige</value>
+  </typ>
+  <typ name="_typ363">
+    <path satz="0220" teil="1" nr="23" sparte="010.48"/>
+    <path satz="0220" teil="1" nr="24" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="32" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="32" sparte="010.13"/>
+    <path satz="0220" teil="1" nr="24" sparte="010.2"/>
+    <path satz="0220" teil="1" nr="25" sparte="010.5"/>
+    <path satz="0220" teil="1" nr="20" sparte="010.6"/>
+    <value key="1">Beitrag</value>
+    <value key="2">Versicherungssumme</value>
+  </typ>
+  <typ name="_typ366">
+    <path satz="0220" teil="1" nr="33" sparte="010.48"/>
+    <value key="0">Beitragsfreiheit bei BU</value>
+    <value key="1">Rente bei BU</value>
+    <value key="2">Einmalzahlung bei BU</value>
+  </typ>
+  <typ name="_typ371">
+    <path satz="0220" teil="6" nr="16" sparte="010.9"/>
+    <path satz="0220" teil="6" nr="16" sparte="010.7"/>
+    <path satz="0220" teil="6" nr="16" sparte="010.13"/>
+    <path satz="0220" teil="6" nr="16" sparte="010.2"/>
+    <path satz="0220" teil="6" nr="12" sparte="010.5"/>
+    <value key="1">Versicherungsnehmer</value>
+    <value key="2">gesetzliche Erbfolge</value>
+    <value key="3">Reihenfolge: Ehegatte, Kinder, Eltern, Erben</value>
+    <value key="9">Sonstiger Bezugsberechtigter</value>
+  </typ>
+  <typ name="_typ376">
+    <path satz="0220" teil="8" nr="13" sparte="010.9"/>
+    <path satz="0220" teil="8" nr="13" sparte="010.7"/>
+    <path satz="0220" teil="8" nr="13" sparte="010.13"/>
+    <path satz="0220" teil="8" nr="13" sparte="010.2"/>
+    <path satz="0220" teil="8" nr="13" sparte="010.5"/>
+    <value key="0">keine Änderung bzw. nur eine Todesfallleistung</value>
+    <value key="1">Erhöhung der Todesfallleistung</value>
+    <value key="2">Reduzierung der Todesfallleistung</value>
+  </typ>
+  <typ name="_typ394">
+    <path satz="0220" teil="1" nr="41" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="41" sparte="010.2"/>
+    <value key="1">Tod</value>
+    <value key="2">Endalter</value>
+    <value key="3">Beitragsrückgewähr</value>
+    <value key="4">Rückkauf</value>
+  </typ>
+  <typ name="_typ395">
+    <path satz="0220" teil="1" nr="42" sparte="010.9"/>
+    <path satz="0220" teil="1" nr="42" sparte="010.2"/>
+    <value key="1">lebenslänglich</value>
+    <value key="2">Wiederheirat</value>
+  </typ>
+  <typ name="_typ400">
+    <path satz="0220" teil="2" nr="16" sparte="010.9"/>
+    <path satz="0220" teil="2" nr="16" sparte="010.2"/>
+    <value key="1">vor Rentenbeginn</value>
+    <value key="2">nach Rentenbeginn</value>
+    <value key="3">vor und nach Rentenbeginn</value>
+  </typ>
+  <typ name="_typ404">
+    <path satz="0220" teil="3" nr="13" sparte="010.9"/>
+    <path satz="0220" teil="2" nr="26" sparte="010.7"/>
+    <path satz="0220" teil="2" nr="26" sparte="010.13"/>
+    <path satz="0220" teil="3" nr="12" sparte="010.2"/>
+    <value key="01">Herzinfarkt</value>
+    <value key="02">Schlaganfall</value>
+    <value key="03">Multiple Sklerose</value>
+    <value key="04">Krebs</value>
+    <value key="05">Bypass-Operation</value>
+    <value key="06">Dauerdialyse</value>
+    <value key="07">Nierentransplantation</value>
+  </typ>
+  <typ name="_typ413">
+    <path satz="0220" teil="8" nr="20" sparte="010.7"/>
+    <value key="0">keine Änderung bzw. nur eine Beitragssumme</value>
+    <value key="1">Erhöhung der Beitragssumme</value>
+    <value key="2">Reduzierung der Beitragssumme</value>
+  </typ>
+  <typ name="_typ432">
+    <path satz="0220" teil="1" nr="43" sparte="010.7"/>
+    <path satz="0220" teil="1" nr="43" sparte="010.13"/>
+    <value key="1">gestundet</value>
+    <value key="2">ausgesetzt</value>
+  </typ>
+  <typ name="_typ446">
+    <path satz="0220" teil="8" nr="20" sparte="010.13"/>
+    <value key="0">keine Änderung bzw. nur eine Erlebensfall VS</value>
+    <value key="1">Erhöhung der Erlebensfall VS</value>
+    <value key="2">Reduzierung der Erlebensfall VS</value>
+  </typ>
+  <typ name="_typ519">
+    <path satz="0220" teil="1" nr="18" sparte="010.5"/>
+    <value key="0">linear</value>
+    <value key="1">progressiv</value>
+  </typ>
+  <typ name="_typ532">
+    <path satz="0220" teil="8" nr="13" sparte="010.6"/>
+    <value key="0">keine Änderung bzw. nur eine Unfallleistung</value>
+    <value key="1">Erhöhung der Unfallleistung</value>
+    <value key="2">Reduzierung der Unfallleistung</value>
+  </typ>
+  <typ name="_typ546">
+    <path satz="0220" teil="1" nr="8" sparte="070"/>
+    <path satz="0220" teil="2" nr="8" sparte="070"/>
+    <path satz="0221" teil="1" nr="8" sparte="070"/>
+    <path satz="0221" teil="2" nr="8" sparte="070"/>
+    <value key="01">Verkehrs- und FahrzeugRechtschutz</value>
+    <value key="02">Fahrer-Rechtschutz</value>
+    <value key="03">Rechtschutz für Gewerbetreibende und freiberuflich Tätige (FirmenRechtschutz)</value>
+    <value key="04">Familien-Rechtschutz</value>
+    <value key="05">Familien- und Verkehrs-Rechtschutz</value>
+    <value key="06">Landwirtschafts- und Verkehrs-Rechtschutz</value>
+    <value key="07">Rechtschutz für Vereine</value>
+    <value key="08">Miet-Rechtschutz</value>
+    <value key="09">Vermögens-Schaden-Rechtschutz</value>
+    <value key="11">Verkehrs-Rechtschutz</value>
+    <value key="12">Fahrer-Rechtschutz</value>
+    <value key="13">Privat-Rechtschutz für Selbständige</value>
+    <value key="14">Berufs-Rechtschutz für Selbständige, Rechtschutz für Firmen und Vereine</value>
+    <value key="15">Privat- und Berufs-Rechtschutz für Nichtselbständige</value>
+    <value key="16">Privat-, Berufs-und Verkehrs-Rechtschutz für Nichtselbständige</value>
+    <value key="17">Landwirtschafts- und Verkehrs-Rechtschutz</value>
+    <value key="18">Privat-, Berufs-und Verkehrs-Rechtschutz für Selbständige</value>
+    <value key="19">Rechtschutz für Eigentümer und Mieter von Wohnungen und Grundstücken</value>
+    <value key="99">Sonstiger Rechtschutz</value>
+  </typ>
+  <typ name="_typ552">
+    <path satz="0220" teil="1" nr="28" sparte="070"/>
+    <value key="1">N</value>
+    <value key="2">C (gilt nicht im Neugeschäft)</value>
+    <value key="3">B</value>
+    <value key="4">0 (Null)</value>
+  </typ>
+  <typ name="_typ554">
+    <path satz="0220" teil="1" nr="32" sparte="070"/>
+    <path satz="0220" teil="1" nr="33" sparte="070"/>
+    <value key="01">010-160</value>
+    <value key="02">010-030</value>
+    <value key="03">399</value>
+    <value key="04">010-040</value>
+    <value key="05">010</value>
+    <value key="06">101-206</value>
+    <value key="07">101-401</value>
+    <value key="08">401-411</value>
+    <value key="09">110-390</value>
+  </typ>
+  <typ name="_typ563">
+    <path satz="0220" teil="2" nr="22" sparte="170"/>
+    <value key="01">3/71-Basiswert</value>
+    <value key="02 ">feste Summe Neuwert</value>
+    <value key="03">feste Summe Neuwert</value>
+    <value key="04">Erstrisikoversicherung</value>
+    <value key="05">VS-Summe nach allg. Vertragsbedingungen</value>
+    <value key="06">Jahreswartungsgebühr</value>
+    <value key="07">Jahresmietgebühr</value>
+    <value key="08">Pauschaldeklaration</value>
+    <value key="09">Höchsthaftungssumme</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ565">
+    <path satz="0220" teil="2" nr="24" sparte="170"/>
+    <value key="0">nein</value>
+    <value key="1">innerhalb des Versicherungsgrundstücks</value>
+    <value key="2">außerhalb des Versicherungsgrundstücks</value>
+  </typ>
+  <typ name="_typ566">
+    <path satz="0220" teil="2" nr="27" sparte="170"/>
+    <value key="1">Kalendertage</value>
+    <value key="2">Arbeitstage</value>
+  </typ>
+  <typ name="_typ579">
+    <path satz="0220" teil="1" nr="19" sparte="030"/>
+    <value key="1">Einzelunfall</value>
+    <value key="2">Gruppenunfall mit Namensnennung</value>
+    <value key="3">Gruppenunfall ohne Namensnennung</value>
+    <value key="4">Familienunfall</value>
+    <value key="5">Kinderunfall</value>
+    <value key="6">Stand. Familienunfall</value>
+    <value key="7">Stand. Einzel-Unfall</value>
+    <value key="9">sonstige</value>
+  </typ>
+  <typ name="_typ580">
+    <path satz="0220" teil="1" nr="20" sparte="030"/>
+    <value key="1">24 Stunden-Deckung</value>
+    <value key="2">nur Berufsunfall</value>
+    <value key="3">Berufsunfall mit Wegeunfall</value>
+    <value key="4">nur Wegeunfall</value>
+    <value key="5">Freizeitunfall</value>
+    <value key="9">sonstige</value>
+  </typ>
+  <typ name="_typ583">
+    <path satz="0220" teil="1" nr="29" sparte="030"/>
+    <value key="0">nein</value>
+    <value key="1">Boden</value>
+    <value key="2">Luft</value>
+    <value key="3">Luft und Boden</value>
+  </typ>
+  <typ name="_typ586">
+    <path satz="0220" teil="2" nr="13" sparte="030"/>
+    <value key="0">normal</value>
+    <value key="1">erhöht</value>
+    <value key="2">geändert</value>
+  </typ>
+  <typ name="_typ602">
+    <path satz="0220" teil="2" nr="14" sparte="140"/>
+    <value key="001">gleitender Neuwert</value>
+    <value key="002">feste Summe   (Neuwert)</value>
+    <value key="003">Zeitwert</value>
+    <value key="004">Erstrisikosumme</value>
+    <value key="005">Wertzuschlagsklausel</value>
+    <value key="006">Mehrkosten</value>
+    <value key="007">Mietkosten</value>
+    <value key="008">erzielbarer Verkaufspreis (gemeiner Wert)</value>
+    <value key="999">Sonstiges</value>
+  </typ>
+  <typ name="_typ603">
+    <path satz="0220" teil="2" nr="27" sparte="140"/>
+    <value key="01">Altes Leitungswassernetz</value>
+    <value key="02">Fußbodenheizung</value>
+    <value key="03">Schwimmbad</value>
+    <value key="04">Sprinkler</value>
+    <value key="05">Brandschutzanlagen</value>
+    <value key="06">Klimaanlagen</value>
+    <value key="07">Wärmepumpen</value>
+    <value key="08">Außenverkleidung</value>
+    <value key="09">Feuergefährdung</value>
+    <value key="10">Kosten</value>
+    <value key="11">außen angebrachte Sachen</value>
+    <value key="12">Außen - Leitungsrohre</value>
+    <value key="13">Mietverlust &gt; 12 Monate</value>
+    <value key="14">Rauchmelder</value>
+    <value key="15">Gewitterinduktion und Nutzwärmeschäden</value>
+    <value key="16">Gebäudebeschädigung nach einem Einbruch durch unbefugte Dritte</value>
+    <value key="17">Aufräumungs- und Abbruchkosten</value>
+    <value key="18">Mehrkosten infolge behördlicher Auflagen</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ606">
+    <path satz="0220" teil="2" nr="31" sparte="140"/>
+    <value key="00">nicht VGB88</value>
+    <value key="11">Flachdach EG ohne Keller</value>
+    <value key="12">Flachdach EG + OG ohne Keller</value>
+    <value key="13">DG nicht ausgebaut EG ohne Keller</value>
+    <value key="14">DG ausgebaut EG ohne Keller</value>
+    <value key="15">DG nicht ausgebaut EG + OG ohne Keller</value>
+    <value key="16">DG ausgebaut EG + OG ohne Keller</value>
+    <value key="21">Flachdach EG mit Keller</value>
+    <value key="22">Flachdach EG + OG mit Keller</value>
+    <value key="23">DG nicht ausgebaut EG mit Keller</value>
+    <value key="24">DG ausgebaut EG mit Keller</value>
+    <value key="25">DG nicht ausgebaut EG + OG mit Keller</value>
+    <value key="26">DG ausgebaut EG + OG mit Keller</value>
+    <value key="31">Flachdach EG mit Keller ausgebaut</value>
+    <value key="32">Flachdach EG + OG mit Keller ausgebaut</value>
+    <value key="33">DG nicht ausgebaut EG mit Keller ausgebaut</value>
+    <value key="34">DG ausgebaut EG mit Keller ausgebaut</value>
+    <value key="35">DG nicht ausgebaut EG + OG mit Keller ausgebaut</value>
+    <value key="36">DG ausgebaut EG + OG mit Keller ausgebaut</value>
+    <value key="99">Gebäudetyp keine Gruppe zuzuordnen</value>
+  </typ>
+  <typ name="_typ607">
+    <path satz="0220" teil="2" nr="32" sparte="140"/>
+    <value key="0">nicht VGB88</value>
+    <value key="1">Summenermittlungsbogen GDV (ehem. VdS)</value>
+    <value key="2">Schätzung durch VU-eigenen Taxator</value>
+    <value key="3">Schätzung durch sonstige Sachverständige</value>
+    <value key="9">Summe wurde von VN festgelegt</value>
+  </typ>
+  <typ name="summen_art_t">
+    <path satz="0220" teil="1" nr="11" sparte="130"/>
+    <path satz="0221" teil="1" nr="8" sparte="130"/>
+    <value key="001">Hausrat</value>
+    <value key="002">Bargeld</value>
+    <value key="003">Urkunden</value>
+    <value key="004">Sammlungen (z. B. Briefmarken)</value>
+    <value key="005">Gold / Silber / Schmucksachen / Pelze</value>
+    <value key="006">echte Teppiche /  Kunstgegenstände / Antiquitäten</value>
+    <value key="007">005 und 006 gemeinsam</value>
+    <value key="008">Wertsachen allgemein</value>
+    <value key="009">Summe für Feuer</value>
+    <value key="010">Summe für ED</value>
+    <value key="011">Summe für Beraubung</value>
+    <value key="012">Summe für LW</value>
+    <value key="013">Summe für Aquarien</value>
+    <value key="014">Summe für Sturm</value>
+    <value key="015">Summe für Fahrrad</value>
+    <value key="016">Zuschlag für Glas über 3 qm</value>
+    <value key="017">Summe für Hagel</value>
+    <value key="018">Summe für Überspannungsschäden</value>
+    <value key="019">Summe für Hotelkosten</value>
+    <value key="020">Summe für Elementarschäden</value>
+    <value key="021">Summe für Nutzfeuer</value>
+    <value key="022">Rückstau</value>
+    <value key="023">Reisegepäck</value>
+    <value key="024">Elektronik</value>
+    <value key="999">Sonstiges</value>
+  </typ>
+  <typ name="summenanpassung_t">
+    <path satz="0220" teil="1" nr="20" sparte="130"/>
+    <path satz="0220" teil="1" nr="23" sparte="130"/>
+    <value key="0">keine</value>
+    <value key="1">gleitend gem. Preisindex VHB</value>
+    <value key="2">fest</value>
+    <value key="3">gleitend und fest</value>
+    <value key="4">individuell</value>
+  </typ>
+  <typ name="_typ615">
+    <path satz="0220" teil="1" nr="9" sparte="510"/>
+    <path satz="0221" teil="1" nr="9" sparte="510"/>
+    <value key="002">Leichtkrafträder</value>
+    <value key="003">Krafträder</value>
+    <value key="112">PKW-Eigenverwendung</value>
+    <value key="113">Flottengeschäft</value>
+    <value key="114">Familienversicherung</value>
+    <value key="127">sonstige Kraftfahrzeuge/Wohnmobile</value>
+  </typ>
+  <typ name="_typ664">
+    <path satz="0250" teil="1" nr="13" sparte="190"/>
+    <value key="01">Anmeldung vor Risikobeginn</value>
+    <value key="02">Anmeldung wöchentlich</value>
+    <value key="03">Anmeldung monatlich</value>
+    <value key="04">Anmeldung vierteljährlich</value>
+    <value key="05">Anmeldung halbjährlich</value>
+    <value key="06">Anmeldung jährlich</value>
+  </typ>
+  <typ name="_typ665">
+    <path satz="0250" teil="1" nr="17" sparte="190"/>
+    <value key="01">Gewerbl. LKW-Verkehr, nicht WVK</value>
+    <value key="02">Bahn</value>
+    <value key="03">Combined Transport,   Kein Spediteursammelgut</value>
+    <value key="04">Messe, Ausstellung</value>
+    <value key="05">Flußschiff, Lagerschiff, Leichter</value>
+    <value key="06">PKW, private Verkehrsmittel</value>
+    <value key="07">Kran und alle Hebevorgänge</value>
+    <value key="08">Flugzeuge</value>
+    <value key="09">Magazin, fremdes Lager</value>
+    <value key="10">Post</value>
+    <value key="11">Seeschiff, auch Kümo</value>
+    <value key="12">Träger, Bote, Mensch</value>
+    <value key="99">Sonstige</value>
+  </typ>
+  <typ name="_typ674">
+    <path satz="0260" teil="1" nr="11" sparte="190"/>
+    <value key="01">Versendungen</value>
+    <value key="02">Bezüge</value>
+    <value key="03">Versendungen und Bezüge</value>
+    <value key="04">Zwischentransporte</value>
+  </typ>
+  <typ name="_typ680">
+    <path satz="0270" teil="1" nr="16" sparte="550"/>
+    <path satz="0280" teil="1" nr="23" sparte="550"/>
+    <value key="1001">Neuanlage / Einzahlung</value>
+    <value key="1002">Folgeeinzahlung</value>
+    <value key="1003">Kontoübertragung (Zugang)</value>
+    <value key="1004">Anlage aus Fondswechsel aus Überlauf</value>
+    <value key="1005">Anlage aus Fondswechsel aus Änderung durch Portefeuillestruktur</value>
+    <value key="1006">Anlage aus Fondswechsel aus Änderung Portefeuille</value>
+    <value key="2001">Auszahlung</value>
+    <value key="2002">Kontoübertragung (Abgang)</value>
+    <value key="2003">Verkauf aus Fondswechsel aus Überlauf</value>
+    <value key="2004">Verkauf aus Fondswechsel aus Änderung durch Portefeuillestruktur</value>
+    <value key="2005">Verkauf aus Fondswechsel aus Änderung Portefeuille</value>
+    <value key="3001">Wiederanlage aus Ausschüttung</value>
+    <value key="3002">Wiederanlage aus Zinsabschlag</value>
+    <value key="3003">Wiederanlage aus Körperschaftssteuergutschrift</value>
+    <value key="4001">Gebühren für Konto-Depotführung</value>
+    <value key="4002">Gebühren für Vermögensberatung</value>
+    <value key="4003">Gebühren für Fondswechsel</value>
+    <value key="4004">Gebühren durch Portefeuillewechsel</value>
+    <value key="7001">aus Ausgabeaufschlag</value>
+    <value key="7002">aus Beratungsgebühren (Bestand)</value>
+    <value key="7003">aus Zinsen (bei Geldmarktfonds)</value>
+    <value key="7004">aus Ausgabeaufschlag (Fondswechsel)</value>
+  </typ>
+  <typ name="_typ681">
+    <path satz="0270" teil="1" nr="18" sparte="550"/>
+    <path satz="0270" teil="1" nr="23" sparte="550"/>
+    <path satz="0270" teil="1" nr="27" sparte="550"/>
+    <path satz="0270" teil="2" nr="15" sparte="550"/>
+    <path satz="0270" teil="2" nr="18" sparte="550"/>
+    <path satz="0270" teil="2" nr="21" sparte="550"/>
+    <path satz="0270" teil="2" nr="24" sparte="550"/>
+    <value key="+">positiv = Einzahlung</value>
+    <value key="-">negativ = Ausschüttung</value>
+  </typ>
+  <typ name="_typ683">
+    <path satz="0270" teil="1" nr="21" sparte="550"/>
+    <path satz="0295" teil="1" nr="15" sparte="550"/>
+    <value key="D">Divisor</value>
+    <value key="M">Multiplikator</value>
+  </typ>
+  <typ name="_typ707">
+    <path satz="0292" teil="1" nr="14" sparte="550"/>
+    <path satz="0292" teil="1" nr="15" sparte="550"/>
+    <value key="01">Aktien Deutschland</value>
+    <value key="02">Renten</value>
+    <value key="03">Geldmarkt Deutschland</value>
+    <value key="04">Offener Immobilienfonds Deutschland</value>
+    <value key="05">Gemischte Fonds Deutschland</value>
+    <value key="06">Geschlossene Immobilienfonds</value>
+    <value key="07">Sonstige Wertpapierfonds</value>
+    <value key="08">AS-Fonds</value>
+    <value key="09">Dachfonds</value>
+    <value key="11">Aktien International</value>
+    <value key="12">Renten International</value>
+    <value key="13">Geldmarkt International</value>
+    <value key="14">Offener Immobilienfonds International</value>
+    <value key="15">Gemischte Fonds International</value>
+    <value key="16">Gemischte Fonds mit Immobilien-/Immobilienanteil</value>
+    <value key="17">Garantiefonds mit aktienähnlichem Profil</value>
+    <value key="18">Garantiefonds mit rentenähnlichem Profil</value>
+    <value key="21">Aktien Deutschland</value>
+    <value key="22">Aktien Europa</value>
+    <value key="23">Aktien Amerika</value>
+    <value key="24">Aktien Japan</value>
+    <value key="25">Aktien Pazifik</value>
+    <value key="26">Aktien International</value>
+    <value key="31">Renten Deutschland</value>
+    <value key="32">Renten Europa</value>
+    <value key="33">Renten International</value>
+    <value key="41">Geldmarkt Deutschland</value>
+    <value key="42">Geldmarkt International</value>
+    <value key="51">Offener Immobilienfonds Deutschland</value>
+    <value key="52">Offener Immobilienfonds International</value>
+    <value key="53">Geschlossene Immobilienfonds</value>
+    <value key="54">Gemischte Fonds Deutschland</value>
+    <value key="55">Gemischte Fonds Europa</value>
+    <value key="56">Gemischte Fonds International</value>
+    <value key="57">Gemischte Fonds mit Immobilien-/Immobilienanteil</value>
+    <value key="58">Garantiefonds mit aktienähnlichem Profil</value>
+    <value key="59">Garantiefonds mit rentenähnlichem Profil</value>
+    <value key="60">Sonstige Wertpapierfonds</value>
+    <value key="61">AS-Fonds</value>
+    <value key="62">Dachfonds</value>
+  </typ>
+  <typ name="_typ728">
+    <path satz="0352" teil="1" nr="11" sparte=""/>
+    <value key="1">Ablauf mit Vorlage der Police</value>
+    <value key="2">Ablauf gemäß Feld &quot;Ablauf der Vorläufigen Deckung&quot;</value>
+  </typ>
+  <typ name="_typ729">
+    <path satz="0352" teil="1" nr="13" sparte=""/>
+    <value key="01">durch VM erteilt</value>
+    <value key="02">bei VU angefordert</value>
+    <value key="03">durch VU ohne Änderung erteilt</value>
+    <value key="04">durch VU mit Änderung erteilt</value>
+    <value key="05">durch VU abgelehnt</value>
+  </typ>
+  <typ name="_typ736">
+    <path satz="0372" teil="1" nr="14" sparte=""/>
+    <value key="0100">lfd. Personennummer im GeVo</value>
+    <value key="0200">leer</value>
+    <value key="0210">Referenznummer</value>
+    <value key="0372">Lfd. Nr. produktspezifische Daten im GeVo</value>
+  </typ>
+  <typ name="_typ740">
+    <path satz="0400" teil="1" nr="9" sparte=""/>
+    <value key="10">Police</value>
+    <value key="11">Storno Police</value>
+    <value key="20">Nachtrag</value>
+    <value key="21">Storno Nachtrag</value>
+    <value key="22">Nachtrag, Minimalbeitrag ohne Verrechnung</value>
+    <value key="30">Folge</value>
+    <value key="31">Storno Folge</value>
+    <value key="40">Provision</value>
+    <value key="41">Storno Provision</value>
+    <value key="50">Techn. Überschuss</value>
+    <value key="51">Storno Techn. Überschuss</value>
+    <value key="60">Gewinnbeteiligung / -abrechnung</value>
+    <value key="61">Storno Gewinnbeteiligung / - abrechnung</value>
+    <value key="65">Einzelanmeldung</value>
+    <value key="66">Storno Einzelanmeldung</value>
+    <value key="70">Umsatzanmeldung</value>
+    <value key="71">Storno Umsatzanmeldung</value>
+    <value key="75">Umsatz- / Einzelanmeldung</value>
+    <value key="76">Storno Umsatz- / Einzelanmeldung</value>
+    <value key="80">Prämienrechnung</value>
+    <value key="81">Storno Prämienrechnung</value>
+    <value key="82">Anzahlungsrechnung</value>
+    <value key="83">Storno Anzahlungsrechnung</value>
+    <value key="84">Schlußrechnung</value>
+    <value key="85">Storno Schlußrechnung</value>
+    <value key="86">Jahresrückvergütung</value>
+    <value key="87">Storno Jahresrückvergütung</value>
+    <value key="88">Nebenleistungen</value>
+    <value key="89">Storno Nebenleistungen</value>
+    <value key="90">Manuelle Provisionskorrektur</value>
+    <value key="91">Storno manuelle Provisionskorrektur</value>
+  </typ>
+  <typ name="_typ742">
+    <path satz="0400" teil="1" nr="17" sparte=""/>
+    <value key="01">Rechnungssperre</value>
+    <value key="02">Mahnungssperre</value>
+    <value key="03">Rechnungs- und Mahnungssperre</value>
+  </typ>
+  <typ name="_typ750">
+    <path satz="0400" teil="1" nr="32" sparte=""/>
+    <value key="10 ">Ausgleich</value>
+    <value key="11">Teilzahlung</value>
+    <value key="20">Änderung Vermittler Beitrag - Provision</value>
+    <value key="21">Änderung Provision</value>
+    <value key="22">Änderung Vermittler Steuer</value>
+    <value key="23">Änderung Vermittler Sonstige</value>
+    <value key="30">Normales Sorno</value>
+    <value key="31">Mahn-Storno</value>
+    <value key="40">Sollstellung durch Vermittler</value>
+  </typ>
+  <typ name="_typ762">
+    <path satz="0410" teil="1" nr="20" sparte=""/>
+    <path satz="0410" teil="1" nr="26" sparte=""/>
+    <path satz="0410" teil="1" nr="32" sparte=""/>
+    <value key="1">Abschluss (Bei Kredit: Neuprovision)</value>
+    <value key="2">Inkasso</value>
+    <value key="3">Verlängerung / Kündigungsrücknahme</value>
+    <value key="4">Führungsprovision</value>
+    <value key="5">sonstige Provision</value>
+    <value key="6">Courtage</value>
+    <value key="7">Bestandspflege (Bei Kredit: Folgeprovision)</value>
+  </typ>
+  <typ name="_typ779">
+    <path satz="0420" teil="1" nr="18" sparte=""/>
+    <path satz="0420" teil="1" nr="28" sparte=""/>
+    <path satz="0420" teil="1" nr="38" sparte=""/>
+    <value key="1">VU</value>
+    <value key="2">Vermittler</value>
+    <value key="3">VN</value>
+  </typ>
+  <typ name="_typ789">
+    <path satz="0430" teil="1" nr="8" sparte=""/>
+    <path satz="0430" teil="1" nr="10" sparte=""/>
+    <path satz="0430" teil="1" nr="12" sparte=""/>
+    <path satz="0430" teil="1" nr="14" sparte=""/>
+    <value key="1">Veränderung</value>
+    <value key="2">Werbung</value>
+    <value key="3">Information</value>
+    <value key="4">Textvortsetzung</value>
+  </typ>
+  <typ name="_typ797">
+    <path satz="0450" teil="1" nr="22" sparte=""/>
+    <path satz="0450" teil="1" nr="28" sparte=""/>
+    <value key="2">Inkassoprovision</value>
+    <value key="6">Courtage</value>
+  </typ>
+  <typ name="_typ805">
+    <path satz="0500" teil="1" nr="11" sparte=""/>
+    <value key="1">Erstlieferung</value>
+    <value key="2">Kumulierte Lieferung</value>
+    <value key="3">Einzellieferung</value>
+  </typ>
+  <typ name="_typ806">
+    <path satz="0500" teil="1" nr="14" sparte=""/>
+    <value key="1">Alleinbesitzend</value>
+    <value key="2">Führungsgeschäft</value>
+    <value key="3">Beteiligung entfällt, da nur vom Führenden geliefert wird</value>
+  </typ>
+  <typ name="_typ807">
+    <path satz="0500" teil="1" nr="21" sparte=""/>
+    <value key="1">VU</value>
+    <value key="2">Vermittler</value>
+  </typ>
+  <typ name="_typ808">
+    <path satz="0500" teil="1" nr="22" sparte=""/>
+    <value key="01">VN</value>
+    <value key="02">Anspruchsteller / Bezugsberechtigter</value>
+    <value key="03">Abtretung</value>
+    <value key="04">Vermittler</value>
+    <value key="05">Versicherungsunternehmen</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ810">
+    <path satz="0500" teil="1" nr="24" sparte=""/>
+    <value key="01">Versicherungsleistung</value>
+    <value key="02">Zinsen</value>
+    <value key="03">Rentenzahlung</value>
+    <value key="04">Regreß</value>
+    <value key="05">Rückzahlung aus Kfz-Schaden</value>
+    <value key="06">Verkaufserlös</value>
+    <value key="07">Kulanzzahlung</value>
+    <value key="99">Sonstiges</value>
+  </typ>
+  <typ name="_typ815">
+    <path satz="0500" teil="1" nr="32" sparte=""/>
+    <value key="0">nein</value>
+    <value key="1">nicht vertragsbelastend z. B.: SFR (KFZ)</value>
+    <value key="2">vertragsbelastend z. B.: SFR (KFZ)</value>
+  </typ>
+  <typ name="_typ816">
+    <path satz="0500" teil="1" nr="33" sparte=""/>
+    <value key="0">nein</value>
+    <value key="1">Ja</value>
+    <value key="2">Doppelanlage, irrtümlich angelegter Schaden</value>
+  </typ>
+  <typ name="_typ818">
+    <path satz="0500" teil="1" nr="37" sparte=""/>
+    <value key="0">nein</value>
+    <value key="1">ja</value>
+    <value key="2">wiedereröffneter Schaden</value>
+  </typ>
+  <typ name="_typ823">
+    <path satz="0550" teil="1" nr="25" sparte=""/>
+    <value key="01">Versicherungsleistung</value>
+    <value key="02">Zinsen</value>
+    <value key="03">Rentenzahlung</value>
+    <value key="04">Rückzahlung aus KFZ-Schaden</value>
+    <value key="05">Verkaufserlös</value>
+    <value key="06">Kulanzzahlung</value>
+    <value key="07">Externe Schadenbearbeitungskosten  z. B. Sachverständigenkosten</value>
+    <value key="99">Sonstige</value>
+  </typ>
+  <typ name="_typ828">
+    <path satz="0600" teil="1" nr="18" sparte=""/>
+    <value key="0">GDV</value>
+    <value key="1">produktspezifisches Datenfeld</value>
+  </typ>
+  <typ name="_typ829">
+    <path satz="0600" teil="1" nr="25" sparte=""/>
+    <value key="0">Kann (optional)</value>
+    <value key="1">Muss (required)</value>
+  </typ>
+</types>
