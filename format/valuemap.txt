@@ -3,7 +3,7 @@ V@1@VU
 V@2@Vermittler
 V@3@VU (Nicht GDV-Schlüssel)
 V@9@Sonstige (z. B. Clearingstelle, Firmenvermittler)
-T@_typ1
+T@absender_art_t
 P@0052@1@4@
 P@0100@1@4@
 P@0100@2@4@
@@ -235,7 +235,7 @@ V@580@Bausparkassen
 V@600@Moped 2.
 V@630@Rahmen- und Sammelverträge
 V@650@Handel und Handwerk 2.
-T@_typ2
+T@sparte_t
 P@0052@1@8@
 V@001@Antrag
 V@002@Eingangsbestätigung
@@ -244,12 +244,12 @@ V@004@Ablehnung
 V@005@Nachfrage
 V@006@Antwort auf Nachfrage
 V@007@Dokument erstellt
-T@_typ3
+T@gevo_t
 P@0052@1@17@
 V@01@Maklerauftrag
 V@02@Unterschrift liegt vor
 V@03@Digitale Signatur
-T@_typ4
+T@autorisierung_t
 P@0052@1@18@
 P@0100@1@23@
 P@0200@1@24@
@@ -439,7 +439,7 @@ P@0500@1@34@
 P@0550@1@32@
 V@0@nein
 V@1@ja
-T@_typ5
+T@boolean
 P@0100@1@8@
 V@0@(ohne Anrede)
 V@1@Herr
@@ -447,7 +447,7 @@ V@2@Frau
 V@3@Firma
 V@4@Herr und Frau
 V@5@Fräulein
-T@_typ7
+T@anrede_t
 P@0100@1@13@
 P@0210@1@13@130
 P@0220@1@12@080
@@ -620,7 +620,7 @@ V@YV@Venezuela
 V@Z@Sambia
 V@ZA@Südafrika
 V@ZW@Simbabwe
-T@_typ8
+T@laenderkennz_t
 P@0100@1@20@
 V@01@Versicherungsnehmer
 V@02@Sicherungsgläubiger
@@ -757,13 +757,13 @@ V@Z8@Zahlungsempfänger für Kostenpauschale
 V@Z9@Zahlungsempfänger für Mietwagenkosten
 V@ZA@Zahlungsempfänger für Sachverständigenkosten
 V@ZB@Auftraggeber für Gutachten
-T@_typ9
+T@address_kennz_t
 P@0100@1@22@
 V@01@Beamte
 V@02@Landwirte
 V@03@Ärzte
 V@99@Sonstige
-T@_typ10
+T@zielgruppe_t
 P@0100@1@25@
 P@0220@1@18@020.1
 P@0220@1@14@010.0
@@ -773,7 +773,7 @@ P@0220@1@15@030
 V@0@juristische Person
 V@1@männlich
 V@2@weiblich
-T@_typ12
+T@geschlecht_t
 P@0100@2@14@
 P@0100@2@16@
 P@0100@2@18@
@@ -790,7 +790,7 @@ V@42@Telefax Geschäftlich
 V@50@E-Mail
 V@51@E-Mail Privat
 V@52@E-Mail Geschäftlich
-T@_typ14
+T@kommtyp_t
 P@0100@2@22@
 V@1@Lastschrift
 V@2@Rechnung
@@ -798,7 +798,7 @@ V@3@Dauerauftrag
 V@4@Depot
 V@5@Gehaltsabzug
 V@9@sonstige
-T@_typ18
+T@zahlungsart_t
 P@0100@2@23@
 V@1@ledig
 V@2@verheiratet
@@ -806,7 +806,7 @@ V@3@geschieden
 V@4@verwitwet
 V@5@getrennt lebend
 V@9@sonstiges
-T@_typ19
+T@fam_stand_t
 P@0100@3@14@
 V@01@natürliche Person
 V@02@Gesellschaft des Bürgerlichen Rechts GdBR
@@ -822,13 +822,13 @@ V@11@Verein nach BGB
 V@12@eG
 V@13@Ges. d. öff. Rechts
 V@99@Sonstiges
-T@_typ24
+T@rechtsform_t
 P@0100@4@10@
 P@0100@4@11@
 V@01@Prämienzahlungskonto
 V@02@Schadenzahlungskonto
 V@03@ohne Spezifikation
-T@_typ26
+T@bankverb_t
 P@0102@1@11@
 P@0220@1@18@030
 V@A@Gefahrengruppe A
@@ -843,12 +843,12 @@ V@04@Kind
 V@05@Mitarbeiter
 V@06@Tochterunternehmen
 V@99@Sonstiges
-T@_typ30
+T@bezug_vn_t
 P@0200@1@8@
 P@0400@1@8@
 V@1@Vermittlerinkasso
 V@2@Zentralinkasso, Direktes Inkasso
-T@_typ32
+T@inkasso_t
 P@0200@1@12@
 P@0210@1@33@580
 P@0210@1@29@010
@@ -866,7 +866,7 @@ V@5@Sonstiges
 V@6@Einmalbetrag
 V@8@monatlich
 V@9@beitragsfrei
-T@_typ33
+T@zahlungsweise_t
 P@0200@1@13@
 P@0210@1@11@000
 P@0210@1@9@080
@@ -899,7 +899,7 @@ V@6@beitragsfrei
 V@7@beitragsfrei durch Leistung
 V@8@Beitragsstundung
 V@9@Sonstiges
-T@_typ34
+T@vertragsstatus_t
 P@0200@1@14@
 P@0220@1@34@020.2
 P@0362@1@13@
@@ -936,7 +936,7 @@ V@30@Agentur und/oder Geschäftsstellenwechsel
 V@31@Rücktritt (z. B. Verletzung der vorvertraglichen Anzeigepflicht / Anfechtung)
 V@32@Abgang nach Tarifwechsel
 V@99@sonstige Stornogründe
-T@_typ35
+T@abgangsgrund_t
 P@0200@1@18@
 P@0550@1@26@
 V@1@Alleinbesitzend
@@ -1180,7 +1180,7 @@ V@YUN@Yugoslav Dinar
 V@ZAR@South African Rand
 V@ZMK@Zambian Kwacha
 V@ZWD@Zimbabwe Dollar
-T@_typ37
+T@waehrung_t
 P@0200@1@33@
 V@1@alte Vers.scheinnr.
 V@2@neue Vers.scheinnr.
@@ -1248,7 +1248,7 @@ P@9999@1@10@
 P@9999@1@12@
 V@+@Positiv
 V@-@Negativ
-T@_typ59
+T@sign_t
 P@0210@1@30@580
 V@V@Vorausdarlehen
 V@Z@Zwischenkredit
@@ -1298,7 +1298,7 @@ V@B@sonstige Sach- und Vermögensschäden (pauschal)
 V@C@Personenschäden und sonstige Schäden (pauschal)
 V@D@unbegrenzt (nur für Gabelstapler nach AKB)
 V@Z@Sonstiges
-T@_typ87
+T@summenart_t
 P@0210@1@24@040
 P@0220@1@28@040
 V@0@keine
@@ -1317,7 +1317,7 @@ V@C@1,75-fach
 V@D@2,25-fach
 V@E@2,5-fach
 V@F@2,75-fach
-T@_typ92
+T@jahres_maximierung_t
 P@0210@1@12@550
 P@0210@1@8@010
 V@1@Neuantrag
@@ -1579,7 +1579,7 @@ V@33@Änderung des Bezugsrechts
 V@34@Folgerechnung
 V@35@Hauptfälligkeitsrechnung
 V@99@sonstige Änderung
-T@_typ141
+T@aenderungsgrund_t
 P@0210@2@8@010
 V@1@Direktversicherung
 V@2@Direktversicherung mit Gehaltsumwandlung
@@ -1715,12 +1715,12 @@ V@5@Bauartklasse V
 V@6@Fertighausgruppe 1
 V@7@Fertighausgruppe 2
 V@8@Fertighausgruppe 3
-T@_typ212
+T@bauartklasse_t
 P@0210@1@31@130
 V@0@nein
 V@1@ja
 V@2@ja (temporär)
-T@_typ213
+T@gefahrenerhoehung_t
 P@0220@1@9@580.2
 P@0220@1@9@580.01
 P@0220@2@9@580.01
@@ -1945,7 +1945,7 @@ V@5@Menge ist in 10000 angegeben. Ergänzung der Menge mit 0.000
 V@6@Menge ist in 100000 angegeben. Ergänzung der Menge mit 00.000
 V@7@Menge ist in Millionen angegeben. Ergänzung der Menge mit .000.000
 V@8@Menge ist in 10 angegeben. Ergänzung der Menge mit .000.000.000
-T@_typ277
+T@mengen_schluessel_t
 P@0220@1@12@051
 V@11@Unbegrenzte Deckung
 V@13@5.000.000 / 1.000.000 / 100.000, Mindestdeckungssummen 2.500.000 / 500.000 / 50.000 in Euro (umgerechnet)
@@ -2135,7 +2135,7 @@ P@0220@9@14@010.6
 P@0220@9@23@010.6
 V@1@VS
 V@2@Beitrag
-T@_typ353
+T@wertungsbasis_t
 P@0220@9@16@010.48
 P@0220@9@25@010.48
 P@0220@9@16@010.9
@@ -2458,7 +2458,7 @@ V@022@Rückstau
 V@023@Reisegepäck
 V@024@Elektronik
 V@999@Sonstiges
-T@_typ609
+T@summen_art_t
 P@0220@1@20@130
 P@0220@1@23@130
 V@0@keine
@@ -2466,7 +2466,7 @@ V@1@gleitend gem. Preisindex VHB
 V@2@fest
 V@3@gleitend und fest
 V@4@individuell
-T@_typ610
+T@summenanpassung_t
 P@0220@1@9@510
 P@0221@1@9@510
 V@002@Leichtkrafträder
