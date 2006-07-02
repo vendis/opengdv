@@ -19,7 +19,8 @@
         <xsl:when test="$tname = 'Buendelungskennzeichen'">
           <xsl:attribute name="name">bkz</xsl:attribute>
         </xsl:when>
-        <xsl:when test="$fname = 'Sparte'">
+        <!-- Bausparen creatively calls 'Sparte' 'Produkt' -->
+        <xsl:when test="$fname = 'Sparte' or $fname = 'Produkt'">
           <xsl:attribute name="name">sparte</xsl:attribute>
         </xsl:when>
         <xsl:when test="$fname = 'Versicherungsschein-Nummer'">
@@ -51,12 +52,12 @@
         <xsl:choose>
           <xsl:when test="$tname = 'Vorzeichen'">sign</xsl:when>
           <xsl:when test="$tname = 'VorzeichenKontostand'">sign</xsl:when>
-          <xsl:when test="$fname = 'Sparte' and $sparte != ''">const</xsl:when>
+          <xsl:when test="($fname = 'Sparte' or $fname = 'Produkt') and $sparte != ''">const</xsl:when>
           <xsl:when test="$fname = 'Sparte'">string</xsl:when>
           <xsl:when test="$fname = 'Leerstellen'">space</xsl:when>
           <xsl:when test="$fname = 'Satzart'">const</xsl:when>
           <xsl:when test="$fname = 'Satznummer'">const</xsl:when>
-          <xsl:when test="$tname = 'Wagnisart'">const</xsl:when>
+          <xsl:when test="$tname = 'Wagnisart'">string</xsl:when>
           <xsl:when test="$typ = 'Alphanumerisch'">string</xsl:when>
           <xsl:when test="$typ = 'Datum'">date</xsl:when>
           <xsl:when test="$typ = 'Flie&#223;komma'">float</xsl:when>
@@ -72,7 +73,11 @@
         <xsl:when test="$fname = 'Satznummer'">
           <xsl:attribute name="value"><xsl:value-of select="ancestor::Teilsatz/@Nummer"/></xsl:attribute>
         </xsl:when>
+        <!-- Special treatment for creative values in the orginal XML -->
+        <xsl:when test="$fname = 'Sparte' and ($sparte = '020.2' or $sparte = '020.1' or $sparte = '020.3')"><xsl:attribute name="value">020</xsl:attribute></xsl:when>
+        <xsl:when test="$fname = 'Sparte' and ($sparte = '010.0' or $sparte = '010.48' or $sparte = '010.9' or $sparte = '010.7' or $sparte = '010.13' or $sparte = '010.2' or $sparte = '010.5' or $sparte = '010.6')"><xsl:attribute name="value">010</xsl:attribute></xsl:when>
         <xsl:when test="$fname = 'Sparte' and $sparte != ''"><xsl:attribute name="value"><xsl:value-of select="$sparte"/></xsl:attribute></xsl:when>
+        <xsl:when test="$fname = 'Produkt' and ($sparte = '580' or $sparte = '580.01' or $sparte = '580.2')"><xsl:attribute name="value">580</xsl:attribute></xsl:when>
       </xsl:choose>
       <xsl:if test="Nachkomma != ''"><xsl:attribute name="frac"><xsl:value-of select="Nachkomma"/></xsl:attribute></xsl:if>
       <label><xsl:value-of select="Name"/></label>

@@ -69,9 +69,9 @@
     <path satz="0220" teil="2" nr="4" sparte="059"/>
     <path satz="0220" teil="1" nr="4" sparte="054"/>
     <path satz="0220" teil="2" nr="4" sparte="054"/>
-    <path satz="0220" teil="1" nr="4" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="4" sparte="020.2"/>
     <path satz="0220" teil="1" nr="4" sparte="020.1"/>
-    <path satz="0220" teil="1" nr="4" sparte="020.3"/>
+    <path satz="0220" teil="3" nr="4" sparte="020.3"/>
     <path satz="0220" teil="1" nr="4" sparte="010.0"/>
     <path satz="0220" teil="6" nr="4" sparte="010.48"/>
     <path satz="0220" teil="8" nr="4" sparte="010.48"/>
@@ -357,10 +357,10 @@
     <path satz="0220" teil="1" nr="35" sparte="052"/>
     <path satz="0220" teil="1" nr="15" sparte="059"/>
     <path satz="0220" teil="1" nr="33" sparte="054"/>
-    <path satz="0220" teil="1" nr="21" sparte="020.2"/>
-    <path satz="0220" teil="1" nr="37" sparte="020.2"/>
-    <path satz="0220" teil="1" nr="39" sparte="020.2"/>
-    <path satz="0220" teil="1" nr="27" sparte="020.3"/>
+    <path satz="0220" teil="2" nr="21" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="37" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="39" sparte="020.2"/>
+    <path satz="0220" teil="3" nr="27" sparte="020.3"/>
     <path satz="0220" teil="1" nr="26" sparte="010.0"/>
     <path satz="0220" teil="6" nr="15" sparte="010.48"/>
     <path satz="0220" teil="1" nr="20" sparte="010.48"/>
@@ -901,7 +901,7 @@
     <path satz="0210" teil="1" nr="8" sparte="140"/>
     <path satz="0210" teil="1" nr="8" sparte="130"/>
     <path satz="0210" teil="1" nr="8" sparte="510"/>
-    <path satz="0220" teil="1" nr="12" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="12" sparte="020.2"/>
     <path satz="0220" teil="1" nr="12" sparte="020.1"/>
     <path satz="0220" teil="1" nr="18" sparte="010.48"/>
     <path satz="0220" teil="1" nr="18" sparte="010.9"/>
@@ -924,7 +924,7 @@
   </typ>
   <typ name="abgangsgrund_t">
     <path satz="0200" teil="1" nr="14" sparte=""/>
-    <path satz="0220" teil="1" nr="34" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="34" sparte="020.2"/>
     <path satz="0362" teil="1" nr="13" sparte=""/>
     <value key="01">Kündigung VN zum Ablauf</value>
     <value key="02">Kündigung VN im Schadenfall / allgemeine Differenzen</value>
@@ -1004,9 +1004,9 @@
     <path satz="0220" teil="1" nr="27" sparte="550"/>
     <path satz="0220" teil="1" nr="15" sparte="055"/>
     <path satz="0220" teil="1" nr="21" sparte="055"/>
-    <path satz="0220" teil="1" nr="28" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="28" sparte="020.2"/>
     <path satz="0220" teil="1" nr="26" sparte="020.1"/>
-    <path satz="0220" teil="1" nr="29" sparte="020.3"/>
+    <path satz="0220" teil="3" nr="29" sparte="020.3"/>
     <path satz="0220" teil="1" nr="18" sparte="070"/>
     <path satz="0220" teil="2" nr="11" sparte="190"/>
     <path satz="0220" teil="2" nr="14" sparte="190"/>
@@ -1556,9 +1556,9 @@
   </typ>
   <typ name="_typ123">
     <path satz="0210" teil="1" nr="8" sparte="020"/>
-    <path satz="0220" teil="1" nr="11" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="11" sparte="020.2"/>
     <path satz="0220" teil="1" nr="11" sparte="020.1"/>
-    <path satz="0220" teil="1" nr="11" sparte="020.3"/>
+    <path satz="0220" teil="3" nr="11" sparte="020.3"/>
     <value key="0">Einzel</value>
     <value key="1">Firmengruppen</value>
     <value key="2">Vereinsgruppen</value>
@@ -1591,7 +1591,7 @@
   <typ name="aenderungsgrund_t">
     <path satz="0210" teil="1" nr="31" sparte="010"/>
     <path satz="0220" teil="1" nr="24" sparte="550"/>
-    <path satz="0220" teil="1" nr="25" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="25" sparte="020.2"/>
     <path satz="0291" teil="1" nr="16" sparte="550"/>
     <path satz="0292" teil="1" nr="22" sparte="550"/>
     <value key="00">Bei Erstausstattung (Stichtagsbestand, Bestandsübernahme)</value>
@@ -2093,7 +2093,7 @@
     <value key="1">mit</value>
   </typ>
   <typ name="_typ322">
-    <path satz="0220" teil="1" nr="17" sparte="020.2"/>
+    <path satz="0220" teil="2" nr="17" sparte="020.2"/>
     <value key="0">einmalig</value>
     <value key="1">dauerhaft</value>
     <value key="2">dauerhaft mit Widerruf</value>
@@ -2138,7 +2138,7 @@
     <value key="TH">Thüringen</value>
   </typ>
   <typ name="_typ339">
-    <path satz="0220" teil="1" nr="28" sparte="020.3"/>
+    <path satz="0220" teil="3" nr="28" sparte="020.3"/>
     <value key="0">nein</value>
     <value key="1">Übertritt aus GKV</value>
     <value key="2">ärztliche Untersuchung</value>
@@ -2148,7 +2148,7 @@
     <value key="9">Sonstiges</value>
   </typ>
   <typ name="_typ341">
-    <path satz="0220" teil="1" nr="33" sparte="020.3"/>
+    <path satz="0220" teil="3" nr="33" sparte="020.3"/>
     <value key="01">Arbeitslosigkeit</value>
     <value key="02">GKV-Übertritt</value>
     <value key="03">Freie Heilfürsorge</value>

@@ -1085,7 +1085,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" pos="11" len="3" type="number">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="580">
         <label>Produkt</label>
       </feld>
       <feld nr="5" pos="14" len="17" type="string">
@@ -1213,7 +1213,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" pos="11" len="3" type="number">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="580">
         <label>Produkt</label>
       </feld>
       <feld nr="5" pos="14" len="17" type="string">
@@ -3732,7 +3732,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" pos="11" len="3" type="number">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="580">
         <label>Produkt</label>
       </feld>
       <feld nr="5" pos="14" len="17" type="string">
@@ -3823,7 +3823,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" pos="11" len="3" type="number">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="580">
         <label>Produkt</label>
       </feld>
       <feld nr="5" pos="14" len="17" type="string">
@@ -3936,7 +3936,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" pos="11" len="3" type="number">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="580">
         <label>Produkt</label>
       </feld>
       <feld nr="5" pos="14" len="17" type="string">
@@ -4265,7 +4265,7 @@
       <feld nr="7" name="verm" pos="33" len="10" type="string">
         <label>Geschäftsstelle / Vermittler</label>
       </feld>
-      <feld nr="8" name="wagnis_art" pos="43" len="6" type="const">
+      <feld nr="8" name="wagnis_art" pos="43" len="6" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="9" pos="49" len="2" type="number">
@@ -4372,7 +4372,7 @@
       <feld nr="7" name="verm" pos="33" len="10" type="string">
         <label>Geschäftsstelle / Vermittler</label>
       </feld>
-      <feld nr="8" name="wagnis_art" pos="43" len="6" type="const">
+      <feld nr="8" name="wagnis_art" pos="43" len="6" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="9" pos="49" len="2" type="number">
@@ -5423,7 +5423,7 @@
     </teil>
   </satzart>
   <satzart satz="0220" sparte="020.2">
-    <teil nr="1">
+    <teil nr="2">
       <feld nr="1" name="sid" pos="1" len="4" type="const" value="0220">
         <label>Satzart</label>
       </feld>
@@ -5433,7 +5433,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="020.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="020">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5451,8 +5451,8 @@
       <feld nr="9" pos="45" len="3" type="string" frac="0">
         <label>Laufende Nummer Tarif</label>
       </feld>
-      <feld nr="10" pos="48" len="1" type="string">
-        <label>Folgenummer zur laufenden Personen-Nr. / Unternummer bzw. laufenden Nummer Tarif</label>
+      <feld nr="10" name="snr" pos="48" len="1" type="const" value="2">
+        <label>Satznummer</label>
       </feld>
       <feld nr="11" pos="49" len="1" type="string">
         <label>Vertragsform</label>
@@ -5557,7 +5557,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="020.1">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="020">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5575,8 +5575,8 @@
       <feld nr="9" pos="45" len="3" type="string" frac="0">
         <label>Lfd. Nummer Tarif</label>
       </feld>
-      <feld nr="10" pos="48" len="1" type="string">
-        <label>Folge-Nr. zur laufenden Personen-Nummer/Unternummer/laufende Nummer Tarif</label>
+      <feld nr="10" name="snr" pos="48" len="1" type="const" value="1">
+        <label>Satznummer</label>
       </feld>
       <feld nr="11" pos="49" len="1" type="string">
         <label>Vertragsform</label>
@@ -5635,7 +5635,7 @@
     </teil>
   </satzart>
   <satzart satz="0220" sparte="020.3">
-    <teil nr="1">
+    <teil nr="3">
       <feld nr="1" name="sid" pos="1" len="4" type="const" value="0220">
         <label>Satzart</label>
       </feld>
@@ -5645,7 +5645,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="020.3">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="020">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5663,8 +5663,8 @@
       <feld nr="9" pos="45" len="3" type="string" frac="0">
         <label>Laufende Nummer Tarif</label>
       </feld>
-      <feld nr="10" pos="48" len="1" type="string">
-        <label>Folgenummer zur laufenden Personen-Nr. / Unternummer bzw. laufenden Nummer Tarif</label>
+      <feld nr="10" name="snr" pos="48" len="1" type="const" value="3">
+        <label>Satznummer</label>
       </feld>
       <feld nr="11" pos="49" len="1" type="string">
         <label>Vertragsform</label>
@@ -5757,7 +5757,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.0">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5772,7 +5772,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -5848,7 +5848,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.48">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5863,7 +5863,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -5903,7 +5903,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.48">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5918,7 +5918,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -5967,7 +5967,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.48">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -5982,7 +5982,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6061,7 +6061,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.48">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6076,7 +6076,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6195,7 +6195,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.48">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6210,7 +6210,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6271,7 +6271,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6286,7 +6286,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6338,7 +6338,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6353,7 +6353,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6393,7 +6393,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6408,7 +6408,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6478,7 +6478,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6493,7 +6493,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6572,7 +6572,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6587,7 +6587,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6718,7 +6718,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6733,7 +6733,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6813,7 +6813,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.9">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6828,7 +6828,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6865,7 +6865,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6880,7 +6880,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6932,7 +6932,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -6947,7 +6947,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7017,7 +7017,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7032,7 +7032,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7111,7 +7111,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7126,7 +7126,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7251,7 +7251,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7266,7 +7266,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7342,7 +7342,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7357,7 +7357,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7409,7 +7409,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7424,7 +7424,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7464,7 +7464,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7479,7 +7479,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7549,7 +7549,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7564,7 +7564,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7643,7 +7643,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7658,7 +7658,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7780,7 +7780,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7795,7 +7795,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7871,7 +7871,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7886,7 +7886,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7938,7 +7938,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -7953,7 +7953,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7993,7 +7993,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8008,7 +8008,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8078,7 +8078,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8093,7 +8093,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8172,7 +8172,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8187,7 +8187,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8318,7 +8318,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8333,7 +8333,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8416,7 +8416,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8431,7 +8431,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8465,7 +8465,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8480,7 +8480,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8520,7 +8520,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8535,7 +8535,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8584,7 +8584,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8599,7 +8599,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8678,7 +8678,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8693,7 +8693,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8794,7 +8794,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8809,7 +8809,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8870,7 +8870,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8885,7 +8885,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8925,7 +8925,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -8940,7 +8940,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8989,7 +8989,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -9004,7 +9004,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -9083,7 +9083,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -9098,7 +9098,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -9184,7 +9184,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -9199,7 +9199,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -10738,7 +10738,7 @@
       <feld nr="7" name="verm" pos="33" len="10" type="string">
         <label>Geschäftsstelle / Vermittler</label>
       </feld>
-      <feld nr="8" name="wagnis_art" pos="43" len="6" type="const">
+      <feld nr="8" name="wagnis_art" pos="43" len="6" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="9" pos="49" len="2" type="number">
@@ -11164,7 +11164,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.48">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11179,7 +11179,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11207,7 +11207,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11222,7 +11222,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11268,7 +11268,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11283,7 +11283,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11324,7 +11324,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.7">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11339,7 +11339,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11367,7 +11367,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11382,7 +11382,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11413,7 +11413,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11428,7 +11428,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11474,7 +11474,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11489,7 +11489,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11533,7 +11533,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.13">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11548,7 +11548,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11576,7 +11576,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11591,7 +11591,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11628,7 +11628,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11643,7 +11643,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11674,7 +11674,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11689,7 +11689,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11721,7 +11721,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.2">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11736,7 +11736,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11764,7 +11764,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11779,7 +11779,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11816,7 +11816,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11831,7 +11831,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11857,7 +11857,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.5">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11872,7 +11872,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11900,7 +11900,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11915,7 +11915,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11949,7 +11949,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -11964,7 +11964,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11990,7 +11990,7 @@
       <feld nr="3" name="bkz" pos="10" len="1" type="string">
         <label>Bündelungskennzeichen</label>
       </feld>
-      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010.6">
+      <feld nr="4" name="sparte" pos="11" len="3" type="const" value="010">
         <label>Sparte</label>
       </feld>
       <feld nr="5" name="vsnr" pos="14" len="17" type="string">
@@ -12005,7 +12005,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -13513,7 +13513,7 @@
       <feld nr="17" pos="229" len="3" type="string" frac="0">
         <label>Lfd. Nummer Tarif</label>
       </feld>
-      <feld nr="18" name="wagnis_art" pos="232" len="1" type="const">
+      <feld nr="18" name="wagnis_art" pos="232" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="19" pos="233" len="1" type="string">
@@ -13586,7 +13586,7 @@
       <feld nr="16" pos="229" len="3" type="string" frac="0">
         <label>Lfd. Nummer Tarif</label>
       </feld>
-      <feld nr="17" name="wagnis_art" pos="232" len="1" type="const">
+      <feld nr="17" name="wagnis_art" pos="232" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="18" pos="233" len="1" type="string">
@@ -13689,7 +13689,7 @@
       <feld nr="26" pos="229" len="3" type="string" frac="0">
         <label>Lfd. Nummer Tarif</label>
       </feld>
-      <feld nr="27" name="wagnis_art" pos="232" len="1" type="const">
+      <feld nr="27" name="wagnis_art" pos="232" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="28" pos="233" len="1" type="string">
@@ -13820,7 +13820,7 @@
       <feld nr="17" pos="229" len="3" type="string" frac="0">
         <label>Lfd. Nummer Tarif</label>
       </feld>
-      <feld nr="18" name="wagnis_art" pos="232" len="1" type="const">
+      <feld nr="18" name="wagnis_art" pos="232" len="1" type="string">
         <label>Wagnisart</label>
       </feld>
       <feld nr="19" pos="233" len="1" type="string">
