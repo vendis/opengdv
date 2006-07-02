@@ -152,7 +152,7 @@ template =
 %q{<?xml version="1.0" encoding="UTF-8"?>
 <types>
 <% for m in types do %>
-  <typ name="<%= h m.name %>">
+  <typ name="<%= h m.name %>" hash="<%= m.hash %>">
 <% for a in m.alias.sort do %>
     <alias name="<%= h a %>"/>
 <% end %>
