@@ -30,11 +30,59 @@ end
 
 class ValueMap
   attr_reader :paths, :values, :name, :alias
+  
+  NAME_MAP = {
+    "_typ1" => [ "absender_art_t", 362134658 ],
+    "_typ2" => [ "sparte_t", 1825682829 ],
+    "_typ3" => [ "gevo_t", 527246070 ],
+    "_typ4" => [ "autorisierung_t", 2620785738 ],
+    "_typ5" => [ "boolean", 4044219356 ],
+    "_typ7" => [ "anrede_t", 2247829527 ],
+    "_typ8" => [ "laenderkennz_t", 1935882545 ],
+    "_typ9" => [ "address_kennz_t", 1112559737 ],
+    "_typ10" => [ "zielgruppe_t", 1952189333 ],
+    "_typ12" => [ "geschlecht_t", 1830612605 ],
+    "_typ14" => [ "kommtyp_t", 3273422001 ],
+    "_typ18" => [ "zahlungsart_t", 780629530 ],
+    "_typ19" => [ "fam_stand_t", 479365104 ],
+    "_typ24" => [ "rechtsform_t", 2092709775 ],
+    "_typ26" => [ "bankverb_t", 2659700852 ],
+    "_typ30" => [ "bezug_vn_t", 4111449760 ],
+    "_typ32" => [ "inkasso_t", 2559002436 ],
+    "_typ33" => [ "zahlungsweise_t", 1630518295 ],
+    "_typ34" => [ "vertragsstatus_t", 2290374739 ],
+    "_typ35" => [ "abgangsgrund_t", 3453120067 ],
+    "_typ37" => [ "waehrung_t", 894664913 ],
+    "_typ59" => [ "sign_t", 4276933552 ],
+    "_typ87" => [ "summenart_t", 1944200830 ],
+    "_typ92" => [ "jahres_maximierung_t", 3982444481 ],
+    "_typ141" => [ "aenderungsgrund_t", 3283809242 ],
+    "_typ212" => [ "bauartklasse_t", 2346596949 ],
+    "_typ213" => [ "gefahrenerhoehung_t", 2383799713 ],
+    "_typ277" => [ "mengen_schluessel_t", 2485354923 ],
+    "_typ353" => [ "wertungsbasis_t", 794488123 ],
+    "_typ609" => [ "summen_art_t", 2022195149 ],
+    "_typ610" => [ "summenanpassung_t", 662870067 ],
+  }
+
+  def ValueMap::lookup_name(vm)
+    hsh = vm.hash
+    name = "_typ#{ValueMap.next_count}"
+    if NAME_MAP.key?(name)
+      n, h = NAME_MAP[name]
+      if hsh != h
+        $stderr.puts "Not renaming #{name} to #{n}, hash #{hsh} != #{h}"
+      else
+        return n
+      end
+    end
+    return name
+  end
 
   # Create from path XML element
   def initialize(e)
     @name = e.attributes["name"]
-    @name = "_typ#{ValueMap.next_count}" if @name.nil? || name.empty?
+    # @name = "_typ#{ValueMap.next_count}" if @name.nil? || name.empty?
     @paths = []
     @values = {}
     @alias = []
@@ -43,10 +91,19 @@ class ValueMap
     e.elements.each("value") do |v|
       @values[v.attributes["key"]] = v.text.strip
     end
+    @name = ValueMap::lookup_name(self)
   end
     
   def eql?(other)
     self == (other)
+  end
+
+  def hash
+    result = 0
+    values.keys.sort.each do |k|
+      result = (41 * result + 23 * k.hash + values[k].hash) % 2**32
+    end
+    result
   end
 
   def ==(other)
