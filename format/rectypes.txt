@@ -1273,7 +1273,7 @@ F:5::14:17:string::Vertragsnummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8:snr:43:1:const:1:Satznummer:
-F:9::44:1:string::Art:
+F:9::44:1:const:2:Art:
 F:10:waehrung:45:3:string::Währungsschlüssel:
 F:11::48:8:date::Bereitstellungsbeginn:
 F:12::56:12:float::Bereitstellungssumme:
@@ -1304,7 +1304,7 @@ F:5::14:17:string::Vertragsnummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8:snr:43:1:const:1:Satznummer:
-F:9::44:1:string::Art:
+F:9::44:1:const:0,1:Art:
 F:10:waehrung:45:3:string::Währungsschlüssel:
 F:11::48:8:date::Letzter Stichtag:
 F:12::56:7:float::Bewertungszahl letzter Stichtag:
@@ -1342,7 +1342,7 @@ F:5::14:17:string::Vertragsnummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8:snr:43:1:const:2:Satznummer:
-F:9::44:1:string::Art:
+F:9::44:1:const:0,1:Art:
 F:10:waehrung:45:3:string::Währungsschlüssel:
 F:11::48:12:float::Begünstigte Aufwendungen lfd. Jahr:
 F:12::60:12:float::Begünstigte Aufwendungen Vorjahr:
@@ -1961,7 +1961,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:0:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:30:string::Name der VP:
 F:12::92:30:string::Vorname der VP:
@@ -1992,7 +1992,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:4,8:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Leistungsfall:
@@ -2011,7 +2011,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:4,8:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Anfängliche Jahresrente in Währungseinheiten:
@@ -2033,7 +2033,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:4,8:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -2065,7 +2065,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:4,8:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -2110,7 +2110,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:4,8:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:30:string::Tarifbezeichnung:
 F:12::92:30:string::Tarifbezeichnung des Folgetarifs:
@@ -2136,7 +2136,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd.Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Erlebensfall:
@@ -2159,7 +2159,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Nächste Auszahlungssumme in Währungseinheiten:
@@ -2178,7 +2178,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Anfängliche Todesfall VS in Währungseinheiten:
@@ -2207,7 +2207,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -2239,7 +2239,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -2288,7 +2288,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:3:number::Abweichende Vertragslaufzeit:
 F:12::65:8:date::Abweichender Ablauf:
@@ -2320,7 +2320,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:9:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:30:string::Vertragsbedingung:
 F:12::92:1:string::Leistung bei schwerer Erkrankung:
@@ -2338,7 +2338,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Erlebensfall:
@@ -2361,7 +2361,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:9:number::Anfängliche Todesfall VS in Währungseinheiten:
@@ -2390,7 +2390,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -2422,7 +2422,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -2469,7 +2469,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:3:number::Abweichende Vertragslaufzeit:
 F:12::65:8:date::Abweichender Ablauf:
@@ -2500,7 +2500,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Erlebensfall:
@@ -2523,7 +2523,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:9:number::Nächste Auszahlungssumme in Währungseinheiten:
@@ -2542,7 +2542,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:9:number::Anfängliche Todesfall VS in Währungseinheiten:
@@ -2571,7 +2571,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -2603,7 +2603,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -2649,7 +2649,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:3:number::Abweichende Vertragslaufzeit:
 F:12::65:8:date::Abweichender Ablauf:
@@ -2680,7 +2680,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Erlebensfall:
@@ -2703,7 +2703,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:9:number::Nächste Auszahlungssumme in Währungseinheiten:
@@ -2722,7 +2722,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:9:number::Anfängliche Todesfall VS in Währungseinheiten:
@@ -2751,7 +2751,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -2783,7 +2783,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -2832,7 +2832,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:3:number::Abweichende Vertragslaufzeit:
 F:12::65:8:date::Abweichender Ablauf:
@@ -2865,7 +2865,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:1:string::Leistung bei schwerer Erkrankung:
 F:12::63:30:string::Versicherte Erkrankungen:
@@ -2882,7 +2882,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Todesfall:
@@ -2901,7 +2901,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:9:number::Anfängliche Todesfall VS in Währungseinheiten:
@@ -2923,7 +2923,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -2955,7 +2955,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -2994,7 +2994,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:30:string::Tarifbezeichnung:
 F:12::92:30:string::Tarifbezeichnung des Folgetarifs:
@@ -3020,7 +3020,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:1:string::Bezugsberechtigt im Leistungsfall:
@@ -3039,7 +3039,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Anfängliche Unfallsumme:
@@ -3061,7 +3061,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Provisionspflichtige Beitragssumme in Währungseinheiten:
@@ -3093,7 +3093,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:8:date::Beginn:
 F:12::70:8:date::Ablauf:
@@ -3127,7 +3127,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:30:string::Tarifbezeichnung:
 F:12::92:30:string::Tarifbezeichnung des Folgetarifs:
@@ -3338,7 +3338,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:6:number::Lfd. Nummer der versicherten Person (VP) / Personengruppe:
-F:9:snr:49:1:const:1:Satznummer:
+F:9::49:1:string::Satznummernwiederholung:
 F:10::50:30:string::Bezeichnung Personengruppe:
 F:11::80:6:number::Anzahl der VP pro Personengruppe:
 F:12::86:30:string::Name der VP:
@@ -3362,7 +3362,8 @@ F:29::241:1:string::passives Kriegsrisiko:
 F:30::242:1:string::Kündigungsklausel VP/ Personengruppe gestrichen:
 F:31::243:7:string::Leerstellen :
 F:33:blank:251:6:space::Leerstellen:
-F:32::250:1:string::Satznummernwiederholung:
+F:32:snr:250:1:const:1:Satznummer:
+F:33::256:1:const: :Zusätzliche Satzkennung:
 T:1
 F:1:sid:1:4:const:0220:Satzart:
 F:2:vunr:5:5:string::VU-Nummer:
@@ -3408,7 +3409,7 @@ F:41::245:1:string::Rückführungskosten:
 F:42::246:6:float::Prozentsatz progressive Invalidität:
 F:43::252:1:string::Mehrleistungsklausel:
 F:44:blank:253:3:space::Leerstellen:
-F:45::256:1:string::Zusätzliche Satzkennung:
+F:45::256:1:const:X:Zusätzliche Satzkennung:
 T:2
 F:1:sid:1:4:const:0220:Satzart:
 F:2:vunr:5:5:string::VU-Nummer:
@@ -3417,7 +3418,7 @@ F:4:sparte:11:3:const:030:Sparte:
 F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
-F:8:snr:43:1:const:3:Satznummer:
+F:8::43:1:string::Satznummernwiederholung:
 F:9::44:17:string::VP-Personennummer des Versicherers:
 F:10::61:17:string::VP-Personennummer des Vermittlers:
 F:11::78:9:number::Serviceleistungen:
@@ -3435,8 +3436,9 @@ F:22::202:12:float::Beitrag Feste Rente in Währungseinheiten:
 F:23::214:12:float::Beitrag Kosmetische Operation in Währungseinheiten:
 F:24::226:12:float::Beitrag Kurkosten in Währungseinheiten:
 F:25::238:12:float::Beitrag Bergungskosten in Währungseinheiten:
-F:26::250:1:string::Satznummernwiederholung:
+F:26:snr:250:1:const:3:Satznummer:
 F:27::251:6:number::Lfd. Nummer der versicherten Person (VP) / Personengruppe:
+F:28::256:1:const:0,1,2,3,4,5,6,7,8,9,0:Zusätzliche Satzkennung:
 T:3
 F:1:sid:1:4:const:0220:Satzart:
 F:2:vunr:5:5:string::VU-Nummer:
@@ -3446,7 +3448,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:snr:60:1:const:9:Satznummer:
+F:9::60:1:string::Satznummernwiederholung:
 F:10::61:2:string::Lfd. Nummer der Satzart:
 F:11::63:1:string::Bezugsberechtigt im Leistungsfall:
 F:12::64:30:string::Sonstiger Bezugsberechtigter im Leistungsfall:
@@ -3454,8 +3456,9 @@ F:13::94:5:float::Bezugsrechtanteil im Leistungsfall:
 F:14::99:1:string::Unwiderrufliches Bezugsrecht im Leistungsfall:
 F:15::100:7:string::Referenznummer:
 F:16:blank:107:143:space::Leerstellen:
-F:17::250:1:string::Satznummernwiederholung:
+F:17:snr:250:1:const:9:Satznummer:
 F:18::251:6:number::Lfd. Nummer der versicherten Person (VP) / Personengruppe:
+F:19::256:1:const:0,1,2,3,4,5,6,7,8,9:Zusätzliche Satzkennung:
 T:9
 K:0220:030
 F:1:sid:1:4:const:0220:Satzart:
@@ -3802,7 +3805,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:4,8:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:12:float::Absoluter Dynamikerhöhungsbetrag in Währungseinheiten:
 F:12:blank:74:182:space::Leerstellen:
@@ -3817,7 +3820,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:14:float::Anfängliche Todesfall VS in Währungseinheiten:
@@ -3838,7 +3841,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:14:float::Beitragssumme in Währungseinheiten:
 F:12::76:14:float::Todesfall VS in Währungseinheiten:
@@ -3857,7 +3860,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:7:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:12:float::Absoluter Dynamikerhöhungsbetrag in Währungseinheiten:
 F:12:blank:74:182:space::Leerstellen:
@@ -3872,7 +3875,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:12:float::Nächste Auszahlungssumme in Währungseinheiten:
@@ -3888,7 +3891,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:14:float::Anfängliche Todesfall VS in Währungseinheiten:
@@ -3909,7 +3912,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:14:float::Erlebensfall VS in Währungseinheiten:
 F:12::76:14:float::Todesfall VS in Währungseinheiten:
@@ -3929,7 +3932,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:1,3:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:12:float::Absoluter Dynamikerhöhungsbetrag in Währungseinheiten:
 F:12:blank:74:182:space::Leerstellen:
@@ -3944,7 +3947,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:14:float::Anfängliche Todesfall VS in Währungseinheiten:
@@ -3962,7 +3965,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:14:float::Nächste Auszahlungssumme in Währungseinheiten:
@@ -3978,7 +3981,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:14:float::Rückkaufswert in Währungseinheiten:
 F:12::76:14:float::Guthaben Divid. Ansammlung in Währungseinheiten:
@@ -3994,7 +3997,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:2:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:12:float::Absoluter Dynamikerhöhungsbetrag in Währungseinheiten:
 F:12:blank:74:182:space::Leerstellen:
@@ -4009,7 +4012,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:14:float::Anfängliche Todesfall VS in Währungseinheiten:
@@ -4027,7 +4030,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:14:float::Versicherungssumme in Währungseinheiten:
 F:12:blank:76:180:space::Leerstellen:
@@ -4041,7 +4044,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:5:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:12:float::Absoluter Dynamikerhöhungsbetrag in Währungseinheiten:
 F:12:blank:74:182:space::Leerstellen:
@@ -4056,7 +4059,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:2:string::Lfd. Nummer der Satzart:
 F:12::64:14:float::Absolute Unfalländerungssumme in Währungseinheiten:
@@ -4073,7 +4076,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:14:float::Unfallsumme in Währungseinheiten:
 F:12:blank:76:180:space::Leerstellen:
@@ -4087,7 +4090,7 @@ F:5:vsnr:14:17:string::Versicherungsschein-Nummer:
 F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:17:string::Lfd. Nummer der versicherten Person (VP):
-F:9:wagnis_art:60:1:string::Wagnisart:
+F:9:wagnis_art:60:1:const:6:Wagnisart:
 F:10::61:1:string::lfd. Nummer zur Wagnisart:
 F:11::62:12:float::Absoluter Dynamikerhöhungsbetrag in Währungseinheiten:
 F:12:blank:74:182:space::Leerstellen:
@@ -4179,7 +4182,7 @@ F:19::160:14:float::Kosmetische Operationen:
 F:20::174:14:float::Kurkosten:
 F:21::188:14:float::Bergungskosten:
 F:22:blank:202:54:space::Leerstellen:
-F:23::256:1:string::Zusätzliche Satzkennung:
+F:23::256:1:const:X:Zusätzliche Satzkennung:
 T:2
 F:1:sid:1:4:const:0221:Satzart:
 F:2:vunr:5:5:string::VU-Nummer:
@@ -4194,6 +4197,7 @@ F:10::58:7:string::Referenznummer:
 F:11:blank:65:185:space::Leerstellen:
 F:12::250:1:string::Satznummernwiederholung:
 F:13::251:6:number::Lfd. Nummer der versicherten Person (VP) / Personengruppe:
+F:14::256:1:const:0,1,2,3,4,5,6,7,8,9:Zusaetzliche Satzkennung:
 T:3
 K:0221:030
 F:1:sid:1:4:const:0221:Satzart:
