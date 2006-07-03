@@ -3747,7 +3747,7 @@
       <feld nr="8" name="snr" pos="43" len="1" type="const" value="1">
         <label>Satznummer</label>
       </feld>
-      <feld nr="9" pos="44" len="1" type="string">
+      <feld nr="9" pos="44" len="1" type="const" value="2">
         <label>Art</label>
       </feld>
       <feld nr="10" name="waehrung" pos="45" len="3" type="string">
@@ -3838,7 +3838,7 @@
       <feld nr="8" name="snr" pos="43" len="1" type="const" value="1">
         <label>Satznummer</label>
       </feld>
-      <feld nr="9" pos="44" len="1" type="string">
+      <feld nr="9" pos="44" len="1" type="const" value="0,1">
         <label>Art</label>
       </feld>
       <feld nr="10" name="waehrung" pos="45" len="3" type="string">
@@ -3951,7 +3951,7 @@
       <feld nr="8" name="snr" pos="43" len="1" type="const" value="2">
         <label>Satznummer</label>
       </feld>
-      <feld nr="9" pos="44" len="1" type="string">
+      <feld nr="9" pos="44" len="1" type="const" value="0,1">
         <label>Art</label>
       </feld>
       <feld nr="10" name="waehrung" pos="45" len="3" type="string">
@@ -5772,7 +5772,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="0">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -5863,7 +5863,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="4,8">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -5918,7 +5918,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="4,8">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -5982,7 +5982,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="4,8">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6076,7 +6076,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="4,8">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6210,7 +6210,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="4,8">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6286,7 +6286,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6353,7 +6353,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6408,7 +6408,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6493,7 +6493,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6587,7 +6587,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6733,7 +6733,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6828,7 +6828,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="9">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6880,7 +6880,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -6947,7 +6947,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7032,7 +7032,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7126,7 +7126,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7266,7 +7266,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7357,7 +7357,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7424,7 +7424,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7479,7 +7479,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7564,7 +7564,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7658,7 +7658,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7795,7 +7795,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7886,7 +7886,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -7953,7 +7953,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8008,7 +8008,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8093,7 +8093,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8187,7 +8187,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8333,7 +8333,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8431,7 +8431,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8480,7 +8480,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8535,7 +8535,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8599,7 +8599,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8693,7 +8693,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8809,7 +8809,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8885,7 +8885,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -8940,7 +8940,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -9004,7 +9004,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -9098,7 +9098,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -9199,7 +9199,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -9820,8 +9820,8 @@
       <feld nr="8" pos="43" len="6" type="number">
         <label>Lfd. Nummer der versicherten Person (VP) / Personengruppe</label>
       </feld>
-      <feld nr="9" name="snr" pos="49" len="1" type="const" value="1">
-        <label>Satznummer</label>
+      <feld nr="9" pos="49" len="1" type="string">
+        <label>Satznummernwiederholung</label>
       </feld>
       <feld nr="10" pos="50" len="30" type="string">
         <label>Bezeichnung Personengruppe</label>
@@ -9892,8 +9892,11 @@
       <feld nr="33" name="blank" pos="251" len="6" type="space">
         <label>Leerstellen</label>
       </feld>
-      <feld nr="32" pos="250" len="1" type="string">
-        <label>Satznummernwiederholung</label>
+      <feld nr="32" name="snr" pos="250" len="1" type="const" value="1">
+        <label>Satznummer</label>
+      </feld>
+      <feld nr="33" pos="256" len="1" type="const" value=" ">
+        <label>Zusätzliche Satzkennung</label>
       </feld>
     </teil>
     <teil nr="2">
@@ -10029,7 +10032,7 @@
       <feld nr="44" name="blank" pos="253" len="3" type="space">
         <label>Leerstellen</label>
       </feld>
-      <feld nr="45" pos="256" len="1" type="string">
+      <feld nr="45" pos="256" len="1" type="const" value="X">
         <label>Zusätzliche Satzkennung</label>
       </feld>
     </teil>
@@ -10055,8 +10058,8 @@
       <feld nr="7" name="verm" pos="33" len="10" type="string">
         <label>Geschäftsstelle / Vermittler</label>
       </feld>
-      <feld nr="8" name="snr" pos="43" len="1" type="const" value="3">
-        <label>Satznummer</label>
+      <feld nr="8" pos="43" len="1" type="string">
+        <label>Satznummernwiederholung</label>
       </feld>
       <feld nr="9" pos="44" len="17" type="string">
         <label>VP-Personennummer des Versicherers</label>
@@ -10109,11 +10112,14 @@
       <feld nr="25" pos="238" len="12" type="float" frac="2">
         <label>Beitrag Bergungskosten in Währungseinheiten</label>
       </feld>
-      <feld nr="26" pos="250" len="1" type="string">
-        <label>Satznummernwiederholung</label>
+      <feld nr="26" name="snr" pos="250" len="1" type="const" value="3">
+        <label>Satznummer</label>
       </feld>
       <feld nr="27" pos="251" len="6" type="number">
         <label>Lfd. Nummer der versicherten Person (VP) / Personengruppe</label>
+      </feld>
+      <feld nr="28" pos="256" len="1" type="const" value="0,1,2,3,4,5,6,7,8,9,0">
+        <label>Zusätzliche Satzkennung</label>
       </feld>
     </teil>
     <teil nr="9">
@@ -10141,8 +10147,8 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="snr" pos="60" len="1" type="const" value="9">
-        <label>Satznummer</label>
+      <feld nr="9" pos="60" len="1" type="string">
+        <label>Satznummernwiederholung</label>
       </feld>
       <feld nr="10" pos="61" len="2" type="string">
         <label>Lfd. Nummer der Satzart</label>
@@ -10165,11 +10171,14 @@
       <feld nr="16" name="blank" pos="107" len="143" type="space">
         <label>Leerstellen</label>
       </feld>
-      <feld nr="17" pos="250" len="1" type="string">
-        <label>Satznummernwiederholung</label>
+      <feld nr="17" name="snr" pos="250" len="1" type="const" value="9">
+        <label>Satznummer</label>
       </feld>
       <feld nr="18" pos="251" len="6" type="number">
         <label>Lfd. Nummer der versicherten Person (VP) / Personengruppe</label>
+      </feld>
+      <feld nr="19" pos="256" len="1" type="const" value="0,1,2,3,4,5,6,7,8,9">
+        <label>Zusätzliche Satzkennung</label>
       </feld>
     </teil>
   </satzart>
@@ -11179,7 +11188,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="4,8">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11222,7 +11231,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11283,7 +11292,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11339,7 +11348,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="7">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11382,7 +11391,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11428,7 +11437,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11489,7 +11498,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11548,7 +11557,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="1,3">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11591,7 +11600,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11643,7 +11652,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11689,7 +11698,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11736,7 +11745,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="2">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11779,7 +11788,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11831,7 +11840,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11872,7 +11881,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="5">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11915,7 +11924,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -11964,7 +11973,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -12005,7 +12014,7 @@
       <feld nr="8" pos="43" len="17" type="string">
         <label>Lfd. Nummer der versicherten Person (VP)</label>
       </feld>
-      <feld nr="9" name="wagnis_art" pos="60" len="1" type="string">
+      <feld nr="9" name="wagnis_art" pos="60" len="1" type="const" value="6">
         <label>Wagnisart</label>
       </feld>
       <feld nr="10" pos="61" len="1" type="string">
@@ -12272,7 +12281,7 @@
       <feld nr="22" name="blank" pos="202" len="54" type="space">
         <label>Leerstellen</label>
       </feld>
-      <feld nr="23" pos="256" len="1" type="string">
+      <feld nr="23" pos="256" len="1" type="const" value="X">
         <label>Zusätzliche Satzkennung</label>
       </feld>
     </teil>
@@ -12315,6 +12324,9 @@
       </feld>
       <feld nr="13" pos="251" len="6" type="number">
         <label>Lfd. Nummer der versicherten Person (VP) / Personengruppe</label>
+      </feld>
+      <feld nr="14" pos="256" len="1" type="const" value="0,1,2,3,4,5,6,7,8,9">
+        <label>Zusaetzliche Satzkennung</label>
       </feld>
     </teil>
   </satzart>
