@@ -16,7 +16,6 @@ rectypes.txt: rectypes-compact.xsl rectypes.xml
 # Reduce the values into a condensed list of maps
 # by extracting all <Werte> into a sane XML format
 # with a list of which values are used where
-# We actually use a handedited version of this
 valuemap.xml: valuemap.xsl satzarten.xml
 	xsltproc -o /tmp/valuemap.xml valuemap.xsl satzarten.xml 
 	./valuemap.rb /tmp/valuemap.xml > $@
