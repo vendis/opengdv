@@ -1018,8 +1018,8 @@ F:39::232:4:float::Laufzeitrabatt in %:
 F:40::236:5:string::Produktform:
 F:41::241:6:number::Produktform gültig ab:
 F:42:blank:247:4:space::Leerstellen:
-F:43::251:5:number::Objektnummer:
-F:44:snr:256:1:const:1:Satznummer:
+F:43:snr:251:1:const:1:Satznummer:
+F:44::252:5:number::Objektnummer:
 T:1
 F:1:sid:1:4:const:0210:Satzart:
 F:2:vunr:5:5:string::VU-Nummer:
@@ -1030,7 +1030,8 @@ F:6:fnr:31:2:number::Folgenummer:
 F:7:verm:33:10:string::Geschäftsstelle / Vermittler:
 F:8::43:20:string::Produktname:
 F:9:blank:63:193:space::Leerstellen:
-F:10:snr:256:1:const:2:Satznummer:
+F:10:snr:251:1:const:2:Satznummer:
+F:11::252:5:number::Objektnummer:
 T:2
 K:0210:130
 F:1:sid:1:4:const:0210:Satzart:

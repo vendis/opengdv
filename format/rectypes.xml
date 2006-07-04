@@ -3012,11 +3012,11 @@
       <feld nr="42" name="blank" pos="247" len="4" type="space">
         <label>Leerstellen</label>
       </feld>
-      <feld nr="43" pos="251" len="5" type="number">
-        <label>Objektnummer</label>
-      </feld>
-      <feld nr="44" name="snr" pos="256" len="1" type="const" value="1">
+      <feld nr="43" name="snr" pos="251" len="1" type="const" value="1">
         <label>Satznummer</label>
+      </feld>
+      <feld nr="44" pos="252" len="5" type="number">
+        <label>Objektnummer</label>
       </feld>
     </teil>
     <teil nr="2">
@@ -3041,14 +3041,17 @@
       <feld nr="7" name="verm" pos="33" len="10" type="string">
         <label>Geschäftsstelle / Vermittler</label>
       </feld>
-      <feld nr="8" pos="43" len="20" type="string" frac="0">
+      <feld nr="8" pos="43" len="20" type="string">
         <label>Produktname</label>
       </feld>
       <feld nr="9" name="blank" pos="63" len="193" type="space">
         <label>Leerstellen</label>
       </feld>
-      <feld nr="10" name="snr" pos="256" len="1" type="const" value="2">
+      <feld nr="10" name="snr" pos="251" len="1" type="const" value="2">
         <label>Satznummer</label>
+      </feld>
+      <feld nr="11" pos="252" len="5" type="number">
+        <label>Objektnummer</label>
       </feld>
     </teil>
   </satzart>
