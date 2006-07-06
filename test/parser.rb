@@ -61,7 +61,6 @@ class TestParser < Test::Unit::TestCase
 
     def test_indexing
         root = GDV::Format::recindex
-        puts GDV::Format::recindex::print
         parts = GDV::Format::rectypes.inject([]) { |l, rt| l + rt.parts }
         assert (parts - root.leaves).empty?
     end
