@@ -100,6 +100,7 @@ module GDV::Format
             p = parts.shift
             @recindex = RecIndex.new(nil, p[:sid], p)
             parts.each do |p|
+                GDV::log "\n\n** Tree:\n#{@recindex.print}\n"
                 @recindex.insert(p)
             end
         end

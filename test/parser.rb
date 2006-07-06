@@ -61,13 +61,13 @@ class TestParser < Test::Unit::TestCase
 
     def test_indexing
         root = GDV::Format::recindex
+        puts GDV::Format::recindex::print
         parts = GDV::Format::rectypes.inject([]) { |l, rt| l + rt.parts }
         assert (parts - root.leaves).empty?
     end
 
     def test_reader
         r = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
-        puts "Tree:\n#{GDV::Format::recindex.print}\n"
         cnt = 0
         begin
             while r.getrec
@@ -77,7 +77,7 @@ class TestParser < Test::Unit::TestCase
             $stderr.puts "#{e.path}:#{e.lineno}:#{e}"
             raise
         end
-        puts "Read #{cnt} lines"
+        assert_equal(165, cnt)
     end
 
     def data_file(name)

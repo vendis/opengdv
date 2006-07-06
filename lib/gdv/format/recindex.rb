@@ -21,11 +21,12 @@ module GDV::Format
             if f.nil? || ! f.const?
                 raise FormatError, "Incompatible fields #{pf(f)}"
             end
+            log "  with values |#{f.values.join('|')}|"
             f.values.each do |value|
                 log "Value: #{value} Child: #{children.key?(value)} Part: #{parts.key?(value)} "
                 if children.key?(value)
                     log "Insert into child #{value}"
-                    return children[value].insert(part)
+                    children[value].insert(part)
                 elsif parts.key?(value)
                     # Need to split and find another field to 
                     # discriminate by
@@ -54,22 +55,32 @@ module GDV::Format
         def classify(record)
             v = field.extract(record)
             ind = "  " * depth
-            puts ind + "Match #{pf(field)} against '#{v}'"
+            log "Match #{pf(field)} against '#{v}'"
             if parts.key?(v)
-                puts ind + " <= #{parts[v]}"
+                log " <= #{parts[v]}"
                 return parts[v]
             elsif children.key?(v)
-                puts ind + " child"
+                log " child"
                 return children[v].classify(record)
             else
-                puts ind + " unknown"
+                log " unknown"
                 return nil
+            end
+        end
+
+        def match_path(record)
+            v = field.extract(record)
+            if parts.key?(v)
+                return [ field, parts[v] ]
+            elsif children.key?(v)
+                return [ field ] + children[v].match_path(record)
+            else
+                return [ field, nil ]
             end
         end
 
         def print(sio=nil)
             sio = StringIO.new unless sio
-            ind = "    " * depth
             sio.puts "#{ind}#{field.name}@#{field.pos}+#{field.len}"
             parts.each do |v, p|
                 sio.puts "#{ind}  #{v} -> #{p}"
@@ -82,7 +93,7 @@ module GDV::Format
         end
 
         def depth
-            p = self
+            p = self.parent
             depth = 0
             while p
                 depth += 1
@@ -113,13 +124,17 @@ module GDV::Format
             raise FormatError, msg
         end
 
+        def ind
+            "  " * depth
+        end
+
         def log(msg)
-            puts msg if false
+            GDV::log "#{ind}#{msg}"
         end
 
         def pf(field)
             return "no field" unless field
-            "#{field.name}@#{field.pos}+#{field.len}=#{field.values}"
+            "#{field.name}@#{field.pos}+#{field.len}"
         end
 
         def unused_fields(part1, part2)
