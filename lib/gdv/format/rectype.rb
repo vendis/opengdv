@@ -116,6 +116,10 @@ module GDV::Format
             record[pos-1..pos+len-2]
         end
 
+        def convert(record)
+            extract(record)
+        end
+
         def const?
             type == 'const'
         end
