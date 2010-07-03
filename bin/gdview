@@ -2,8 +2,37 @@
 
 $:.unshift(File::join(File::dirname(__FILE__), '..', 'lib'))
 require 'gdv'
+require 'optparse'
 
-GDV::Format::init
+verbose = false
+brief = false
+
+options = OptionParser.new do |opts|
+    opts.on('-v', '--verbose', 'verbose operation') do |dummy|
+        verbose = true
+    end
+    opts.on('-b', '--brief', 'brief output') { |dummy| brief = true }
+end
+options.banner = "gdview [options] file"
+options.parse!
+unless ARGV.size == 1
+    $stderr.puts "error: you need to specify a GDV input file"
+    $stderr.puts options
+    exit 1
+end
+
+begin
+    GDV::Format::init
+rescue GDV::Format::FormatError => e
+    puts "Inconsistent parse tables"
+    if verbose
+        puts "Index tree is"
+        puts GDV::Format::recindex.print
+        puts
+    end
+    puts e.message
+    exit 1
+end
 File::open("/tmp/tree.txt", "w") { |f| f.puts GDV::Format::recindex::print }
 
 r = GDV::Format::Reader.new(ARGV[0])
@@ -14,10 +43,12 @@ loop do
         break if rec.nil?
         if rec.known?
             puts "\n#{rec.part}"
-            rec.part.fields.each do |f|
-                v = f.extract(rec.raw)
-                unless v =~ /^ *$/
-                    puts "#{f.label}: #{f.extract(rec.raw)}"
+            unless brief
+                rec.part.fields.each do |f|
+                    v = f.extract(rec.raw)
+                    unless v =~ /^ *$/
+                        puts "#{f.label}: #{v} [#{v.size}]"
+                    end
                 end
             end
         else

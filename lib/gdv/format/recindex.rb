@@ -4,7 +4,7 @@ module GDV::Format
 
     class RecIndex
         attr_reader :field, :children, :parts, :parent
-        
+
         def initialize(parent, field, part)
             log "node #{pf(field)} : #{part}"
             @parent = parent
@@ -19,7 +19,8 @@ module GDV::Format
             log "Insert #{part} for #{pf(field)}"
             f = part.field_at(field.pos, field.len)
             if f.nil? || ! f.const?
-                raise FormatError, "Incompatible fields #{pf(f)}"
+                part.emit
+                raise FormatError, "Incompatible fields #{pf(f)} #{field} for #{part}"
             end
             log "  with values |#{f.values.join('|')}|"
             f.values.each do |value|
@@ -28,7 +29,7 @@ module GDV::Format
                     log "Insert into child #{value}"
                     children[value].insert(part)
                 elsif parts.key?(value)
-                    # Need to split and find another field to 
+                    # Need to split and find another field to
                     # discriminate by
                     old_part = parts[value]
                     log "Splitting #{old_part} at #{value}"
@@ -38,7 +39,7 @@ module GDV::Format
                     end
                     new_field = key_fields[0]
                     log "new_field: #{pf(new_field)} at #{value}"
-                    children[value] = RecIndex.new(self, new_field, 
+                    children[value] = RecIndex.new(self, new_field,
                                                     old_part)
                     parts.delete(value)
                     children[value].insert(part)
@@ -134,7 +135,9 @@ module GDV::Format
 
         def pf(field)
             return "no field" unless field
-            "#{field.name}@#{field.pos}+#{field.len}"
+            const = ""
+            const = "=#{field.values.join(",")}" if field.const?
+            "#{field.name}@#{field.pos}+#{field.len}#{const}"
         end
 
         def unused_fields(part1, part2)

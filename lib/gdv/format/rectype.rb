@@ -7,10 +7,12 @@ module GDV::Format
     end
 
     class RecType
-        attr_reader :satz, :sparte, :parts
-        def initialize(satz, sparte, parts)
-            @satz = satz
-            @sparte = sparte
+        attr_reader :satz, :sparte, :line, :label, :parts
+        def initialize(parts, h)
+            @satz = h[:satz]
+            @sparte = h[:sparte]
+            @line = h[:line]
+            @label = h[:label]
             @parts = parts
             @parts.each do |p|
                 p.rectype = self
@@ -24,14 +26,25 @@ module GDV::Format
         def finalize
             @parts.each { |p| p.finalize }
         end
+
+        def emit
+            parts.each { |p| p.emit }
+            puts "K:#{line}:#{satz}:#{sparte}:#{label}"
+        end
+
+        def self.parse(parts, l)
+            RecType.new(parts, :line => l[1], :satz => l[2], :sparte => l[3],
+                        :label => l[4])
+        end
     end
-    
+
     class Part
-        attr_reader :nr, :fields, :key_fields
+        attr_reader :nr, :line, :fields, :key_fields
         attr_accessor :rectype
 
-        def initialize(nr, fields)
-            @nr = nr
+        def initialize(fields, h)
+            @nr = h[:nr]
+            @line = h[:line]
             @fields = fields
             @key_fields = fields.select { |f| f.const? }
             @fields.each do |f|
@@ -55,17 +68,18 @@ module GDV::Format
 
         def [](name)
             unless field?(name)
-                raise FormatError, "No field named #{name} in #{self.rectype.satz}:#{self.rectype.sparte}:#{self.nr}"
+                puts "FIELDS #{@field_index.keys.inspect}"
+                raise FormatError, "#{line}: No field named #{name} in #{self.rectype.satz}:#{self.rectype.sparte}:#{self.nr}"
             end
             @field_index[name]
         end
 
         def inspect
-            "  nr = #{nr}\n  fields = #{fields.inspect}"
+            self.to_s
         end
 
         def to_s
-            "<Part:#{rectype.satz}:#{rectype.sparte}:#{nr}>"
+            "<Part:#{rectype.satz}:#{rectype.sparte}:#{nr} (line #{line})>"
         end
 
         def rectype=(rt)
@@ -76,7 +90,40 @@ module GDV::Format
         end
 
         def finalize
-            @fields.each do |f|
+            # Make sure field names are unique and compute the
+            # length for the 'space' field which might be missing
+            names = {}
+            used = 0
+            @warnings ||= []
+            fields.each do |f|
+                names[f.name] ||= 0
+                names[f.name] += 1
+                # 'Overlay' fields have pos set
+                used += f.len if f.len && f.pos == 0
+            end
+            pos = 1
+            fields.each do |f|
+                f.pos = pos if f.pos == 0
+                if f.len.nil? && f.type == 'space'
+                    if used
+                        f.len = 256 - used
+                        used = nil
+                    else
+                        raise FormatError, "#{line}: two fields without a length"
+                    end
+                end
+                raise FormatError, "#{line}: missing length #{f.inspect}" if f.len.nil?
+                pos += f.len
+            end
+            names.keys.each do |n|
+                if names[n] > 1
+                    fields.select { |f| f.name == n }.each do |f|
+                        @warnings << "rename #{f.nr}: #{f.name}"
+                        f.uniquify_name!
+                    end
+                end
+            end
+            fields.each do |f|
                 f.finalize
                 if @field_index.key?(f.name)
                     raise FormatError, "Duplicate field #{f.name}"
@@ -84,32 +131,54 @@ module GDV::Format
                 @field_index[f.name] = f
             end
         end
-    end
-    
-    class Field
-        attr_reader :nr, :name, :pos, :len, :type, :values, :label
-        attr_accessor :part
 
-        def initialize(nr, name, pos, len, type, values, label)
-            @nr = nr
-            if name.nil? || name.size == 0
-                name = "field#{nr}"
+        def emit
+            fields.each { |f| f.emit }
+            @warnings.each { |w| puts "C:#{w}" }
+            puts "T:#{line}:#{nr}"
+        end
+
+        def self.parse(fields, l)
+            Part.new(fields, :line => l[1], :nr => l[2].to_i)
+        end
+    end
+
+    class Field
+        attr_reader :nr, :name, :type, :values, :label, :line
+        attr_accessor :part, :pos, :len
+        attr_reader :precision
+
+        def initialize(h)
+            @line = h[:line]
+            @nr = h[:nr]
+            if h[:name].empty?
+                @name = :"field#{nr}"
+            else
+                @name = h[:name].to_sym
             end
-            if name == "blank" || name == "waehrung"
+            if @name == "blank" || @name == "waehrung"
                 # For these fields, we don't care too much about their name
-                name = "#{name}#{nr}"
+                @name = :"#{@name}#{@nr}"
             end
-            @name = name.to_sym
             # Seems to be true based on some examples
-            if @name == :snr && values == ["1"]
-                values << ' '
+            @values = h[:values] || []
+            if @name == :snr && @values == ["1"]
+                @values << ' '
             end
-            @pos = pos
-            @len = len
-            @type = type
-            @values = values.uniq
-            @label = label
+            @pos = h[:pos] || 0
+            @len = h[:len]
+            @type = h[:type]
+            if number?
+                @precision = @values.shift
+            else
+                @values = @values.uniq
+            end
+            @label = h[:label]
             @part = nil
+        end
+
+        def uniquify_name!
+            @name = "#{@name}_f#{@nr}"
         end
 
         def extract(record)
@@ -124,6 +193,10 @@ module GDV::Format
             type == 'const'
         end
 
+        def number?
+            type == 'number'
+        end
+
         def to_s
             "<Field[#{nr}]#{type}:#{pos}+#{len}>\n"
         end
@@ -134,25 +207,42 @@ module GDV::Format
             end
             @part = p
         end
-        
+
         def finalize
             if const?
                 if values.empty?
-                    raise FormatError, 
-                    "Values can not be empty for const fields"
+                    raise FormatError,
+                    "#{line}:Values can not be empty for const fields #{self.inspect}"
                 end
                 values.each do |v|
                     if len != v.size
-                        raise FormatError, 
-                        "Value #{value} must have exactly #{len} chars"
+                        raise FormatError,
+                        "#{line}:Value #{v} must have exactly #{len} chars"
                     end
                 end
             else
                 unless values.empty?
-                    raise FormatError, 
-                    "Values can only be given for const fields"
+                    raise FormatError,
+                    "#{line}:Values can only be given for const fields #{self.inspect}"
                 end
             end
+        end
+
+        def emit
+            v = values.join(",")
+            puts "F:#{line}:#{nr}:#{name}:#{pos}:#{len}:#{type}:#{v}:#{label}"
+        end
+
+        def self.parse(l)
+            v = l[7] || ""
+            Field.new(:line => l[1],
+                      :nr => l[2].to_i,
+                      :name => l[3],
+                      :pos => l[4].to_i,
+                      :len => l[5].to_i,
+                      :type => l[6],
+                      :values => v.split(","),
+                      :label => l[8])
         end
     end
 
@@ -176,4 +266,3 @@ module GDV::Format
     end
 
 end
-

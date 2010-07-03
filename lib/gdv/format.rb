@@ -1,6 +1,6 @@
-require 'gdv/format/rectype.rb'
-require 'gdv/format/recindex.rb'
-require 'gdv/format/reader.rb'
+require 'gdv/format/rectype'
+require 'gdv/format/recindex'
+require 'gdv/format/reader'
 
 module GDV::Format
     def self.load_rectypes(file)
@@ -13,23 +13,16 @@ module GDV::Format
                 cnt += 1
                 line.chomp!
                 a = line.split(/:/)
-                typ = a.shift
+                typ = a.first
                 case typ
                 when "K":
-                        all << RecType.new(a[0], a[1], parts)
+                    all << RecType::parse(parts, a)
                     parts = []
                 when "T":
-                        parts << Part.new(a[0].to_i, fields)
+                    parts << Part::parse(fields, a)
                     fields = []
                 when "F":
-                        nr, name, pos, len, type, v, label = a
-                    nr = nr.to_i
-                    pos = pos.to_i
-                    len = len.to_i
-                    v = "" if v.nil?
-                    values = v.split(",")
-                    fields << Field.new(nr, name, pos, len, 
-                                                type, values, label)
+                    fields << Field::parse(a)
                 end
             end
         rescue FormatError => e
@@ -74,7 +67,7 @@ module GDV::Format
         end
         return all
     end
-    
+
     class << self
         attr_reader :rectypes, :values, :recindex
     end

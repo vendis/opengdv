@@ -8,7 +8,7 @@ module GDV
     end
 
     def self.log(msg)
-        puts "#{msg}" if false
+        true
     end
 end
 
