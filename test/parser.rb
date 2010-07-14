@@ -7,34 +7,22 @@ class TestParser < Test::Unit::TestCase
 
     def setup
         GDV::Format::init
+        @maps = GDV::Format::maps
+        @rectypes = GDV::Format::rectypes
     end
-        
+
     def test_init_values
-        v = GDV::Format::values
-        assert_equal(158, v.size)
-        assert v.key?(:absender_art_t)
-        typ = v[:absender_art_t]
-        assert typ.is_a?(GDV::Format::Typ)
+        assert @maps.key?(:art_absenders_t)
+        typ = @maps[:art_absenders_t]
         assert_equal(4, typ.values.size)
         assert_equal(["1", "2", "3", "9"], typ.values.keys.sort)
         assert_equal("Vermittler", typ.values["2"])
-        assert_equal(1, typ.paths.size)
-        path = typ.paths[0]
-        assert_equal("0001", path.satz)
-        assert_equal(1, path.teil)
-        assert_equal(54, path.nr)
-        assert_nil(path.sparte)
     end
 
     def test_init_rectypes
-        assert_equal(144, GDV::Format::rectypes.size)
-        rectype = nil
-        GDV::Format::rectypes.each do |rt|
-            if rt.satz == "9999"
-                assert_nil rectype
-                rectype = rt
-            end
-        end
+        s9999 = @rectypes.select { |rt| rt.satz == "9999" }
+        assert_equal(1, s9999.size)
+        rectype = s9999.first
         assert_not_nil rectype
         assert_nil rectype.sparte
         assert_equal(1, rectype.parts.size)
@@ -52,7 +40,7 @@ class TestParser < Test::Unit::TestCase
         f = part.fields[12]
         assert_equal(13, f.nr)
         assert_equal(part, f.part)
-        assert_equal("blank13", f.name.to_s)
+        assert_equal("blank", f.name.to_s)
         assert_equal(100, f.pos)
         assert_equal(157, f.len)
         assert_equal('space', f.type)

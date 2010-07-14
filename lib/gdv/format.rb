@@ -6,7 +6,9 @@ module GDV::Format
     def self.load_rectypes(file)
         fields = []
         parts = []
-        all = []
+        @rectypes = []
+        map = {}
+        @maps = {}
         cnt = 0
         begin
             file.each_line do |line|
@@ -16,60 +18,34 @@ module GDV::Format
                 typ = a.first
                 case typ
                 when "K":
-                    all << RecType::parse(parts, a)
+                    @rectypes << RecType::parse(parts, a)
                     parts = []
                 when "T":
                     parts << Part::parse(fields, a)
                     fields = []
                 when "F":
-                    fields << Field::parse(a)
+                    fields << Field::parse(a, @maps)
+                # Types with fixed values
+                when "V":
+                    map[a[1]] = a[2]
+                when "M":
+                    t = a[1].to_sym
+                    if @maps[t]
+                        raise FormatError, "Duplicate value map #{t}"
+                    end
+                    @maps[t] = ValueMap.new(a[2], map)
+                    map = {}
                 end
             end
         rescue FormatError => e
             puts "#{cnt}:#{e}"
             raise e
         end
-        all.each { |rt| rt.finalize }
-        return all
-    end
-
-    def self.load_values(file)
-        values = {}
-        paths = []
-        all = {}
-        cnt = 0
-        begin
-            file.each_line do |line|
-                cnt += 1
-                line.chomp!
-                a = line.split(/@/)
-                typ = a.shift
-                case typ
-                when "V":
-                        values[a[0]] = a[1]
-                when "P":
-                        satz, teil, nr, sparte = a
-                    teil = teil.to_i
-                    nr = nr.to_i
-                    paths << Path.new(satz, teil, nr, sparte)
-                when "T":
-                        name = a[0]
-                    all[name.to_sym] = Typ.new(name, paths, values)
-                    paths = []
-                    values = {}
-                end
-            end
-        rescue FormatError => e
-            path = "input"
-            path = file.path if file.respond_to?(:path)
-            puts "#{path}:#{cnt}:#{e}"
-            raise e
-        end
-        return all
+        @rectypes.each { |rt| rt.finalize }
     end
 
     class << self
-        attr_reader :rectypes, :values, :recindex
+        attr_reader :rectypes, :maps, :recindex
     end
 
     def self.classify(record)
@@ -79,12 +55,7 @@ module GDV::Format
     def self.init
         if @rectypes.nil?
             File.open(File.join(GDV::format_path, 'rectypes.txt')) do |f|
-                @rectypes = load_rectypes(f)
-            end
-        end
-        if @values.nil?
-            File.open(File.join(GDV::format_path, 'valuemap.txt')) do |f|
-                @values = load_values(f)
+                load_rectypes(f)
             end
         end
         # Build the index for classifying records

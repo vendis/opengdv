@@ -11,6 +11,7 @@ module GDV::Format
         def initialize(parts, h)
             @satz = h[:satz]
             @sparte = h[:sparte]
+            @sparte = nil if @sparte == ""
             @line = h[:line]
             @label = h[:label]
             @parts = parts
@@ -145,10 +146,10 @@ module GDV::Format
 
     class Field
         attr_reader :nr, :name, :type, :values, :label, :line
-        attr_accessor :part, :pos, :len
+        attr_accessor :part, :pos, :len, :map
         attr_reader :precision
 
-        def initialize(h)
+        def initialize(h, vmap = nil)
             @line = h[:line]
             @nr = h[:nr]
             if h[:name].empty?
@@ -197,6 +198,10 @@ module GDV::Format
             type == 'number'
         end
 
+        def mapped?
+            ! @map.nil?
+        end
+
         def to_s
             "<Field[#{nr}]#{type}:#{pos}+#{len}>\n"
         end
@@ -233,7 +238,7 @@ module GDV::Format
             puts "F:#{line}:#{nr}:#{name}:#{pos}:#{len}:#{type}:#{v}:#{label}"
         end
 
-        def self.parse(l)
+        def self.parse(l, maps={})
             v = l[7] || ""
             Field.new(:line => l[1],
                       :nr => l[2].to_i,
@@ -242,7 +247,7 @@ module GDV::Format
                       :len => l[5].to_i,
                       :type => l[6],
                       :values => v.split(","),
-                      :label => l[8])
+                      :label => l[8], :map => maps[l[6]])
         end
     end
 
@@ -256,11 +261,10 @@ module GDV::Format
         end
     end
 
-    class Typ
-        attr_accessor :name, :paths, :values
-        def initialize(name, paths, values)
-            @name = name
-            @paths = paths
+    class ValueMap
+        attr_accessor :label, :values
+        def initialize(label, values)
+            @label = label
             @values = values
         end
     end
