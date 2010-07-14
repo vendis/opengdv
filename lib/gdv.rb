@@ -4,7 +4,7 @@ module GDV
     end
 
     def self.format_path
-        File::join(File::dirname(__FILE__), "..", "format")
+        File::join(File::dirname(__FILE__), "gdv", "format", "data")
     end
 
     def self.log(msg)
