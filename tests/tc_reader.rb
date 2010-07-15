@@ -1,3 +1,4 @@
+# -*- coding: raw-text -*-
 require 'test/unit'
 
 require 'gdv'
@@ -54,16 +55,26 @@ class TestParser < Test::Unit::TestCase
 
     def test_reader
         r = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
-        cnt = 0
-        begin
-            while r.getrec
-                cnt += 1
-            end
-        rescue GDV::Format::UnknownRecordError => e
-            $stderr.puts "#{e.path}:#{e.lineno}:#{e}"
-            raise
+
+        rec = r.getrec
+        assert rec.known?
+        assert_equal("0001", rec.part.rectype.satz)
+        assert_nil rec.part.rectype.sparte
+        assert_equal(1, rec.part.nr)
+
+        exp = { :sid => "0001", :vunr => "9999 ",
+            :absender => "XXX Versicherung AG           ",
+            :adressat => "BRBRIENNEE,JÜRGEN             ",
+            :erstellungs_dat_zeitraum_vom_zeitraum_bis => '2207200422072004'
+        }
+        exp.keys.each do |k|
+            assert_equal(exp[k], rec[k])
         end
-        assert_equal(165, cnt)
+
+        while rec = r.getrec
+            assert rec.known?
+        end
+        assert_equal(165, r.lineno)
     end
 
     def data_file(name)

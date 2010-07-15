@@ -11,16 +11,24 @@ module GDV::Format
 
     class RecordSizeError < ReaderError
     end
-    
+
     class UnknownRecordError < ReaderError
     end
-    
+
     class Record
         attr_reader :raw, :part
 
         def initialize(raw, part)
             @raw = raw
             @part = part
+        end
+
+        def field(name)
+            @part[name]
+        end
+
+        def [](name)
+            field(name).extract(@raw)
         end
 
         def known?
@@ -54,7 +62,7 @@ module GDV::Format
             end
             @line.chomp!
             @lineno += 1
-            if line.size != 256 
+            if line.size != 256
                 if feature?(:pad_short_lines)
                     @line += " " * (256 - line.size)
                 else

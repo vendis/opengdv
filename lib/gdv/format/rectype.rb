@@ -69,8 +69,8 @@ module GDV::Format
 
         def [](name)
             unless field?(name)
-                puts "FIELDS #{@field_index.keys.inspect}"
-                raise FormatError, "#{line}: No field named #{name} in #{self.rectype.satz}:#{self.rectype.sparte}:#{self.nr}"
+                names = @field_index.keys.collect { |k| k.to_s }.sort
+                raise FormatError, "#{line}: No field named #{name} in #{self.rectype.satz}:#{self.rectype.sparte}:#{self.nr}. Possible fields: #{names.join(", ")}"
             end
             @field_index[name]
         end
