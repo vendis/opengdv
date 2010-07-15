@@ -1,7 +1,5 @@
 # -*- coding: raw-text -*-
-require 'test/unit'
-
-require 'gdv'
+require 'test_helper'
 
 class TestParser < Test::Unit::TestCase
 
@@ -75,9 +73,5 @@ class TestParser < Test::Unit::TestCase
             assert rec.known?
         end
         assert_equal(165, r.lineno)
-    end
-
-    def data_file(name)
-        File::join(File::dirname(__FILE__), "data", name)
     end
 end

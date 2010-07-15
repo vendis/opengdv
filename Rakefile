@@ -13,5 +13,5 @@ task :compile => "format/rectypes.txt"
 
 Rake::TestTask.new(:test) do |t|
     t.test_files = FileList['tests/tc_*.rb']
-    t.libs = [ 'lib' ]
+    t.libs = [ 'lib', 'tests/lib' ]
 end
