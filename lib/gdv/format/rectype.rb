@@ -67,12 +67,17 @@ module GDV::Format
             @field_index.key?(name)
         end
 
+        # Look a field up by its name or number
         def [](name)
-            unless field?(name)
-                names = @field_index.keys.collect { |k| k.to_s }.sort
-                raise FormatError, "#{line}: No field named #{name} in #{self.rectype.satz}:#{self.rectype.sparte}:#{self.nr}. Possible fields: #{names.join(", ")}"
+            if name.is_a?(Fixnum)
+                @fields[name - 1]
+            else
+                unless field?(name)
+                    names = @field_index.keys.collect { |k| k.to_s }.sort
+                    raise FormatError, "#{line}: No field named #{name} in #{self.rectype.satz}:#{self.rectype.sparte}:#{self.nr}. Possible fields: #{names.join(", ")}"
+                end
+                @field_index[name]
             end
-            @field_index[name]
         end
 
         def inspect

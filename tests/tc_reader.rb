@@ -63,7 +63,9 @@ class TestParser < Test::Unit::TestCase
         exp = { :sid => "0001", :vunr => "9999 ",
             :absender => "XXX Versicherung AG           ",
             :adressat => "BRBRIENNEE,JÜRGEN             ",
-            :erstellungs_dat_zeitraum_vom_zeitraum_bis => '2207200422072004'
+            :erstellungs_dat_zeitraum_vom_zeitraum_bis => '2207200422072004',
+            6 => '9999009999',
+            54 => "1"
         }
         exp.keys.each do |k|
             assert_equal(exp[k], rec[k])
