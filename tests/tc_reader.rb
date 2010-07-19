@@ -56,9 +56,10 @@ class TestParser < Test::Unit::TestCase
 
         rec = r.getrec
         assert rec.known?
-        assert_equal("0001", rec.part.rectype.satz)
-        assert_nil rec.part.rectype.sparte
-        assert_equal(1, rec.part.nr)
+        assert_equal("0001", rec.rectype.satz)
+        assert_nil rec.rectype.sparte
+        assert_equal(2, rec.lines.size)
+        assert_equal(1, rec[1].part.nr)
 
         exp = { :sid => "0001", :vunr => "9999 ",
             :absender => "XXX Versicherung AG           ",
@@ -68,7 +69,7 @@ class TestParser < Test::Unit::TestCase
             54 => "1"
         }
         exp.keys.each do |k|
-            assert_equal(exp[k], rec[k])
+            assert_equal(exp[k], rec[1][k])
         end
 
         while rec = r.getrec

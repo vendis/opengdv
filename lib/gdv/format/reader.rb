@@ -15,7 +15,7 @@ module GDV::Format
     class UnknownRecordError < ReaderError
     end
 
-    class Record
+    class Line
         attr_reader :raw, :part
 
         def initialize(raw, part)
@@ -34,10 +34,35 @@ module GDV::Format
         def known?
             not part.nil?
         end
+
+        def rectype
+            @part.rectype
+        end
+    end
+
+    class Record
+        attr_reader :rectype
+
+        def initialize(rectype, lines)
+            @rectype = rectype
+            @lines = lines.inject({}) { |m, l| m[l.part.nr] = l; m }
+        end
+
+        def [](nr)
+            @lines[nr]
+        end
+
+        def lines
+            @lines.values.sort { |l1, l2| l1.part.nr <=> l2.part.nr }
+        end
+
+        def known?
+            not rectype.nil?
+        end
     end
 
     class Reader
-        attr_reader :io, :lineno, :line
+        attr_reader :io, :lineno
 
         def initialize(io)
             @features = [:pad_short_lines]
@@ -55,25 +80,43 @@ module GDV::Format
         end
 
         def getrec
-            @line = io.gets
-            if line.nil?
+            getline unless @line
+            return nil if @line.nil?
+            lines = [ @line ]
+            if rectype = @line.rectype
+                loop do
+                    getline
+                    if @line.nil? || rectype.nil? || rectype != @line.rectype
+                        break
+                    end
+                    lines << @line
+                end
+            end
+            return Record.new(rectype, lines)
+        end
+
+        private
+        def getline
+            if io.closed?
+                @line = nil
+                return nil
+            end
+            buf = io.gets
+            if buf.nil?
                 io.close if feature?(:close_at_eof)
                 return nil
             end
-            @line.chomp!
+            buf.chomp!
             @lineno += 1
-            if line.size != 256
+            if buf.size != 256
                 if feature?(:pad_short_lines)
-                    @line += " " * (256 - line.size)
+                    buf += " " * (256 - buf.size)
                 else
-                    raise RecordSizeError.new(io, lineno), "Expected line with 256 bytes, but read #{line.size} bytes"
+                    raise RecordSizeError.new(io, lineno), "Expected line with 256 bytes, but read #{buf.size} bytes"
                 end
             end
-            if line.nil?
-                raise RuntimeError, "Line disappeared #{lineno}"
-            end
-            part = GDV::Format::classify(line)
-            Record.new(line, part)
+            part = GDV::Format::classify(buf)
+            @line = Line.new(buf, part)
         end
 
     end
