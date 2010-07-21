@@ -15,9 +15,19 @@ module GDV::Format
             @line = h[:line]
             @label = h[:label]
             @parts = parts
+            @part_index = {}
             @parts.each do |p|
                 p.rectype = self
+                p.fields.each do |f|
+                    unless @part_index[f.name]
+                        @part_index[f.name] = [p.nr, f.name]
+                    end
+                end
             end
+        end
+
+        def index(name)
+            @part_index[name]
         end
 
         def inspect
@@ -188,10 +198,13 @@ module GDV::Format
             @name = "#{@name}_f#{@nr}"
         end
 
+        # Return the raw string for this field from +record+
         def extract(record)
             record[pos-1..pos+len-2]
         end
 
+        # Convert the value for this field in +record+. For mapped types,
+        # return the entry from the map. Strip spaces
         def convert(record)
             s = extract(record)
             if mapped?
@@ -278,6 +291,10 @@ module GDV::Format
         def initialize(label, values)
             @label = label
             @values = values
+        end
+
+        def [](k)
+            values[k]
         end
     end
 

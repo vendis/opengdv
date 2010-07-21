@@ -69,4 +69,9 @@ module GDV::Format
             end
         end
     end
+
+    # Constants for the different kinds of 'satz'
+    VORSATZ = "0001"
+    NACHSATZ = "9999"
+    ADDRESS_TEIL = "0100"
 end

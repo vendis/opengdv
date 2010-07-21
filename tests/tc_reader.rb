@@ -58,16 +58,19 @@ class TestParser < Test::Unit::TestCase
         assert rec.known?
         assert_equal("0001", rec.rectype.satz)
         assert_nil rec.rectype.sparte
+        assert_equal("XXX Versicherung AG", rec.absender)
+        assert_raises(ArgumentError) { rec.not_a_field }
         assert_equal(2, rec.lines.size)
         assert_equal(1, rec[1].part.nr)
 
-        exp = { :sid => "0001", :vunr => "9999 ",
-            :absender => "XXX Versicherung AG           ",
-            :adressat => "BRBRIENNEE,JÜRGEN             ",
+        exp = { :sid => "0001", :vunr => "9999",
+            :absender => "XXX Versicherung AG",
+            :adressat => "BRBRIENNEE,JÜRGEN",
             :erstellungs_dat_zeitraum_vom_zeitraum_bis => '2207200422072004',
             6 => '9999009999',
-            54 => "1"
+            54 => "VU"
         }
+        assert_equal("1", rec[1].raw(54))
         exp.keys.each do |k|
             assert_equal(exp[k], rec[1][k])
         end

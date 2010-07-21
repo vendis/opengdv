@@ -28,6 +28,10 @@ module GDV::Format
         end
 
         def [](name)
+            field(name).convert(@raw)
+        end
+
+        def raw(name)
             field(name).extract(@raw)
         end
 
@@ -36,7 +40,7 @@ module GDV::Format
         end
 
         def rectype
-            @part.rectype
+            part.rectype if part
         end
     end
 
@@ -48,8 +52,17 @@ module GDV::Format
             @lines = lines.inject({}) { |m, l| m[l.part.nr] = l; m }
         end
 
-        def [](nr)
-            @lines[nr]
+        def [](k)
+            @lines[k]
+        end
+
+        def method_missing(name, *args)
+            nr, name = @rectype.index(name)
+            if nr.nil?
+                super
+            else
+                @lines[nr][name]
+            end
         end
 
         def lines
@@ -58,6 +71,10 @@ module GDV::Format
 
         def known?
             not rectype.nil?
+        end
+
+        def satz
+            rectype.satz
         end
     end
 

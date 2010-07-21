@@ -42,12 +42,14 @@ loop do
         rec = r.getrec
         break if rec.nil?
         if rec.known?
-            puts "\n#{rec.part}"
+            puts "#{rec.satz}"
             unless brief
-                rec.part.fields.each do |f|
-                    v = f.extract(rec.raw)
-                    unless v =~ /^ *$/
-                        puts "#{f.label}: #{v} [#{v.size}]"
+                rec.lines do |l|
+                    l.part.fields.each do |f|
+                        v = f.extract(rec.raw)
+                        unless v =~ /^ *$/
+                            puts "#{f.label}: #{v} [#{v.size}]"
+                        end
                     end
                 end
             end
