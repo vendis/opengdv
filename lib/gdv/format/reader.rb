@@ -8,7 +8,7 @@ module GDV::Format
             @lineno = lineno
         end
 
-        def to_str
+        def message
             "#{path}:#{lineno}:#{details}"
         end
 
@@ -159,8 +159,8 @@ module GDV::Format
             @features.include?(name)
         end
 
-        def push(rec)
-            @records << rec
+        def unshift(rec)
+            @records.unshift(rec)
         end
 
         # Return the next record, or nil if there are no more records

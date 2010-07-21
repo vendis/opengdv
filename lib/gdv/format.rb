@@ -77,5 +77,5 @@ module GDV::Format
     SIGNATURES   = "0352"
     CLAUSES      = "0350"
     REBATES      = "0390"
-
+    GENERAL_CONTRACT = "0200"
 end
