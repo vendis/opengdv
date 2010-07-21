@@ -154,7 +154,8 @@ module GDV::Format
         attr_accessor :part, :pos, :len, :map
         attr_reader :precision
 
-        def initialize(h, vmap = nil)
+        def initialize(h)
+            @map = h[:map]
             @line = h[:line]
             @nr = h[:nr]
             if h[:name].empty?
@@ -192,15 +193,20 @@ module GDV::Format
         end
 
         def convert(record)
-            extract(record)
+            s = extract(record)
+            if mapped?
+                map[s]
+            else
+                s.strip
+            end
         end
 
         def const?
-            type == 'const'
+            type == :const
         end
 
         def number?
-            type == 'number'
+            type == :number
         end
 
         def mapped?
@@ -245,14 +251,15 @@ module GDV::Format
 
         def self.parse(l, maps={})
             v = l[7] || ""
+            t = l[6].to_sym
             Field.new(:line => l[1],
                       :nr => l[2].to_i,
                       :name => l[3],
                       :pos => l[4].to_i,
                       :len => l[5].to_i,
-                      :type => l[6],
+                      :type => t,
                       :values => v.split(","),
-                      :label => l[8], :map => maps[l[6]])
+                      :label => l[8], :map => maps[t])
         end
     end
 

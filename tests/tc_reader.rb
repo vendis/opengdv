@@ -41,7 +41,7 @@ class TestParser < Test::Unit::TestCase
         assert_equal("blank", f.name.to_s)
         assert_equal(100, f.pos)
         assert_equal(157, f.len)
-        assert_equal('space', f.type)
+        assert_equal(:space, f.type)
         assert f.values.empty?
     end
 
