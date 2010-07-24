@@ -35,7 +35,7 @@ module GDV::Format
     end
 
     class Line
-        attr_reader :raw, :part
+        attr_reader :part
 
         def initialize(raw, part)
             @raw = raw
@@ -50,8 +50,12 @@ module GDV::Format
             field(name).convert(@raw)
         end
 
-        def raw(name)
-            field(name).extract(@raw)
+        def raw(name = nil)
+            if name.nil?
+                @raw
+            else
+                field(name).extract(@raw)
+            end
         end
 
         def known?
@@ -94,6 +98,10 @@ module GDV::Format
 
         def satz
             rectype.satz
+        end
+
+        def sparte
+            rectype.sparte
         end
     end
 
