@@ -1,3 +1,5 @@
+require 'date'
+
 module GDV::Format
 
     class FormatError < RuntimeError
@@ -210,11 +212,19 @@ module GDV::Format
             if mapped?
                 map[s]
             elsif number?
-                if precision
+                if precision > 0
                     s.to_i / (10.0 ** precision)
                 else
                     s.to_i
                 end
+            elsif type == :date
+                d = s[0,2].to_i
+                m = s[2,2].to_i
+                y = s[4,4].to_i
+                return nil if y + m + d == 0
+                d = 1 if d == 0
+                m = 1 if m == 0
+                Date.civil(y,m,d)
             else
                 s.strip
             end

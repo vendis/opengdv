@@ -79,6 +79,9 @@ class TestParser < Test::Unit::TestCase
             assert rec.known?
             if rec.rectype.satz == "9999"
                 assert_equal(4806.0, rec[1][4])
+            elsif rec.rectype.satz == "0200" &&
+                    rec[1][5] == "59999999999"
+                assert_equal(Date.civil(2004,5,1), rec[1][9])
             end
         end
         assert_equal(165, r.lineno)
