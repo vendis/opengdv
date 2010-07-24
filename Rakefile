@@ -1,4 +1,5 @@
 require 'rake'
+require 'rake/rdoctask'
 require 'rake/testtask'
 
 GDV_XML = "format/VUVM2009_011109.xml"
@@ -10,6 +11,11 @@ end
 
 desc "Compile GDV XML into parse tables"
 task :compile => "format/rectypes.txt"
+
+Rake::RDocTask.new do |t|
+    t.main = "README.rdoc"
+    t.rdoc_files.include("README.rdoc", "lib/**/*.rb")
+end
 
 Rake::TestTask.new(:test) do |t|
     t.test_files = FileList['tests/tc_*.rb']
