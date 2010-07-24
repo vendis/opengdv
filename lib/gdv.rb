@@ -12,7 +12,5 @@ module GDV
     end
 end
 
-require 'gdv/format.rb'
-require 'gdv/transmission.rb'
-require 'gdv/contract.rb'
-require 'gdv/partner.rb'
+require 'gdv/format'
+require 'gdv/model'
