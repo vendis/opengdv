@@ -1,6 +1,5 @@
 # Base class for all models
-class GDV::Model::Base
-
+module GDV::Model
     # Constants for the different kinds of 'satz'
     VORSATZ      = "0001"
     NACHSATZ     = "9999"
@@ -11,11 +10,14 @@ class GDV::Model::Base
     GENERAL_CONTRACT = "0200"
     SPECIFIC_CONTRACT = "0210"
 
-    def [](sym)
-        instance_variable_get(:"@#{sym}")
-    end
+    class Base
 
-    def []=(sym, value)
-        instance_variable_set(:"@#{sym}", value)
+        def [](sym)
+            instance_variable_get(:"@#{sym}")
+        end
+
+        def []=(sym, value)
+            instance_variable_set(:"@#{sym}", value)
+        end
     end
 end
