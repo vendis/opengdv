@@ -51,8 +51,9 @@ loop do
                     l.part.fields.each do |f|
                         v = convert ? f.convert(l.raw) : f.extract(l.raw)
                         unless v =~ /^ *$/
-                            s = convert ? "" : " [#{v.size}]"
-                            puts "#{f.label}: #{v}#{s}"
+                            s = convert ? "#{v.class.name}" : "#{v.size}"
+                            lbl = f.label.nil? ? f.type.to_s : f.label[0,29]
+                            printf "%2d %-30s %-20s [%s]\n", f.nr, lbl + ":", v, s
                         end
                     end
                     if l == rec.lines.last
