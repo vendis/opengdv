@@ -112,9 +112,9 @@ module GDV::Format
         class Parser
             attr_reader :result
 
-            def initialize(reader, &block)
+            def initialize(reader, klass, &block)
                 @reader = reader
-                @result = {}
+                @result = klass.new
                 instance_eval &block
             end
 
@@ -210,17 +210,8 @@ module GDV::Format
             end
         end
 
-        def parse(klass = nil, &block)
-            hash = Parser.new(self, &block).result
-            if klass
-                obj = klass.new
-                hash.keys.each do |k|
-                    obj.instance_variable_set(:"@#{k}", hash[k])
-                end
-                return obj
-            else
-                return hash
-            end
+        def parse(klass, &block)
+            Parser.new(self, klass, &block).result
         end
 
         private

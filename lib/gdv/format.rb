@@ -78,4 +78,5 @@ module GDV::Format
     CLAUSES      = "0350"
     REBATES      = "0390"
     GENERAL_CONTRACT = "0200"
+    SPECIFIC_CONTRACT = "0210"
 end

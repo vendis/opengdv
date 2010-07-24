@@ -4,7 +4,7 @@ class GDV::Model::Base
         instance_variable_get(:"@#{sym}")
     end
 
-    def []=(sym)
-        instance_variable_set(:"@#{sym}")
+    def []=(sym, value)
+        instance_variable_set(:"@#{sym}", value)
     end
 end
