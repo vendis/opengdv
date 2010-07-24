@@ -9,10 +9,10 @@ class GDV::Model::Transmission < GDV::Model::Base
 
     def self.parse(reader)
         reader.parse(self) do
-            one :vorsatz, :satz => GDV::Format::VORSATZ
+            one :vorsatz, :satz => VORSATZ
             objects :contracts, GDV::Model::Contract,
-                      :satz => GDV::Format::ADDRESS_TEIL
-            one :nachsatz, :satz => GDV::Format::NACHSATZ
+                      :satz => ADDRESS_TEIL
+            one :nachsatz, :satz => NACHSATZ
         end
     end
 end

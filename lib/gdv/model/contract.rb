@@ -7,14 +7,13 @@ class GDV::Model::Contract < GDV::Model::Base
         reader.parse(self) do
             object :partner, GDV::Model::Partner
             # Allgemeiner Teil
-            one    :general, :satz => GDV::Format::GENERAL_CONTRACT
-            star   :signatures, :satz => GDV::Format::SIGNATURES
-            star   :clauses, :satz => GDV::Format::CLAUSES
-            star   :rebates, :satz => GDV::Format::REBATES
+            one    :general, :satz => GENERAL_CONTRACT
+            star   :signatures, :satz => SIGNATURES
+            star   :clauses, :satz => CLAUSES
+            star   :rebates, :satz => REBATES
             # Spartenspezifischer Teil
-            one    :specific, :satz => GDV::Format::SPECIFIC_CONTRACT
-            skip_until :satz => [GDV::Format::ADDRESS_TEIL,
-                                 GDV::Format::NACHSATZ]
+            one    :specific, :satz => SPECIFIC_CONTRACT
+            skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
         end
     end
 end
