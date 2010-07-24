@@ -66,7 +66,7 @@ class TestParser < Test::Unit::TestCase
         exp = { :sid => "0001", :vunr => "9999",
             :absender => "XXX Versicherung AG",
             :adressat => "BRBRIENNEE,JÜRGEN",
-            :erstellungs_dat_zeitraum_vom_zeitraum_bis => '2207200422072004',
+            :erstellungs_dat_zeitraum_vom_zeitraum_bis => 2207200422072004,
             6 => '9999009999',
             54 => "VU"
         }
@@ -77,6 +77,9 @@ class TestParser < Test::Unit::TestCase
 
         while rec = r.getrec
             assert rec.known?
+            if rec.rectype.satz == "9999"
+                assert_equal(4806.0, rec[1][4])
+            end
         end
         assert_equal(165, r.lineno)
     end

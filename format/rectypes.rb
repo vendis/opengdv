@@ -23,11 +23,13 @@ FIELD_NAMES = {
 }
 
 TYPE_NAMES = {
-    'Alphanumerisch' => 'string',
-    'Datum' => 'date',
-    'Fließkomma' => 'number',
-    'Numerisch' => 'number',
-    'Uhrzeit' => 'time'
+    'Alphanumerisch' => :string,
+    'Datum' => :date,
+    'Fließkomma' => :number,
+    'FlieÃŸkomma' => :number,
+    'Numerisch' => :number,
+    'Uhrzeit' => :time,
+    '' => :unknown
 }
 
 EMITTED_TYPE_MAPS = []
@@ -46,15 +48,15 @@ end
 def typename(fieldname, fdef)
     # FIXME: Handle value maps
     if ['sid', 'snr'].include?(fieldname)
-        "const"
+        :const
     else
         vmap = fdef.xpath('wertetabelle')
         tname = vmap.xpath('technischerName').text
         if tname.empty?
             typ = fdef.xpath("datentyp").text
-            TYPE_NAMES[typ] || typ
+            TYPE_NAMES[typ] || typ.to_sym
         else
-            typename = tname.to_underscore + "_t"
+            typename = (tname.to_underscore + "_t").to_sym
             if ! EMITTED_TYPE_MAPS.include?(typename)
                 vmap.xpath('alleWerteDerTabelle/eintrag').each do |e|
                     val = e.xpath('wert').text
@@ -274,7 +276,7 @@ rt.xpath("satzart").each do |rec|
             fdef = fields.xpath("feld[@referenz = '#{f["referenz"]}']")
             if fdef.size == 0
                 if f['leerstellen']
-                    fld[:type] = 'space'
+                    fld[:type] = :space
                 elsif !f['const']
                     raise "Field without definition #{f}"
                 end
@@ -283,10 +285,10 @@ rt.xpath("satzart").each do |rec|
                 fld[:type] = typename(fld[:name], fdef)
             end
             if val = f["const"]
-                fld[:type] = "const"
+                fld[:type] = :const
                 val = val.split(",")
             end
-            if fld[:type] == 'number'
+            if fld[:type] == :number
                 decimals = fdef.xpath("nachkommastellen").text
                 val = [ decimals ] unless decimals.empty?
             end

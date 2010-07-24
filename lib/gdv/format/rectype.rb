@@ -120,7 +120,7 @@ module GDV::Format
             pos = 1
             fields.each do |f|
                 f.pos = pos if f.pos == 0
-                if f.len.nil? && f.type == 'space'
+                if f.len.nil? && f.type == :space
                     if used
                         f.len = 256 - used
                         used = nil
@@ -186,7 +186,7 @@ module GDV::Format
             @len = h[:len]
             @type = h[:type]
             if number?
-                @precision = @values.shift
+                @precision = @values.shift.to_i
             else
                 @values = @values.uniq
             end
@@ -209,6 +209,12 @@ module GDV::Format
             s = extract(record)
             if mapped?
                 map[s]
+            elsif number?
+                if precision
+                    s.to_i / (10.0 ** precision)
+                else
+                    s.to_i
+                end
             else
                 s.strip
             end
@@ -258,7 +264,11 @@ module GDV::Format
         end
 
         def emit
-            v = values.join(",")
+            if number?
+                v = [ precision ]
+            else
+                v = values.join(",")
+            end
             puts "F:#{line}:#{nr}:#{name}:#{pos}:#{len}:#{type}:#{v}:#{label}"
         end
 
