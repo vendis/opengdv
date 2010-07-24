@@ -1,5 +1,5 @@
 # A contract, i.e. everything between the Vorsatz and Nachsatz
-class GDV::Model::Contract
+class GDV::Model::Contract < GDV::Model::Base
     attr_reader :partner, :general, :signatures, :clauses, :rebates
 
     def self.parse(reader)

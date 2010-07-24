@@ -1,5 +1,5 @@
 # The partner portion of a contract
-class GDV::Model::Partner
+class GDV::Model::Partner < GDV::Model::Base
     attr_reader :address, :signatures, :clauses, :rebates
 
     # Partner := 0100 0342* 0350* 0390*

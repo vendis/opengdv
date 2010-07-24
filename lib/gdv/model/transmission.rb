@@ -1,6 +1,6 @@
 # A class encompassing an entire transmission, i.e. what is usually
 # found in one GDV file
-class GDV::Model::Transmission
+class GDV::Model::Transmission < GDV::Model::Base
     attr_reader :vorsatz, :nachsatz, :contracts
 
     def vunr
