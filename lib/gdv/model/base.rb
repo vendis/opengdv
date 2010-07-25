@@ -61,6 +61,8 @@ module GDV::Model
             end
         end
 
+        private :read_property
+
         class << self
             # Define an instance method +name+ that will retrieve the
             # converted field value described with the path +args+.  Each
