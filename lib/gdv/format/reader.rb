@@ -34,39 +34,6 @@ module GDV::Format
         end
     end
 
-    class Line
-        attr_reader :part
-
-        def initialize(raw, part)
-            @raw = raw
-            @part = part
-        end
-
-        def field(name)
-            @part[name]
-        end
-
-        def [](name)
-            field(name).convert(@raw)
-        end
-
-        def raw(name = nil)
-            if name.nil?
-                @raw
-            else
-                field(name).extract(@raw)
-            end
-        end
-
-        def known?
-            not part.nil?
-        end
-
-        def rectype
-            part.rectype if part
-        end
-    end
-
     class Record
         attr_reader :rectype
 
