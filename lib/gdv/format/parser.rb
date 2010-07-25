@@ -57,6 +57,11 @@ module GDV::Format
         end
 
         def error(msg = nil)
+            if msg == :unexpected
+                rec = @reader.getrec
+                @reader.unshift(rec)
+                msg = "unerwarteter Satz #{rec.rectype}"
+            end
             raise ParseError.new(@reader, msg)
         end
     end

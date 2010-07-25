@@ -33,7 +33,11 @@ module GDV::Format
         end
 
         def inspect
-            "satz = #{satz}\nsparte = #{sparte}\n parts = #{parts.inspect}"
+            "@satz = #{satz}\n@sparte = #{sparte}\n@parts = #{parts.inspect}"
+        end
+
+        def to_s
+            "rectype: @satz = #{satz}, @sparte = #{sparte}"
         end
 
         def finalize
