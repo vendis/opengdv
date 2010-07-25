@@ -122,6 +122,10 @@ module GDV::Format
                 result[sym] = @reader.match!(cond)
             end
 
+            def maybe(sym, cond)
+                result[sym] = @reader.match(cond)
+            end
+
             def star(sym, cond)
                 result[sym] = []
                 while @reader.match?(cond)
@@ -149,6 +153,17 @@ module GDV::Format
                 end
             end
 
+            def match?(cond)
+                @reader.match?(cond)
+            end
+
+            def satz?(satz)
+                match?(:satz => satz)
+            end
+
+            def sparte?(sparte)
+                match?(:sparte => sparte)
+            end
         end
 
         def initialize(io)
@@ -195,19 +210,29 @@ module GDV::Format
         # the record
         def match?(cond)
             rec = getrec
-            result = rec && cond_match(rec.satz, cond[:satz])
             @records.unshift(rec)
+            result = ! rec.nil?
+            if result && cond[:satz]
+                result = cond_match(rec.satz, cond[:satz])
+            end
+            if result && cond[:sparte]
+                result = cond_match(rec.sparte, cond[:sparte])
+            end
             result
+        end
+
+        # Return the next record, provided it matches +cond+; otherwise,
+        # return nil
+        def match(cond)
+            getrec if match?(cond)
         end
 
         # Return the next record, provided it matches +cond+; if it
         # doesn't, raise a ParseError
         def match!(cond)
-            if match?(cond)
-                return getrec
-            else
-                raise ParseError.new(io, lineno, cond)
-            end
+            rec = match(cond)
+            raise ParseError.new(io, lineno, cond) unless rec
+            rec
         end
 
         def parse(klass, &block)
