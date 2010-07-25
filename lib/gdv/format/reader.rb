@@ -43,7 +43,7 @@ module GDV::Format
         end
 
         def [](k)
-            @lines[k]
+            @lines[k] || @rectype.parts[k-1].default
         end
 
         def method_missing(name, *args)

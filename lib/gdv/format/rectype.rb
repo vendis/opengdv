@@ -156,6 +156,16 @@ module GDV::Format
             puts "T:#{line}:#{nr}"
         end
 
+        # Return a +Line+ based on this part with a string that is filled
+        # with the default values for each field
+        def default
+            unless @default
+                raw = fields.collect { |f| f.default }.join("")
+                @default = Line.new(raw, self)
+            end
+            @default
+        end
+
         def self.parse(fields, l)
             Part.new(fields, :line => l[1], :nr => l[2].to_i)
         end
@@ -280,6 +290,17 @@ module GDV::Format
                 v = values.join(",")
             end
             puts "F:#{line}:#{nr}:#{name}:#{pos}:#{len}:#{type}:#{v}:#{label}"
+        end
+
+        # Return a string holding the default value for this field
+        def default
+            if [:number, :date, :time].include?(type)
+                "0" * len
+            elsif type == :const
+                values.first
+            else
+                " " * len
+            end
         end
 
         def self.parse(l, maps={})

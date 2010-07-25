@@ -45,6 +45,15 @@ class TestParser < Test::Unit::TestCase
         assert f.values.empty?
     end
 
+    def test_default
+        rectype = @rectypes.select { |rt| rt.satz == "9999" }.first
+        line = rectype.parts[0].default
+        assert_equal(256, line.raw.size)
+        assert_equal("9999", line[1])
+        assert_equal(0, line[2])
+        assert_equal(" " * 10, line.raw(3))
+    end
+
     def test_indexing
         root = GDV::Format::recindex
         parts = GDV::Format::rectypes.inject([]) { |l, rt| l + rt.parts }
