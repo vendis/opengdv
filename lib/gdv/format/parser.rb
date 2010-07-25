@@ -55,6 +55,10 @@ module GDV::Format
         def sparte?(sparte)
             match?(:sparte => sparte)
         end
+
+        def error(msg = nil)
+            raise ParseError.new(@reader, msg)
+        end
     end
 
 end
