@@ -56,6 +56,10 @@ module GDV::Format
             match?(:sparte => sparte)
         end
 
+        def peek
+            @reader.peek
+        end
+
         def error(msg = nil)
             if msg == :unexpected
                 rec = @reader.getrec

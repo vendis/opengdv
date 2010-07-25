@@ -26,15 +26,17 @@ module GDV::Format
     class MatchError < ReaderError
         def initialize(reader, cond = {})
             s = cond.keys.collect { |k| "#{k} = #{cond[k]}" }.join(" und ")
-            super(reader, "Satz mit Kennzeichnung #{s} erwartet")
+            act = reader.peek.rectype
+            super(reader, "Satz mit Kennzeichnung #{s} erwartet, aber #{act} gefunden")
         end
     end
 
     class Record
-        attr_reader :rectype
+        attr_reader :rectype, :lineno
 
-        def initialize(rectype, lines)
+        def initialize(rectype, lines, lineno)
             @rectype = rectype
+            @lineno = lineno
             @lines = lines.inject({}) { |m, l| m[l.part.nr] = l; m }
         end
 
@@ -92,6 +94,13 @@ module GDV::Format
             @records.unshift(rec)
         end
 
+        # Return the next record without consuming it
+        def peek
+            rec = getrec
+            unshift(rec)
+            rec
+        end
+
         # Return the next record, or nil if there are no more records
         def getrec
             unless @records.empty?
@@ -109,14 +118,13 @@ module GDV::Format
                     lines << @line
                 end
             end
-            return Record.new(rectype, lines)
+            return Record.new(rectype, lines, @lineno - lines.size)
         end
 
         # Return +true+ if the next record matches +cond+ without consuming
         # the record
         def match?(cond)
-            rec = getrec
-            @records.unshift(rec)
+            rec = peek
             result = ! rec.nil?
             if result && cond[:satz]
                 result = cond_match(rec.satz, cond[:satz])
