@@ -27,8 +27,10 @@ module GDV::Format
             end
         end
 
-        def object(sym, klass)
-            result[sym] = klass.parse(@reader)
+        def object(sym, klass, cond = nil)
+            if cond.nil? || @reader.match?(cond)
+                result[sym] = klass.parse(@reader)
+            end
         end
 
         # Parse a sequence of objects of class +klass+ as long
