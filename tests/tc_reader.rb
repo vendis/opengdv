@@ -95,4 +95,10 @@ class TestParser < Test::Unit::TestCase
         end
         assert_equal(165, r.lineno)
     end
+
+    def test_match
+        r = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
+        assert(r.match?(:satz => "0001"))
+        assert_raise(GDV::Format::MatchError) { r.match!(:satz => "9999") }
+    end
 end

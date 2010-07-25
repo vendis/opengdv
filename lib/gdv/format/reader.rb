@@ -2,18 +2,12 @@ module GDV::Format
 
     class ReaderError < RuntimeError
         attr_reader :path, :lineno
-        def initialize(io, lineno)
+        def initialize(reader, details = nil)
             @path = "(input)"
-            @path = io.path if io.respond_to?(:path)
-            @lineno = lineno
-        end
-
-        def message
-            "#{path}:#{lineno}:#{details}"
-        end
-
-        def details
-            "Lesefehler"
+            @path = reader.io.path if reader.io.respond_to?(:path)
+            @lineno = reader.lineno
+            details = "Lesefehler" unless details
+            super("#{path}:#{lineno}:#{details}")
         end
     end
 
@@ -24,13 +18,15 @@ module GDV::Format
     end
 
     class ParseError < ReaderError
-        def initialize(io, lineno, cond)
-            super(io, lineno)
-            @cond = cond
+        def initialize(reader, details = nil)
+            super
         end
+    end
 
-        def details
-            "Satz mit Kennzeichnung #{@cond.inspect} erwartet"
+    class MatchError < ReaderError
+        def initialize(reader, cond = {})
+            s = cond.keys.collect { |k| "#{k} = #{cond[k]}" }.join(" und ")
+            super(reader, "Satz mit Kennzeichnung #{s} erwartet")
         end
     end
 
@@ -196,10 +192,10 @@ module GDV::Format
         end
 
         # Return the next record, provided it matches +cond+; if it
-        # doesn't, raise a ParseError
+        # doesn't, raise a MatchError
         def match!(cond)
             rec = match(cond)
-            raise ParseError.new(io, lineno, cond) unless rec
+            raise MatchError.new(self, cond) unless rec
             rec
         end
 
