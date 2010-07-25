@@ -73,7 +73,7 @@ module GDV::Format
     end
 
     class Reader
-        attr_reader :io, :lineno
+        attr_reader :io, :lineno, :unknown
 
         # Helper class for the DSL used in Reader.parse
         class Parser
@@ -142,6 +142,7 @@ module GDV::Format
                 @io = io
             end
             @lineno = 0
+            @unknown = 0
             @records = []
         end
 
@@ -208,25 +209,29 @@ module GDV::Format
 
         private
         def getline
-            if io.closed?
-                @line = nil
-                return nil
-            end
-            buf = io.gets
-            if buf.nil?
-                io.close if feature?(:close_at_eof)
-                return nil
-            end
-            buf.chomp!
-            @lineno += 1
-            if buf.size != 256
-                if feature?(:pad_short_lines)
-                    buf += " " * (256 - buf.size)
-                else
-                    raise RecordSizeError.new(io, lineno), "Expected line with 256 bytes, but read #{buf.size} bytes"
+            begin
+                if io.closed?
+                    @line = nil
+                    return nil
                 end
-            end
-            part = GDV::Format::classify(buf)
+                buf = io.gets
+                if buf.nil?
+                    io.close if feature?(:close_at_eof)
+                    return nil
+                end
+                buf.chomp!
+                @lineno += 1
+                if buf.size != 256
+                    if feature?(:pad_short_lines)
+                        buf += " " * (256 - buf.size)
+                    else
+                        raise RecordSizeError.new(io, lineno), "Expected line with 256 bytes, but read #{buf.size} bytes"
+                    end
+                end
+                # FIXME: We silently skip anything we don't understand
+                part = GDV::Format::classify(buf)
+                @unknown += 1 if part.nil?
+            end while part.nil?
             @line = Line.new(buf, part)
         end
 

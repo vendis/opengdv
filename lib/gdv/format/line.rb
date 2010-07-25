@@ -30,11 +30,6 @@ module GDV::Format
             end
         end
 
-        # Return +true+ if +part+ is set
-        def known?
-            not part.nil?
-        end
-
         # Return the +Rectype+ to which the +part+ belongs
         def rectype
             part.rectype if part

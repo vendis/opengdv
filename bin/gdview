@@ -39,39 +39,28 @@ end
 File::open("/tmp/tree.txt", "w") { |f| f.puts GDV::Format::recindex::print }
 
 r = GDV::Format::Reader.new(ARGV[0])
-unknown = 0
 loop do
     begin
         rec = r.getrec
         break if rec.nil?
-        if rec.known?
-            puts "#{rec.satz}.#{rec.sparte}"
-            unless brief
-                rec.lines.each do |l|
-                    l.part.fields.each do |f|
-                        v = convert ? f.convert(l.raw) : f.extract(l.raw)
-                        unless v =~ /^ *$/
-                            s = convert ? "#{v.class.name}" : "#{v.size}"
-                            lbl = f.label.nil? ? f.type.to_s : f.label[0,29]
-                            printf "%2d %-30s %-20s [%s]\n", f.nr, lbl + ":", v, s
-                        end
-                    end
-                    if l == rec.lines.last
-                        puts "=" * 70
-                    else
-                        puts "-" * 70
+        puts "#{rec.satz}.#{rec.sparte}"
+        unless brief
+            rec.lines.each do |l|
+                l.part.fields.each do |f|
+                    v = convert ? f.convert(l.raw) : f.extract(l.raw)
+                    unless v =~ /^ *$/
+                        s = convert ? "#{v.class.name}" : "#{v.size}"
+                        lbl = f.label.nil? ? f.type.to_s : f.label[0,29]
+                        printf "%2d %-30s %-20s [%s]\n", f.nr, lbl + ":", v, s
                     end
                 end
+                if l == rec.lines.last
+                    puts "=" * 70
+                else
+                    puts "-" * 70
+                end
             end
-        else
-            mp = GDV::Format::recindex::match_path(r.line)
-            mp.pop
-            print "\n***:#{r.lineno}:unknown record:"
-            puts mp.collect { |field|
-                "#{field.name}@#{field.pos}=#{field.extract(r.line)}"
-            }.join(' ')
-            unknown += 1
         end
     end
 end
-puts "#{r.lineno} Saetze, #{unknown} unerkannt"
+puts "#{r.lineno} Saetze, #{r.unknown} unerkannt"
