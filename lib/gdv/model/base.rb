@@ -51,20 +51,32 @@ module GDV::Model
             instance_variable_set(:"@#{sym}", value)
         end
 
-        def read_property(args)
+        def read_property(args, fnr, mode)
             obj = self
-            while args.size > 2
-                arg = args.shift
-                obj = obj.send(arg)
+            args.each { |arg| obj = obj[arg] }
+            if mode == :raw
+                obj.raw(fnr)
+            else
+                obj[fnr]
             end
-            obj[args[0]][args[1]]
         end
 
         class << self
-            def property(*args)
-                name = args.shift
+            # Define an instance method +name+ that will retrieve the
+            # converted field value described with the path +args+.  Each
+            # entry in +args+ except for the last two must be symbols,
+            # naming associated objects. The last two entries give the
+            # numbers of the part and field to read
+            #
+            # Also define an instance method +name_raw+ that will retrieve
+            # the raw value of the field
+            def property(name, *args)
+                fnr = args.pop
                 define_method(name) do
-                    read_property(args)
+                    read_property(args, fnr, :convert)
+                end
+                define_method(:"#{name}_raw") do
+                    read_property(args, fnr, :raw)
                 end
             end
         end
