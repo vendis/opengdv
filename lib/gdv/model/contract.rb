@@ -4,6 +4,9 @@ module GDV::Model
         # Erster Partner - der Versicherungsnehmer
         attr_reader :vn
 
+        # Liste weiterer partner
+        attr_reader :partner
+
         attr_reader :general, :signatures, :clauses, :rebates
         attr_reader :sparte
 
@@ -21,6 +24,8 @@ module GDV::Model
         def self.parse(reader)
             reader.parse(self) do
                 object :vn, Partner
+                objects :partner, Partner, :satz => ADDRESS_TEIL
+
                 # Allgemeiner Teil
                 one    :general, :satz => GENERAL_CONTRACT
                 star   :signatures, :satz => SIGNATURES
