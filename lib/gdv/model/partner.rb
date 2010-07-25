@@ -8,6 +8,8 @@ module GDV::Model
         property :vorname,  :address, 1, 11
         property :kdnr_vu,  :address, 2, 8
 
+        property :geburtsort, :address, 4, 9
+
         # Partner := 0100 0342* 0350* 0390*
         def self.parse(reader)
             reader.parse(self) do

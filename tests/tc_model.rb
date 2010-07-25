@@ -15,6 +15,8 @@ class TestModel < Test::Unit::TestCase
         p = c.vn
         assert_equal("2", p.anrede_raw)
         assert_equal("Frau", p.anrede)
+        assert_equal("", p.geburtsort)
+
         assert_equal("Frau", p.address.anredeschluessel)
         assert_equal("Martina", p.address.name3)
         g = c.general
