@@ -6,6 +6,9 @@ module GDV::Format
         def initialize(reader, klass, &block)
             @reader = reader
             @result = klass.new
+            unless block_given?
+                raise ParseError.new(@reader, "No structure defined for #{klass}")
+            end
             instance_eval &block
         end
 

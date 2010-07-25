@@ -83,11 +83,21 @@ module GDV::Model
             end
 
             def structure(&block)
-                @structure = block
+                if block_given?
+                    @structure = block
+                end
+                klass = self
+                while klass
+                    if s = klass.instance_variable_get(:@structure)
+                        return s
+                    end
+                    klass = klass.superclass
+                end
+                nil
             end
 
             def parse(reader)
-                reader.parse(self, &@structure)
+                reader.parse(self, &structure)
             end
         end
     end
