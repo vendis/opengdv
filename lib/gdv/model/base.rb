@@ -15,7 +15,15 @@ module GDV::Model
         KRANKEN     = "020"
         UNFALL      = "030"
         HAFTPFLICHT = "040"
+        # Kraftfahrt
         KFZ         = "050" # Kraftfahrt
+        KFZ_HAFT    = "051" # Kraftfahrzeug-Haftpflichtversicherung
+        KFZ_VOLL    = "052" # Fahrzeugvollversicherung
+        KFZ_TEIL    = "053" # Fahrzeugteilversicherung
+        KFZ_UNFALL  = "054" # Kraftfahrtunfallversicherung
+        KFZ_BAUSTEIN = "055" # Kfz-Baustein
+        KFZ_GEPAECK = "059" # Kfz-Gepaeck
+
         RS          = "070" # Rechtsschutz
         FEUER       = "080" # Feuer - Industrie, Gewerbl. Sach
         GLAS        = "010"
@@ -34,6 +42,8 @@ module GDV::Model
         # Spartenspezifische Satzarten
         DETAILS     = "0210"
         ADDL        = "0211"
+        SPECIFIC    = "0220"
+        SPEC_ADDL   = "0221"
     end
 
     class Base
