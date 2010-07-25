@@ -13,8 +13,8 @@ class TestModel < Test::Unit::TestCase
         assert_equal(14, @trans.contracts.size)
         c = @trans.contracts.first
         p = c.vn
-        assert_equal("2", p.address[1].raw(:anredeschluessel))
-        assert_equal("Frau", p.address[1][:anredeschluessel])
+        assert_equal("2", p.anrede_raw)
+        assert_equal("Frau", p.anrede)
         assert_equal("Frau", p.address.anredeschluessel)
         assert_equal("Martina", p.address.name3)
         g = c.general
@@ -29,6 +29,11 @@ class TestModel < Test::Unit::TestCase
 
         c = contracts.first
         assert_not_nil c
+
+        assert_equal("Gillensvier", c.vn.nachname)
+        assert_equal("Herbert", c.vn.vorname)
+        assert_equal("W45KKK", c.vn.kdnr_vu)
+
         assert_equal("59999999990", c.vsnr)
         assert_equal(Date.civil(2004, 7, 1), c.begin)
         assert_equal(Date.civil(2005,1,1), c.end)

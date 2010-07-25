@@ -3,6 +3,11 @@ module GDV::Model
     class Partner < Base
         attr_reader :address, :signatures, :clauses, :rebates
 
+        property :anrede,   :address, 1, 8
+        property :nachname, :address, 1, 9
+        property :vorname,  :address, 1, 11
+        property :kdnr_vu,  :address, 2, 8
+
         # Partner := 0100 0342* 0350* 0390*
         def self.parse(reader)
             reader.parse(self) do
