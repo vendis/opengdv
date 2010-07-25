@@ -81,6 +81,14 @@ module GDV::Model
                     read_property(args, fnr, :raw)
                 end
             end
+
+            def structure(&block)
+                @structure = block
+            end
+
+            def parse(reader)
+                reader.parse(self, &@structure)
+            end
         end
     end
 end

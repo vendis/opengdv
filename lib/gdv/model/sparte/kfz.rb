@@ -5,13 +5,11 @@ module GDV::Model::Sparte
         property :model, :details, 1, 11
         property :price, :addl,    1, 8
 
-        def self.parse(reader)
-            reader.parse(self) do
-                one    :details, :satz => DETAILS
-                maybe  :addl, :satz => ADDL
-                star   :clauses, :satz => GDV::Model::CLAUSES
-                star   :rebates, :satz => GDV::Model::REBATES
-            end
+        structure do
+            one    :details, :satz => DETAILS
+            maybe  :addl, :satz => ADDL
+            star   :clauses, :satz => GDV::Model::CLAUSES
+            star   :rebates, :satz => GDV::Model::REBATES
         end
     end
 end

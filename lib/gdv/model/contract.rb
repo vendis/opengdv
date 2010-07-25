@@ -21,24 +21,22 @@ module GDV::Model
         property :end,     :general, 1, 10
         property :renewal, :general, 1, 11
 
-        def self.parse(reader)
-            reader.parse(self) do
-                object :vn, Partner
-                objects :partner, Partner, :satz => ADDRESS_TEIL
+        structure do
+            object :vn, Partner
+            objects :partner, Partner, :satz => ADDRESS_TEIL
 
-                # Allgemeiner Teil
-                one    :general, :satz => GENERAL_CONTRACT
-                star   :signatures, :satz => SIGNATURES
-                star   :clauses, :satz => CLAUSES
-                star   :rebates, :satz => REBATES
-                # Spartenspezifischer Teil
-                if satz?(Sparte::DETAILS)
-                    if sparte?(Sparte::KFZ)
-                        object :sparte, Sparte::Kfz
-                    end
+            # Allgemeiner Teil
+            one    :general, :satz => GENERAL_CONTRACT
+            star   :signatures, :satz => SIGNATURES
+            star   :clauses, :satz => CLAUSES
+            star   :rebates, :satz => REBATES
+            # Spartenspezifischer Teil
+            if satz?(Sparte::DETAILS)
+                if sparte?(Sparte::KFZ)
+                    object :sparte, Sparte::Kfz
                 end
-                skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
             end
+            skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
         end
     end
 end

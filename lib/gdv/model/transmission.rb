@@ -4,17 +4,12 @@ module GDV::Model
     class Transmission < Base
         attr_reader :vorsatz, :nachsatz, :contracts
 
-        def vunr
-            @vorsatz[1][2].strip
-        end
+        property :vunr, :vorsatz, 1, 2
 
-        def self.parse(reader)
-            reader.parse(self) do
-                one :vorsatz, :satz => VORSATZ
-                objects :contracts, Contract,
-                :satz => ADDRESS_TEIL
-                one :nachsatz, :satz => NACHSATZ
-            end
+        structure do
+            one :vorsatz, :satz => VORSATZ
+            objects :contracts, Contract, :satz => ADDRESS_TEIL
+            one :nachsatz, :satz => NACHSATZ
         end
     end
 end

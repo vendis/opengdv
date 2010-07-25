@@ -10,14 +10,11 @@ module GDV::Model
 
         property :geburtsort, :address, 4, 9
 
-        # Partner := 0100 0342* 0350* 0390*
-        def self.parse(reader)
-            reader.parse(self) do
-                one :address, :satz => ADDRESS_TEIL
-                star :signatures, :satz => SIGNATURES
-                star :clauses, :satz => CLAUSES
-                star :rebates, :satz => REBATES
-            end
+        structure do
+            one  :address,    :satz => ADDRESS_TEIL
+            star :signatures, :satz => SIGNATURES
+            star :clauses,    :satz => CLAUSES
+            star :rebates,    :satz => REBATES
         end
     end
 end
