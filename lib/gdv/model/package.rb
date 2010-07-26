@@ -1,7 +1,6 @@
-# A class encompassing an entire transmission, i.e. what is usually
-# found in one GDV file
+# Ein Datenpaket, d.h. der Teil einer Uebertragung, der mit einem Vorsatz beginnt und einem Nachsatz endet
 module GDV::Model
-    class Transmission < Base
+    class Package < Base
         attr_reader :vorsatz, :nachsatz, :contracts
 
         property :vunr, :vorsatz, 1, 2

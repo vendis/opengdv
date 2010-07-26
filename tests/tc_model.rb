@@ -5,7 +5,7 @@ class TestModel < Test::Unit::TestCase
     def setup
         GDV::Format::init
         @reader = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
-        @trans = GDV::Model::Transmission::parse(@reader)
+        @trans = GDV::Model::Package::parse(@reader)
     end
 
     def test_transmission
