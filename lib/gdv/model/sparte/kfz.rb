@@ -16,15 +16,17 @@ module GDV::Model::Sparte
             star   :clauses, :satz => GDV::Model::CLAUSES
             star   :rebates, :satz => GDV::Model::REBATES
 
-            object :haft, Haft, Haft.first
-            object :voll, Voll, Voll.first
-            object :teil, Teil, Teil.first
-            object :unfall, Unfall, Unfall.first
-            objects :bausteine, Baustein, Baustein.first
-            object :gepaeck, Gepaeck, Gepaeck.first
+            object :haft, Haft
+            object :voll, Voll
+            object :teil, Teil
+            object :unfall, Unfall
+            objects :bausteine, Baustein
+            object :gepaeck, Gepaeck
 
             error(:unexpected) if satz?(SPECIFIC)
         end
+
+        first :satz => DETAILS, :sparte => KFZ
 
         #
         # Teilsparten von Kfz
@@ -45,7 +47,7 @@ module GDV::Model::Sparte
                 maybe  :addl,     :satz => SPEC_ADDL, :sparte => sparte
                 star   :clauses,  :satz => GDV::Model::CLAUSES
                 star   :rebates,  :satz => GDV::Model::REBATES
-                objects :bausteine, Baustein, Baustein.first
+                objects :bausteine, Baustein
             end
         end
 

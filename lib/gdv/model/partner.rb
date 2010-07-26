@@ -10,6 +10,8 @@ module GDV::Model
 
         property :geburtsort, :address, 4, 9
 
+        first :satz => ADDRESS_TEIL
+
         structure do
             one  :address,    :satz => ADDRESS_TEIL
             star :signatures, :satz => SIGNATURES

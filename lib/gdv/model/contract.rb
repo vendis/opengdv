@@ -1,4 +1,6 @@
 # A contract, i.e. everything between the Vorsatz and Nachsatz
+require 'gdv/model/partner'
+
 module GDV::Model
     class Contract < Base
         # Erster Partner - der Versicherungsnehmer
@@ -21,9 +23,11 @@ module GDV::Model
         property :end,     :general, 1, 10
         property :renewal, :general, 1, 11
 
+        first Partner
+
         structure do
             object :vn, Partner
-            objects :partner, Partner, :satz => ADDRESS_TEIL
+            objects :partner, Partner
 
             # Allgemeiner Teil
             one    :general, :satz => GENERAL_CONTRACT
@@ -31,11 +35,7 @@ module GDV::Model
             star   :clauses, :satz => CLAUSES
             star   :rebates, :satz => REBATES
             # Spartenspezifischer Teil
-            if satz?(Sparte::DETAILS)
-                if sparte?(Sparte::KFZ)
-                    object :sparte, Sparte::Kfz
-                end
-            end
+            object :sparte, Sparte::Kfz
             skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
         end
     end

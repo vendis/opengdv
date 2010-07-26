@@ -7,7 +7,7 @@ module GDV::Model
 
         structure do
             one :vorsatz, :satz => VORSATZ
-            objects :contracts, Contract, :satz => ADDRESS_TEIL
+            objects :contracts, Contract
             one :nachsatz, :satz => NACHSATZ
         end
     end

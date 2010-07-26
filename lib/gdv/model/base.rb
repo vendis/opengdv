@@ -109,6 +109,19 @@ module GDV::Model
             def parse(reader)
                 reader.parse(self, &structure)
             end
+
+            # Define the conditions to match the first record of this
+            # object
+            def first(h = nil)
+                if h
+                    if h.is_a?(Class)
+                        @first = h.first
+                    else
+                        @first = h if h
+                    end
+                end
+                @first
+            end
         end
     end
 end

@@ -27,17 +27,17 @@ module GDV::Format
             end
         end
 
-        def object(sym, klass, cond = nil)
-            if cond.nil? || @reader.match?(cond)
+        def object(sym, klass)
+            if @reader.match?(klass.first)
                 result[sym] = klass.parse(@reader)
             end
         end
 
         # Parse a sequence of objects of class +klass+ as long
         # as +cond+ matches the current record
-        def objects(sym, klass, cond)
+        def objects(sym, klass)
             result[sym] = []
-            while @reader.match?(cond)
+            while @reader.match?(klass.first)
                 result[sym] << klass.parse(@reader)
             end
         end
