@@ -7,10 +7,18 @@ require 'optparse'
 verbose = false
 brief = false
 convert = false
+debug = false
+GDV::logger = Logger.new(STDOUT)
+GDV::logger.level = Logger::WARN
 
 options = OptionParser.new do |opts|
     opts.on('-v', '--verbose', 'verbose operation') do |dummy|
         verbose = true
+        GDV::logger.level = Logger::INFO unless debug
+    end
+    opts.on('-d', '--debug', 'debug output') do |dummy|
+        debug = true
+        GDV::logger.level = Logger::DEBUG
     end
     opts.on('-b', '--brief', 'brief output') { |_| brief = true }
     opts.on('-c', '--convert', 'convert field values') { |_| convert = true }
@@ -23,9 +31,6 @@ unless ARGV.size == 1
     $stderr.puts options
     exit 1
 end
-
-GDV::logger = Logger.new(STDOUT)
-GDV::logger.level = Logger::INFO
 
 begin
     GDV::Format::init
