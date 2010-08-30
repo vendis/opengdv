@@ -177,6 +177,9 @@ module GDV::Format
                 # FIXME: We silently skip anything we don't understand
                 part = GDV::Format::classify(buf)
                 @unknown += 1 if part.nil?
+                if part.nil?
+                    GDV::logger.info "#{lineno}:unknown record:#{buf[0,4]}.#{buf[10,3]} skenn=#{buf[255,1]} snr='#{buf[249,1]}'"
+                end
             end while part.nil?
             @line = Line.new(buf, part)
         end

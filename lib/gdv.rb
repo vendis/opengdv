@@ -1,3 +1,5 @@
+require 'logger'
+
 module GDV
     def self.version
         "0.0.1"
@@ -7,8 +9,18 @@ module GDV
         File::join(File::dirname(__FILE__), "gdv", "format", "data")
     end
 
-    def self.log(msg)
-        true
+    # Return a +Logger+
+    def self.logger
+        unless @logger
+            # Create a dummy logger
+            self.logger = Logger.new(false)
+        end
+        @logger
+    end
+
+    def self.logger=(logger)
+        @logger = logger
+        @logger.datetime_format = "%Y-%m-%d %H:%M:%S"
     end
 end
 

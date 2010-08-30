@@ -6,7 +6,7 @@ module GDV::Format
         attr_reader :field, :children, :parts, :parent
 
         def initialize(parent, field, part)
-            log "node #{pf(field)} : #{part}"
+            logger.debug "node #{pf(field)} : #{part}"
             @parent = parent
             @field = field
             @children = {}
@@ -16,37 +16,37 @@ module GDV::Format
 
 
         def insert(part)
-            log "Insert #{part} for #{pf(field)}"
+            logger.debug "Insert #{part} for #{pf(field)}"
             f = part.field_at(field.pos, field.len)
             if f.nil? || ! f.const?
                 part.emit
                 raise FormatError, "Incompatible fields #{pf(f)} #{field} for #{part}"
             end
-            log "  with values |#{f.values.join('|')}|"
+            logger.debug "  with values |#{f.values.join('|')}|"
             f.values.each do |value|
-                log "Value: #{value} Child: #{children.key?(value)} Part: #{parts.key?(value)} "
+                logger.debug "Value: #{value} Child: #{children.key?(value)} Part: #{parts.key?(value)} "
                 if children.key?(value)
-                    log "Insert into child #{value}"
+                    logger.debug "Insert into child #{value}"
                     children[value].insert(part)
                 elsif parts.key?(value)
                     # Need to split and find another field to
                     # discriminate by
                     old_part = parts[value]
-                    log "Splitting #{old_part} at #{value}"
+                    logger.debug "Splitting #{old_part} at #{value}"
                     key_fields = unused_fields(old_part, part)
                     if key_fields.empty?
                         raise_no_key_field_error(old_part, part)
                     end
                     new_field = key_fields[0]
-                    log "new_field: #{pf(new_field)} at #{value}"
+                    logger.debug "new_field: #{pf(new_field)} at #{value}"
                     children[value] = RecIndex.new(self, new_field,
                                                     old_part)
                     parts.delete(value)
                     children[value].insert(part)
                     msg = ".." * depth
-                    log "new_field: #{pf(new_field)} at #{value} #{msg}"
+                    logger.debug "new_field: #{pf(new_field)} at #{value} #{msg}"
                 else
-                    log "Adding part #{pf(f)}"
+                    logger.debug "Adding part #{pf(f)}"
                     parts[value] = part
                 end
             end
@@ -56,15 +56,15 @@ module GDV::Format
         def classify(record)
             v = field.extract(record)
             ind = "  " * depth
-            log "Match #{pf(field)} against '#{v}'"
+            log =  "Match #{pf(field)} against '#{v}': "
             if parts.key?(v)
-                log " <= #{parts[v]}"
+                logger.debug "#{log} <= #{parts[v]}"
                 return parts[v]
             elsif children.key?(v)
-                log " child"
+                logger.debug "#{log} child"
                 return children[v].classify(record)
             else
-                log " unknown"
+                logger.debug "#{log} unknown"
                 return nil
             end
         end
@@ -129,10 +129,6 @@ module GDV::Format
             "  " * depth
         end
 
-        def log(msg)
-            GDV::log "#{ind}#{msg}"
-        end
-
         def pf(field)
             return "no field" unless field
             const = ""
@@ -154,5 +150,9 @@ module GDV::Format
             key_fields
         end
 
+        private
+        def logger
+            GDV::logger
+        end
     end
 end
