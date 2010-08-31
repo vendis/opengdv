@@ -59,8 +59,8 @@ def typename(fieldname, fdef)
             typename = (tname.to_underscore + "_t").to_sym
             if ! EMITTED_TYPE_MAPS.include?(typename)
                 vmap.xpath('alleWerteDerTabelle/eintrag').each do |e|
-                    val = e.xpath('wert').text
-                    label = e.xpath('beschreibung').text
+                    val = e.xpath('wert').text.strip
+                    label = e.xpath('beschreibung').text.strip
                     puts "V:#{val}:#{label}"
                 end
                 puts "M:#{typename}:#{tname}"

@@ -130,14 +130,14 @@ F:12305:55:produktspezifische_antragsdaten0372:240:3:string::Produktspezifische 
 F:12316:56:produktspezifische_stammdaten:243:3:string::Produktspezifische Stammdaten 0600
 F:12337:57:blank:246:10:space::Leerstellen
 F:12348:58:snr:256:1:const:2:Satznummer
-C:rename 27: satzart0221
-C:rename 30: satzart0221
-C:rename 32: satzart0221
-C:rename 35: satzart0221
 C:rename 26: satzart0211
 C:rename 29: satzart0211
 C:rename 31: satzart0211
 C:rename 34: satzart0211
+C:rename 27: satzart0221
+C:rename 30: satzart0221
+C:rename 32: satzart0221
+C:rename 35: satzart0221
 T:11462:2
 F:12369:1:sid:1:4:const:0001:Satzart
 F:12380:2:vunr:5:5:string::VU-Nummer
@@ -437,10 +437,10 @@ V:BRN:Bahrain
 V:BRU:Brunei Darussalam
 V:BS:Bahamas
 V:BUR:Myanmar
-V:BVI:Virgin Islands 
+V:BVI:Virgin Islands
 V:BW:Botswana
 V:BY:Belarus (Weißrußland)
-V:CAM:Cameroon 
+V:CAM:Cameroon
 V:CDN:Kanada
 V:CH:Schweiz
 V:CI:Côte d"Ivoire
@@ -500,7 +500,7 @@ V:KWT:Kuwait
 V:KZ:Kasachstan
 V:L:Luxemburg
 V:LAO:Demokratische Volksrepublik Laos
-V:LAR:Libyan Arab Jamahiriya 
+V:LAR:Libyan Arab Jamahiriya
 V:LB:Liberia
 V:CU:Lesotho
 V:LS:Lesotho
@@ -513,7 +513,7 @@ V:MC:Monaco
 V:MD:Moldau
 V:MEX:Mexiko
 V:MGL:Mongolei
-V:MK:Mazedonien (ehemalige jugoslawische Republik) 
+V:MK:Mazedonien (ehemalige jugoslawische Republik)
 V:MNE:Montenegro
 V:MOC:Mosambik
 V:MS:Mauritius
@@ -521,8 +521,8 @@ V:MW:Malawi
 V:N:Norwegen
 V:NA:Niederländ. Antillen
 V:NAM:Namibia
-V:NAU:Nauru 
-V:NEP:Nepal 
+V:NAU:Nauru
+V:NEP:Nepal
 V:NIC:Nicaragua
 V:NL:Niederlande
 V:NZ:Neuseeland
@@ -538,7 +538,7 @@ V:RC:China (Taiwan)
 V:RCA:Zentralafrikanische Republik
 V:RCB:Kongo
 V:RCH:Chile
-V:RG:Guinea 
+V:RG:Guinea
 V:RH:Haiti
 V:RI:Indonesien
 V:RIM:Mauretanien
@@ -552,11 +552,11 @@ V:ROK:Korea (Republik)
 V:ROU:Uruguay
 V:RP:Philippinen
 V:RSM:San Marino
-V:RU:Burundi 
+V:RU:Burundi
 V:RUS:Russische Föderation
 V:RWA:Ruanda
 V:S:Schweden
-V:SA:Saudi Arabia 
+V:SA:Saudi Arabia
 V:SD:Swasiland
 V:SN:Senegal
 V:SGP:Singapur
@@ -564,13 +564,13 @@ V:SK:Slowakische Republik
 V:SLO:Slowenien
 V:SME:Suriname
 V:SN:Senegal
-V:SO:Somalia 
+V:SO:Somalia
 V:SRB:Serbien
-V:SUD:Sudan 
+V:SUD:Sudan
 V:SY:Seyschellen
 V:SYR:Syrien
 V:T:Thailand
-V:TCH:Chad 
+V:TCH:Chad
 V:TJ:Tadschikistan
 V:TM:Turkmenistan
 V:TN:Tunesien
@@ -616,139 +616,139 @@ V:YU:Jugoslawien (Serbien/Montenegro)
 M:lkz_t:LKZ
 V:01:Versicherungsnehmer
 V:02:Sicherungsgläubiger
-V:03:Beitragszahler 
-V:04:Zustellungsbevollmächtigter 
-V:05:Leistungsempfänger 
-V:06:Korrespondenzpartner 
+V:03:Beitragszahler
+V:04:Zustellungsbevollmächtigter
+V:05:Leistungsempfänger
+V:06:Korrespondenzpartner
 V:07:GV-Partner
-V:08:Empfänger Beitragsrückerstattung 
-V:09:Versicherte Person 
-V:10:SFR-Berechtigter 
-V:11:Fahrzeughalter 
-V:12:Fahrer 
-V:13:Abschleppfirma 
-V:14:Vermittler 
-V:15:Anspruchsteller 
-V:16:Mietwagenfirma 
+V:08:Empfänger Beitragsrückerstattung
+V:09:Versicherte Person
+V:10:SFR-Berechtigter
+V:11:Fahrzeughalter
+V:12:Fahrer
+V:13:Abschleppfirma
+V:14:Vermittler
+V:15:Anspruchsteller
+V:16:Mietwagenfirma
 V:17:Polizeidienststelle
-V:18:Zeuge 
-V:19:Werkstatt 
+V:18:Zeuge
+V:19:Werkstatt
 V:20:Schadenmanager
 V:21:Sachverständiger
 V:22:Melder(Notrufmeldende Person)
 V:23:Rettungsleitstelle
-V:24:Autobahnmeisterei 
+V:24:Autobahnmeisterei
 V:25:Pannenhelfer
-V:26:Assisteur 
-V:31:Versicherungsnehmer 
+V:26:Assisteur
+V:31:Versicherungsnehmer
 V:32:Sicherungsgläubiger
 V:33:Beitragszahler
 V:34:Zustellungsbevollmächtigter
 V:35:Leistungsempfänger
-V:36:Korrespondenzpartner 
-V:37:GV-Partner 
-V:38:Empfänger Beitragsrückerstattung 
-V:39:Versicherte Person 
+V:36:Korrespondenzpartner
+V:37:GV-Partner
+V:38:Empfänger Beitragsrückerstattung
+V:39:Versicherte Person
 V:40:SFR-Berechtigter
 V:41:Fahrzeughalter
-V:42:Fahrer 
+V:42:Fahrer
 V:43:Abschleppfirma
 V:44:Vermittler
 V:45:Anspruchsteller
-V:46:Mietwagenfirma 
-V:47:Polizeidienststelle 
-V:48:Zeuge 
-V:49:Werkstatt 
-V:50:Schadenmanager 
+V:46:Mietwagenfirma
+V:47:Polizeidienststelle
+V:48:Zeuge
+V:49:Werkstatt
+V:50:Schadenmanager
 V:51:Sachverständiger
-V:52:Melder(Notrufmeldende Person) 
+V:52:Melder(Notrufmeldende Person)
 V:53:Rettungsleitstelle
-V:54:Autobahnmeisterei 
-V:55:Pannenhelfer 
-V:56:Assisteur 
-V:61:Versicherungsnehmer 
-V:62:Sicherungsgläubiger 
+V:54:Autobahnmeisterei
+V:55:Pannenhelfer
+V:56:Assisteur
+V:61:Versicherungsnehmer
+V:62:Sicherungsgläubiger
 V:63:Beitragszahler
 V:64:Zustellungsbevollmächtigter
-V:65:Leistungsempfänger 
-V:66:Korrespondenzpartner 
+V:65:Leistungsempfänger
+V:66:Korrespondenzpartner
 V:67:GV-Partner
-V:68:Empfänger Beitragsrückerstattung 
-V:69:Versicherte Person 
-V:70:SFR-Berechtigter 
-V:71:Fahrzeughalter 
-V:72:Fahrer 
+V:68:Empfänger Beitragsrückerstattung
+V:69:Versicherte Person
+V:70:SFR-Berechtigter
+V:71:Fahrzeughalter
+V:72:Fahrer
 V:73:Abschleppfirma
-V:74:Vermittler 
-V:75:Anspruchsteller 
-V:76:Mietwagenfirma 
+V:74:Vermittler
+V:75:Anspruchsteller
+V:76:Mietwagenfirma
 V:77:Polizeidienststelle
 V:78:Zeuge
 V:79:Werkstatt
-V:80:Schadenmanager 
-V:81:Sachverständiger 
+V:80:Schadenmanager
+V:81:Sachverständiger
 V:82:Melder(Notrufmeldende Person)
 V:83:Rettungsleitstelle
 V:84:Autobahnmeisterei
 V:85:Pannenhelfer
-V:86:Assisteur 
+V:86:Assisteur
 V:A1:Rechtsanwalt
-V:A2:Eigentümer 
-V:A3:Versicherungsunternehmen 
+V:A2:Eigentümer
+V:A3:Versicherungsunternehmen
 V:A4:Auftraggeber
-V:A5:Zahlungsempfänger 
-V:A6:Restwerthändler 
-V:A7:Fahrzeuganbieter 
-V:D1:Rechtsanwalt 
-V:D2:Eigentümer 
-V:D3:Versicherungsunternehmen 
-V:D4:Auftraggeber 
+V:A5:Zahlungsempfänger
+V:A6:Restwerthändler
+V:A7:Fahrzeuganbieter
+V:D1:Rechtsanwalt
+V:D2:Eigentümer
+V:D3:Versicherungsunternehmen
+V:D4:Auftraggeber
 V:D5:Zahlungsempfänger
 V:D6:Restwerthändler
-V:D7:Fahrzeuganbieter 
-V:G1:Rechtsanwalt 
+V:D7:Fahrzeuganbieter
+V:G1:Rechtsanwalt
 V:G2:Eigentümer
-V:G3:Versicherungsunternehmen 
+V:G3:Versicherungsunternehmen
 V:G4:Auftraggeber
-V:G5:Zahlungsempfänger 
+V:G5:Zahlungsempfänger
 V:G6:Restwerthändler
-V:G7:Fahrzeuganbieter 
-V:X0:Zahlungsempfänger für Reparaturkosten 
+V:G7:Fahrzeuganbieter
+V:X0:Zahlungsempfänger für Reparaturkosten
 V:X1:Zahlungsempfänger für Gesambetrag
 V:X2:Zahlungsempfänger für Wertminderung
 V:X3:Zahlungsempfänger für An- und Abmeldekosten
-V:X4:Zahlungsempfänger für Umbaukosten 
-V:X5:Zahlungsempfänger für Abschlepp-/Bergungskosten 
-V:X6:Zahlungsempfänger für Rückführungskosten 
-V:X7:Zahlungsempfänger für Nutzungsausfall 
-V:X8:Zahlungsempfänger für Kostenpauschale 
-V:X9:Zahlungsempfänger für Mietwagenkosten 
+V:X4:Zahlungsempfänger für Umbaukosten
+V:X5:Zahlungsempfänger für Abschlepp-/Bergungskosten
+V:X6:Zahlungsempfänger für Rückführungskosten
+V:X7:Zahlungsempfänger für Nutzungsausfall
+V:X8:Zahlungsempfänger für Kostenpauschale
+V:X9:Zahlungsempfänger für Mietwagenkosten
 V:XA:Zahlungsempfänger für Sachverständigenkosten
-V:XB:Auftraggeber für Gutachten 
-V:Y0:Zahlungsempfänger für Reparaturkosten 
+V:XB:Auftraggeber für Gutachten
+V:Y0:Zahlungsempfänger für Reparaturkosten
 V:Y1:Zahlungsempfänger für Gesambetrag
-V:Y2:Zahlungsempfänger für Wertminderung 
+V:Y2:Zahlungsempfänger für Wertminderung
 V:Y3:Zahlungsempfänger für An- und Abmeldekosten
 V:Y4:Zahlungsempfänger für Umbaukosten
-V:Y5:Zahlungsempfänger für Abschlepp-/Bergungskosten 
+V:Y5:Zahlungsempfänger für Abschlepp-/Bergungskosten
 V:Y6:Zahlungsempfänger für Rückführungskosten
-V:Y7:Zahlungsempfänger für Nutzungsausfall 
-V:Y8:Zahlungsempfänger für Kostenpauschale 
-V:Y9:Zahlungsempfänger für Mietwagenkosten 
-V:YA:Zahlungsempfänger für Sachverständigenkosten 
-V:YB:Auftraggeber für Gutachten 
-V:Z0:Zahlungsempfänger für Reparaturkosten 
+V:Y7:Zahlungsempfänger für Nutzungsausfall
+V:Y8:Zahlungsempfänger für Kostenpauschale
+V:Y9:Zahlungsempfänger für Mietwagenkosten
+V:YA:Zahlungsempfänger für Sachverständigenkosten
+V:YB:Auftraggeber für Gutachten
+V:Z0:Zahlungsempfänger für Reparaturkosten
 V:Z1:Zahlungsempfänger für Gesambetrag
-V:Z2:Zahlungsempfänger für Wertminderung 
-V:Z3:Zahlungsempfänger für An- und Abmeldekosten 
-V:Z4:Zahlungsempfänger für Umbaukosten 
-V:Z5:Zahlungsempfänger für Abschlepp-/Bergungskosten 
-V:Z6:Zahlungsempfänger für Rückführungskosten 
+V:Z2:Zahlungsempfänger für Wertminderung
+V:Z3:Zahlungsempfänger für An- und Abmeldekosten
+V:Z4:Zahlungsempfänger für Umbaukosten
+V:Z5:Zahlungsempfänger für Abschlepp-/Bergungskosten
+V:Z6:Zahlungsempfänger für Rückführungskosten
 V:Z7:Zahlungsempfänger für Nutzungsausfall
-V:Z8:Zahlungsempfänger für Kostenpauschale 
-V:Z9:Zahlungsempfänger für Mietwagenkosten 
-V:ZA:Zahlungsempfänger für Sachverständigenkosten 
-V:ZB:Auftraggeber für Gutachten 
+V:Z8:Zahlungsempfänger für Kostenpauschale
+V:Z9:Zahlungsempfänger für Mietwagenkosten
+V:ZA:Zahlungsempfänger für Sachverständigenkosten
+V:ZB:Auftraggeber für Gutachten
 V:B1:Mitversicherte Person
 V:E1:Mitversicherte Person
 V:H1:Mitversicherte Person
@@ -938,7 +938,7 @@ F:14484:16:snr:256:1:const:5:Satznummer
 T:14299:5
 K:13152:0100::Adressteil
 V:A:Gefahrengruppe A
-V:B:Gefahrengruppe B 
+V:B:Gefahrengruppe B
 V:E:Einheitsgefahren
 M:gefahrengruppe_t:Gefahrengruppe
 V:01:Selbst
@@ -1585,15 +1585,15 @@ F:19293:31:saldo_f31:181:14:number:2:Saldo
 F:19304:32:vorzeichen_f32:195:1:vorzeichen_t::Vorzeichen
 F:19316:33:ueberzahlung:196:14:number:2:Überzahlung
 F:19336:34:blank:210:47:space::Leerstellen
+C:rename 23: saldo
+C:rename 25: saldo
+C:rename 27: saldo
+C:rename 31: saldo
 C:rename 24: vorzeichen
 C:rename 26: vorzeichen
 C:rename 28: vorzeichen
 C:rename 30: vorzeichen
 C:rename 32: vorzeichen
-C:rename 23: saldo
-C:rename 25: saldo
-C:rename 27: saldo
-C:rename 31: saldo
 T:18903:2
 K:18540:0220:570:Baufinanzierung - Spartenspezifisch
 V:0:Antragsphase
@@ -2210,7 +2210,7 @@ V:5:Leitungswasser gem. § 2D (ECB87)
 V:6:Sturm gem. § 2E (ECB87)
 V:7:Sturm gem. § 2E (ECB87) Hagel gem. § 2F (ECB87)
 V:8:Sonstige Gefahren
-V:9:Besondere Kündigungsfrist 
+V:9:Besondere Kündigungsfrist
 M:kombinationsschluessel_t:Kombinationsschluessel
 F:23549:1:sid:1:4:const:0220:Satzart
 F:23560:2:vunr:5:5:string::VU-Nummer
@@ -5018,131 +5018,131 @@ V:9822:Automatische Umschlüsselung auf WNR 9701
 V:9826:Automatische Umschlüsselung auf WNR 9701
 V:9831:Automatische Umschlüsselung auf WNR 9701
 M:wagnisart_haftpflicht_t:WagnisartHaftpflicht
-V:001: , Personen, Person
-V:002:X, Lohn-/Gehaltssumme, 
-V:003:X, Umsatz, 
-V:004: , Anlagen, Anlage
-V:005: , Strahler, 
-V:006:X, Bausumme, 
-V:007:X, Beitrag, 
-V:008: , Tanks, Tank
-V:010: , Apparate, Apparat
-V:011: , Megawatt / H, 
-V:012: , km Länge, 
-V:014: , Anschlüsse, Anschluß
-V:015: , CBM, 
-V:016: , CBM Inhalt, 
-V:017: , Schlachtungen, Schlachtung
-V:018: , Fächer, Fach
-V:019: , Agenturen, Agentur
-V:020: , Hetar (tariflich), 
-V:021: , Hektar, 
-V:022: , Spritzen, Spritze
-V:023: , Tiere, Tier
-V:024: , Räume, Raum
-V:025:X, Versicherungssumme, 
-V:026: , Geräte, Gerät
-V:027: , Pferde, Pferd
-V:028: , Bahnen, Bahn
-V:029: , Betten, Bett
-V:030: , Ponys, Pony
-V:031: , Hengste, Hengst
-V:032: , Stiere, Stier
-V:033: , Hunde, Hund
-V:034: , Völker, Volk
-V:035: , Schafe, Schaf
-V:036: , Bagger, 
-V:038: , Honorar, 
-V:039: , Zimmer, 
-V:040: , Fremdenzimmer, 
-V:041: , Schieß-Stände, Schieß-Stand
-V:043: , Blöcke, Block
-V:044: , Plätze, Platz
-V:046: , Säle, Saal
-V:047: , Wirtschaften, Wirtschaft
-V:048: , qm Fläche, 
-V:049: , Lenker, 
-V:050: , qm, 
-V:051: , KFZ, 
-V:052: , Automaten, Automat
-V:054: , Spielfelder, Spielfeld
-V:055: , Einstellplätze, Einstellplatz
-V:056: , Säuglinge, Säugling
-V:057: , Schwestern, Schwester
-V:059: , Probanden, Proband
-V:060: , Besucher, 
-V:061: , Badeeinrichtungen, Badeeinrichtung
-V:062: , Fahrzeuge, Fahrzeug
-V:063: , m Frontlänge, 
-V:064: , Wagen, 
-V:065: , Übergänge, Übergang
-V:066: , Kreuzungen, Kreuzung
-V:068: , Waagen, Waage
-V:070: , Wagen / Container, 
-V:071:X, Einnahmen, 
-V:072: , KFZ / Geräte, KFZ / Gerät
-V:073: , Kräne, Kran
-V:074: , Winden, Winde
-V:075: , Vorrichtungen, Vorrichtung
-V:076: , Teilnehmer, 
-V:077: , Tafeln, Tafel
-V:078: , Säulen, Säule
-V:079: , Abonnenten, Abonnent
-V:080: , KFZ-Einstellplätze, KFZ-Einstellplatz
-V:081: , Einstellplätze für Fahrräder, Einstellplatz für Fahrrad
-V:082: , Schließfächer, Schließfach
-V:083: , Zapfstellen, Zapfstelle
-V:084: , Aufbewahrungsscheine, Aufbewahrungsschein
-V:085: , Mitglieder, Mitglied
-V:086: , Boote, Boot
-V:087: , qm Segelfläche, 
-V:088: , m Bahnlänge, 
-V:089: , Schanzen, Schanze
-V:091: , Kinder, Kind
-V:092: , Schützen, Schütze
-V:093: , Tiere / Boote / Geräte, Tier / Boot / Gerät
-V:094: , Reiter, 
-V:095: , Aussteller, 
-V:096: , Teilnehmer / Besucher, 
-V:097: , Böller, 
-V:099:X, Mietwert, 
-V:100: , Wohnungen, Wohnung
-V:101: , Grundstücke, Grundstück
-V:102: , m Straßenfront, 
-V:103: , Mieter, 
-V:104: , Garagen, Garage
-V:105:X, Pacht-/Mietwert, 
-V:107: , Ärzte, Arzt
-V:108: , Besamungen, Besamung
-V:109: , qm Stallungen, qm Stallung
-V:110: , Lehrer, 
-V:111: , Schüler, 
-V:112: , Jagdscheine, Jagdschein
-V:113: , km Straßenlänge, 
-V:115: , Einwohner, 
-V:116: , Schiffe, Schiff
-V:117: , Schlepper, 
-V:118: , PS, 
-V:120: , BRT, 
-V:121: , kw, 
-V:122: , Versicherungen, Versicherung
-V:123:X, Warenumsatz, 
-V:124: , Betriebsorte, Betriebsort
-V:126: , Ställe, Stall
-V:127: , GJ/H, 
-V:128: , Hilfspersonen, Hilfsperson
-V:129: , Maschinen, Maschine
-V:800: , Behälter
-V:801: , Mitwirkende
-V:802: , Stück bzw. Wagnis / Wagnisse
-V:803: , Wert der Eigenleistung
-V:804: , Vogel / Vögel
-V:805: , Personen mit Arbeiten auf freiem Grundstück
-V:806: , Personen ohne Arbeiten auf freiem Grundstück
-V:807: , Inhaber
-V:808: , Angestellte
-V:809: , Stell- und Liegeplätze 
-V:999: , Sonstige 
+V:001:, Personen, Person
+V:002:X, Lohn-/Gehaltssumme,
+V:003:X, Umsatz,
+V:004:, Anlagen, Anlage
+V:005:, Strahler,
+V:006:X, Bausumme,
+V:007:X, Beitrag,
+V:008:, Tanks, Tank
+V:010:, Apparate, Apparat
+V:011:, Megawatt / H,
+V:012:, km Länge,
+V:014:, Anschlüsse, Anschluß
+V:015:, CBM,
+V:016:, CBM Inhalt,
+V:017:, Schlachtungen, Schlachtung
+V:018:, Fächer, Fach
+V:019:, Agenturen, Agentur
+V:020:, Hetar (tariflich),
+V:021:, Hektar,
+V:022:, Spritzen, Spritze
+V:023:, Tiere, Tier
+V:024:, Räume, Raum
+V:025:X, Versicherungssumme,
+V:026:, Geräte, Gerät
+V:027:, Pferde, Pferd
+V:028:, Bahnen, Bahn
+V:029:, Betten, Bett
+V:030:, Ponys, Pony
+V:031:, Hengste, Hengst
+V:032:, Stiere, Stier
+V:033:, Hunde, Hund
+V:034:, Völker, Volk
+V:035:, Schafe, Schaf
+V:036:, Bagger,
+V:038:, Honorar,
+V:039:, Zimmer,
+V:040:, Fremdenzimmer,
+V:041:, Schieß-Stände, Schieß-Stand
+V:043:, Blöcke, Block
+V:044:, Plätze, Platz
+V:046:, Säle, Saal
+V:047:, Wirtschaften, Wirtschaft
+V:048:, qm Fläche,
+V:049:, Lenker,
+V:050:, qm,
+V:051:, KFZ,
+V:052:, Automaten, Automat
+V:054:, Spielfelder, Spielfeld
+V:055:, Einstellplätze, Einstellplatz
+V:056:, Säuglinge, Säugling
+V:057:, Schwestern, Schwester
+V:059:, Probanden, Proband
+V:060:, Besucher,
+V:061:, Badeeinrichtungen, Badeeinrichtung
+V:062:, Fahrzeuge, Fahrzeug
+V:063:, m Frontlänge,
+V:064:, Wagen,
+V:065:, Übergänge, Übergang
+V:066:, Kreuzungen, Kreuzung
+V:068:, Waagen, Waage
+V:070:, Wagen / Container,
+V:071:X, Einnahmen,
+V:072:, KFZ / Geräte, KFZ / Gerät
+V:073:, Kräne, Kran
+V:074:, Winden, Winde
+V:075:, Vorrichtungen, Vorrichtung
+V:076:, Teilnehmer,
+V:077:, Tafeln, Tafel
+V:078:, Säulen, Säule
+V:079:, Abonnenten, Abonnent
+V:080:, KFZ-Einstellplätze, KFZ-Einstellplatz
+V:081:, Einstellplätze für Fahrräder, Einstellplatz für Fahrrad
+V:082:, Schließfächer, Schließfach
+V:083:, Zapfstellen, Zapfstelle
+V:084:, Aufbewahrungsscheine, Aufbewahrungsschein
+V:085:, Mitglieder, Mitglied
+V:086:, Boote, Boot
+V:087:, qm Segelfläche,
+V:088:, m Bahnlänge,
+V:089:, Schanzen, Schanze
+V:091:, Kinder, Kind
+V:092:, Schützen, Schütze
+V:093:, Tiere / Boote / Geräte, Tier / Boot / Gerät
+V:094:, Reiter,
+V:095:, Aussteller,
+V:096:, Teilnehmer / Besucher,
+V:097:, Böller,
+V:099:X, Mietwert,
+V:100:, Wohnungen, Wohnung
+V:101:, Grundstücke, Grundstück
+V:102:, m Straßenfront,
+V:103:, Mieter,
+V:104:, Garagen, Garage
+V:105:X, Pacht-/Mietwert,
+V:107:, Ärzte, Arzt
+V:108:, Besamungen, Besamung
+V:109:, qm Stallungen, qm Stallung
+V:110:, Lehrer,
+V:111:, Schüler,
+V:112:, Jagdscheine, Jagdschein
+V:113:, km Straßenlänge,
+V:115:, Einwohner,
+V:116:, Schiffe, Schiff
+V:117:, Schlepper,
+V:118:, PS,
+V:120:, BRT,
+V:121:, kw,
+V:122:, Versicherungen, Versicherung
+V:123:X, Warenumsatz,
+V:124:, Betriebsorte, Betriebsort
+V:126:, Ställe, Stall
+V:127:, GJ/H,
+V:128:, Hilfspersonen, Hilfsperson
+V:129:, Maschinen, Maschine
+V:800:, Behälter
+V:801:, Mitwirkende
+V:802:, Stück bzw. Wagnis / Wagnisse
+V:803:, Wert der Eigenleistung
+V:804:, Vogel / Vögel
+V:805:, Personen mit Arbeiten auf freiem Grundstück
+V:806:, Personen ohne Arbeiten auf freiem Grundstück
+V:807:, Inhaber
+V:808:, Angestellte
+V:809:, Stell- und Liegeplätze
+V:999:, Sonstige
 M:berechnungseinheit_haftpflicht_t:BerechnungseinheitHaftpflicht
 V:1:Originalmenge
 V:2:Menge ist in 10 angegeben. Ergänzung der Menge mit 0
@@ -5791,9 +5791,9 @@ M:art_zulassung_beim_vorbesitzer_t:ArtZulassungBeimVorbesitzer
 V:00:unbekannt
 V:01:Garage (beliebiger Typ)
 V:02:nicht vorhanden
-V:03:abschließbare Einzel- und Doppelgarage 
+V:03:abschließbare Einzel- und Doppelgarage
 V:04:Mehrfach / Tiefgarage (nicht abschließbar)
-V:05:gesichertes Grundstück / Carport 
+V:05:gesichertes Grundstück / Carport
 V:06:gesichertes Grundstück
 V:07:Carport
 M:garage_t:Garage
@@ -5947,10 +5947,10 @@ F:32439:15:snr:256:1:const:1, :Satznummer
 T:32266:1
 K:32199:0212:050:KFZ - Fahrzeugdaten "Antrag"
 V:11:Unbegrenzte Deckung
-V:13:5.000.000 / 1.000.000 / 100.000, Mindestdeckungssummen 2.500.000 / 500.000 / 50.000 in Euro (umgerechnet) 
-V:16:Deckungssummen, die nicht unter die Pos. 11, 13, 17 und 18 fallen 
-V:17:Gesetzliche Deckungssummen für Personenbeförderung mit Omnibussen 
-V:18:5.000.000 Personenschäden,  2.000.000 pauschal Sach- und Vermögensschäden, 2.500.000 Euro (umgerechnet), 1.000.000 Euro (umgerechnet) 
+V:13:5.000.000 / 1.000.000 / 100.000, Mindestdeckungssummen 2.500.000 / 500.000 / 50.000 in Euro (umgerechnet)
+V:16:Deckungssummen, die nicht unter die Pos. 11, 13, 17 und 18 fallen
+V:17:Gesetzliche Deckungssummen für Personenbeförderung mit Omnibussen
+V:18:5.000.000 Personenschäden,  2.000.000 pauschal Sach- und Vermögensschäden, 2.500.000 Euro (umgerechnet), 1.000.000 Euro (umgerechnet)
 V:51:50.000.000 Euro (pauschal), 8.000.000 Euro maximal pro Person (zusätzlicher Schlüssel, nicht im GDV-Verzeichnis enthalten)
 V:52:100.000.000 Euro (pauschal), 8.000.000 Euro maximal pro Person (zusätzlicher Schlüssel, nicht im GDV-Statistikverzeichnis enthalten)
 V:53:100.000.000 Euro (pauschal), 10.000.000 Euro maximal pro Person (zusätzlicher Schlüssel, nicht im GDV-Statistikverzeichnis enthalten)
@@ -6032,30 +6032,30 @@ F:33396:17:blank:173:83:space::Leerstellen
 F:33407:18:snr:256:1:const:1, :Satznummer
 T:33201:1
 K:33134:0221:051:KFZ - Fahrzeughaftpflicht Spartenspezifischer Teil
-V:21:VK ohne Selbstbeteiligung (Bei allen Tatbeständen zur Fahrzeugversicherung) 
-V:22:VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet) 
-V:23:VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet) 
-V:24:VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet) 
-V:26:VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet) 
-V:27:VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet) 
+V:21:VK ohne Selbstbeteiligung (Bei allen Tatbeständen zur Fahrzeugversicherung)
+V:22:VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet)
+V:23:VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet)
+V:24:VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet)
+V:26:VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet)
+V:27:VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet)
 V:98:sonstige Selbstbeteiligung
-V:32:VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet) 
-V:33:VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet) 
-V:34:VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet) 
-V:36:VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet) 
-V:37:VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet) 
+V:32:VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet)
+V:33:VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet)
+V:34:VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet)
+V:36:VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet)
+V:37:VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet)
 V:99:sonstige Selbstbeteiligung
-V:42:VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet) 
-V:43:VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet) 
-V:44:VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet) 
-V:46:VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet) 
-V:47:VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet) 
+V:42:VK mit 300,00 DM Selbstbeteiligung VK mit 150,00 Euro (umgerechnet)
+V:43:VK mit 650,00 DM Selbstbeteiligung VK mit 300,00 Euro (umgerechnet)
+V:44:VK mit 1000,00 DM Selbstbeteiligung VK mit 500,00 Euro (umgerechnet)
+V:46:VK mit 2000,00 DM Selbstbeteiligung VK mit 1000,00 Euro (umgerechnet)
+V:47:VK mit 5000,00 DM Selbstbeteiligung VK mit 2500,00 Euro (umgerechnet)
 V:69:sonstige Selbstbeteiligung
-V:63:VK und TK mit je 650,00 DM Selbstbtlg. VK u. TK mit 300,00 Euro (umgerechnet) 
-V:64:VK und TK mit je 1000,00 DM Selbstbtlg. VK u. TK mit 500,00 Euro (umgerechnet) 
-V:65:VK und TK mit je 1500,00 DM Selbstbtlg. VK u. TK mit 750,00 Euro (umgerechnet) 
-V:66:VK und TK mit je 2000,00 DM Selbstbtlg. VK u. TK mit 1000,00 Euro (umgerechnet) 
-V:67:VK und TK mit je 5000,00 DM Selbstbtlg. VK u. TK mit 2500,00 Euro (umgerechnet) 
+V:63:VK und TK mit je 650,00 DM Selbstbtlg. VK u. TK mit 300,00 Euro (umgerechnet)
+V:64:VK und TK mit je 1000,00 DM Selbstbtlg. VK u. TK mit 500,00 Euro (umgerechnet)
+V:65:VK und TK mit je 1500,00 DM Selbstbtlg. VK u. TK mit 750,00 Euro (umgerechnet)
+V:66:VK und TK mit je 2000,00 DM Selbstbtlg. VK u. TK mit 1000,00 Euro (umgerechnet)
+V:67:VK und TK mit je 5000,00 DM Selbstbtlg. VK u. TK mit 2500,00 Euro (umgerechnet)
 V:97:sonstige Selbstbeteiligung für Vollkasko und Teilkasko
 M:kfv_deckungsart_t:KFVDeckungsart
 F:33496:1:sid:1:4:const:0220:Satzart
@@ -6136,8 +6136,8 @@ F:34398:18:snr:256:1:const:1, :Satznummer
 T:34192:1
 K:34125:0221:052:KFZ - Fahrzeugvoll Spartenspezifischer Teil
 V:71:ohne Selbstbeteiligung
-V:72:TK mit 300,00 DM Selbstbeteiligung  TK mit 150,00 Euro (umgerechnet) 
-V:73:TK mit 650,00 DM Selbstbeteiligung  TK mit 300,00 Euro (umgerechnet) 
+V:72:TK mit 300,00 DM Selbstbeteiligung  TK mit 150,00 Euro (umgerechnet)
+V:73:TK mit 650,00 DM Selbstbeteiligung  TK mit 300,00 Euro (umgerechnet)
 V:74:TK mit 1000,00 DM Selbstbeteiligung  TK mit 500,00 Euro (umgerechnet)
 V:76:TK mit 5000,00 DM Selbstbeteiligung TK mit 2500,00 Euro (umgerechnet)
 V:77:TK mit 5000,00 DM Selbstbeteiligung TK mit 2500,00 Euro (umgerechnet)
@@ -6742,7 +6742,7 @@ V:5:Gehaltsanpassung
 V:6:absoluter Dynamikerhöhungsbetrag
 V:9:Sonstiges
 M:erhoehungsarten_dynamik_t:ErhoehungsartenDynamik
-V:1:Beitrag 
+V:1:Beitrag
 V:2:Versicherungssumme
 M:erhoehungsbasis_t:Erhoehungsbasis
 V:1:pro Schadensfall
@@ -6804,7 +6804,7 @@ M:art_der_haltung_t:ArtDerHaltung
 V:01:Tierkranken inkl. OP-Kosten
 V:02:OP-Kosten
 V:03:OP-Kranken, Reiterunfall, Pferdehalterrechtsschutz
-V:04:OP-Kranken, Reiterunfall, Pferdehalterrechtsschutz, Pferdehalterhaftpflichtversicherung 
+V:04:OP-Kranken, Reiterunfall, Pferdehalterrechtsschutz, Pferdehalterhaftpflichtversicherung
 V:99:Sonstiges
 M:tarifwahl_versicherungsumfang_tierkranken_t:TarifwahlVersicherungsumfangTierkranken
 V:1:Einfacher Satz
@@ -6997,7 +6997,7 @@ F:42876:11:snr:256:1:const:1, :Satznummer
 T:42747:1
 K:42680:0211:010:Leben - Vertragsspezifischer Teil
 M:lfd_nummer_wagnisart_t:lfdNummerWagnisart
-V:01:Sozialversicherungspflichtig Beschäftigte ohne besondere Merkmale 
+V:01:Sozialversicherungspflichtig Beschäftigte ohne besondere Merkmale
 V:02:Auszubildende
 V:03:Beschäftigte in Altersteilzeit
 V:04:Praktikanten
@@ -7006,7 +7006,7 @@ V:06:Geringfügig entlohnte Beschäftigte nach § 8 Abs. 1 Nr. 1 SGB IV
 V:07:Kurzfristig Beschäftigte nach § 8 Abs. 1 Nr. 2 SGB IV
 V:08:Unständig Beschäftigte
 V:09:Altersvollrentner und Versorgungsbezieher wegen Alters
-V:10:Unterbrechung wegen Elternzeit 
+V:10:Unterbrechung wegen Elternzeit
 V:11:Unterbrechung wegen gesetzlicher Dienstpflicht
 V:12:Beschäftigte in Mutterschutz
 V:13:Ausgeschieden
@@ -7066,13 +7066,13 @@ M:gewinnverwendungsarten_leben_t:GewinnverwendungsartenLeben
 V:1:gestundet
 V:2:ausgesetzt
 M:sparvorgang_t:Sparvorgang
-V:01:Herzinfarkt 
+V:01:Herzinfarkt
 V:02:Schlaganfall
 V:03:Multiple Sklerose
 V:04:Krebs
 V:05:Bypass-Operation
 V:06:Dauerdialyse
-V:07:Nierentransplantation 
+V:07:Nierentransplantation
 M:versicherte_erkrankungen_t:VersicherteErkrankungen
 F:43385:1:sid:1:4:const:0220:Satzart
 F:43396:2:vunr:5:5:string::VU-Nummer
@@ -7369,6 +7369,8 @@ F:46811:27:haftung_ab_f27:170:8:date::Haftung ab
 F:46822:28:haftung_bis_f28:178:8:date::Haftung bis
 F:46843:29:blank:186:70:space::Leerstellen
 F:46854:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -7383,8 +7385,6 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:46496:9
 K:46429:0220:010.13:Leben - Kapitallebens-/Risikovers.  = Wagnisart 1 u. 3 - Wertungssummen
 V:1:Tod
@@ -7675,6 +7675,8 @@ F:50407:27:haftung_ab_f27:170:8:date::Haftung ab
 F:50418:28:haftung_bis_f28:178:8:date::Haftung bis
 F:50439:29:blank:186:70:space::Leerstellen
 F:50450:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -7689,15 +7691,13 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:50090:9
 K:50023:0220:010.2:Leben - Rentenversicherung = Wagnisart 2 - Wertungssummen
 V:1:Berufssparte
 V:2:medizinisch
 V:9:Sonstige
 M:risikozuschlaege_t:Risikozuschlaege
-V:0:Beitragsfreiheit bei BU 
+V:0:Beitragsfreiheit bei BU
 V:1:Rente bei BU
 V:2:Einmalzahlung bei BU
 M:buz_verwendungsart_t:BuzVerwendungsart
@@ -7858,6 +7858,8 @@ F:52521:27:haftung_ab_f27:170:8:date::Haftung ab
 F:52532:28:haftung_bis_f28:178:8:date::Haftung bis
 F:52553:29:blank:186:70:space::Leerstellen
 F:52564:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -7872,8 +7874,6 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:52206:9
 K:52139:0220:010.48:Leben - Berufsunfähigkeit = Wagnisart 4 u. 8 - Wertungssummen
 V:0:linear
@@ -8062,6 +8062,8 @@ F:54994:27:haftung_ab_f27:170:8:date::Haftung ab
 F:55005:28:haftung_bis_f28:178:8:date::Haftung bis
 F:55026:29:blank:186:70:space::Leerstellen
 F:55037:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -8076,8 +8078,6 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:54679:9
 K:54612:0220:010.5:Leben - Risikozusatz = Wagnisart 5 - Wertungssummen
 F:55126:1:sid:1:4:const:0220:Satzart
@@ -8261,6 +8261,8 @@ F:57422:27:haftung_ab_f27:170:8:date::Haftung ab
 F:57433:28:haftung_bis_f28:178:8:date::Haftung bis
 F:57454:29:blank:186:70:space::Leerstellen
 F:57465:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -8275,8 +8277,6 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:57104:9
 K:57037:0220:010.6:Leben - Unfall = Wagnisart 6 - Wertungssummen
 F:57554:1:sid:1:4:const:0220:Satzart
@@ -8514,6 +8514,8 @@ F:60444:27:haftung_ab_f27:170:8:date::Haftung ab
 F:60455:28:haftung_bis_f28:178:8:date::Haftung bis
 F:60476:29:blank:186:70:space::Leerstellen
 F:60487:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -8528,8 +8530,6 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:60129:9
 K:60062:0220:010.7:Leben - Kapital-/Fondsgebundene LV = Wagnisart 7 - Wertungssummen
 F:60576:1:sid:1:4:const:0220:Satzart
@@ -8758,6 +8758,8 @@ F:63334:27:haftung_ab_f27:170:8:date::Haftung ab
 F:63345:28:haftung_bis_f28:178:8:date::Haftung bis
 F:63366:29:blank:186:70:space::Leerstellen
 F:63377:30:snr:256:1:const:9:Satznummer
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
 C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
@@ -8772,8 +8774,6 @@ C:rename 13: provisionspflichtige_wertungssumme_in_we
 C:rename 22: provisionspflichtige_wertungssumme_in_we
 C:rename 17: haftungswertungssumme_in_we
 C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
 T:63019:9
 K:62952:0220:010.9:Leben - Fondsgebundene Rentenversicherung = Wagnisart 9 - Wertungssummen
 F:63466:1:sid:1:4:const:0230:Satzart
@@ -8903,7 +8903,7 @@ V:03666:021 - 025 BESCHAEFTIGTE (RS-KOMBINATIONSPAKETE MIT FVRS)
 V:03667:026 - 050 BESCHAEFTIGTE (RS-KOMBINATIONSPAKETE MIT FVRS)
 V:03669:WEITERE INHABER (RS-KOMBINATIONSPAKETE MIT FVRS)
 V:04010:NICHT ALS ERGÄNZUNG ZUM FIRMEN-RS
-V:04020: ALS ERGÄNZUNG ZUM FIRMEN-RS
+V:04020:ALS ERGÄNZUNG ZUM FIRMEN-RS
 V:04030:NICHTSELBSTAENDIGE
 V:04040:SELBSTAENDIGE
 V:04050:ZUSÄTZLICHER PERSONEN-RS FÜR DEN VERSICHERUNGSNEHMER -ZUSATZRISIKO -
@@ -8926,7 +8926,7 @@ V:07101:VEREINE BIS 200 MITGLIEDER
 V:07102:VEREINE ÜBER 200 MITGLIEDER
 V:07201:VEREINE BIS 200 MITGLIEDER
 V:07202:VEREINE ÜBER 200 MITGLIEDER
-V:07301: SONSTIGE VEREINE (NICHT SCHLÜSSELBAR UNTER 101-202)
+V:07301:SONSTIGE VEREINE (NICHT SCHLÜSSELBAR UNTER 101-202)
 V:07401:VEREINE MIT VERTRAGS-, BERUFS-, LIZENZSPORTLERN ODER -TRAINERS UNABHÄNGIG VON DER ART
 V:08101:EIGENTUEMER VON EINFAMILIENHAEUSERN
 V:08102:WOHNUNGSEIGENTUEMER
@@ -9454,7 +9454,7 @@ V:0566:Lasergeräte in der Medizintechnik
 V:0570:Dentaltechnik
 V:0575:Anlagen und Geräte für Zahntechnik
 V:0580:Endoskope (z.B. Gastroskope, Zystoskope)
-V:0585:Ultraschallgeräte 
+V:0585:Ultraschallgeräte
 V:0588:Medizinische Anlagen und Geräte in Fahrzeugen
 V:0590:Sonstige Anlagen der Medizintechnik
 V:0600:Mess-, Prüf- und Regeltechnik
@@ -9515,7 +9515,7 @@ V:1022:Entstickungsanlagen (DENOX)
 V:1201:Dampfturbogeneratoren
 V:1202:Turbinenöl
 V:1251:Dampfturbinen allein
-V:1301:ORC-Anlagen (Organic-Rankine-Cycle-Anlagen) 
+V:1301:ORC-Anlagen (Organic-Rankine-Cycle-Anlagen)
 V:1302:Dampfmaschinen allein bis n=500 u. Lokomobilen
 V:1303:Dampfmaschinen allein über n=500 u.Dampfmotoren
 V:1401:Wasserturbinen allein
@@ -9893,7 +9893,7 @@ V:7062:Hub- u. Gabelstapler (elektrisch)
 V:7063:Elektroschlepper u. -karren
 V:7064:Autohebebühnen
 V:7071:Lokomotiven
-V:7072:Rollendes Material (z.B. Waggons, Wagen, Loren) ohne eigenen Antrieb 
+V:7072:Rollendes Material (z.B. Waggons, Wagen, Loren) ohne eigenen Antrieb
 V:7097:Motorjapaner, Autoschütter
 V:7098:Muldenkipper, Dumper
 V:7101:Raupenbagger
@@ -10050,12 +10050,12 @@ V:9230:Gebäude-Neubauten über 20.000.000 €
 V:9240:Gebäude-Rohbauten, Kraftwerke, Werks- u. Hallenbauten
 V:9300:Wasserbau
 V:9400:Altbauten
-V:9410:Tunnelbau geschlossene Bauweise, 
+V:9410:Tunnelbau geschlossene Bauweise,
 V:9420:Tunnelbau offene Bauweise
 V:9430:Bohrungen
 V:9500:Umsatz-Verträge
 V:9600:Jahresverträge mit Einzelanmeldung
-V:9610:Kläranlagen, unterirdische Behälter, 
+V:9610:Kläranlagen, unterirdische Behälter,
 V:9620:Wasserbau, Hafenanlagen, Deiche, Schleusen
 V:9700:Altbauten
 V:9800:Sonstige Bauleistungsrisiken (die nicht überwiegend einer OKZ zugeordnet werden können)
@@ -10330,7 +10330,7 @@ V:09:Magazin, fremdes Lager
 V:10:Post
 V:11:Seeschiff, auch Kümo
 V:12:Träger, Bote, Mensch
-V:99:Sonstige 
+V:99:Sonstige
 M:transportmittelschluessel_t:Transportmittelschluessel
 F:65535:1:sid:1:4:const:0250:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
@@ -10398,7 +10398,7 @@ F:65535:11:versssumme_in_we:54:14:number:2:Versicherungssumme in Währungseinhei
 F:65535:12:blank:68:189:space::Leerstellen
 T:65535:2
 K:65535:0251:190:Transport - Einzelanmeldung
-V:01:Versendungen 
+V:01:Versendungen
 V:02:Bezüge
 V:03:Versendungen und Bezüge
 V:04:Zwischentransporte
@@ -11291,10 +11291,6 @@ F:65535:29:vermittler_nrassekuradeur_f29:208:20:string::Vermittler-NummerAssekur
 F:65535:30:vs_nr_beteiligten_gesellschaft_f30:228:17:string::Versicherungsschein-Nummer der beteiligten Gesellschaft
 F:65535:31:blank_f31:245:11:space::Leerstellen
 F:65535:32:snr:256:1:const:1, :Satznummer
-C:rename 12: blank
-C:rename 19: blank
-C:rename 25: blank
-C:rename 31: blank
 C:rename 18: vs_nr_beteiligten_gesellschaft
 C:rename 24: vs_nr_beteiligten_gesellschaft
 C:rename 30: vs_nr_beteiligten_gesellschaft
@@ -11306,6 +11302,10 @@ C:rename 26: vu_nr_beteiligten_gesellschaft
 C:rename 15: anteil_beteiligten_gesellschaft
 C:rename 21: anteil_beteiligten_gesellschaft
 C:rename 27: anteil_beteiligten_gesellschaft
+C:rename 12: blank
+C:rename 19: blank
+C:rename 25: blank
+C:rename 31: blank
 C:rename 16: abrechnung_vermittler
 C:rename 22: abrechnung_vermittler
 C:rename 28: abrechnung_vermittler
@@ -11471,7 +11471,7 @@ V:03:beantragte Mit-/ Nebenversicherung
 V:04:zu ersetzende Versicherung
 M:kennzeichen_der_vor_mitversicherung_t:KennzeichenDerVorMitversicherung
 V:0:Vorversicherung
-V:1:Mitversicherung 
+V:1:Mitversicherung
 M:kennung_vor_mitversicherung_t:KennungVorMitversicherung
 F:65535:1:sid:1:4:const:0362:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
@@ -11812,22 +11812,22 @@ F:65535:27:blank_f27:135:122:space::Leerstellen
 C:rename 14: steuerabfuehrung_durch
 C:rename 20: steuerabfuehrung_durch
 C:rename 26: steuerabfuehrung_durch
-C:rename 8: blank
-C:rename 15: blank
-C:rename 21: blank
-C:rename 27: blank
+C:rename 13: waehrung
+C:rename 19: waehrung
+C:rename 25: waehrung
 C:rename 10: steuerart
 C:rename 16: steuerart
 C:rename 22: steuerart
 C:rename 11: steuerkategorie
 C:rename 17: steuerkategorie
 C:rename 23: steuerkategorie
-C:rename 13: waehrung
-C:rename 19: waehrung
-C:rename 25: waehrung
 C:rename 12: steuer_prozentsatz
 C:rename 18: steuer_prozentsatz
 C:rename 24: steuer_prozentsatz
+C:rename 8: blank
+C:rename 15: blank
+C:rename 21: blank
+C:rename 27: blank
 T:65535:1
 K:65535:0420::Inkasso - Abrechnung Versicherungsteuer
 V:1:Veränderung
@@ -11963,7 +11963,7 @@ V:05:Versicherungsunternehmen
 V:99:Sonstiges
 M:zahlungsempfaenger_t:Zahlungsempfaenger
 V:01:Versicherungsleistung
-V:02:Zinsen 
+V:02:Zinsen
 V:03:Rentenzahlung
 V:04:Regreß
 V:05:Rückzahlung aus Kfz-Schaden
@@ -12799,13 +12799,13 @@ V:1072:Infektionen(Klausel)
 V:1089:sonstige
 V:1098:keine Verschluesselung moeglich
 V:1099:Unfallursache unbekannt
-V:2001:Personenschaden (kein Produktschaden)                                                              
-V:2002:Sachschaden (kein Produktschaden)                                                                  
-V:2003:Vermögensschaden (kein Schaden nach Ziff. 4.2 - 4.6 des GDV-Produkthaftpflicht-Modells)            
-V:2004:Aufwendungen vor Eintritt des Versicherungsfalles gemäß Ziff. 5 des GDV-Umwelthaftpflicht-Modells  
-V:2005:Produkthaftpflicht-Sachschaden                                                                     
-V:2006:Produkthaftpflicht-Personenschaden                                                                 
-V:2007:Schaden nach Ziff. 4.2 - 4.6 des GDV-Produkthaftpflicht-Modells                                    
+V:2001:Personenschaden (kein Produktschaden)
+V:2002:Sachschaden (kein Produktschaden)
+V:2003:Vermögensschaden (kein Schaden nach Ziff. 4.2 - 4.6 des GDV-Produkthaftpflicht-Modells)
+V:2004:Aufwendungen vor Eintritt des Versicherungsfalles gemäß Ziff. 5 des GDV-Umwelthaftpflicht-Modells
+V:2005:Produkthaftpflicht-Sachschaden
+V:2006:Produkthaftpflicht-Personenschaden
+V:2007:Schaden nach Ziff. 4.2 - 4.6 des GDV-Produkthaftpflicht-Modells
 V:3011:Personenschaden inkl. Sach-/Vermögensschaden (KH)
 V:3016:reine Sach-/Vermögensschaden (KH)
 V:3051:Kollisionsschaden Kfz/Kfz (VK)
@@ -13008,7 +13008,7 @@ F:65535:33:schadenursache_alle_sparten:251:4:schadenallesparten_t::Schadenursach
 F:65535:34:blank:255:2:space::Leerstellen
 T:65535:1
 K:65535:0550::Schaden - Abrechnungssatz
-V:0:GDV 
+V:0:GDV
 V:1:produktspezifisches Datenfeld
 M:bezugsfeldart_t:Bezugsfeldart
 V:0:Kann (optional)
