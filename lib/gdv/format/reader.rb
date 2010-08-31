@@ -112,9 +112,10 @@ module GDV::Format
             if rectype = @line.rectype
                 loop do
                     getline
-                    if @line.nil? || rectype.nil? || rectype != @line.rectype
-                        break
-                    end
+                    break if @line.nil? || rectype.nil?
+                    break if rectype != @line.rectype
+                    break if lines.last.snr >= @line.snr
+
                     lines << @line
                 end
             end

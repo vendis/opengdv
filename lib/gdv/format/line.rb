@@ -30,6 +30,11 @@ module GDV::Format
             end
         end
 
+        # Return the +snr+ (Satznummer) for this line
+        def snr
+            part.nr
+        end
+
         # Return the +Rectype+ to which the +part+ belongs
         def rectype
             part.rectype if part
