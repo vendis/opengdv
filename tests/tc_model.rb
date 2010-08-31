@@ -23,6 +23,23 @@ class TestModel < Test::Unit::TestCase
         assert_equal("B4LTTT", g[1][25])
     end
 
+    def test_multiple_partner
+        @model = GDV::model(data_file("multiple_addresses.gdv"))
+
+        assert_equal 1, @model.contracts.size
+        contract = @model.contracts[0]
+        vn = contract.vn
+        assert_equal "Kunde", vn.address.name1
+        assert_equal "Versicherungsnehmer", vn.address.adress_kennzeichen
+        assert_equal "01", vn.address[1].raw(:adress_kennzeichen)
+
+        assert_equal 1, contract.partner.size
+        partner = contract.partner[0]
+        assert_equal "Vermittler", partner.address.name1
+        assert_equal "Vermittler", partner.address.adress_kennzeichen
+        assert_equal "14", partner.address[1].raw(:adress_kennzeichen)
+    end
+
     def test_kfz
         contracts = contracts_for(GDV::Model::Sparte::KFZ)
         assert_equal(4, contracts.size)
