@@ -163,6 +163,7 @@ module GDV::Format
                 end
                 buf = io.gets
                 if buf.nil?
+                    @line = nil
                     io.close if feature?(:close_at_eof)
                     return nil
                 end

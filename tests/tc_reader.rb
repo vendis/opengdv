@@ -114,4 +114,13 @@ class TestParser < Test::Unit::TestCase
         assert_not_nil rec
         assert_equal   "Vermittler", rec.name1
     end
+
+    def test_single_nachsatz
+        r = GDV::Format::Reader.new(data_file("multiple_addresses.gdv"))
+        while rec = r.getrec
+            break if rec.rectype.satz == "9999"
+        end
+        assert_equal "9999", rec.rectype.satz
+        assert_nil r.getrec
+    end
 end
