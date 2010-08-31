@@ -51,6 +51,7 @@ module GDV::Format
     end
 
     def self.classify(record)
+        init if @recindex.nil?
         @recindex.classify(record)
     end
 

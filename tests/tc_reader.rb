@@ -61,7 +61,7 @@ class TestParser < Test::Unit::TestCase
     end
 
     def test_reader
-        r = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
+        r = GDV::reader(data_file("muster_bestand.gdv"))
 
         rec = r.getrec
         assert rec.known?
@@ -97,13 +97,13 @@ class TestParser < Test::Unit::TestCase
     end
 
     def test_match
-        r = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
+        r = GDV::reader(data_file("muster_bestand.gdv"))
         assert(r.match?(:satz => "0001"))
         assert_raise(GDV::Format::MatchError) { r.match!(:satz => "9999") }
     end
 
     def test_multiple_addresses
-        r = GDV::Format::Reader.new(data_file("multiple_addresses.gdv"))
+        r = GDV::reader(data_file("multiple_addresses.gdv"))
         assert_not_nil r.match(:satz => "0001")
 
         rec = r.match(:satz => "0100")
@@ -116,7 +116,7 @@ class TestParser < Test::Unit::TestCase
     end
 
     def test_single_nachsatz
-        r = GDV::Format::Reader.new(data_file("multiple_addresses.gdv"))
+        r = GDV::reader(data_file("multiple_addresses.gdv"))
         while rec = r.getrec
             break if rec.rectype.satz == "9999"
         end

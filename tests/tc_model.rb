@@ -3,15 +3,13 @@ require 'test_helper'
 class TestModel < Test::Unit::TestCase
 
     def setup
-        GDV::Format::init
-        @reader = GDV::Format::Reader.new(data_file("muster_bestand.gdv"))
-        @trans = GDV::Model::Package::parse(@reader)
+        @model = GDV::model(data_file("muster_bestand.gdv"))
     end
 
     def test_transmission
-        assert_equal("9999", @trans.vunr)
-        assert_equal(14, @trans.contracts.size)
-        c = @trans.contracts.first
+        assert_equal("9999", @model.vunr)
+        assert_equal(14, @model.contracts.size)
+        c = @model.contracts.first
         p = c.vn
         assert_equal("2", p.anrede_raw)
         assert_equal("Frau", p.anrede)
@@ -61,6 +59,6 @@ class TestModel < Test::Unit::TestCase
     end
 
     def contracts_for(sp)
-        @trans.contracts.select { |c| c.sparte?(sp) }
+        @model.contracts.select { |c| c.sparte?(sp) }
     end
 end
