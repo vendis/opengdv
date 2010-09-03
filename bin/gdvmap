@@ -1,0 +1,52 @@
+#! /usr/bin/ruby
+
+$:.unshift(File::join(File::dirname(__FILE__), '..', 'lib'))
+require 'gdv'
+require 'optparse'
+
+verbose = false
+debug = false
+mode = :none
+name = nil
+format = :plain
+
+options = OptionParser.new do |opts|
+    opts.on('-v', '--verbose', 'verbose operation') do |_|
+        verbose = true
+        GDV::logger.level = Logger::INFO unless debug
+    end
+    opts.on('-d', '--debug', 'debug output') do |_|
+        debug = true
+        GDV::logger.level = Logger::DEBUG
+    end
+    opts.on('-l', '--list', 'list all map names') { |_| mode = :list }
+    opts.on('-d', '--dump=NAME', 'dump map NAME') do |name|
+        mode = :dump
+        name = name.to_sym
+    end
+    opts.on('--csv', 'dump as CSV') { |_| format = :csv }
+end
+
+options.banner = "gdvmap [options] file\n\nPrint information about value maps"
+options.parse!
+
+GDV::Format::init
+
+if mode == :list
+    GDV::Format::maps.keys.map{ |k| k.to_s }.sort.each { |k| puts k }
+elsif mode == :dump
+    map = GDV::Format::maps[name]
+    unless map
+        $stderr.puts "Could not find map #{map}"
+        exit 1
+    end
+    map.values.keys.sort.each do |k|
+        if format == :csv
+            printf "\"%s\",\"%s\"\n", k, map[k]
+        else
+            printf "%s %s\n", k, map[k]
+        end
+    end
+else
+    puts options
+end
