@@ -63,14 +63,14 @@ F:11398:57:bestandsfuehrende_geschaeftsstelle:241:2:string::Bestandsführende Ge
 F:11418:58:klausel_datensatzsatzart0350:243:3:string::Klausel-Datensatz Satzart 0350
 F:11439:59:blank:246:10:space::Leerstellen
 F:11450:60:snr:256:1:const:1, :Satznummer
-C:rename 32: satzart0210
-C:rename 36: satzart0210
-C:rename 38: satzart0210
-C:rename 42: satzart0210
 C:rename 33: satzart0220
 C:rename 37: satzart0220
 C:rename 39: satzart0220
 C:rename 43: satzart0220
+C:rename 32: satzart0210
+C:rename 36: satzart0210
+C:rename 38: satzart0210
+C:rename 42: satzart0210
 T:10542:1
 F:11471:1:sid:1:4:const:0001:Satzart
 F:11482:2:vunr:5:5:string::VU-Nummer
@@ -1284,7 +1284,7 @@ K:15524:0202::Allgemeine Antragsdaten
 F:15810:1:sid:1:4:const:0210:Satzart
 F:15821:2:vunr:5:5:string::VU-Nummer
 F:15832:3:bkz:10:1:string::Bündelungskennzeichen
-F:15843:4:sparte:11:3:const:000:Sparte
+F:15843:4:sparte:11:3:const:000,060,063,065,069,160,161,162,169,233,290,291,293,294,299:Sparte
 F:15854:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:15865:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:15876:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -1318,7 +1318,7 @@ T:15801:1
 F:16193:1:sid:1:4:const:0210:Satzart
 F:16204:2:vunr:5:5:string::VU-Nummer
 F:16215:3:bkz:10:1:string::Bündelungskennzeichen
-F:16226:4:sparte:11:3:const:000:Sparte
+F:16226:4:sparte:11:3:const:000,060,063,065,069,160,161,162,169,233,290,291,293,294,299:Sparte
 F:16237:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:16248:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:16259:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -1340,7 +1340,7 @@ K:15734:0210:000:Allgemeiner Satz
 F:16501:1:sid:1:4:const:0211:Satzart
 F:16512:2:vunr:5:5:string::VU-Nummer
 F:16523:3:bkz:10:1:string::Bündelungskennzeichen
-F:16534:4:sparte:11:3:const:000:Sparte
+F:16534:4:sparte:11:3:const:000,060,063,065,069,160,161,162,169,233,290,291,293,294,299:Sparte
 F:16545:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:16556:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:16567:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -1356,7 +1356,7 @@ K:16425:0211:000:Allgemeiner Satz - Vertragsspezifischer Teil
 F:16743:1:sid:1:4:const:0220:Satzart
 F:16754:2:vunr:5:5:string::VU-Nummer
 F:16765:3:bkz:10:1:string::Bündelungskennzeichen
-F:16776:4:sparte:11:3:const:000:Sparte
+F:16776:4:sparte:11:3:const:000,060,063,065,069,160,161,162,169,233,290,291,293,294,299:Sparte
 F:16788:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:16799:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:16810:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -1385,7 +1385,7 @@ T:16734:1
 F:17072:1:sid:1:4:const:0220:Satzart
 F:17083:2:vunr:5:5:string::VU-Nummer
 F:17094:3:bkz:10:1:string::Bündelungskennzeichen
-F:17105:4:sparte:11:3:const:000:Sparte
+F:17105:4:sparte:11:3:const:000,060,063,065,069,160,161,162,169,233,290,291,293,294,299:Sparte
 F:17117:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:17128:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:17139:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -1405,7 +1405,7 @@ K:16667:0220:000:Allgemeiner Satz
 F:17360:1:sid:1:4:const:0221:Satzart
 F:17371:2:vunr:5:5:string::VU-Nummer
 F:17382:3:bkz:10:1:string::Bündelungskennzeichen
-F:17393:4:sparte:11:3:const:000:Sparte
+F:17393:4:sparte:11:3:const:000,060,063,065,069,160,161,162,169,233,290,291,293,294,299:Sparte
 F:17404:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:17415:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:17426:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -2113,7 +2113,7 @@ M:statistisches_hauptkonto_t:StatistischesHauptkonto
 F:22553:1:sid:1:4:const:0210:Satzart
 F:22564:2:vunr:5:5:string::VU-Nummer
 F:22575:3:bkz:10:1:string::Bündelungskennzeichen
-F:22586:4:sparte:11:3:const:080:Sparte
+F:22586:4:sparte:11:3:const:080,081,082,083,089,090,099,100,109,120,123,124,150,210,231:Sparte
 F:22597:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:22608:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:22619:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -2162,7 +2162,7 @@ T:22544:1
 F:23109:1:sid:1:4:const:0210:Satzart
 F:23120:2:vunr:5:5:string::VU-Nummer
 F:23131:3:bkz:10:1:string::Bündelungskennzeichen
-F:23142:4:sparte:11:3:const:080:Sparte
+F:23142:4:sparte:11:3:const:080,081,082,083,089,090,099,100,109,120,123,124,150,210,231:Sparte
 F:23153:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:23164:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:23175:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -2177,7 +2177,7 @@ K:22477:0210:080:Feuer - Industrie / Gewerbliche Sachversicherung
 F:23340:1:sid:1:4:const:0211:Satzart
 F:23351:2:vunr:5:5:string::VU-Nummer
 F:23362:3:bkz:10:1:string::Bündelungskennzeichen
-F:23373:4:sparte:11:3:const:080:Sparte
+F:23373:4:sparte:11:3:const:080,081,082,083,089,090,099,100,109,120,123,124,150,210,231:Sparte
 F:23384:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:23395:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:23406:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -2215,7 +2215,7 @@ M:kombinationsschluessel_t:Kombinationsschluessel
 F:23549:1:sid:1:4:const:0220:Satzart
 F:23560:2:vunr:5:5:string::VU-Nummer
 F:23571:3:bkz:10:1:string::Bündelungskennzeichen
-F:23582:4:sparte:11:3:const:080:Sparte
+F:23582:4:sparte:11:3:const:080,081,082,083,089,090,099,100,109,120,123,124,150,210,231:Sparte
 F:23593:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:23604:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:23615:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -2233,7 +2233,7 @@ T:23540:1
 F:23759:1:sid:1:4:const:0220:Satzart
 F:23770:2:vunr:5:5:string::VU-Nummer
 F:23781:3:bkz:10:1:string::Bündelungskennzeichen
-F:23792:4:sparte:11:3:const:080:Sparte
+F:23792:4:sparte:11:3:const:080,081,082,083,089,090,099,100,109,120,123,124,150,210,231:Sparte
 F:23803:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:23814:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:23825:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -2268,7 +2268,7 @@ K:23473:0220:080:Feuer - Industrie / Gewerbliche Sachversicherung
 F:24221:1:sid:1:4:const:0221:Satzart
 F:24232:2:vunr:5:5:string::VU-Nummer
 F:24243:3:bkz:10:1:string::Bündelungskennzeichen
-F:24254:4:sparte:11:3:const:080:Sparte
+F:24254:4:sparte:11:3:const:080,081,082,083,089,090,099,100,109,120,123,124,150,210,231:Sparte
 F:24265:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:24276:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:24287:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -7369,6 +7369,10 @@ F:46811:27:haftung_ab_f27:170:8:date::Haftung ab
 F:46822:28:haftung_bis_f28:178:8:date::Haftung bis
 F:46843:29:blank:186:70:space::Leerstellen
 F:46854:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -7381,10 +7385,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:46496:9
 K:46429:0220:010.13:Leben - Kapitallebens-/Risikovers.  = Wagnisart 1 u. 3 - Wertungssummen
 V:1:Tod
@@ -7675,6 +7675,10 @@ F:50407:27:haftung_ab_f27:170:8:date::Haftung ab
 F:50418:28:haftung_bis_f28:178:8:date::Haftung bis
 F:50439:29:blank:186:70:space::Leerstellen
 F:50450:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -7687,10 +7691,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:50090:9
 K:50023:0220:010.2:Leben - Rentenversicherung = Wagnisart 2 - Wertungssummen
 V:1:Berufssparte
@@ -7858,6 +7858,10 @@ F:52521:27:haftung_ab_f27:170:8:date::Haftung ab
 F:52532:28:haftung_bis_f28:178:8:date::Haftung bis
 F:52553:29:blank:186:70:space::Leerstellen
 F:52564:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -7870,10 +7874,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:52206:9
 K:52139:0220:010.48:Leben - Berufsunfähigkeit = Wagnisart 4 u. 8 - Wertungssummen
 V:0:linear
@@ -8062,6 +8062,10 @@ F:54994:27:haftung_ab_f27:170:8:date::Haftung ab
 F:55005:28:haftung_bis_f28:178:8:date::Haftung bis
 F:55026:29:blank:186:70:space::Leerstellen
 F:55037:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -8074,10 +8078,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:54679:9
 K:54612:0220:010.5:Leben - Risikozusatz = Wagnisart 5 - Wertungssummen
 F:55126:1:sid:1:4:const:0220:Satzart
@@ -8261,6 +8261,10 @@ F:57422:27:haftung_ab_f27:170:8:date::Haftung ab
 F:57433:28:haftung_bis_f28:178:8:date::Haftung bis
 F:57454:29:blank:186:70:space::Leerstellen
 F:57465:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -8273,10 +8277,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:57104:9
 K:57037:0220:010.6:Leben - Unfall = Wagnisart 6 - Wertungssummen
 F:57554:1:sid:1:4:const:0220:Satzart
@@ -8514,6 +8514,10 @@ F:60444:27:haftung_ab_f27:170:8:date::Haftung ab
 F:60455:28:haftung_bis_f28:178:8:date::Haftung bis
 F:60476:29:blank:186:70:space::Leerstellen
 F:60487:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -8526,10 +8530,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:60129:9
 K:60062:0220:010.7:Leben - Kapital-/Fondsgebundene LV = Wagnisart 7 - Wertungssummen
 F:60576:1:sid:1:4:const:0220:Satzart
@@ -8758,6 +8758,10 @@ F:63334:27:haftung_ab_f27:170:8:date::Haftung ab
 F:63345:28:haftung_bis_f28:178:8:date::Haftung bis
 F:63366:29:blank:186:70:space::Leerstellen
 F:63377:30:snr:256:1:const:9:Satznummer
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
 C:rename 18: haftung_ab
 C:rename 27: haftung_ab
 C:rename 14: wertungsbasis
@@ -8770,10 +8774,6 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
 T:63019:9
 K:62952:0220:010.9:Leben - Fondsgebundene Rentenversicherung = Wagnisart 9 - Wertungssummen
 F:63466:1:sid:1:4:const:0230:Satzart
@@ -9294,7 +9294,7 @@ M:vertragsform_technische_t:VertragsformTechnische
 F:65415:1:sid:1:4:const:0210:Satzart
 F:65426:2:vunr:5:5:string::VU-Nummer
 F:65437:3:bkz:10:1:string::Bündelungskennzeichen
-F:65448:4:sparte:11:3:const:170:Sparte
+F:65448:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65460:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65471:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65482:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -9340,7 +9340,7 @@ T:65406:1
 F:65535:1:sid:1:4:const:0210:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
 F:65535:3:bkz:10:1:string::Bündelungskennzeichen
-F:65535:4:sparte:11:3:const:170:Sparte
+F:65535:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65535:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65535:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65535:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -9353,7 +9353,7 @@ K:65339:0210:170:Technische Versicherungen
 F:65535:1:sid:1:4:const:0211:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
 F:65535:3:bkz:10:1:string::Bündelungskennzeichen
-F:65535:4:sparte:11:3:const:170:Sparte
+F:65535:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65535:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65535:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65535:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -10091,7 +10091,7 @@ M:art_des_selbstbehalts_t:ArtDesSelbstbehalts
 F:65535:1:sid:1:4:const:0220:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
 F:65535:3:bkz:10:1:string::Bündelungskennzeichen
-F:65535:4:sparte:11:3:const:170:Sparte
+F:65535:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65535:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65535:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65535:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -10108,7 +10108,7 @@ T:65535:1
 F:65535:1:sid:1:4:const:0220:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
 F:65535:3:bkz:10:1:string::Bündelungskennzeichen
-F:65535:4:sparte:11:3:const:170:Sparte
+F:65535:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65535:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65535:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65535:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -10145,7 +10145,7 @@ T:65535:2
 F:65535:1:sid:1:4:const:0220:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
 F:65535:3:bkz:10:1:string::Bündelungskennzeichen
-F:65535:4:sparte:11:3:const:170:Sparte
+F:65535:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65535:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65535:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65535:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -10165,7 +10165,7 @@ K:65535:0220:170:Technische Versicherungen
 F:65535:1:sid:1:4:const:0221:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
 F:65535:3:bkz:10:1:string::Bündelungskennzeichen
-F:65535:4:sparte:11:3:const:170:Sparte
+F:65535:4:sparte:11:3:const:170,171,172,174,175,176,179,232:Sparte
 F:65535:5:vs_nr:14:17:string::Versicherungsschein-Nummer
 F:65535:6:folge_nr:31:2:folgenummer_t::Folgenummer
 F:65535:7:verm:33:10:string::Geschäftsstelle / Vermittler
@@ -11291,6 +11291,9 @@ F:65535:29:vermittler_nrassekuradeur_f29:208:20:string::Vermittler-NummerAssekur
 F:65535:30:vs_nr_beteiligten_gesellschaft_f30:228:17:string::Versicherungsschein-Nummer der beteiligten Gesellschaft
 F:65535:31:blank_f31:245:11:space::Leerstellen
 F:65535:32:snr:256:1:const:1, :Satznummer
+C:rename 16: abrechnung_vermittler
+C:rename 22: abrechnung_vermittler
+C:rename 28: abrechnung_vermittler
 C:rename 18: vs_nr_beteiligten_gesellschaft
 C:rename 24: vs_nr_beteiligten_gesellschaft
 C:rename 30: vs_nr_beteiligten_gesellschaft
@@ -11306,9 +11309,6 @@ C:rename 12: blank
 C:rename 19: blank
 C:rename 25: blank
 C:rename 31: blank
-C:rename 16: abrechnung_vermittler
-C:rename 22: abrechnung_vermittler
-C:rename 28: abrechnung_vermittler
 T:65535:1
 F:65535:1:sid:1:4:const:0300:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer

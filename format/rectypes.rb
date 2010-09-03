@@ -34,6 +34,22 @@ TYPE_NAMES = {
 
 EMITTED_TYPE_MAPS = []
 
+# Some record types are defined for one lob, but can be used
+# for many others
+SPARTE_SYNONYMS = {
+    # Feuer-Industrie/Gewerbl. Sachvers
+    "080" => [ "080", "081", "082", "083", "089", "090",
+               "099", "100", "109", "120", "123", "124",
+               "150", "210", "231" ].join(","),
+    # Allgemeiner Satz
+    "000" => [ "000", "060", "063", "065", "069",
+               "160", "161", "162", "169", "233",
+               "290", "291", "293", "294", "299" ].join(","),
+    # Technische Vers.
+    "170" => [ "170", "171", "172", "174", "175", "176", "179",
+               "232" ].join(",")
+}
+
 class String
    def to_underscore
      self.gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').
@@ -219,7 +235,7 @@ rt.xpath("satzart").each do |rec|
             end
             sparte, v = val.split(".")
             if sparte
-                f["const"] = sparte
+                f["const"] = SPARTE_SYNONYMS[sparte] || sparte
                 if v
                     vals = v.split("").join(",")
                     xpr = nil
