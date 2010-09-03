@@ -27,13 +27,6 @@ module GDV
     def self.reader(file)
         GDV::Format::Reader.new(file)
     end
-
-    def self.model(file_or_reader)
-        unless file_or_reader.is_a?(GDV::Format::Reader)
-            file_or_reader = GDV::Format::Reader.new(file_or_reader)
-        end
-        GDV::Model::Package::parse(file_or_reader)
-    end
 end
 
 require 'gdv/format'

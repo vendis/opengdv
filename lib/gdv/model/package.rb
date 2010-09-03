@@ -2,6 +2,7 @@
 module GDV::Model
     class Package < Base
         attr_reader :vorsatz, :nachsatz, :contracts
+        attr_accessor :filename
 
         property :vunr, :vorsatz, 1, 2
 
