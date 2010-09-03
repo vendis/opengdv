@@ -83,8 +83,8 @@ module GDV::Format
         def print(sio=nil)
             sio = StringIO.new unless sio
             sio.puts "#{ind}#{field.name}@#{field.pos}+#{field.len}"
-            parts.each do |v, p|
-                sio.puts "#{ind}  #{v} -> #{p}"
+            parts.keys.sort.each do |k|
+                sio.puts "#{ind}  #{k} -> #{parts[k]}"
             end
             children.sort.each do |v, c|
                 sio.puts "#{ind}  #{v} ==>"
