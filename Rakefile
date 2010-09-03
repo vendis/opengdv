@@ -21,3 +21,5 @@ Rake::TestTask.new(:test) do |t|
     t.test_files = FileList['tests/tc_*.rb']
     t.libs = [ 'lib', 'tests/lib' ]
 end
+
+task :default => :test
