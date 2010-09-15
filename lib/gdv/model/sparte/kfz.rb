@@ -1,4 +1,4 @@
-# Der spartenspezifische Teil fuer Sparte Leben
+# Der spartenspezifische Teil fuer Sparte KfZ
 module GDV::Model::Sparte
     #
     # Kfz Hauptvertrag
@@ -9,6 +9,7 @@ module GDV::Model::Sparte
         property :make,  :details, 1, 10
         property :model, :details, 1, 11
         property :price, :addl,    1, 8
+        property :we,    :details, 1, 21
 
         structure do
             one    :details, :satz => DETAILS
@@ -41,6 +42,8 @@ module GDV::Model::Sparte
                 { :satz => SPECIFIC, :sparte => sparte }
             end
 
+            attr_reader :specific
+
             structure do
                 sparte = result.class.sparte
                 one    :specific, :satz => SPECIFIC, :sparte => sparte
@@ -54,19 +57,30 @@ module GDV::Model::Sparte
         class Haft < TeilSparte
             property :regionalklasse, :specific, 1, 11
             property :sfs,            :specific,  1, 15
-            property :beitrag,        :addl, 1, 9
+
+            def beitrag
+                return addl[1][9] if addl
+                specific[1][17]
+            end
         end
 
-        class Voll < TeilSparte; end
+        class Voll < TeilSparte
+            property :beitrag,        :specific, 1, 16
+        end
 
         class Teil < TeilSparte
             property :typkl, :specific, 1, 21
             property :beitrag, :addl, 1, 8
+            def beitrag
+                return addl[1][8] if addl
+                specific[1][13]
+            end
         end
 
         class Unfall < TeilSparte
             property :deckung1, :specific, 1, 11
             property :invaliditaet, :addl, 1, 9
+            property :beitrag, :specific, 1, 25
         end
 
         class Baustein < TeilSparte; end

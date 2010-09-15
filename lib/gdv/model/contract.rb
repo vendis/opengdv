@@ -26,11 +26,25 @@ module GDV::Model
         end
 
         property :vsnr,    :general, 1, 5
+        property :agency,  :general, 1, 7
+
         property :begin,   :general, 1, 9
         property :end,     :general, 1, 10
         property :renewal, :general, 1, 11
+        property :beitrag, :general, 1, 22
+        property :we,      :general, 1, 21
+
+        property :status,  :general, 1, 13
+        property :cancelled_reason, :general, 1, 14
+        property :cancelled_on, :general, 1, 15
+
+        property :zw,      :general, 1, 12
 
         first Partner
+
+        def cancelled?
+            self.status_raw == "4"
+        end
 
         structure do
             object :vn, Partner
