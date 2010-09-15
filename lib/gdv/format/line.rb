@@ -1,7 +1,8 @@
-# An individual line in a file. Combines the actual string from the file
-# with the underlying +Part+ describing the field layout
 module GDV::Format
+    # An individual line in a file. Combines the actual string from the
+    # file with the underlying {Part} describing the field layout
     class Line
+        # @return [Part] the part matching the line
         attr_reader :part
 
         # Create a new line, based on the 256 byte string +raw+ that will
@@ -11,7 +12,7 @@ module GDV::Format
             @part = part
         end
 
-        # Return the field +name+ from +part+
+        # @return [Field] the field +name+ from +part+
         def field(name)
             @part[name]
         end
@@ -21,7 +22,9 @@ module GDV::Format
             field(name).convert(@raw)
         end
 
-        # Return the raw value for field +name+ in this line
+        # Return the raw value for field +name+ in this line, or the entire
+        # line if +name+ is +nil+
+        # @return [String] the raw field value
         def raw(name = nil)
             if name.nil?
                 @raw

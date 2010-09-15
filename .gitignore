@@ -1,3 +1,6 @@
 enorm/
 pkg/
 tests/data/private
+.yardoc/
+doc/
+html/

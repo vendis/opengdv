@@ -3,6 +3,7 @@ require 'rake'
 require 'rake/rdoctask'
 require 'rake/testtask'
 require 'rake/gempackagetask'
+require 'yard'
 
 GDV_XML = "format/VUVM2009_011109.xml"
 RECTYPES = "lib/gdv/format/data/rectypes.txt"
@@ -29,6 +30,10 @@ task :compile => RECTYPES
 Rake::RDocTask.new do |t|
     t.main = "README.rdoc"
     t.rdoc_files.include("README.rdoc", "lib/**/*.rb")
+end
+
+YARD::Rake::YardocTask.new do |t|
+  t.options += ['--title', "OpenGDV #{PKG_VERSION} Documentation"]
 end
 
 Rake::TestTask.new(:test) do |t|

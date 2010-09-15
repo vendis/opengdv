@@ -40,6 +40,7 @@ module GDV::Format
             @lines = lines.inject({}) { |m, l| m[l.part.nr] = l; m }
         end
 
+        # @return [Line] the line with +snr+ +k+
         def [](k)
             @lines[k] || @rectype.parts[k-1].default
         end
@@ -53,6 +54,7 @@ module GDV::Format
             end
         end
 
+        # @return [Array<Line>]
         def lines
             @lines.values.sort { |l1, l2| l1.part.nr <=> l2.part.nr }
         end
@@ -94,14 +96,16 @@ module GDV::Format
             @records.unshift(rec)
         end
 
-        # Return the next record without consuming it
+        # @return [Record] the next record without consuming it
         def peek
             rec = getrec
             unshift(rec)
             rec
         end
 
-        # Return the next record, or nil if there are no more records
+        # Read the next record from the input stream
+        # @return [Record] the next record
+        # @return [nil] if there are no more records
         def getrec
             unless @records.empty?
                 return @records.shift
@@ -122,8 +126,10 @@ module GDV::Format
             return Record.new(rectype, lines, @lineno - lines.size)
         end
 
-        # Return +true+ if the next record matches +cond+ without consuming
-        # the record
+        # Check if the next record matches the condition +cond+ without
+        # consuming the record
+        # @return [Boolean] +true+ if the next record
+        # matches, +false+ otherwise
         def match?(cond)
             rec = peek
             result = ! rec.nil?
@@ -136,14 +142,18 @@ module GDV::Format
             result
         end
 
-        # Return the next record, provided it matches +cond+; otherwise,
-        # return nil
+        # Return the next record, provided it matches +cond+
+        # @return [Record] the next record
+        # @return [nil] if the next record does not match +cond+ or if
+        # there is no next record
         def match(cond)
             getrec if match?(cond)
         end
 
         # Return the next record, provided it matches +cond+; if it
         # doesn't, raise a MatchError
+        # @return [Record] the next record
+        # @raise [MatchError] if the next record does not match +cond+
         def match!(cond)
             rec = match(cond)
             raise MatchError.new(self, cond) unless rec

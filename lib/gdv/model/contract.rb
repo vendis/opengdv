@@ -1,15 +1,22 @@
-# A contract, i.e. everything between the Vorsatz and Nachsatz
+# -*- coding: utf-8 -*-
 require 'gdv/model/partner'
 
 module GDV::Model
+    # A contract, i.e. everything between the Vorsatz and Nachsatz
     class Contract < Base
-        # Erster Partner - der Versicherungsnehmer
+        # @return [Partner] Erster Partner - der Versicherungsnehmer
         attr_reader :vn
 
-        # Liste weiterer partner
+        # @return [Array<Partner>] Liste weiterer partner
         attr_reader :partner
 
-        attr_reader :general, :signatures, :clauses, :rebates
+        # @return [GDV::Format::Record] 0200 - Allgemeiner Satz
+        attr_reader :general
+
+        # @return [GDV::Format::Record] 0352 - Signaturen
+        attr_reader :signatures
+
+        # @return [Sparte::Kfz] spartenspecifische Sätze
         attr_reader :sparte
 
         # Return +true+ if this contract is in sparte +sp+ (one of the

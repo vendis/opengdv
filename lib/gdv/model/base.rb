@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Base class for all models
 module GDV::Model
     # Constants for the different kinds of 'satz'
@@ -47,10 +48,10 @@ module GDV::Model
     end
 
     class Base
-        # Lise von Saetzen '0350 - Klausel-Datensatz'
+        # @return [Array<GDV::Format::Record>] 0350 - Klauseln
         attr_reader :clauses
 
-        # Liste von Saetzen '0390 - Rabatte und Zuschlaege'
+        # @return [Array<GDV::Format::Record>] 0390 - Rabatte und Zuschläge
         attr_reader :rebates
 
         def [](sym)
