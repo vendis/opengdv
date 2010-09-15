@@ -1,4 +1,4 @@
-= Godiva - eine Bibliotek zm Lesen von GDV Dateien
+= OpenGDV - eine Bibliotek zm Lesen von GDV Dateien
 
 Diese Bibliothek ermoeglicht es, Dateienn im {GDV eNorm
 VU-Vermittler}[http://www.gdv-online.de/vuvm/] Format zu lesen
