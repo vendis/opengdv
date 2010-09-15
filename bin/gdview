@@ -55,7 +55,7 @@ loop do
         unless brief
             rec.lines.each do |l|
                 l.part.fields.each do |f|
-                    v = convert ? f.convert(l.raw) : f.extract(l.raw)
+                    v = convert ? l[f.nr] : l.raw(f.nr)
                     unless v =~ /^ *$/
                         s = convert ? "#{v.class.name}" : "#{v.size}"
                         lbl = f.label.nil? ? f.type.to_s : f.label[0,29]

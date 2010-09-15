@@ -220,8 +220,14 @@ module GDV::Format
         end
 
         # Convert the value for this field in +record+. For mapped types,
-        # return the entry from the map. Strip spaces
-        def convert(record)
+        # return the entry from the map. For alphanumeric fields, strip
+        # spaces and convert using the +iconv+ if it is passed to convert
+        # the character encoding
+        # @param [String] record the raw record (a string of 256 bytes)
+        # @param [Iconv] iconv an optional Iconv instance
+        # @return [String, Fixnum, Date] the converted value for this
+        # field
+        def convert(record, iconv = nil)
             s = extract(record)
             if mapped?
                 map[s]
@@ -240,7 +246,11 @@ module GDV::Format
                 m = 1 if m == 0
                 Date.civil(y,m,d)
             else
-                s.strip
+                if iconv
+                    iconv.iconv(s.strip)
+                else
+                    s.strip
+                end
             end
         end
 

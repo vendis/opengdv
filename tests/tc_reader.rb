@@ -1,4 +1,3 @@
-# -*- coding: raw-text -*-
 require 'test_helper'
 
 class TestParser < Test::Unit::TestCase
@@ -74,7 +73,7 @@ class TestParser < Test::Unit::TestCase
 
         exp = { :sid => "0001", :vunr => "9999",
             :absender => "XXX Versicherung AG",
-            :adressat => "BRBRIENNEE,JÜRGEN",
+            :adressat => "BRBRIENNEE,J\xc3\x9cRGEN",
             :erstellungs_dat_zeitraum_vom_zeitraum_bis => 2207200422072004,
             6 => '9999009999',
             54 => "VU"

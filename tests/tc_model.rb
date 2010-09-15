@@ -86,6 +86,12 @@ class TestModel < Test::Unit::TestCase
         assert_equal 3, @transmission.packages.size
     end
 
+    def test_cset
+        transmission "muster_bestand.gdv"
+        vn = @transmission.packages[0].contracts[0].vn
+        assert_equal "Kitzelpf\xc3\xbctze", vn.nachname
+    end
+
     def contracts_for(sp)
         @package.contracts.select { |c| c.sparte?(sp) }
     end
