@@ -64,7 +64,10 @@ module GDV::Model
 
         def read_property(args, fnr, mode)
             obj = self
-            args.each { |arg| obj = obj[arg] }
+            args.each do |arg|
+                obj = obj[arg]
+                raise ArgumentError, "path #{args.inspect} leads to nil at #{arg} for #{self.inspect}" if obj.nil?
+            end
             if mode == :raw
                 obj.raw(fnr)
             else
