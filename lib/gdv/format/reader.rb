@@ -1,5 +1,3 @@
-require 'iconv'
-
 module GDV::Format
 
     class ReaderError < RuntimeError
@@ -92,7 +90,7 @@ module GDV::Format
             # files. There are other possibilities, like CP850; when we
             # encounter them, we need a way to set the source character
             # encoding
-            @iconv = Iconv.new("UTF-8", "ISO-8859-15")
+            @enc = "ISO-8859-15"
         end
 
         def feature?(name)
@@ -200,7 +198,7 @@ module GDV::Format
                     GDV::logger.info "#{lineno}:unknown record:#{buf[0,4]}.#{buf[10,3]} skenn=#{buf[255,1]} snr='#{buf[249,1]}'"
                 end
             end while part.nil?
-            @line = Line.new(buf, part, @iconv)
+            @line = Line.new(buf, part, @enc)
         end
 
         # When +cond+ is an array, check whether +val+ is in +cond+;
