@@ -86,6 +86,42 @@ class TestModel < Test::Unit::TestCase
         assert_equal 3, @transmission.packages.size
     end
 
+    def test_yaml_contract
+        transmission "muster_bestand.gdv"
+
+        contracts = contracts_for(GDV::Model::Sparte::KFZ)
+        assert_equal(4, contracts.size)
+
+        c = YAML::load(contracts.first.to_yaml)
+
+        assert_equal("Gillensvier", c.vn.nachname)
+        assert_equal("Herbert", c.vn.vorname)
+        assert_equal("W45KKK", c.vn.kdnr_vu)
+
+        assert_equal("59999999990", c.vsnr)
+        assert_equal(Date.civil(2004, 7, 1), c.begin)
+        assert_equal(Date.civil(2005,1,1), c.end)
+        assert_equal(Date.civil(2005,1,1), c.renewal)
+
+        kfz = c.sparte
+        assert_equal("VW", kfz.make)
+        assert_equal('1J (GOLF IV 1.9 TDI SYNCR', kfz.model)
+        assert_equal(0, kfz.price)
+
+        assert_not_nil kfz.haft
+        assert_equal("R8", kfz.haft.regionalklasse)
+        assert_equal("1/2", kfz.haft.sfs)
+        assert_equal(866.87, kfz.haft.beitrag)
+
+        assert_not_nil kfz.teil
+        assert_equal("22", kfz.teil.typkl)
+        assert_equal(173.58, kfz.teil.beitrag)
+
+        assert_not_nil kfz.unfall
+        assert_equal("1", kfz.unfall.deckung1_raw)
+        assert_equal(30000.0, kfz.unfall.invaliditaet)
+    end
+
     def test_cset
         transmission "muster_bestand.gdv"
         vn = @transmission.packages[0].contracts[0].vn

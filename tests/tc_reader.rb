@@ -60,6 +60,42 @@ class TestParser < Test::Unit::TestCase
         assert_equal "000", part.rectype.sparte
     end
 
+    def test_yaml_rectype
+        rt = @rectypes.first
+        yml = rt.to_yaml
+        assert_equal "--- !opengdv.vendis.org,2009-11-01/rectype \npath: \n  :snr: \" \"\n  :sid: \"0001\"\n", yml
+        assert_equal rt, YAML::load(yml)
+    end
+
+    def test_yaml_part
+        part = @rectypes.first.parts.last
+
+        yml = YAML::dump(part)
+        assert_equal 136, yml.size
+        assert_equal part, YAML::load(yml)
+    end
+
+    def test_yaml_record
+        r = GDV::reader(data_file("muster_bestand.gdv"))
+        r.getrec
+
+        rec = r.getrec
+
+        yml = rec.to_yaml
+        rec2 = YAML::load(yml)
+
+        assert_equal 985, yml.size
+        assert       rec2.known?
+        assert_equal rec.lineno, rec2.lineno
+        assert_equal rec.rectype, rec2.rectype
+        rec.lines.each  do |l|
+            l.part.fields.each do |f|
+                assert_equal l[f.name], rec2[l.part.nr][f.name],
+                             "Wrong #{f.name} in part #{l.part.nr}"
+            end
+        end
+    end
+
     def test_default
         rectype = @rectypes.select { |rt| rt.satz == "9999" }.first
         line = rectype.parts[0].default

@@ -1,6 +1,11 @@
 require 'date'
+require 'yaml'
 
 module GDV::Format
+
+    # The URI we use for our YAML objects. The date indicates the date
+    # of the underlying GDV release
+    YAML_URI = "tag:opengdv.vendis.org,2009-11-01"
 
     class FormatError < RuntimeError
     end
@@ -52,6 +57,20 @@ module GDV::Format
         def self.parse(parts, l)
             RecType.new(parts, :line => l[1], :satz => l[2], :sparte => l[3],
                         :label => l[4])
+        end
+
+        yaml_as "#{YAML_URI}:rectype"
+
+        def to_yaml(opts = {})
+            YAML.quick_emit(self, opts) do |out|
+                out.map(taguri, to_yaml_style) do |map|
+                    map.add("path", parts.first.path)
+                end
+            end
+        end
+
+        def self.yaml_new(klass, tag, val)
+            GDV::Format::recindex.find_part(val["path"]).rectype
         end
     end
 
@@ -168,6 +187,21 @@ module GDV::Format
                 @default = Line.new(raw, self)
             end
             @default
+        end
+
+        yaml_as "#{YAML_URI}:part"
+
+        def to_yaml(opts = {})
+            YAML.quick_emit(self, opts) do |out|
+                out.map(taguri, to_yaml_style) do |map|
+                    map.add("nr", @nr)
+                    map.add("rectype", @rectype)
+                end
+            end
+        end
+
+        def self.yaml_new(klass, tag, val)
+            val["rectype"].parts[val["nr"]-1]
         end
 
         def self.parse(fields, l)
