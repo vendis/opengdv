@@ -44,6 +44,22 @@ class TestParser < Test::Unit::TestCase
         assert f.values.empty?
     end
 
+    def test_part_path
+        recindex = GDV::Format::recindex
+        part = recindex.find_part(:sid => "0001", :snr => " ")
+        assert_not_nil part
+        assert_equal "0001", part.rectype.satz
+        assert_equal 1, part.nr
+
+        part = recindex.find_part(:sid=>"0210",
+                                  :sparte=>"160", :snr=>"2")
+        assert_not_nil part
+        assert_equal "0210", part.rectype.satz
+        assert_equal 2, part.nr
+        # Sparte 160 benutzt 0210.000
+        assert_equal "000", part.rectype.sparte
+    end
+
     def test_default
         rectype = @rectypes.select { |rt| rt.satz == "9999" }.first
         line = rectype.parts[0].default

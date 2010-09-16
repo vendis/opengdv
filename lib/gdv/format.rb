@@ -69,6 +69,7 @@ module GDV::Format
             parts.each do |p|
                 @recindex.insert(p)
             end
+            @recindex.finalize
         end
     end
 end

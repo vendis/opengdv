@@ -57,7 +57,7 @@ module GDV::Format
 
     class Part
         attr_reader :nr, :line, :fields, :key_fields
-        attr_accessor :rectype
+        attr_accessor :rectype, :path
 
         def initialize(fields, h)
             @nr = h[:nr]

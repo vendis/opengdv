@@ -69,15 +69,18 @@ module GDV::Format
             end
         end
 
-        def match_path(record)
-            v = field.extract(record)
-            if parts.key?(v)
-                return [ field, parts[v] ]
-            elsif children.key?(v)
-                return [ field ] + children[v].match_path(record)
-            else
-                return [ field, nil ]
+        def finalize(path = {})
+            parts.each_key do |k|
+                parts[k].path = { field.name => k }.merge!(path) unless parts[k].path
             end
+            children.each do |v, c|
+                c.finalize({ field.name => v }.merge!(path))
+            end
+        end
+
+        def find_part(path)
+            parts[path[field.name]] ||
+                children[path[field.name]].find_part(path)
         end
 
         def print(sio=nil)
