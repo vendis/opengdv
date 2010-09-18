@@ -174,4 +174,13 @@ class TestParser < Test::Unit::TestCase
         assert_equal "9999", rec.rectype.satz
         assert_nil r.getrec
     end
+
+    def test_parse_date
+        d = Date.civil(2010, 8, 4)
+        assert_equal d, GDV::Format.parse_date("04082010")
+        d = Date.civil(2010, 1, 1)
+        assert_equal d, GDV::Format.parse_date("00002010")
+        d = Date.civil(2010, 8, 1)
+        assert_equal d, GDV::Format.parse_date("00082010")
+    end
 end

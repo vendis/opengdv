@@ -13,6 +13,19 @@ module GDV::Format
     class RecordError < RuntimeError
     end
 
+    # Parse a date; the string +s+ must be exactly 8 bytes, in the format
+    # +MMTTJJJJ+.
+    # @return [Date] the date corresponding to +s+
+    def self.parse_date(s)
+        d = s[0,2].to_i
+        m = s[2,2].to_i
+        y = s[4,4].to_i
+        return nil if y + m + d == 0
+        d = 1 if d == 0
+        m = 1 if m == 0
+        Date.civil(y,m,d)
+    end
+
     class RecType
         attr_reader :satz, :sparte, :line, :label, :parts
         def initialize(parts, h)
@@ -272,13 +285,7 @@ module GDV::Format
                     s.to_i
                 end
             elsif type == :date
-                d = s[0,2].to_i
-                m = s[2,2].to_i
-                y = s[4,4].to_i
-                return nil if y + m + d == 0
-                d = 1 if d == 0
-                m = 1 if m == 0
-                Date.civil(y,m,d)
+                GDV::Format::parse_date(s)
             else
                 if enc
                     Encoder.utf8(enc).convert(s.strip)
