@@ -63,14 +63,14 @@ F:11398:57:bestandsfuehrende_geschaeftsstelle:241:2:string::Bestandsführende Ge
 F:11418:58:klausel_datensatzsatzart0350:243:3:string::Klausel-Datensatz Satzart 0350
 F:11439:59:blank:246:10:space::Leerstellen
 F:11450:60:snr:256:1:const:1, :Satznummer
-C:rename 33: satzart0220
-C:rename 37: satzart0220
-C:rename 39: satzart0220
-C:rename 43: satzart0220
 C:rename 32: satzart0210
 C:rename 36: satzart0210
 C:rename 38: satzart0210
 C:rename 42: satzart0210
+C:rename 33: satzart0220
+C:rename 37: satzart0220
+C:rename 39: satzart0220
+C:rename 43: satzart0220
 T:10542:1
 F:11471:1:sid:1:4:const:0001:Satzart
 F:11482:2:vunr:5:5:string::VU-Nummer
@@ -1585,15 +1585,15 @@ F:19293:31:saldo_f31:181:14:number:2:Saldo
 F:19304:32:vorzeichen_f32:195:1:vorzeichen_t::Vorzeichen
 F:19316:33:ueberzahlung:196:14:number:2:Überzahlung
 F:19336:34:blank:210:47:space::Leerstellen
-C:rename 23: saldo
-C:rename 25: saldo
-C:rename 27: saldo
-C:rename 31: saldo
 C:rename 24: vorzeichen
 C:rename 26: vorzeichen
 C:rename 28: vorzeichen
 C:rename 30: vorzeichen
 C:rename 32: vorzeichen
+C:rename 23: saldo
+C:rename 25: saldo
+C:rename 27: saldo
+C:rename 31: saldo
 T:18903:2
 K:18540:0220:570:Baufinanzierung - Spartenspezifisch
 V:0:Antragsphase
@@ -7369,14 +7369,6 @@ F:46811:27:haftung_ab_f27:170:8:date::Haftung ab
 F:46822:28:haftung_bis_f28:178:8:date::Haftung bis
 F:46843:29:blank:186:70:space::Leerstellen
 F:46854:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -7385,6 +7377,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:46496:9
 K:46429:0220:010.13:Leben - Kapitallebens-/Risikovers.  = Wagnisart 1 u. 3 - Wertungssummen
 V:1:Tod
@@ -7675,14 +7675,6 @@ F:50407:27:haftung_ab_f27:170:8:date::Haftung ab
 F:50418:28:haftung_bis_f28:178:8:date::Haftung bis
 F:50439:29:blank:186:70:space::Leerstellen
 F:50450:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -7691,6 +7683,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:50090:9
 K:50023:0220:010.2:Leben - Rentenversicherung = Wagnisart 2 - Wertungssummen
 V:1:Berufssparte
@@ -7858,14 +7858,6 @@ F:52521:27:haftung_ab_f27:170:8:date::Haftung ab
 F:52532:28:haftung_bis_f28:178:8:date::Haftung bis
 F:52553:29:blank:186:70:space::Leerstellen
 F:52564:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -7874,6 +7866,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:52206:9
 K:52139:0220:010.48:Leben - Berufsunfähigkeit = Wagnisart 4 u. 8 - Wertungssummen
 V:0:linear
@@ -8062,14 +8062,6 @@ F:54994:27:haftung_ab_f27:170:8:date::Haftung ab
 F:55005:28:haftung_bis_f28:178:8:date::Haftung bis
 F:55026:29:blank:186:70:space::Leerstellen
 F:55037:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -8078,6 +8070,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:54679:9
 K:54612:0220:010.5:Leben - Risikozusatz = Wagnisart 5 - Wertungssummen
 F:55126:1:sid:1:4:const:0220:Satzart
@@ -8261,14 +8261,6 @@ F:57422:27:haftung_ab_f27:170:8:date::Haftung ab
 F:57433:28:haftung_bis_f28:178:8:date::Haftung bis
 F:57454:29:blank:186:70:space::Leerstellen
 F:57465:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -8277,6 +8269,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:57104:9
 K:57037:0220:010.6:Leben - Unfall = Wagnisart 6 - Wertungssummen
 F:57554:1:sid:1:4:const:0220:Satzart
@@ -8514,14 +8514,6 @@ F:60444:27:haftung_ab_f27:170:8:date::Haftung ab
 F:60455:28:haftung_bis_f28:178:8:date::Haftung bis
 F:60476:29:blank:186:70:space::Leerstellen
 F:60487:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -8530,6 +8522,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:60129:9
 K:60062:0220:010.7:Leben - Kapital-/Fondsgebundene LV = Wagnisart 7 - Wertungssummen
 F:60576:1:sid:1:4:const:0220:Satzart
@@ -8758,14 +8758,6 @@ F:63334:27:haftung_ab_f27:170:8:date::Haftung ab
 F:63345:28:haftung_bis_f28:178:8:date::Haftung bis
 F:63366:29:blank:186:70:space::Leerstellen
 F:63377:30:snr:256:1:const:9:Satznummer
-C:rename 13: provisionspflichtige_wertungssumme_in_we
-C:rename 22: provisionspflichtige_wertungssumme_in_we
-C:rename 17: haftungswertungssumme_in_we
-C:rename 26: haftungswertungssumme_in_we
-C:rename 18: haftung_ab
-C:rename 27: haftung_ab
-C:rename 14: wertungsbasis
-C:rename 23: wertungsbasis
 C:rename 19: haftung_bis
 C:rename 28: haftung_bis
 C:rename 15: wertungsmodell
@@ -8774,6 +8766,14 @@ C:rename 12: provisionspflichtige_beitragssumme_in_we
 C:rename 21: provisionspflichtige_beitragssumme_in_we
 C:rename 16: buchungskennzeichen
 C:rename 25: buchungskennzeichen
+C:rename 13: provisionspflichtige_wertungssumme_in_we
+C:rename 22: provisionspflichtige_wertungssumme_in_we
+C:rename 17: haftungswertungssumme_in_we
+C:rename 26: haftungswertungssumme_in_we
+C:rename 18: haftung_ab
+C:rename 27: haftung_ab
+C:rename 14: wertungsbasis
+C:rename 23: wertungsbasis
 T:63019:9
 K:62952:0220:010.9:Leben - Fondsgebundene Rentenversicherung = Wagnisart 9 - Wertungssummen
 F:63466:1:sid:1:4:const:0230:Satzart
@@ -11291,9 +11291,6 @@ F:65535:29:vermittler_nrassekuradeur_f29:208:20:string::Vermittler-NummerAssekur
 F:65535:30:vs_nr_beteiligten_gesellschaft_f30:228:17:string::Versicherungsschein-Nummer der beteiligten Gesellschaft
 F:65535:31:blank_f31:245:11:space::Leerstellen
 F:65535:32:snr:256:1:const:1, :Satznummer
-C:rename 16: abrechnung_vermittler
-C:rename 22: abrechnung_vermittler
-C:rename 28: abrechnung_vermittler
 C:rename 18: vs_nr_beteiligten_gesellschaft
 C:rename 24: vs_nr_beteiligten_gesellschaft
 C:rename 30: vs_nr_beteiligten_gesellschaft
@@ -11309,6 +11306,9 @@ C:rename 12: blank
 C:rename 19: blank
 C:rename 25: blank
 C:rename 31: blank
+C:rename 16: abrechnung_vermittler
+C:rename 22: abrechnung_vermittler
+C:rename 28: abrechnung_vermittler
 T:65535:1
 F:65535:1:sid:1:4:const:0300:Satzart
 F:65535:2:vunr:5:5:string::VU-Nummer
@@ -11809,12 +11809,6 @@ F:65535:24:steuer_prozentsatz_f24:123:8:number:5:Steuer-Prozentsatz
 F:65535:25:waehrung_f25:131:3:waehrungsschluessel_t::Währungsschlüssel
 F:65535:26:steuerabfuehrung_durch_f26:134:1:steuabfuehr_t::Steuerabführung durch
 F:65535:27:blank_f27:135:122:space::Leerstellen
-C:rename 14: steuerabfuehrung_durch
-C:rename 20: steuerabfuehrung_durch
-C:rename 26: steuerabfuehrung_durch
-C:rename 13: waehrung
-C:rename 19: waehrung
-C:rename 25: waehrung
 C:rename 10: steuerart
 C:rename 16: steuerart
 C:rename 22: steuerart
@@ -11828,6 +11822,12 @@ C:rename 8: blank
 C:rename 15: blank
 C:rename 21: blank
 C:rename 27: blank
+C:rename 14: steuerabfuehrung_durch
+C:rename 20: steuerabfuehrung_durch
+C:rename 26: steuerabfuehrung_durch
+C:rename 13: waehrung
+C:rename 19: waehrung
+C:rename 25: waehrung
 T:65535:1
 K:65535:0420::Inkasso - Abrechnung Versicherungsteuer
 V:1:Veränderung
