@@ -5,6 +5,15 @@ module GDV::Model
         attr_accessor :filename
 
         property :vunr, :vorsatz, 1, 2
+        property :created_from_until, :vorsatz, 1, 5
+
+        def created_from
+            GDV::Format.parse_date(created_from_until_raw[0, 8])
+        end
+
+        def created_until
+            GDV::Format.parse_date(created_from_until_raw[8, 8])
+        end
 
         structure do
             one :vorsatz, :satz => VORSATZ

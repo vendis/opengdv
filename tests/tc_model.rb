@@ -9,6 +9,10 @@ class TestModel < Test::Unit::TestCase
         assert_equal 1, @transmission.packages.size
 
         assert_equal("9999", @package.vunr)
+        d = Date.civil(2004, 7, 22)
+        assert_equal(d, @package.created_from)
+        assert_equal(d, @package.created_until)
+
         assert_equal(14, @package.contracts.size)
         c = @package.contracts.first
         p = c.vn
