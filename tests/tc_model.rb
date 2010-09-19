@@ -84,6 +84,7 @@ class TestModel < Test::Unit::TestCase
         transmission "multi_package.gdv"
 
         assert_equal 3, @transmission.packages.size
+        assert_equal 16, @transmission.contracts_count
     end
 
     def test_yaml_contract
@@ -126,6 +127,15 @@ class TestModel < Test::Unit::TestCase
         transmission "muster_bestand.gdv"
         vn = @transmission.packages[0].contracts[0].vn
         assert_equal "Kitzelpf\xc3\xbctze", vn.nachname
+    end
+
+    def test_garbage
+        assert_raises GDV::Format::MatchError do
+            transmission "garbage.gdv"
+        end
+        assert_raises GDV::Format::MatchError do
+            transmission "missing_nachsatz.gdv"
+        end
     end
 
     def contracts_for(sp)

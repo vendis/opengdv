@@ -26,8 +26,11 @@ module GDV::Format
     class MatchError < ReaderError
         def initialize(reader, cond = {})
             s = cond.keys.collect { |k| "#{k} = #{cond[k]}" }.join(" und ")
-            act = reader.peek.rectype
-            super(reader, "Satz mit Kennzeichnung #{s} erwartet, aber #{act} gefunden")
+            if act = reader.peek
+                super(reader, "Satz mit Kennzeichnung #{s} erwartet, aber #{act.rectype} gefunden")
+            else
+                super(reader, "Satz mit Kennzeichnung #{s} erwartet")
+            end
         end
     end
 

@@ -45,7 +45,7 @@ module GDV::Format
         # Skip records until we find one that matches +cond+
         def skip_until(cond)
             while ! @reader.match?(cond)
-                @reader.getrec
+                break unless @reader.getrec
             end
         end
 
