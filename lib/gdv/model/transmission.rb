@@ -15,5 +15,16 @@ module GDV::Model
                 @contracts_count += @packages.last.contracts.size
             end
         end
+
+        # Calls +block+ once for each contract in this transmission,
+        # passing the package to which the contract belongs and the
+        # contract.
+        def each_contract(&block)
+            @packages.each do |pkg|
+                pkg.contracts.each do |contract|
+                    yield(pkg, contract)
+                end
+            end
+        end
     end
 end
