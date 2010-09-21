@@ -33,18 +33,18 @@ unless ARGV.size == 1
 end
 
 begin
-    GDV::Format::init
+    GDV::Format::Classifier.instance
 rescue GDV::Format::FormatError => e
     puts "Inconsistent parse tables"
     if verbose
         puts "Index tree is"
-        puts GDV::Format::recindex.print
+        puts GDV::Format::Classifier::instance.recindex.print
         puts
     end
     puts e.message
     exit 1
 end
-File::open("/tmp/tree.txt", "w") { |f| f.puts GDV::Format::recindex::print }
+File::open("/tmp/tree.txt", "w") { |f| f.puts GDV::Format::Classifier::instance::recindex::print }
 
 r = GDV::Format::Reader.new(ARGV[0])
 loop do

@@ -83,7 +83,7 @@ module GDV::Format
         end
 
         def self.yaml_new(klass, tag, val)
-            GDV::Format::recindex.find_part(val["path"]).rectype
+            GDV::Format::Classifier::find_part(val["path"]).rectype
         end
     end
 

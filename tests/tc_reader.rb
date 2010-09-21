@@ -3,9 +3,8 @@ require 'test_helper'
 class TestParser < Test::Unit::TestCase
 
     def setup
-        GDV::Format::init
-        @maps = GDV::Format::maps
-        @rectypes = GDV::Format::rectypes
+        @maps = GDV::Format::Classifier.maps
+        @rectypes = GDV::Format::Classifier.rectypes
     end
 
     def test_init_values
@@ -45,13 +44,12 @@ class TestParser < Test::Unit::TestCase
     end
 
     def test_part_path
-        recindex = GDV::Format::recindex
-        part = recindex.find_part(:sid => "0001", :snr => " ")
+        part = GDV::Format::Classifier.find_part(:sid => "0001", :snr => " ")
         assert_not_nil part
         assert_equal "0001", part.rectype.satz
         assert_equal 1, part.nr
 
-        part = recindex.find_part(:sid=>"0210",
+        part = GDV::Format::Classifier.find_part(:sid=>"0210",
                                   :sparte=>"160", :snr=>"2")
         assert_not_nil part
         assert_equal "0210", part.rectype.satz
@@ -106,8 +104,8 @@ class TestParser < Test::Unit::TestCase
     end
 
     def test_indexing
-        root = GDV::Format::recindex
-        parts = GDV::Format::rectypes.inject([]) { |l, rt| l + rt.parts }
+        root = GDV::Format::Classifier.instance.recindex
+        parts = GDV::Format::Classifier.instance.rectypes.inject([]) { |l, rt| l + rt.parts }
         assert (parts - root.leaves).empty?
     end
 

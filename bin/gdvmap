@@ -30,12 +30,12 @@ end
 options.banner = "gdvmap [options] file\n\nPrint information about value maps"
 options.parse!
 
-GDV::Format::init
+maps = GDV::Format::Classifier::maps
 
 if mode == :list
-    GDV::Format::maps.keys.map{ |k| k.to_s }.sort.each { |k| puts k }
+    maps.keys.map{ |k| k.to_s }.sort.each { |k| puts k }
 elsif mode == :dump
-    map = GDV::Format::maps[name]
+    map = maps[name]
     unless map
         $stderr.puts "Could not find map #{map}"
         exit 1

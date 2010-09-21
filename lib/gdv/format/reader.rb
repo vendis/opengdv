@@ -195,7 +195,7 @@ module GDV::Format
                     end
                 end
                 # FIXME: We silently skip anything we don't understand
-                part = GDV::Format::classify(buf)
+                part = GDV::Format::Classifier.classify(buf)
                 @unknown += 1 if part.nil?
                 if part.nil?
                     GDV::logger.info "#{lineno}:unknown record:#{buf[0,4]}.#{buf[10,3]} skenn=#{buf[255,1]} snr='#{buf[249,1]}'"
