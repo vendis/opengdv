@@ -1,12 +1,12 @@
 module GDV::Format
 
     class ReaderError < RuntimeError
-        attr_reader :path, :lineno
-        def initialize(reader, details = nil)
+        attr_reader :path, :lineno, :details
+        def initialize(reader, details = "Lesefehler")
             @path = "(input)"
             @path = reader.io.path if reader.io.respond_to?(:path)
             @lineno = reader.lineno
-            details = "Lesefehler" unless details
+            @details = details
             super("#{path}:#{lineno}:#{details}")
         end
     end
