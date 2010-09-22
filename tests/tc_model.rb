@@ -89,6 +89,7 @@ class TestModel < Test::Unit::TestCase
 
         assert_equal 3, @transmission.packages.size
         assert_equal 16, @transmission.contracts_count
+        assert_equal 15, @transmission.unique_contracts_count
     end
 
     def test_yaml_contract
