@@ -59,8 +59,8 @@ class TestModel < Test::Unit::TestCase
         assert_equal("W45KKK", c.vn.kdnr_vu)
 
         assert_equal("59999999990", c.vsnr)
-        assert_equal(Date.civil(2004, 7, 1), c.begin)
-        assert_equal(Date.civil(2005,1,1), c.end)
+        assert_equal(Date.civil(2004, 7, 1), c.begin_on)
+        assert_equal(Date.civil(2005,1,1), c.end_on)
         assert_equal(Date.civil(2005,1,1), c.renewal)
 
         kfz = c.sparte
@@ -105,8 +105,8 @@ class TestModel < Test::Unit::TestCase
         assert_equal("W45KKK", c.vn.kdnr_vu)
 
         assert_equal("59999999990", c.vsnr)
-        assert_equal(Date.civil(2004, 7, 1), c.begin)
-        assert_equal(Date.civil(2005,1,1), c.end)
+        assert_equal(Date.civil(2004, 7, 1), c.begin_on)
+        assert_equal(Date.civil(2005,1,1), c.end_on)
         assert_equal(Date.civil(2005,1,1), c.renewal)
 
         kfz = c.sparte

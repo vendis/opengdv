@@ -31,8 +31,8 @@ module GDV::Model
         property :vsnr,    :general, 1, 5
         property :agency,  :general, 1, 7
         property :inkasso_art, :general, 1, 8
-        property :begin,   :general, 1, 9
-        property :end,     :general, 1, 10
+        property :begin_on, :general, 1, 9
+        property :end_on,   :general, 1, 10
         property :renewal, :general, 1, 11
         property :zw,      :general, 1, 12
 
