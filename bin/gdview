@@ -7,6 +7,7 @@ require 'optparse'
 verbose = false
 brief = false
 convert = false
+full = false
 debug = false
 GDV::logger = Logger.new(STDOUT)
 GDV::logger.level = Logger::WARN
@@ -22,6 +23,7 @@ options = OptionParser.new do |opts|
     end
     opts.on('-b', '--brief', 'brief output') { |_| brief = true }
     opts.on('-c', '--convert', 'convert field values') { |_| convert = true }
+    opts.on('-f', '--full', 'show empty fields') { |_| full = true }
 end
 
 options.banner = "gdview [options] file"
@@ -56,6 +58,7 @@ loop do
             rec.lines.each do |l|
                 l.part.fields.each do |f|
                     v = convert ? l[f.nr] : l.raw(f.nr)
+                    next unless full || !v.nil?
                     unless v =~ /^ *$/
                         s = convert ? "#{v.class.name}" : "#{v.size}"
                         lbl = f.label.nil? ? f.type.to_s : f.label[0,29]
