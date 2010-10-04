@@ -40,11 +40,21 @@ module GDV::Model
         property :cancelled_reason, :general, 1, 14
         property :cancelled_on, :general, 1, 15
 
+        property :changed_on, :general, 1, 17
+
         property :beitrag, :general, 1, 22
         property :we,      :general, 1, 21
 
+        property :proposal_written_on, :general, 1, 31
 
-        property :zw,      :general, 1, 12
+        property :cancel_required, :general, 2, 8
+        property :produktform, :general, 2, 10
+        property :produktform_ab, :general, 2, 11
+        property :beitrag_brutto, :general, 2, 12
+        property :vsnr_pretty,    :general, 2, 13
+        property :produktname,    :general, 2, 14
+        property :proposal_rcvd_on, :general, 2, 16
+        property :policy_on,        :general, 2, 17
 
         first Partner
 
@@ -54,6 +64,10 @@ module GDV::Model
 
         def bundled?
             self.bkz_raw == "1"
+        end
+
+        def effective_on
+            changed_on || begin_on
         end
 
         structure do

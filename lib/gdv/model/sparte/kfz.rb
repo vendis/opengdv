@@ -6,10 +6,26 @@ module GDV::Model::Sparte
     class Kfz < Base
         attr_reader :haft, :voll, :teil, :unfall, :baustein, :gepaeck
 
+        property :wagnis, :details, 1, 8
+        property :staerke, :details, 1, 9
         property :make,  :details, 1, 10
         property :model, :details, 1, 11
-        property :price, :addl,    1, 8
+        property :hsn,   :details, 1, 12
+        property :tsn,   :details, 1, 13
+        property :vin,   :details, 1, 14
+        property :kennz, :details, 1, 15
+        property :erstzul_on, :details, 1, 16
+        property :neupreis, :details, 1, 17
         property :we,    :details, 1, 21
+
+        property :fz_art, :details, 1, 10
+        property :erstzul_vn_on, :details, 2, 14
+        property :fahrleistung,  :details, 2, 20
+        property :garage, :details, 2, 21
+        property :nutzungsart, :details, 2, 22
+        property :staerke_einheit, :details, 2, 35
+
+        property :price, :addl,    1, 8
 
         structure do
             one    :details, :satz => DETAILS
