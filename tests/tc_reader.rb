@@ -61,7 +61,7 @@ class TestParser < Test::Unit::TestCase
     def test_yaml_rectype
         rt = @rectypes.first
         yml = rt.to_yaml
-        assert_equal "--- !opengdv.vendis.org,2009-11-01/rectype \npath: \n  :snr: \" \"\n  :sid: \"0001\"\n", yml
+        assert_equal "--- !opengdv.vendis.org,2009-11-01/rectype \npath: \n  :sid: \"0001\"\n  :snr: \" \"\n", yml
         assert_equal rt, YAML::load(yml)
     end
 

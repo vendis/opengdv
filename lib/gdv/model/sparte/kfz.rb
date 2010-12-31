@@ -4,47 +4,6 @@ module GDV::Model::Sparte
     # Kfz Hauptvertrag
     #
     class Kfz < Base
-        attr_reader :haft, :voll, :teil, :unfall, :baustein, :gepaeck
-
-        property :wagnis, :details, 1, 8
-        property :staerke, :details, 1, 9
-        property :make,  :details, 1, 10
-        property :model, :details, 1, 11
-        property :hsn,   :details, 1, 12
-        property :tsn,   :details, 1, 13
-        property :vin,   :details, 1, 14
-        property :kennz, :details, 1, 15
-        property :erstzul_on, :details, 1, 16
-        property :neupreis, :details, 1, 17
-        property :we,    :details, 1, 21
-
-        property :fz_art, :details, 1, 10
-        property :erstzul_vn_on, :details, 2, 14
-        property :fahrleistung,  :details, 2, 20
-        property :garage, :details, 2, 21
-        property :nutzungsart, :details, 2, 22
-        property :staerke_einheit, :details, 2, 35
-
-        property :price, :addl,    1, 8
-
-        structure do
-            one    :details, :satz => DETAILS
-            maybe  :addl, :satz => ADDL
-            star   :clauses, :satz => GDV::Model::CLAUSES
-            star   :rebates, :satz => GDV::Model::REBATES
-
-            object :haft, Haft
-            object :voll, Voll
-            object :teil, Teil
-            object :unfall, Unfall
-            objects :bausteine, Baustein
-            object :gepaeck, Gepaeck
-
-            error(:unexpected) if satz?(SPECIFIC)
-        end
-
-        first :satz => DETAILS, :sparte => KFZ
-
         #
         # Teilsparten von Kfz
         #
@@ -58,17 +17,20 @@ module GDV::Model::Sparte
                 { :satz => SPECIFIC, :sparte => sparte }
             end
 
-            attr_reader :specific
-
-            structure do
-                sparte = result.class.sparte
-                one    :specific, :satz => SPECIFIC, :sparte => sparte
-                maybe  :addl,     :satz => SPEC_ADDL, :sparte => sparte
-                star   :clauses,  :satz => GDV::Model::CLAUSES
-                star   :rebates,  :satz => GDV::Model::REBATES
-                objects :bausteine, Baustein
+            def self.inherited(subclass)
+                subclass.grammar do
+                    one    :specific, :satz => SPECIFIC,
+                           :sparte => subclass.sparte
+                    maybe  :addl,     :satz => SPEC_ADDL,
+                           :sparte => subclass.sparte
+                    star   :clauses,  :satz => GDV::Model::CLAUSES
+                    star   :rebates,  :satz => GDV::Model::REBATES
+                    objects :bausteine, GDV::Model::Sparte::Kfz::Baustein
+                end
             end
         end
+
+        class Baustein < TeilSparte; end
 
         class Haft < TeilSparte
             property :regionalklasse, :specific, 1, 11
@@ -99,8 +61,50 @@ module GDV::Model::Sparte
             property :beitrag, :specific, 1, 25
         end
 
-        class Baustein < TeilSparte; end
-
         class Gepaeck < TeilSparte; end
+
+        #
+        # Main Kfz class
+        #
+
+        grammar do
+            one    :details, :satz => DETAILS
+            maybe  :addl, :satz => ADDL
+            star   :clauses, :satz => GDV::Model::CLAUSES
+            star   :rebates, :satz => GDV::Model::REBATES
+
+            object :haft, Haft
+            object :voll, Voll
+            object :teil, Teil
+            object :unfall, Unfall
+            objects :bausteine, Baustein
+            object :gepaeck, Gepaeck
+
+            error(:unexpected) { |parser| parser.satz?(SPECIFIC) }
+        end
+
+        first :satz => DETAILS, :sparte => KFZ
+
+        property :wagnis, :details, 1, 8
+        property :staerke, :details, 1, 9
+        property :make,  :details, 1, 10
+        property :model, :details, 1, 11
+        property :hsn,   :details, 1, 12
+        property :tsn,   :details, 1, 13
+        property :vin,   :details, 1, 14
+        property :kennz, :details, 1, 15
+        property :erstzul_on, :details, 1, 16
+        property :neupreis, :details, 1, 17
+        property :we,    :details, 1, 21
+
+        property :fz_art, :details, 2, 10
+        property :erstzul_vn_on, :details, 2, 14
+        property :fahrleistung,  :details, 2, 20
+        property :garage, :details, 2, 21
+        property :nutzungsart, :details, 2, 22
+        property :staerke_einheit, :details, 2, 35
+
+        property :price, :addl,    1, 8
+
     end
 end

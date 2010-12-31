@@ -168,8 +168,9 @@ module GDV::Format
             rec
         end
 
-        def parse(klass, &block)
-            Parser.new(self, klass, &block).result
+        # Parse records according to the grammar in +klass.grammar+
+        def parse(klass)
+            Parser.new(self, klass).result
         end
 
         private

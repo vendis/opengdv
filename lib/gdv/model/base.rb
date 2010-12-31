@@ -96,14 +96,15 @@ module GDV::Model
                 end
             end
 
-            def structure(&block)
+            def grammar(&block)
                 if block_given?
-                    @structure = block
+                    raise "Klass #{self.name} already has a grammar" if @grammar
+                    @grammar = Grammar.new(self, &block)
                 end
                 klass = self
                 while klass
-                    if s = klass.instance_variable_get(:@structure)
-                        return s
+                    if g = klass.instance_variable_get(:@grammar)
+                        return g
                     end
                     klass = klass.superclass
                 end
@@ -111,7 +112,7 @@ module GDV::Model
             end
 
             def parse(reader)
-                reader.parse(self, &structure)
+                reader.parse(self)
             end
 
             # Define the conditions to match the first record of this

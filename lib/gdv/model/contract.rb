@@ -4,20 +4,30 @@ require 'gdv/model/partner'
 module GDV::Model
     # A contract, i.e. everything between the Vorsatz and Nachsatz
     class Contract < Base
-        # @return [Partner] Erster Partner - der Versicherungsnehmer
-        attr_reader :vn
 
-        # @return [Array<Partner>] Liste weiterer partner
-        attr_reader :partner
+        grammar do
+            # @return [Partner] Erster Partner - der Versicherungsnehmer
+            object :vn, Partner
+            # @return [Array<Partner>] Liste weiterer partner
+            objects :partner, Partner
 
-        # @return [GDV::Format::Record] 0200 - Allgemeiner Satz
-        attr_reader :general
+            # Allgemeiner Teil
+            # @return [GDV::Format::Record] 0200 - Allgemeiner Satz
+            one    :general, :satz => GENERAL_CONTRACT
+            # @return [GDV::Format::Record] 0352 - Signaturen
+            star   :signatures, :satz => SIGNATURES
+            star   :clauses, :satz => CLAUSES
+            star   :rebates, :satz => REBATES
 
-        # @return [GDV::Format::Record] 0352 - Signaturen
-        attr_reader :signatures
+            # Spartenspezifischer Teil
+            # @return [Sparte::Kfz] spartenspecifische Sätze
+            object :sparte, Sparte::Kfz
 
-        # @return [Sparte::Kfz] spartenspecifische Sätze
-        attr_reader :sparte
+            # Skip over anything we don't understand
+            skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
+        end
+
+        first Partner
 
         # Return +true+ if this contract is in sparte +sp+ (one of the
         # constants from Model::Sparte)
@@ -56,8 +66,6 @@ module GDV::Model
         property :proposal_rcvd_on, :general, 2, 16
         property :policy_on,        :general, 2, 17
 
-        first Partner
-
         def cancelled?
             self.status_raw == "4"
         end
@@ -68,20 +76,6 @@ module GDV::Model
 
         def effective_on
             changed_on || begin_on
-        end
-
-        structure do
-            object :vn, Partner
-            objects :partner, Partner
-
-            # Allgemeiner Teil
-            one    :general, :satz => GENERAL_CONTRACT
-            star   :signatures, :satz => SIGNATURES
-            star   :clauses, :satz => CLAUSES
-            star   :rebates, :satz => REBATES
-            # Spartenspezifischer Teil
-            object :sparte, Sparte::Kfz
-            skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
         end
     end
 end
