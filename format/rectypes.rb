@@ -215,6 +215,12 @@ doc.xpath("/service/satzarten//feldreferenz[name = 'Produkt'] | /service/felder/
     prod.xpath("name|technischerName").each { |n| n.content = 'Sparte' }
 end
 
+# Rename field 10 of 0220.020 to 'skenn'
+progress "Rename field 10 for 0220.020 to 'skenn'"
+doc.xpath("//feldreferenz/technischerName[. = 'FolgeNrZurLaufendenPersonenNrUnterNrLaufendeNrTarif' or . = 'FolgeNrZurLaufendenPersonenNrUnterNrBzwLaufendenNrTarif']").each do |field|
+    field.content = "skenn"
+end
+
 # Add a 'const' attribute in feldreferenz for discrimnator fields
 # We set 'const' to a comma-separated list of possible values,
 # even though that's horrible XML
