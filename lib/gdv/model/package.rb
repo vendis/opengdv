@@ -4,9 +4,9 @@ module GDV::Model
         attr_accessor :filename
 
         grammar do
-            one :vorsatz, :satz => VORSATZ
+            one :vorsatz, :sid => VORSATZ
             objects :contracts, Contract
-            one :nachsatz, :satz => NACHSATZ
+            one :nachsatz, :sid => NACHSATZ
         end
 
         property :vunr, :vorsatz, 1, 2

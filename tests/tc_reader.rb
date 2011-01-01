@@ -147,19 +147,21 @@ class TestParser < Test::Unit::TestCase
 
     def test_match
         r = GDV::reader(data_file("muster_bestand.gdv"))
-        assert(r.match?(:satz => "0001"))
-        assert_raise(GDV::Format::MatchError) { r.match!(:satz => "9999") }
+        assert(r.match?(:sid => "0001"))
+        assert(! r.match?(:dummy => "X"))
+        assert(! r.match?(:sid => "0001", :dummy => "X"))
+        assert_raise(GDV::Format::MatchError) { r.match!(:sid => "9999") }
     end
 
     def test_multiple_addresses
         r = GDV::reader(data_file("multiple_addresses.gdv"))
-        assert_not_nil r.match(:satz => "0001")
+        assert_not_nil r.match(:sid => "0001")
 
-        rec = r.match(:satz => "0100")
+        rec = r.match(:sid => "0100")
         assert_not_nil rec
         assert_equal   "Kunde", rec.name1
 
-        rec = r.match(:satz => "0100")
+        rec = r.match(:sid => "0100")
         assert_not_nil rec
         assert_equal   "Vermittler", rec.name1
     end

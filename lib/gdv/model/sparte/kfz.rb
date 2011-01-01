@@ -14,17 +14,17 @@ module GDV::Model::Sparte
             end
 
             def self.first
-                { :satz => SPECIFIC, :sparte => sparte }
+                { :sid => SPECIFIC, :sparte => sparte }
             end
 
             def self.inherited(subclass)
                 subclass.grammar do
-                    one    :specific, :satz => SPECIFIC,
+                    one    :specific, :sid => SPECIFIC,
                            :sparte => subclass.sparte
-                    maybe  :addl,     :satz => SPEC_ADDL,
+                    maybe  :addl,     :sid => SPEC_ADDL,
                            :sparte => subclass.sparte
-                    star   :clauses,  :satz => GDV::Model::CLAUSES
-                    star   :rebates,  :satz => GDV::Model::REBATES
+                    star   :clauses,  :sid => GDV::Model::CLAUSES
+                    star   :rebates,  :sid => GDV::Model::REBATES
                     objects :bausteine, GDV::Model::Sparte::Kfz::Baustein
                 end
             end
@@ -68,10 +68,10 @@ module GDV::Model::Sparte
         #
 
         grammar do
-            one    :details, :satz => DETAILS
-            maybe  :addl, :satz => ADDL
-            star   :clauses, :satz => GDV::Model::CLAUSES
-            star   :rebates, :satz => GDV::Model::REBATES
+            one    :details, :sid => DETAILS
+            maybe  :addl, :sid => ADDL
+            star   :clauses, :sid => GDV::Model::CLAUSES
+            star   :rebates, :sid => GDV::Model::REBATES
 
             object :haft, Haft
             object :voll, Voll
@@ -83,7 +83,7 @@ module GDV::Model::Sparte
             error(:unexpected) { |parser| parser.satz?(SPECIFIC) }
         end
 
-        first :satz => DETAILS, :sparte => KFZ
+        first :sid => DETAILS, :sparte => KFZ
 
         property :wagnis, :details, 1, 8
         property :staerke, :details, 1, 9

@@ -140,14 +140,11 @@ module GDV::Format
         # matches, +false+ otherwise
         def match?(cond)
             rec = peek
-            result = ! rec.nil?
-            if result && cond[:satz]
-                result = cond_match(rec.satz, cond[:satz])
+            return false if rec.nil?
+            path = rec.rectype.parts.first.path
+            cond.keys.all? do |k|
+                cond_match(path[k], cond[k])
             end
-            if result && cond[:sparte]
-                result = cond_match(rec.sparte, cond[:sparte])
-            end
-            result
         end
 
         # Return the next record, provided it matches +cond+
@@ -208,6 +205,7 @@ module GDV::Format
         # When +cond+ is an array, check whether +val+ is in +cond+;
         # otherwise check if +cond+ equals +val+
         def cond_match(val, cond)
+            return cond.nil? && val.nil? if cond.nil? || val.nil?
             if cond.respond_to?(:include?)
                 cond.include?(val)
             else

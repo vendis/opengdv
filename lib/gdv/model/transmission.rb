@@ -7,9 +7,9 @@ module GDV::Model
         def initialize(filename)
             reader = GDV::Format::Reader.new(filename)
             @packages = []
-            reader.unshift reader.match!(:satz => VORSATZ)
+            reader.unshift reader.match!(:sid => VORSATZ)
             @contracts_count = 0
-            while reader.match?(:satz => VORSATZ)
+            while reader.match?(:sid => VORSATZ)
                 @packages << Package::parse(reader)
                 @packages.last.filename = filename
                 @contracts_count += @packages.last.contracts.size

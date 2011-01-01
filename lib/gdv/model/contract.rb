@@ -13,18 +13,18 @@ module GDV::Model
 
             # Allgemeiner Teil
             # @return [GDV::Format::Record] 0200 - Allgemeiner Satz
-            one    :general, :satz => GENERAL_CONTRACT
+            one    :general, :sid => GENERAL_CONTRACT
             # @return [GDV::Format::Record] 0352 - Signaturen
-            star   :signatures, :satz => SIGNATURES
-            star   :clauses, :satz => CLAUSES
-            star   :rebates, :satz => REBATES
+            star   :signatures, :sid => SIGNATURES
+            star   :clauses, :sid => CLAUSES
+            star   :rebates, :sid => REBATES
 
             # Spartenspezifischer Teil
             # @return [Sparte::Kfz] spartenspecifische Sätze
             object :sparte, Sparte::Kfz
 
             # Skip over anything we don't understand
-            skip_until :satz => [ADDRESS_TEIL, NACHSATZ]
+            skip_until :sid => [ADDRESS_TEIL, NACHSATZ]
         end
 
         first Partner

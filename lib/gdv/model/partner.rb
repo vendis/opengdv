@@ -2,12 +2,12 @@
 module GDV::Model
     class Partner < Base
         grammar do
-            one  :address,    :satz => ADDRESS_TEIL
-            star :signatures, :satz => SIGNATURES
-            star :clauses,    :satz => CLAUSES
-            star :rebates,    :satz => REBATES
+            one  :address,    :sid => ADDRESS_TEIL
+            star :signatures, :sid => SIGNATURES
+            star :clauses,    :sid => CLAUSES
+            star :rebates,    :sid => REBATES
         end
-        first :satz => ADDRESS_TEIL
+        first :sid => ADDRESS_TEIL
 
         property :anrede,   :address, 1, 8
         property :nachname, :address, 1, 9
