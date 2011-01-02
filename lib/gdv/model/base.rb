@@ -125,7 +125,7 @@ module GDV::Model
                         @first = h if h
                     end
                 end
-                @first
+                @first || @grammar.first
             end
         end
     end

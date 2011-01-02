@@ -63,6 +63,18 @@ module GDV::Model
             @rules.each { |r| r.run(runnable) }
         end
 
+        # Return the conditions that the first record for this grammar has
+        # to match. This only works if the first rule of the grammar is
+        # +:one+
+        def first
+            r = @rules.first
+            if r.kind == :one
+                r.opts
+            else
+                raise "Could not deduce first rules for this grammar"
+            end
+        end
+
         # Add a rule of the given kind under the given name and with the
         # given options
         def new_rule(kind, name, opts)
