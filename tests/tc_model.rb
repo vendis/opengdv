@@ -143,6 +143,17 @@ class TestModel < Test::Unit::TestCase
         end
     end
 
+    def test_kranken
+        transmission "kranken.gdv"
+        contract = @package.contracts.first
+        assert_equal "VS12345", contract.vsnr
+        assert_equal 1, contract.sparte.vps.size
+        vp = contract.sparte.vps.first
+        assert_equal "Mayer", vp.nachname
+        assert_equal 1, vp.rates.size
+        assert_equal "004T", vp.rates.first.benefit_begin
+    end
+
     def contracts_for(sp)
         @package.contracts.select { |c| c.sparte?(sp) }
     end

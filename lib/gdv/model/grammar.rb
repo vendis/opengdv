@@ -4,7 +4,7 @@ module GDV::Model
     class Grammar
 
         # The fields against which we can match records
-        MATCH_OPTS = [ :sid, :sparte ]
+        MATCH_OPTS = [ :sid, :sparte, :skenn ]
 
         # The options for the various rules. The keys also define what
         # rules are available
