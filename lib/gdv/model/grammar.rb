@@ -12,8 +12,8 @@ module GDV::Model
             :one => MATCH_OPTS,
             :maybe => MATCH_OPTS,
             :star => MATCH_OPTS,
-            :object => [ :class ],
-            :objects => [ :class ],
+            :object => [ :classes ],
+            :objects => [ :classes ],
             :skip_until => MATCH_OPTS,
             :error => [ :test, :message ]
         }
@@ -90,17 +90,17 @@ module GDV::Model
             new_rule(:star, name, opts)
         end
 
-        # Accept an optional object of the given +klass+ and store it in
-        # the attribute +name+.
-        def object(name, klass)
-            new_rule(:object, name, :class => klass)
+        # Accept an optional object of one of the given +klasses+ and store
+        # it in the attribute +name+.
+        def object(name, *klasses)
+            new_rule(:object, name, :classes => klasses)
         end
 
         # Accept an arbitrary number of objects, including none, of the
-        # given +klass+ and store an array of the matching objects in the
-        # attribute +name+
-        def objects(name, klass)
-            new_rule(:objects, name, :class => klass)
+        # given +klasses+ and store an array of the matching objects in the
+        # attribute +name+.
+        def objects(name, *klasses)
+            new_rule(:objects, name, :classes => klasses)
         end
 
         # Skip records until we find one that matches +cond+. Skipped

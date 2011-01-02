@@ -25,8 +25,7 @@ module GDV::Format
         end
 
         def object(sym, opts)
-            klass = opts[:class]
-            if @reader.match?(klass.first)
+            if klass = matching_class(opts[:classes])
                 result[sym] = klass.parse(@reader)
             end
         end
@@ -34,9 +33,8 @@ module GDV::Format
         # Parse a sequence of objects of class +klass+ as long
         # as +cond+ matches the current record
         def objects(sym, opts)
-            klass = opts[:class]
             result[sym] = []
-            while @reader.match?(klass.first)
+            while klass = matching_class(opts[:classes])
                 result[sym] << klass.parse(@reader)
             end
         end
@@ -74,6 +72,19 @@ module GDV::Format
             end
             raise ParseError.new(@reader, msg)
         end
+
+        private
+        def matching_class(klasses)
+            klasses = klasses.select { |klass| @reader.match?(klass.first) }
+            # This is a proramming error: we have several classes that
+            # can not be distinguished by their firsts
+            if klasses.size > 1
+                raise ParseError.new(@reader,
+                  "Ambiguous set of classes #{klasses.inspect}")
+            end
+            klasses.first
+        end
+
     end
 
 end
