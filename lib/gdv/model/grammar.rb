@@ -46,7 +46,7 @@ module GDV::Model
             end
         end
 
-        attr_reader :klass
+        attr_reader :klass, :rules
 
         # Create a new grammar. The rules for the grammar come from
         # evaluating the block against +self+
