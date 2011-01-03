@@ -154,6 +154,18 @@ class TestModel < Test::Unit::TestCase
         assert_equal "004T", vp.rates.first.benefit_begin
     end
 
+    def test_unfall
+        transmission "unfall.gdv"
+        contract = @package.contracts.first
+        assert_equal "1122334455", contract.vsnr
+
+        assert_equal "U88:01", contract.sparte.tarif
+        assert_equal 4, contract.sparte.vps.size
+        vp = contract.sparte.vps.first
+        assert_equal "Moele", vp.nachname
+        assert_equal "Norbert", vp.vorname
+    end
+
     def contracts_for(sp)
         @package.contracts.select { |c| c.sparte?(sp) }
     end

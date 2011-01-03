@@ -31,7 +31,7 @@ module GDV::Model::Sparte
     # Kranken - 0210.020
     class Kranken < Base
         grammar do
-            one     :specific, :sid => DETAILS, :sparte => KRANKEN
+            one     :details,  :sid => DETAILS, :sparte => KRANKEN
             star    :clauses,  :sid => GDV::Model::CLAUSES
             star    :rebates,  :sid => GDV::Model::REBATES
             objects :vps, KrankenVp
