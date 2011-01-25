@@ -39,6 +39,7 @@ module GDV::Model
         property :bkz,     :general, 1, 3
         property :lob,     :general, 1, 4
         property :vsnr,    :general, 1, 5
+        property :seq,     :general, 1, 6
         property :agency,  :general, 1, 7
         property :inkasso_art, :general, 1, 8
         property :begin_on, :general, 1, 9
