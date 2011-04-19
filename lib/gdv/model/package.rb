@@ -10,6 +10,7 @@ module GDV::Model
         end
 
         property :vunr, :vorsatz, 1, 2
+        property :absender, :vorsatz, 1, 3
         property :created_from_until, :vorsatz, 1, 5
 
         def created_from
