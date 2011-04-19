@@ -1,5 +1,7 @@
 require 'test_helper'
 
+require 'stringio'
+
 class TestParser < Test::Unit::TestCase
 
     def setup
@@ -182,5 +184,19 @@ class TestParser < Test::Unit::TestCase
         assert_equal d, GDV::Format.parse_date("00002010")
         d = Date.civil(2010, 8, 1)
         assert_equal d, GDV::Format.parse_date("00082010")
+    end
+
+    def test_junk_long_line
+        sb = StringIO.new("x" * 257 + "\n")
+        r = GDV::reader(sb)
+        assert_raises(GDV::Format::RecordSizeError) {
+            r.getrec
+        }
+    end
+
+    def test_junk_notrec
+        sb = StringIO.new("x" * 256 + "\n")
+        r = GDV::reader(sb)
+        assert_nil r.getrec
     end
 end

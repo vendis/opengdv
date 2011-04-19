@@ -186,10 +186,10 @@ module GDV::Format
                 buf.chomp!
                 @lineno += 1
                 if buf.size != 256
-                    if feature?(:pad_short_lines)
+                    if feature?(:pad_short_lines) && buf.size < 256
                         buf += " " * (256 - buf.size)
                     else
-                        raise RecordSizeError.new(io, lineno), "Expected line with 256 bytes, but read #{buf.size} bytes"
+                        raise RecordSizeError.new(self), "Expected line with 256 bytes, but read #{buf.size} bytes"
                     end
                 end
                 # FIXME: We silently skip anything we don't understand
