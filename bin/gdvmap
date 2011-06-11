@@ -3,6 +3,7 @@
 $:.unshift(File::join(File::dirname(__FILE__), '..', 'lib'))
 require 'gdv'
 require 'optparse'
+require 'yaml'
 
 verbose = false
 debug = false
@@ -25,6 +26,7 @@ options = OptionParser.new do |opts|
         name = name.to_sym
     end
     opts.on('--csv', 'dump as CSV') { |_| format = :csv }
+    opts.on('--yaml', 'dump as YAML') { |_| format = :yaml }
 end
 
 options.banner = "gdvmap [options] file\n\nPrint information about value maps"
@@ -40,11 +42,16 @@ elsif mode == :dump
         $stderr.puts "Could not find map #{map}"
         exit 1
     end
-    map.values.keys.sort.each do |k|
-        if format == :csv
-            printf "\"%s\",\"%s\"\n", k, map[k]
-        else
-            printf "%s %s\n", k, map[k]
+    if format == :yaml
+        h = { name => map }
+        puts h.to_yaml
+    else
+        map.values.keys.sort.each do |k|
+            if format == :csv
+                printf "\"%s\",\"%s\"\n", k, map[k]
+            else
+                printf "%s %s\n", k, map[k]
+            end
         end
     end
 else
