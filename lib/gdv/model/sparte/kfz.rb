@@ -33,8 +33,16 @@ module GDV::Model::Sparte
         class Baustein < TeilSparte; end
 
         class Haft < TeilSparte
-            property :regionalklasse, :specific, 1, 11
-            property :sfs,            :specific,  1, 15
+            property :begin_on,        :specific, 1, 8
+            property :regionalklasse,  :specific, 1, 11
+            property :deckungsart,     :specific, 1, 12
+            property :deckungssumme,   :specific, 1, 13
+            property :rabattgrundjahr, :specific, 1, 14
+            property :sfs,             :specific, 1, 15
+            property :beitragssatz,    :specific, 1, 16
+            property :beitrag,         :specific, 1, 17
+            property :schutzbrief,     :specific, 1, 28
+            property :typkl,           :specific, 1, 31
 
             def beitrag
                 return addl[1][9] if addl
@@ -95,13 +103,28 @@ module GDV::Model::Sparte
         property :kennz, :details, 1, 15
         property :erstzul_on, :details, 1, 16
         property :neupreis, :details, 1, 17
+        property :mehrwert, :details, 1, 18
+        property :flotte, :details, 1, 20
         property :we,    :details, 1, 21
+        property :sonderbed, :details, 1, 24
+        property :saisonkennz, :details, 1, 33
 
         property :fz_art, :details, 2, 10
+        property :kennz_art, :details, 2, 11
+        property :baujahr, :details, 2, 13
         property :erstzul_vn_on, :details, 2, 14
+        property :mehrwert_grund, :details, 2, 18
         property :fahrleistung,  :details, 2, 20
         property :garage, :details, 2, 21
         property :nutzungsart, :details, 2, 22
+        property :eigentum_fz, :details, 2, 23
+        property :wohneigentum, :details, 2, 24
+        property :produktname, :details, 2, 25
+        property :begin_doppelkarte_on, :details, 2, 28
+        property :end_doppelkarte_on, :details, 2, 29
+        property :aufbau, :details, 2, 32
+        property :gefahrgut, :details, 2, 33
+        property :gesamtmasse, :details, 2, 34
         property :staerke_einheit, :details, 2, 35
 
         property :price, :addl,    1, 8
