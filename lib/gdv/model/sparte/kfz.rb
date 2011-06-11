@@ -51,12 +51,34 @@ module GDV::Model::Sparte
         end
 
         class Voll < TeilSparte
-            property :beitrag,        :specific, 1, 16
+            property :begin_on,        :specific, 1,  8
+            property :excluded_on,     :specific, 1,  9
+            property :changed_on,      :specific, 1, 10
+            property :regionalklasse,  :specific, 1, 11
+            property :deckungsart,     :specific, 1, 12
+            property :rabattgrundjahr, :specific, 1, 13
+            property :sfs,             :specific, 1, 14
+            property :beitragssatz,    :specific, 1, 15
+            property :beitrag,         :specific, 1, 16
+            property :claims_prev_year, :specific, 1, 24
+            property :typkl,           :specific, 1, 25
+            property :free_deductible,      :specific, 1, 26
+            property :free_deductible_tk,   :specific, 1, 30
+            property :gap_deckung,     :specific, 1, 36
         end
 
         class Teil < TeilSparte
-            property :typkl, :specific, 1, 21
-            property :beitrag, :addl, 1, 8
+            property :begin_on,        :specific, 1,  8
+            property :excluded_on,     :specific, 1,  9
+            property :changed_on,      :specific, 1, 10
+            property :regionalklasse,  :specific, 1, 11
+            property :deckungsart,     :specific, 1, 12
+            property :flottenrabatt,   :specific, 1, 18
+            property :typkl,           :specific, 1, 21
+            property :free_deductible, :specific, 1, 22
+            property :gap_deckung,     :sepcific, 1, 30
+            property :deductible,      :specific, 2, 11
+
             def beitrag
                 return addl[1][8] if addl
                 specific[1][13]
