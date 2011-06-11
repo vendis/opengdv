@@ -383,10 +383,17 @@ module GDV::Format
     end
 
     class ValueMap
-        attr_accessor :label, :values
-        def initialize(label, values)
-            @label = label
-            @values = values
+        attr_accessor :label, :values, :orig_values
+
+        def initialize(label, values, override)
+            if override
+                @label = override.label
+                @values = override.values
+            else
+                @label = label
+                @values = values
+            end
+            @orig_values = values
         end
 
         def [](k)

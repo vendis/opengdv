@@ -8,6 +8,11 @@ module GDV::Format
         attr_reader :rectypes, :maps, :recindex
 
         def initialize
+            # Load value map overrides
+            File.open(File.join(GDV::format_path, 'value_maps.yaml')) do |f|
+                @override_maps = YAML.load(f)
+            end
+
             File.open(File.join(GDV::format_path, 'rectypes.txt')) do |f|
                 load_rectypes(f)
             end
@@ -75,7 +80,7 @@ module GDV::Format
                         if @maps[t]
                             raise FormatError, "Duplicate value map #{t}"
                         end
-                        @maps[t] = ValueMap.new(a[2], map)
+                        @maps[t] = ValueMap.new(a[2], map, @override_maps[t])
                         map = {}
                     end
                 end

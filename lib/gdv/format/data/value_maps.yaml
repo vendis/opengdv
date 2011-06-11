@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+#
+# Overrides for specific types to make labels more concise etc.
+#
+---
+:kh_deckungsart_t: !ruby/object:GDV::Format::ValueMap
+  label: Deckungsart
+  values:
+    "11": unbegrenzt
+    "13": 5 Mio / 1 Mio / 100.000, min. 2.5 Mio / 500 T / 50 T
+    "16": andere
+    "17": "Gesetzliche Deckungssummen für Personenbeförderung mit Omnibussen"
+    "18": "5 Mio Personenschäden,  2 Mio pauschal Sach- und Vermögensschäden, 2.500.000 Euro (umgerechnet), 1 Mio Euro (umgerechnet)"
+    "51": "50 Mio Euro (pauschal), 8 Mio Euro maximal pro Person"
+    "52": "100 Mio Euro (pauschal), 8 Mio Euro maximal pro Person"
+    "53": "100 Mio Euro (pauschal), 10 Mio Euro maximal pro Person"
+    "54": "100 Mio Euro (pauschal), 12 Mio Euro maximal pro Person"
+    "55": "100 Mio Euro (pauschal), 15 Mio Euro maximal pro Person"
