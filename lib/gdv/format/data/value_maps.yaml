@@ -16,3 +16,45 @@
     "53": "100 Mio Euro (pauschal), 10 Mio Euro maximal pro Person"
     "54": "100 Mio Euro (pauschal), 12 Mio Euro maximal pro Person"
     "55": "100 Mio Euro (pauschal), 15 Mio Euro maximal pro Person"
+:abgangsgruende_t: !ruby/object:GDV::Format::ValueMap
+  label: Abgangsgruende
+  values:
+    "01": "VN zum Ablauf"
+    "02": "VN im Schadenfall"
+    "03": "VN nach Beitragserhöhung"
+    "04": "VU zum Ablauf"
+    "05": "VU im Schadenfall"
+    "06": "VU mangels Beitragszahlung"
+    "07": "Risikofortfall"
+    "08": "Ersatzversicherung"
+    "09": "Storno zum Ablauf kurzfristiger Verträge"
+    "10": Vertragsunterbrechung mit Reservierung (spez. KFZ)
+    "11": Vertragsunterbrechung ohne Reservierung (spez. KFZ)
+    "12": Storno ab Beginn
+    "13": "Kündigung des Erwerbers bei Besitzwechsel"
+    "14": Tod VN
+    "15": Altersablauf
+    "16": "Kündigungsklausel gestrichen"
+    "17": Erlebensfallauszahlung
+    "18": Abgang aus Rahmenvertrag
+    "19": Beitragsfreistellung vom VN beantragt
+    "20": Beitragsfreistellung
+    "21": Vertragsende (Tod der VP)
+    "22": Vertragsende (Ablauf)
+    "23": Vertragsende (Heirat)
+    "24": "Rückkauf"
+    "25": Verfall
+    "26": Wechsel zu anderen PKV
+    "27": Wechsel zur ges. KV - pflichtig
+    "28": Wechsel zur ges. KV - freiwillig
+    "29": Vertragstrennung / -Zusammenlegung
+    "30": "Agenturwechsel"
+    "31": "Rücktritt (Anfechtung)"
+    "32": Abgang nach Tarifwechsel
+    "33": "Rücktritt (Verletzung der Informationspflicht)"
+    "34": "Fristlose Kündigung (Verletzung der Anzeigepflicht)"
+    "35": "Kündigung (Verletzung der Anzeigepflicht durch VN)"
+    "36": "Kündigung VN wegen Ausschluss der Gefahr durch VU"
+    "37": "Storno (Übergang auf anderes VU wegen Fusion)"
+    "38": "Storno (Fortführung unter neuer VSNr)"
+    "99": "sonstige Stornogründe"
