@@ -4,6 +4,8 @@ $:.unshift(File::join(File::dirname(__FILE__), '..', 'lib'))
 require 'gdv'
 require 'optparse'
 
+PROGNAME = File::basename(__FILE__)
+
 verbose = false
 brief = false
 convert = false
@@ -26,7 +28,7 @@ options = OptionParser.new do |opts|
     opts.on('-f', '--full', 'show empty fields') { |_| full = true }
 end
 
-options.banner = "gdview [options] file"
+options.banner = "#{PROGNAME} [OPTIONS] FILE"
 options.parse!
 unless ARGV.size == 1
     $stderr.puts "error: you need to specify a GDV input file"

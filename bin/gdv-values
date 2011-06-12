@@ -5,6 +5,8 @@ require 'gdv'
 require 'optparse'
 require 'yaml'
 
+PROGNAME = File::basename(__FILE__)
+
 verbose = false
 debug = false
 mode = :none
@@ -29,7 +31,7 @@ options = OptionParser.new do |opts|
     opts.on('--yaml', 'dump as YAML') { |_| format = :yaml }
 end
 
-options.banner = "gdvmap [options] file\n\nPrint information about value maps"
+options.banner = "#{PROGNAME} [OPTIONS] FILE\n\nPrint information about value maps"
 options.parse!
 
 maps = GDV::Format::Classifier::maps
