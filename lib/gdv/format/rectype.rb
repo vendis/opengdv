@@ -295,6 +295,11 @@ module GDV::Format
             end
         end
 
+        # Return the original mapped value of this field, not the override
+        def orig_mapped(record)
+          @map.orig_values[extract(record)] if @map
+        end
+
         def const?
             type == :const
         end

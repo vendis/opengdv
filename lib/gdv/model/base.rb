@@ -70,6 +70,8 @@ module GDV::Model
             end
             if mode == :raw
                 obj.raw(fnr)
+            elsif mode == :orig
+                obj.orig_mapped(fnr)
             else
                 obj[fnr]
             end
@@ -85,7 +87,8 @@ module GDV::Model
             # numbers of the part and field to read
             #
             # Also define an instance method +name_raw+ that will retrieve
-            # the raw value of the field
+            # the raw value of the field, and a method +name_orig+ for the
+            # originally mapped value
             def property(name, *args)
                 fnr = args.pop
                 define_method(name) do
@@ -93,6 +96,9 @@ module GDV::Model
                 end
                 define_method(:"#{name}_raw") do
                     read_property(args, fnr, :raw)
+                end
+                define_method(:"#{name}_orig") do
+                    read_property(args, fnr, :orig)
                 end
             end
 

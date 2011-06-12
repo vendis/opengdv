@@ -34,6 +34,11 @@ module GDV::Format
             end
         end
 
+        # Return the original mapped value for field +name+
+        def orig_mapped(name)
+          field(name).orig_mapped(@raw)
+        end
+
         # Return the +snr+ (Satznummer) for this line
         def snr
             part.nr
