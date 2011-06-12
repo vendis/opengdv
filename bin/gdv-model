@@ -1,0 +1,54 @@
+#! /usr/bin/ruby
+
+$:.unshift(File::join(File::dirname(__FILE__), '..', 'lib'))
+require 'gdv'
+require 'optparse'
+
+PROGNAME = File::basename(__FILE__)
+
+def print_grammar(indent, obj)
+    obj.class.grammar.rules.each do |r|
+        val = obj[r.name]
+        case r.kind
+            when :one, :maybe:
+                puts "#{indent}#{r.name}" unless val.nil?
+            when :star:
+                puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
+            when :object:
+                unless val.nil?
+                    puts "#{indent}#{r.name} (#{val.class.name})"
+                    print_grammar(indent + "  ", val)
+                end
+           when :objects:
+                puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
+                val.each do |v|
+                    puts "#{indent}  #{v.class.name}"
+                    print_grammar(indent + "    ", v)
+                end
+        end
+    end
+end
+
+options = OptionParser.new do |opts|
+end
+
+options.banner = "#{PROGNAME} FILE\n\nPrint the model representation of a GDV file"
+options.parse!
+unless ARGV.size == 1
+    $stderr.puts "error: you need to specify a GDV input file"
+    $stderr.puts options
+    exit 1
+end
+
+txn = GDV::Model::Transmission.new(ARGV[0])
+
+puts "#{txn.packages.size} Package(s)"
+
+txn.packages.each do |pkg|
+    puts "- #{pkg.contracts.size} Contracts"
+    pkg.contracts.each do |c|
+        k = c.sparte.nil? ? "*" : c.sparte.class.name
+        puts "-- #{c.lob_raw} #{k}"
+        print_grammar(" " * 7, c.sparte) unless c.sparte.nil?
+    end
+end
