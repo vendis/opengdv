@@ -76,7 +76,7 @@ module GDV::Model::Sparte
             property :flottenrabatt,   :specific, 1, 18
             property :typkl,           :specific, 1, 21
             property :free_deductible, :specific, 1, 22
-            property :gap_deckung,     :sepcific, 1, 30
+            property :gap_deckung,     :specific, 1, 30
             property :deductible,      :specific, 2, 11
 
             def beitrag
