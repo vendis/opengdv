@@ -60,12 +60,11 @@ loop do
             rec.lines.each do |l|
                 l.part.fields.each do |f|
                     v = convert ? l[f.nr] : l.raw(f.nr)
-                    next unless full || !v.nil?
-                    unless v =~ /^ *$/
-                        s = convert ? "#{v.class.name}" : "#{v.size}"
-                        lbl = f.label.nil? ? f.type.to_s : f.label[0,29]
-                        printf "%2d %-30s %-20s [%s]\n", f.nr, lbl + ":", v, s
-                    end
+                    blank = (v =~ /^ $/)
+                    next if (v.nil? || blank) && !full
+                    s = convert ? "#{v.class.name}" : "#{v.size}"
+                    lbl = f.label.nil? ? f.type.to_s : f.label[0,29]
+                    printf "%2d %-30s %-20s [%s]\n", f.nr, lbl + ":", v, s
                 end
                 if l == rec.lines.last
                     puts "=" * 70
