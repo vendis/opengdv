@@ -46,9 +46,11 @@ puts "#{txn.packages.size} Package(s)"
 
 txn.packages.each do |pkg|
     puts "- #{pkg.contracts.size} Contracts"
+    puts "  VU: #{pkg.vunr}"
+    puts "  VM: #{pkg.vmnr}"
     pkg.contracts.each do |c|
         k = c.sparte.nil? ? "*" : c.sparte.class.name
-        puts "-- #{c.lob_raw} #{k}"
+        puts "-- #{c.lob_raw} #{c.vsnr} #{k}"
         print_grammar(" " * 7, c.sparte) unless c.sparte.nil?
     end
 end
