@@ -77,7 +77,74 @@ module GDV::Model
             end
         end
 
-        private :read_property
+        # Produce a string representation that mirrors the structure of
+        # this model object defined by its grammar
+        #
+        # +opts+ is a hash with the following entries:
+        # - +:indent+ - the initial indentation, defaults to ""
+        # - +:io+ - the IO object onto which this model will be printed.
+        #           If none is given, +format+ returns a string.
+        # - +:fields+ - whether to print all fields
+        # - +:full+   - print all fields, even empty ones
+        # - +:convert+ - convert mapped field values
+        def format(opts = {})
+          as_string = opts[:io].nil?
+          print_header = opts[:header_printed].nil?
+          opts[:io] ||= StringIO.new
+          io = opts[:io]
+          opts[:indent] ||= ""
+          indent = opts[:indent]
+          if print_header
+            io.puts "#{indent}#{self.class.name}"
+            opts[:header_printed] = true
+          end
+          self.class.grammar.rules.each do |r|
+            val = self[r.name]
+            case r.kind
+            when :one, :maybe:
+                unless val.nil?
+                  io.puts "#{indent}#{r.name}"
+                  format_fields(val, opts) if opts[:fields]
+                end
+            when :star:
+                io.puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
+                val.each { |v| format_fields(v, opts) } if opts[:fields]
+            when :object:
+                unless val.nil?
+                  io.puts "#{indent}#{r.name} (#{val.class.name})"
+                  val.format(opts.merge(:indent => indent + "  "))
+                end
+            when :objects:
+                io.puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
+                val.each do |v|
+                  io.puts "#{indent}  #{v.class.name}"
+                  v.format(opts.merge(:indent => indent + " " * 4))
+                end
+            end
+          end
+          as_string ? opts.delete(:io).string : opts[:io]
+        end
+
+        def format_fields(rec, opts = {})
+          io = opts[:io]
+          indent = opts[:indent] +  " " * 4
+          rec.lines.each do |l|
+            l.part.fields.each do |f|
+              v = opts[:convert] ? l[f.nr] : l.raw(f.nr)
+              blank = v.strip.empty?
+              next if (v.nil? || blank) && !opts[:full]
+              lbl = (f.label.nil? ? f.type.to_s : f.label[0,32]) + ":"
+              io.printf "#{indent}%2d %-33s %-20s\n", f.nr, lbl, v.strip
+            end
+            if l == rec.lines.last
+              io.puts indent + "=" * (70 - indent.size)
+            else
+              io.puts indent + "-" * (70 - indent.size)
+            end
+          end
+        end
+
+        private :read_property, :format_fields
 
         class << self
             # Define an instance method +name+ that will retrieve the
