@@ -5,6 +5,7 @@ module GDV::Model
     VORSATZ      = "0001"
     NACHSATZ     = "9999"
     ADDRESS_TEIL = "0100"
+    SHARE        = "0300"
     SIGNATURES   = "0352"
     CLAUSES      = "0350"
     REBATES      = "0390"

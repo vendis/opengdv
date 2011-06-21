@@ -21,7 +21,13 @@ module GDV::Model
 
             # Spartenspezifischer Teil
             # @return [Sparte::Kfz] spartenspecifische Sätze
-            object :sparte, Sparte::Kfz, Sparte::Kranken, Sparte::Unfall
+            object :sparte, Sparte::Kfz, Sparte::Kranken, Sparte::Unfall,
+                            Sparte::Haftpflicht, Sparte::Rechtsschutz,
+                            Sparte::Feuer, Sparte::Glas, Sparte::Hausrat,
+                            Sparte::VerbGeb, Sparte::Technische,
+                            Sparte::Allgemein
+
+            star   :shares, :sid => SHARE
 
             # Skip over anything we don't understand
             skip_until :sid => [ADDRESS_TEIL, NACHSATZ]
