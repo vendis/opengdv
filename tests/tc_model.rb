@@ -166,6 +166,15 @@ class TestModel < Test::Unit::TestCase
         assert_equal "Norbert", vp.vorname
     end
 
+    def test_undefined_field
+        contract = GDV::Model::Contract.new
+        assert_raises(ArgumentError) { contract.lob }
+        assert_raises(ArgumentError) { contract.lob_raw }
+        assert_raises(ArgumentError) { contract.lob_orig }
+        assert_nil contract.lob(:default => nil)
+        assert_equal "None", contract.lob(:default => "None")
+    end
+
     def contracts_for(sp)
         @package.contracts.select { |c| c.sparte?(sp) }
     end

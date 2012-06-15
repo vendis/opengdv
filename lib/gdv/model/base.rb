@@ -67,7 +67,10 @@ module GDV::Model
             obj = self
             args.each do |arg|
                 obj = obj[arg]
-                raise ArgumentError, "path #{args.inspect} leads to nil at #{arg} for #{self.inspect}" if obj.nil?
+                if obj.nil?
+                    raise ArgumentError, "path #{args.inspect} leads to nil at #{arg} for #{self.inspect}" unless mode == :silent
+                    return nil
+                end
             end
             if mode == :raw
                 obj.raw(fnr)
@@ -159,8 +162,15 @@ module GDV::Model
             # originally mapped value
             def property(name, *args)
                 fnr = args.pop
-                define_method(name) do
-                    read_property(args, fnr, :convert)
+                define_method(name) do |*opts|
+                    val = nil
+                    if opts[0].is_a?(Hash) and opts[0].key?(:default)
+                        mode = :silent
+                        val = opts[0][:default]
+                    else
+                        mode = :convert
+                    end
+                    read_property(args, fnr, mode) || val
                 end
                 define_method(:"#{name}_raw") do
                     read_property(args, fnr, :raw)
