@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'rake'
-require 'rake/rdoctask'
+require 'rdoc/task'
 require 'rake/testtask'
 require 'rake/gempackagetask'
 require 'yard'
