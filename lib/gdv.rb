@@ -1,5 +1,10 @@
 require 'logger'
 
+# This code will not work with psych, since the callbacks
+# we need are different
+require 'yaml'
+YAML::ENGINE.yamler = 'syck'
+
 module GDV
     def self.version
         "0.0.1"

@@ -266,15 +266,13 @@ module GDV::Format
             record[pos-1..pos+len-2]
         end
 
-        # Convert the value for this field in +record+. For mapped types,
-        # return the entry from the map. For alphanumeric fields, strip
-        # spaces and convert using the +enc+ if it is passed to convert
-        # the character encoding
+        # Convert the value for this field in +record+ to UTF-8. For mapped
+        # types, return the entry from the map. For alphanumeric fields,
+        # strip spaces.
         # @param [String] record the raw record (a string of 256 bytes)
-        # @param [Encoder] enc an optional encoder
         # @return [String, Fixnum, Date] the converted value for this
         # field
-        def convert(record, enc = nil)
+        def convert(record)
             s = extract(record)
             if mapped?
                 map[s]
@@ -287,11 +285,9 @@ module GDV::Format
             elsif type == :date
                 GDV::Format::parse_date(s)
             else
-                if enc
-                    Encoder.utf8(enc).convert(s.strip)
-                else
-                    s.strip
-                end
+                s.strip!
+                s.encode!("UTF-8")
+                s
             end
         end
 

@@ -7,10 +7,9 @@ module GDV::Format
 
         # Create a new line, based on the 256 byte string +raw+ that will
         # be split into fields according to +part+
-        def initialize(raw, part, enc = nil)
+        def initialize(raw, part)
             @raw = raw
             @part = part
-            @enc = enc
         end
 
         # @return [Field] the field +name+ from +part+
@@ -20,7 +19,7 @@ module GDV::Format
 
         # Return the converted value for field +name+ in this line
         def [](name)
-            field(name).convert(@raw, @enc)
+            field(name).convert(@raw)
         end
 
         # Return the raw value for field +name+ in this line, or the entire

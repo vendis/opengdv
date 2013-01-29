@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 require 'test_helper'
 
 class TestModel < Test::Unit::TestCase
@@ -131,7 +133,7 @@ class TestModel < Test::Unit::TestCase
     def test_cset
         transmission "muster_bestand.gdv"
         vn = @transmission.packages[0].contracts[0].vn
-        assert_equal "Kitzelpf\xc3\xbctze", vn.nachname
+        assert_equal "Kitzelpfütze", vn.nachname
     end
 
     def test_garbage

@@ -1,4 +1,3 @@
-require 'gdv/format/encoder'
 require 'gdv/format/line'
 require 'gdv/format/rectype'
 require 'gdv/format/recindex'

@@ -76,24 +76,25 @@ module GDV::Format
     end
 
     class Reader
+        # FIXME: For now, we assume ISO-8859-15 encoding of all input
+        # files. There are other possibilities, like CP850; when we
+        # encounter them, we need a way to set the source character
+        # encoding
+        INPUT_CODING = "ISO-8859-15"
+
         attr_reader :io, :lineno, :unknown
 
         def initialize(io)
             @features = [:pad_short_lines]
             if io.is_a?(String)
                 @features << :close_at_eof
-                @io = File.open(io)
+                @io = File.open(io, "r:#{INPUT_CODING}")
             else
                 @io = io
             end
             @lineno = 0
             @unknown = 0
             @records = []
-            # FIXME: For now, we assum ISO-8859-15 encoding of all input
-            # files. There are other possibilities, like CP850; when we
-            # encounter them, we need a way to set the source character
-            # encoding
-            @enc = "ISO-8859-15"
         end
 
         def feature?(name)
@@ -200,7 +201,7 @@ module GDV::Format
                     GDV::logger.info "#{lineno}:unknown record:#{buf[0,4]}.#{buf[10,3]} skenn='#{buf[255,1]}' snr='#{buf[249,1]}'"
                 end
             end while part.nil?
-            @line = Line.new(buf, part, @enc)
+            @line = Line.new(buf, part)
         end
 
         # When +cond+ is an array, check whether +val+ is in +cond+;
