@@ -105,20 +105,20 @@ module GDV::Model
           self.class.grammar.rules.each do |r|
             val = self[r.name]
             case r.kind
-            when :one, :maybe:
+            when :one, :maybe
                 unless val.nil?
                   io.puts "#{indent}#{r.name}"
                   format_fields(val, opts) if opts[:fields]
                 end
-            when :star:
+            when :star
                 io.puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
                 val.each { |v| format_fields(v, opts) } if opts[:fields]
-            when :object:
+            when :object
                 unless val.nil?
                   io.puts "#{indent}#{r.name} (#{val.class.name})"
                   val.format(opts.merge(:indent => indent + "  "))
                 end
-            when :objects:
+            when :objects
                 io.puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
                 val.each do |v|
                   io.puts "#{indent}  #{v.class.name}"

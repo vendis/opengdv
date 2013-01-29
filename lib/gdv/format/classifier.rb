@@ -64,18 +64,18 @@ module GDV::Format
                     a = line.split(/:/)
                     typ = a.first
                     case typ
-                    when "K":
+                    when "K"
                             @rectypes << RecType::parse(parts, a)
                         parts = []
-                    when "T":
+                    when "T"
                             parts << Part::parse(fields, a)
                         fields = []
-                    when "F":
+                    when "F"
                             fields << Field::parse(a, @maps)
                         # Types with fixed values
-                    when "V":
+                    when "V"
                             map[a[1]] = a[2]
-                    when "M":
+                    when "M"
                             t = a[1].to_sym
                         if @maps[t]
                             raise FormatError, "Duplicate value map #{t}"
