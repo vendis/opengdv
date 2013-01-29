@@ -2,7 +2,7 @@
 require 'rake'
 require 'rdoc/task'
 require 'rake/testtask'
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 require 'yard'
 
 GDV_XML = "format/VUVM2009_011109.xml"
@@ -59,7 +59,7 @@ Versicherungsverträge, Kunden, und andere versicherungsrelevante Details.
 EOF
 end
 
-Rake::GemPackageTask.new(spec) do |pkg|
+Gem::PackageTask.new(spec) do |pkg|
     pkg.need_zip = true
     pkg.need_tar = true
 end
