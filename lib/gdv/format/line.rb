@@ -12,6 +12,13 @@ module GDV::Format
             @part = part
         end
 
+        def init_with(c)
+          # This suckage is only necessary since Psych doesn't give
+          # us a chance to intercept object creation for @part
+          @raw = c["raw"]
+          @part = c["part"].intern
+        end
+
         # @return [Field] the field +name+ from +part+
         def field(name)
             @part[name]

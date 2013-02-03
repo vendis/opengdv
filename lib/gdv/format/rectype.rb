@@ -74,16 +74,29 @@ module GDV::Format
 
         yaml_as "#{YAML_URI}:rectype"
 
-        def to_yaml(opts = {})
-            YAML.quick_emit(self, opts) do |out|
-                out.map(taguri, to_yaml_style) do |map|
-                    map.add("path", parts.first.path)
-                end
-            end
+        def encode_with(c)
+          c["path"] = parts.first.path
         end
 
-        def self.yaml_new(klass, tag, val)
-            GDV::Format::Classifier::find_part(val["path"]).rectype
+        def init_with(c)
+          rt = GDV::Format::Classifier::find_part(c["path"]).rectype
+          @satz = rt.satz
+          @sparte = rt.sparte
+          @line = rt.line
+          @label = rt.label
+          @parts = rt.parts
+          @part_index = {}
+          @parts.each do |p|
+            p.fields.each do |f|
+              unless @part_index[f.name]
+                @part_index[f.name] = [p.nr, f.name]
+              end
+            end
+          end
+        end
+
+        def intern
+          GDV::Format::Classifier::find_part(parts.first.path).rectype
         end
     end
 
@@ -204,17 +217,23 @@ module GDV::Format
 
         yaml_as "#{YAML_URI}:part"
 
-        def to_yaml(opts = {})
-            YAML.quick_emit(self, opts) do |out|
-                out.map(taguri, to_yaml_style) do |map|
-                    map.add("nr", @nr)
-                    map.add("rectype", @rectype)
-                end
-            end
+        def encode_with(c)
+          c["nr"] = @nr
+          c["rectype"] = @rectype
         end
 
-        def self.yaml_new(klass, tag, val)
-            val["rectype"].parts[val["nr"]-1]
+        def init_with(c)
+          @rectype = c["rectype"].intern
+          @nr = c["nr"]
+          p = rectype.parts[nr - 1]
+          @line = p.line
+          @fields = p.fields
+          @key_fields = p.key_fields
+          @field_index = {}
+        end
+
+        def intern
+          rectype.intern.parts[nr-1]
         end
 
         def self.parse(fields, l)

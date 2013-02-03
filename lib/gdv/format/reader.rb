@@ -43,6 +43,14 @@ module GDV::Format
             @lines = lines.inject({}) { |m, l| m[l.part.nr] = l; m }
         end
 
+        def init_with(c)
+          # This suckage is only necessary since Psych doesn't give
+          # us a chance to intercept object creation
+          @rectype = c["rectype"].intern
+          @lineno = c["lineno"]
+          @lines = c["lines"]
+        end
+
         # @return [Line] the line with +snr+ +k+
         def [](k)
             @lines[k] || @rectype.parts[k-1].default

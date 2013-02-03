@@ -64,20 +64,19 @@ class TestParser < Test::Unit::TestCase
     def test_yaml_rectype
         rt = @rectypes.first
         yml = rt.to_yaml
-        assert_equal "--- !opengdv.vendis.org,2009-11-01/rectype \npath: \n  :snr: \"1\"\n  :sid: \"0001\"\n", yml
-        assert_equal rt, YAML::load(yml)
+        assert_equal "--- !<tag:opengdv.vendis.org,2009-11-01:rectype>\npath:\n  :snr: '1'\n  :sid: '0001'\n", yml
+        assert_equal rt, YAML::load(yml).intern
     end
 
     def test_yaml_part
         part = @rectypes.first.parts.last
 
         yml = YAML::dump(part)
-        assert_equal 136, yml.size
-        assert_equal part, YAML::load(yml)
+        assert_equal 145, yml.size
+        assert_equal part, YAML::load(yml).intern
     end
 
     def test_yaml_record
-      skip "Syck loses encodings"
         r = GDV::reader(data_file("muster_bestand.gdv"))
         r.getrec
 
@@ -86,7 +85,7 @@ class TestParser < Test::Unit::TestCase
         yml = rec.to_yaml
         rec2 = YAML::load(yml)
 
-        assert_equal 943, yml.size
+        assert_equal 1063, yml.size
         assert       rec2.known?
         assert_equal rec.lineno, rec2.lineno
         assert_equal rec.rectype, rec2.rectype
