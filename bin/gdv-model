@@ -10,16 +10,16 @@ def print_grammar(indent, obj)
     obj.class.grammar.rules.each do |r|
         val = obj[r.name]
         case r.kind
-            when :one, :maybe:
+            when :one, :maybe
                 puts "#{indent}#{r.name}" unless val.nil?
-            when :star:
+            when :star
                 puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
-            when :object:
+            when :object
                 unless val.nil?
                     puts "#{indent}#{r.name} (#{val.class.name})"
                     print_grammar(indent + "  ", val)
                 end
-           when :objects:
+           when :objects
                 puts "#{indent}#{r.name} (#{val.size})" unless val.empty?
                 val.each do |v|
                     puts "#{indent}  #{v.class.name}"
