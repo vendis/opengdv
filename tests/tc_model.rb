@@ -47,6 +47,15 @@ class TestModel < Test::Unit::TestCase
         assert_equal "14", partner.address[1].raw(:adress_kennzeichen)
     end
 
+    def test_encoding
+        transmission "muster_bestand.gdv"
+
+        contract = @package.contracts[0]
+        vn = contract.vn
+        assert_equal Encoding.find("UTF-8"), vn.nachname.encoding
+        assert_equal "Kitzelpfütze", vn.nachname
+    end
+
     def test_kfz
         transmission "muster_bestand.gdv"
 
