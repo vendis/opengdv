@@ -53,7 +53,7 @@ module GDV::Format
 
         # @return [Line] the line with +snr+ +k+
         def [](k)
-            @lines[k] || @rectype.parts[k-1].default
+            @lines[k] || @rectype.part_with_nr(k).default
         end
 
         def method_missing(name, *args)

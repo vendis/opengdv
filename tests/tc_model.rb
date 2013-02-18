@@ -6,28 +6,7 @@ class TestModel < Test::Unit::TestCase
     def test_transmission
         transmission "muster_bestand.gdv"
 
-        assert_equal 1, @transmission.packages.size
-        assert_equal data_file("muster_bestand.gdv"), @package.filename
-        assert_equal 1, @transmission.packages.size
-
-        assert_equal("9999", @package.vunr)
-        d = Date.civil(2004, 7, 22)
-        assert_equal(d, @package.created_from)
-        assert_equal(d, @package.created_until)
-
-        assert_equal(14, @package.contracts.size)
-        c = @package.contracts.first
-        p = c.vn
-        assert_equal("2", p.anrede_raw)
-        assert_equal("Frau", p.anrede)
-        assert_equal("", p.geburtsort)
-
-        assert_equal("Frau", p.address.anredeschluessel)
-        assert_equal("Martina", p.address.name3)
-        g = c.general
-        assert_not_nil g
-        assert_equal("EUR", g[1].raw(21))
-        assert_equal("B4LTTT", g[1][25])
+        check_muster_bestand(@transmission)
     end
 
     def test_multiple_partner
@@ -186,6 +165,16 @@ class TestModel < Test::Unit::TestCase
         assert_equal "None", contract.lob(:default => "None")
     end
 
+    def test_yaml_roundtrip
+        xm = nil
+        assert_nothing_raised do
+            transmission "muster_bestand.gdv"
+            xm = YAML::load(@transmission.to_yaml)
+        end
+
+        check_muster_bestand(xm)
+    end
+
     def contracts_for(sp)
         @package.contracts.select { |c| c.sparte?(sp) }
     end
@@ -193,5 +182,33 @@ class TestModel < Test::Unit::TestCase
     def transmission(filename)
         @transmission = GDV::Model::Transmission.new(data_file(filename))
         @package = @transmission.packages.first
+    end
+
+    def check_muster_bestand(transmission)
+        assert_equal 1, transmission.packages.size
+
+        pkg = transmission.packages.first
+
+        assert_equal data_file("muster_bestand.gdv"), pkg.filename
+        assert_equal 1, transmission.packages.size
+
+        assert_equal("9999", pkg.vunr)
+        d = Date.civil(2004, 7, 22)
+        assert_equal(d, pkg.created_from)
+        assert_equal(d, pkg.created_until)
+
+        assert_equal(14, pkg.contracts.size)
+        c = pkg.contracts.first
+        p = c.vn
+        assert_equal("2", p.anrede_raw)
+        assert_equal("Frau", p.anrede)
+        assert_equal("", p.geburtsort)
+
+        assert_equal("Frau", p.address.anredeschluessel)
+        assert_equal("Martina", p.address.name3)
+        g = c.general
+        assert_not_nil g
+        assert_equal("EUR", g[1].raw(21))
+        assert_equal("B4LTTT", g[1][25])
     end
 end

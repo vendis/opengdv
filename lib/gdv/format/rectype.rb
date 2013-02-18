@@ -26,6 +26,9 @@ module GDV::Format
         Date.civil(y,m,d)
     end
 
+    # A record type (Satzart), consisting of a number of parts (Teilsaetze)
+    # Note that the +parts+ attribute is an array, but that the parts
+    # appear in that array in no particular order
     class RecType
         attr_reader :satz, :sparte, :line, :label, :parts
         def initialize(parts, h)
@@ -65,6 +68,10 @@ module GDV::Format
         def emit
             parts.each { |p| p.emit }
             puts "K:#{line}:#{satz}:#{sparte}:#{label}"
+        end
+
+        def part_with_nr(nr)
+          @parts.find { |p| p.nr == nr }
         end
 
         def self.parse(parts, l)
@@ -225,7 +232,7 @@ module GDV::Format
         def init_with(c)
           @rectype = c["rectype"].intern
           @nr = c["nr"]
-          p = rectype.parts[nr - 1]
+          p = rectype.part_with_nr(nr)
           @line = p.line
           @fields = p.fields
           @key_fields = p.key_fields
@@ -233,7 +240,7 @@ module GDV::Format
         end
 
         def intern
-          rectype.intern.parts[nr-1]
+          rectype.intern.part_with_nr(nr)
         end
 
         def self.parse(fields, l)
