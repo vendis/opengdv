@@ -193,6 +193,7 @@ module GDV::Format
                     return nil
                 end
                 buf.chomp!
+                buf.encode!("UTF-8")
                 @lineno += 1
                 if buf.size != 256
                     if feature?(:pad_short_lines) && buf.size < 256
