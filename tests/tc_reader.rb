@@ -85,7 +85,6 @@ class TestParser < Test::Unit::TestCase
         yml = rec.to_yaml
         rec2 = YAML::load(yml)
 
-        assert_equal 1063, yml.size
         assert       rec2.known?
         assert_equal rec.lineno, rec2.lineno
         assert_equal rec.rectype, rec2.rectype
