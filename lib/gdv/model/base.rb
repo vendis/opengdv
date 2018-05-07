@@ -103,7 +103,7 @@ module GDV::Model
             opts[:header_printed] = true
           end
           self.class.grammar.rules.each do |r|
-            val = self[r.name]
+            val = self[r.name] if r.name
             case r.kind
             when :one, :maybe
                 unless val.nil?
