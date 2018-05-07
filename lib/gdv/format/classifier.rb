@@ -8,6 +8,8 @@ module GDV::Format
         attr_reader :rectypes, :maps, :recindex
 
         def initialize
+            @recindex = nil
+
             # Load value map overrides
             File.open(File.join(GDV::format_path, 'value_maps.yaml')) do |f|
                 @override_maps = YAML.load(f)
@@ -22,8 +24,8 @@ module GDV::Format
                 parts = @rectypes.inject([]) { |l, rt| l + rt.parts }
                 p = parts.shift
                 @recindex = RecIndex.new(nil, p[:sid], p)
-                parts.each do |p|
-                    @recindex.insert(p)
+                parts.each do |pt|
+                    @recindex.insert(pt)
                 end
                 @recindex.finalize
             end

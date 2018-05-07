@@ -55,7 +55,6 @@ module GDV::Format
         # Return the part that describes this record
         def classify(record)
             v = field.extract(record)
-            ind = "  " * depth
             log =  "Match #{pf(field)} against '#{v}': "
             if parts.key?(v)
                 debug "#{log} <= #{parts[v]}"

@@ -79,7 +79,7 @@ module GDV::Format
                         :label => l[4])
         end
 
-        yaml_as "#{YAML_URI}:rectype"
+        yaml_tag "#{YAML_URI}:rectype"
 
         def encode_with(c)
           c["path"] = parts.first.path
@@ -108,8 +108,8 @@ module GDV::Format
     end
 
     class Part
-        attr_reader :nr, :line, :fields, :key_fields
-        attr_accessor :rectype, :path
+        attr_reader :nr, :line, :fields, :key_fields, :rectype
+        attr_accessor :path
 
         def initialize(fields, h)
             @nr = h[:nr]
@@ -120,6 +120,7 @@ module GDV::Format
                 f.part = self
             end
             @field_index = {}
+            @default = nil
         end
 
         def field_at(pos, len)
@@ -222,7 +223,7 @@ module GDV::Format
             @default
         end
 
-        yaml_as "#{YAML_URI}:part"
+        yaml_tag "#{YAML_URI}:part"
 
         def encode_with(c)
           c["nr"] = @nr
@@ -249,8 +250,8 @@ module GDV::Format
     end
 
     class Field
-        attr_reader :nr, :name, :type, :values, :label, :line
-        attr_accessor :part, :pos, :len, :map
+        attr_reader :nr, :name, :type, :values, :label, :line, :part
+        attr_accessor :pos, :len, :map
         attr_reader :precision
 
         def initialize(h)

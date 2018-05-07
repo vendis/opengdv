@@ -109,7 +109,7 @@ class TestParser < Test::Unit::TestCase
     def test_indexing
         root = GDV::Format::Classifier.instance.recindex
         parts = GDV::Format::Classifier.instance.rectypes.inject([]) { |l, rt| l + rt.parts }
-        assert (parts - root.leaves).empty?
+        assert((parts - root.leaves).empty?)
     end
 
     def test_reader

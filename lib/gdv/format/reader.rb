@@ -100,6 +100,7 @@ module GDV::Format
             else
                 @io = io
             end
+            @line = nil
             @lineno = 0
             @unknown = 0
             @records = []

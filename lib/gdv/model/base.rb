@@ -56,7 +56,10 @@ module GDV::Model
         attr_reader :rebates
 
         def [](sym)
-            instance_variable_get(:"@#{sym}")
+            sym = :"@#{sym}"
+            if instance_variable_defined?(sym)
+                instance_variable_get(sym)
+            end
         end
 
         def []=(sym, value)
@@ -162,15 +165,17 @@ module GDV::Model
             # originally mapped value
             def property(name, *args)
                 fnr = args.pop
-                define_method(name) do |*opts|
-                    val = nil
-                    if opts[0].is_a?(Hash) and opts[0].key?(:default)
-                        mode = :silent
-                        val = opts[0][:default]
-                    else
-                        mode = :convert
+                unless self.instance_methods(false).include?(name)
+                    define_method(name) do |*opts|
+                        val = nil
+                        if opts[0].is_a?(Hash) and opts[0].key?(:default)
+                            mode = :silent
+                            val = opts[0][:default]
+                        else
+                            mode = :convert
+                        end
+                        read_property(args, fnr, mode) || val
                     end
-                    read_property(args, fnr, mode) || val
                 end
                 define_method(:"#{name}_raw") do
                     read_property(args, fnr, :raw)
@@ -182,7 +187,9 @@ module GDV::Model
 
             def grammar(&block)
                 if block_given?
-                    raise "Klass #{self.name} already has a grammar" if @grammar
+                    if instance_variable_defined?(:@grammar) && @grammar
+                        raise "Klass #{self.name} already has a grammar"
+                    end
                     @grammar = Grammar.new(self, &block)
                 end
                 klass = self
@@ -206,10 +213,14 @@ module GDV::Model
                     if h.is_a?(Class)
                         @first = h.first
                     else
-                        @first = h if h
+                        @first = h
                     end
                 end
-                @first || @grammar.first
+                if instance_variable_defined?(:@first)
+                    @first
+                else
+                    @grammar.first
+                end
             end
         end
     end

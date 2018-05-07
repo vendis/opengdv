@@ -11,7 +11,7 @@ module GDV
 
     # Return a +Logger+
     def self.logger
-        unless @logger
+        unless instance_variable_defined?(:@logger)
             # Create a dummy logger
             self.logger = Logger.new(false)
         end

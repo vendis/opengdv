@@ -33,6 +33,11 @@ module GDV::Model::Sparte
         class Baustein < TeilSparte; end
 
         class Haft < TeilSparte
+            def beitrag
+                return addl[1][9] if addl
+                specific[1][17]
+            end
+
             property :begin_on,        :specific, 1, 8
             property :regionalklasse,  :specific, 1, 11
             property :deckungsart,     :specific, 1, 12
@@ -43,11 +48,6 @@ module GDV::Model::Sparte
             property :beitrag,         :specific, 1, 17
             property :schutzbrief,     :specific, 1, 28
             property :typkl,           :specific, 1, 31
-
-            def beitrag
-                return addl[1][9] if addl
-                specific[1][17]
-            end
         end
 
         class Voll < TeilSparte

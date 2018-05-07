@@ -53,7 +53,7 @@ module GDV::Model
         def initialize(klass, &block)
             @rules = []
             @klass = klass
-            instance_eval &block
+            instance_eval(&block)
         end
 
         # Run the grammar against a runnable. A runnable must define a
